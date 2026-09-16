@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260916T125419Z-420f47",
-  "last_run_at": "2026-09-16T12:54:19Z",
-  "last_success_at": "2026-09-16T11:59:46Z",
-  "total_articles": 231,
+  "last_run_id": "20260916T133843Z-54060d",
+  "last_run_at": "2026-09-16T13:38:43Z",
+  "last_success_at": "2026-09-16T13:38:43Z",
+  "total_articles": 234,
   "source_count": 16,
-  "success_rate_7d": 0.6,
+  "success_rate_7d": 0.625,
   "window_days": 30,
   "highlights": [
     {
@@ -15,7 +15,7 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 6.533,
+      "score": 6.517,
       "reasons": [
         "3 个独立来源同时报道",
         "涉及发布/上线"
@@ -30,7 +30,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 6.267,
+      "score": 6.252,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -44,7 +44,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.264,
+      "score": 6.249,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -58,7 +58,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa608a8347c.jpg?imageMogr2/quality/90",
-      "score": 6.028,
+      "score": 6.013,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -72,10 +72,10 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.899,
+      "score": 5.898,
       "reasons": [
         "2 个独立来源同时报道",
-        "HN 162 分 · 41 评论"
+        "HN 199 分 · 62 评论"
       ],
       "cluster_size": 2,
       "independent_sources": 2

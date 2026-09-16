@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-16T12:54:19+00:00",
-  "run_id": "20260916T125419Z-420f47",
-  "trigger": "manual",
+  "generated_at": "2026-09-16T13:38:43+00:00",
+  "run_id": "20260916T133843Z-54060d",
+  "trigger": "cron",
   "offline": false,
-  "overall": "partial",
-  "total_in_store": 231,
-  "new_this_run": 1,
-  "deduped_this_run": 214,
+  "overall": "success",
+  "total_in_store": 234,
+  "new_this_run": 3,
+  "deduped_this_run": 227,
   "window_days": 30,
   "health": {
-    "ok": 1,
-    "no_new": 14,
+    "ok": 3,
+    "no_new": 13,
     "parse_warning": 0,
     "stale": 0,
-    "failed": 1,
-    "success_rate_7d": 0.6
+    "failed": 0,
+    "success_rate_7d": 0.625
   },
   "sources": [
     {
@@ -34,7 +34,7 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-09-16T08:51:02+00:00",
-      "duration_ms": 257,
+      "duration_ms": 1638,
       "error": null
     },
     {
@@ -53,7 +53,7 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-09-16T11:20:27+00:00",
-      "duration_ms": 134,
+      "duration_ms": 1432,
       "error": null
     },
     {
@@ -72,7 +72,7 @@
       "items_new": 0,
       "items_dup": 18,
       "latest_published_at": "2026-09-16T10:38:00+00:00",
-      "duration_ms": 674,
+      "duration_ms": 3683,
       "error": null
     },
     {
@@ -91,7 +91,7 @@
       "items_new": 0,
       "items_dup": 28,
       "latest_published_at": "2026-09-16T11:31:33+00:00",
-      "duration_ms": 332,
+      "duration_ms": 4036,
       "error": null
     },
     {
@@ -110,7 +110,7 @@
       "items_new": 0,
       "items_dup": 11,
       "latest_published_at": "2026-09-16T04:04:59+00:00",
-      "duration_ms": 358,
+      "duration_ms": 1614,
       "error": null
     },
     {
@@ -129,7 +129,7 @@
       "items_new": 0,
       "items_dup": 1,
       "latest_published_at": "2026-09-14T08:35:27+00:00",
-      "duration_ms": 195,
+      "duration_ms": 1190,
       "error": null
     },
     {
@@ -148,7 +148,7 @@
       "items_new": 0,
       "items_dup": 6,
       "latest_published_at": "2026-09-16T10:53:58+00:00",
-      "duration_ms": 171,
+      "duration_ms": 1269,
       "error": null
     },
     {
@@ -161,58 +161,58 @@
       "items_kept": 9,
       "items_filtered": 10,
       "items_tz_corrected": 0,
-      "items_summary_dropped": 8,
-      "items_with_image": 11,
+      "items_summary_dropped": 6,
+      "items_with_image": 10,
       "items_out_of_window": 0,
       "items_new": 0,
       "items_dup": 9,
       "latest_published_at": "2026-09-16T10:06:51+00:00",
-      "duration_ms": 1069,
+      "duration_ms": 2958,
       "error": null
     },
     {
       "id": "openai",
       "name": "OpenAI News",
       "name_en": "OpenAI News",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
-      "items_seen": 1193,
+      "items_seen": 1194,
       "items_kept": 20,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 20,
-      "latest_published_at": "2026-09-14T12:00:00+00:00",
-      "duration_ms": 1040,
+      "items_new": 1,
+      "items_dup": 19,
+      "latest_published_at": "2026-09-16T13:00:00+00:00",
+      "duration_ms": 493,
       "error": null
     },
     {
       "id": "google-ai",
       "name": "Google AI Blog",
       "name_en": "Google AI Blog",
-      "status": "failed",
-      "http_status": null,
-      "items_seen": 0,
-      "items_kept": 0,
+      "status": "no_new",
+      "http_status": 200,
+      "items_seen": 20,
+      "items_kept": 20,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
-      "items_with_image": 0,
-      "items_out_of_window": 0,
+      "items_with_image": 20,
+      "items_out_of_window": 5,
       "items_new": 0,
-      "items_dup": 0,
-      "latest_published_at": null,
-      "duration_ms": 64541,
-      "error": "timeout：请求超时"
+      "items_dup": 15,
+      "latest_published_at": "2026-09-15T16:00:00+00:00",
+      "duration_ms": 194,
+      "error": null
     },
     {
       "id": "techcrunch-ai",
       "name": "TechCrunch AI",
       "name_en": "TechCrunch AI",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 20,
       "items_kept": 20,
@@ -221,10 +221,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 20,
-      "latest_published_at": "2026-09-16T10:34:47+00:00",
-      "duration_ms": 373,
+      "items_new": 1,
+      "items_dup": 19,
+      "latest_published_at": "2026-09-16T13:23:02+00:00",
+      "duration_ms": 191,
       "error": null
     },
     {
@@ -243,14 +243,14 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-09-16T12:00:00+00:00",
-      "duration_ms": 521,
+      "duration_ms": 133,
       "error": null
     },
     {
       "id": "mit-techreview-ai",
       "name": "MIT Tech Review AI",
       "name_en": "MIT Tech Review AI",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 10,
       "items_kept": 10,
@@ -259,10 +259,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 3,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 9,
+      "items_new": 0,
+      "items_dup": 10,
       "latest_published_at": "2026-09-16T12:47:34+00:00",
-      "duration_ms": 506,
+      "duration_ms": 129,
       "error": null
     },
     {
@@ -281,14 +281,14 @@
       "items_new": 0,
       "items_dup": 11,
       "latest_published_at": "2026-09-15T22:47:07+00:00",
-      "duration_ms": 510,
+      "duration_ms": 210,
       "error": null
     },
     {
       "id": "hn",
       "name": "Hacker News",
       "name_en": "Hacker News",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 21,
       "items_kept": 21,
@@ -297,10 +297,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 20,
+      "items_new": 1,
+      "items_dup": 19,
       "latest_published_at": "2026-09-16T08:08:57+00:00",
-      "duration_ms": 1257,
+      "duration_ms": 627,
       "error": null
     },
     {
@@ -319,7 +319,7 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-09-16T04:00:00+00:00",
-      "duration_ms": 1176,
+      "duration_ms": 467,
       "error": null
     }
   ],
@@ -331,7 +331,7 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 6.533,
+      "score": 6.517,
       "reasons": [
         "3 个独立来源同时报道",
         "涉及发布/上线"
@@ -346,7 +346,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 6.267,
+      "score": 6.252,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -360,7 +360,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.264,
+      "score": 6.249,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -374,7 +374,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa608a8347c.jpg?imageMogr2/quality/90",
-      "score": 6.028,
+      "score": 6.013,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -388,10 +388,10 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.899,
+      "score": 5.898,
       "reasons": [
         "2 个独立来源同时报道",
-        "HN 162 分 · 41 评论"
+        "HN 199 分 · 62 评论"
       ],
       "cluster_size": 2,
       "independent_sources": 2
