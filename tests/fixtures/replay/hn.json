@@ -1,0 +1,1608 @@
+{
+ "exhaustive": {
+  "nbHits": true,
+  "typo": true
+ },
+ "exhaustiveNbHits": true,
+ "exhaustiveTypo": true,
+ "hits": [
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "vertigoruntime"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Mistral X Mozilla: Private, Multilingual <em>AI</em> Browsing"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://mistral.<em>ai</em>/news/mistral-x-mozilla/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_vertigoruntime",
+    "story_49723408",
+    "front_page"
+   ],
+   "author": "vertigoruntime",
+   "children": [
+    49724318,
+    49724287,
+    49725173,
+    49724768,
+    49724206,
+    49724349,
+    49724555,
+    49724838,
+    49724719,
+    49724277,
+    49724380,
+    49725192
+   ],
+   "created_at": "2026-09-16T08:08:57Z",
+   "created_at_i": 1789546137,
+   "num_comments": 23,
+   "objectID": "49723408",
+   "points": 91,
+   "story_id": 49723408,
+   "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
+   "updated_at": "2026-09-16T11:39:57Z",
+   "url": "https://mistral.ai/news/mistral-x-mozilla/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "albelfio"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "Introducing System One Models and Jev"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://typesafe.<em>ai</em>/blog/introducing-system-one-models-and-jev"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_albelfio",
+    "story_49717558",
+    "front_page"
+   ],
+   "author": "albelfio",
+   "children": [
+    49718492,
+    49723461,
+    49721150,
+    49719442,
+    49720612,
+    49718350,
+    49718291,
+    49718626,
+    49723278,
+    49722440,
+    49717848,
+    49718111,
+    49719883,
+    49718120,
+    49724426,
+    49718267,
+    49723530,
+    49722331,
+    49719902,
+    49724915,
+    49724814,
+    49724300,
+    49718719,
+    49719414,
+    49724117,
+    49724916,
+    49724111,
+    49718973,
+    49717590,
+    49723116,
+    49719621,
+    49723804,
+    49718035,
+    49721441,
+    49719097,
+    49722115,
+    49721416,
+    49722538,
+    49724531,
+    49724185,
+    49720694,
+    49724321,
+    49719175,
+    49722711,
+    49720719,
+    49722615,
+    49718066,
+    49723348,
+    49721409,
+    49723003,
+    49718135,
+    49723678,
+    49718890,
+    49723102,
+    49720062,
+    49722565,
+    49719167,
+    49723660,
+    49722315,
+    49718912,
+    49721095,
+    49718383,
+    49721299,
+    49722698,
+    49721114,
+    49718866,
+    49720302,
+    49720843,
+    49719465,
+    49719359,
+    49723143,
+    49723070,
+    49719502,
+    49718671,
+    49719788,
+    49721922,
+    49719032,
+    49718490,
+    49721856,
+    49723154,
+    49719478,
+    49720437,
+    49722018,
+    49720329,
+    49722858,
+    49718269,
+    49719416,
+    49718810,
+    49717928,
+    49718047,
+    49721123,
+    49718399,
+    49717856,
+    49718242,
+    49719927,
+    49718646,
+    49718562,
+    49721305,
+    49721090,
+    49720634,
+    49718561,
+    49721731,
+    49718422,
+    49721501,
+    49721955,
+    49718357,
+    49720852,
+    49720139,
+    49720717,
+    49718349,
+    49719930,
+    49721109,
+    49718619,
+    49717965,
+    49719120,
+    49722529,
+    49718742,
+    49718926,
+    49718196,
+    49718166,
+    49723250,
+    49720553,
+    49719329,
+    49718094,
+    49718825,
+    49718581,
+    49718426,
+    49718009,
+    49720075,
+    49718053,
+    49722252,
+    49719260,
+    49718766,
+    49720023,
+    49718402,
+    49718376,
+    49718137,
+    49717966,
+    49721632,
+    49718445,
+    49719033,
+    49718361,
+    49718343,
+    49718313,
+    49724210,
+    49724302,
+    49719775,
+    49718684,
+    49723355,
+    49723538,
+    49723541,
+    49723734,
+    49718355,
+    49718248,
+    49722345,
+    49720200
+   ],
+   "created_at": "2026-09-15T19:25:03Z",
+   "created_at_i": 1789500303,
+   "num_comments": 422,
+   "objectID": "49717558",
+   "points": 1476,
+   "story_id": 49717558,
+   "title": "Introducing System One Models and Jev",
+   "updated_at": "2026-09-16T11:39:57Z",
+   "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "bearsyankees"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "We got admin access to Baseten's production GitHub"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.strix.<em>ai</em>/blog/baseten-harbor-github-pat-takeover"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_bearsyankees",
+    "story_49716476",
+    "front_page"
+   ],
+   "author": "bearsyankees",
+   "children": [
+    49721678,
+    49716662,
+    49720897,
+    49721718,
+    49717393,
+    49717458,
+    49716849,
+    49724618,
+    49719471,
+    49716931,
+    49724184,
+    49723521,
+    49716477,
+    49716634,
+    49718694,
+    49718081,
+    49716722,
+    49718224,
+    49719274,
+    49722281,
+    49717272,
+    49717661,
+    49716701,
+    49717311,
+    49718002,
+    49719228,
+    49717587,
+    49721417,
+    49719615,
+    49721936,
+    49717335,
+    49720568,
+    49717234,
+    49717331
+   ],
+   "created_at": "2026-09-15T18:11:24Z",
+   "created_at_i": 1789495884,
+   "num_comments": 169,
+   "objectID": "49716476",
+   "points": 288,
+   "story_id": 49716476,
+   "title": "We got admin access to Baseten's production GitHub",
+   "updated_at": "2026-09-16T11:38:28Z",
+   "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "leumon"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "Gemini 3.8 Live and 3.8 Live Extended Thinking"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://blog.google/innovation-and-<em>ai</em>/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_leumon",
+    "story_49715947",
+    "front_page"
+   ],
+   "author": "leumon",
+   "children": [
+    49718996,
+    49722066,
+    49717988,
+    49717061,
+    49716968,
+    49716918,
+    49718250,
+    49716990,
+    49718208,
+    49716985,
+    49723029,
+    49724641,
+    49724821,
+    49718983,
+    49720177,
+    49717281,
+    49718793,
+    49721097,
+    49721668,
+    49723803,
+    49722743,
+    49719356,
+    49717307,
+    49723017,
+    49721944,
+    49717869,
+    49717277,
+    49717262,
+    49717172,
+    49718947,
+    49723380,
+    49717010,
+    49721885,
+    49717215,
+    49720739,
+    49721579,
+    49722022,
+    49722847,
+    49717144,
+    49722450,
+    49717254,
+    49720428,
+    49723360,
+    49716766,
+    49719038,
+    49717205
+   ],
+   "created_at": "2026-09-15T17:38:18Z",
+   "created_at_i": 1789493898,
+   "num_comments": 282,
+   "objectID": "49715947",
+   "points": 430,
+   "story_id": 49715947,
+   "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+   "updated_at": "2026-09-16T11:39:57Z",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "jaykru"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "Why I'm still bearish on LLMs after Navier-Stokes"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://dank.systems/posts/2026-09-15-<em>ai</em>-bear.html"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_jaykru",
+    "story_49715927",
+    "front_page"
+   ],
+   "author": "jaykru",
+   "children": [
+    49720191,
+    49723161,
+    49720632,
+    49721087,
+    49724775,
+    49720100,
+    49720210,
+    49719884,
+    49724362,
+    49723010,
+    49719881,
+    49720835,
+    49720794,
+    49720674,
+    49720161,
+    49720457,
+    49723485,
+    49724328,
+    49721091,
+    49724229,
+    49720726,
+    49723045,
+    49719887,
+    49721022,
+    49720405,
+    49724143,
+    49720231,
+    49720291,
+    49721265,
+    49721666,
+    49721283,
+    49720614,
+    49715928,
+    49724331,
+    49723157,
+    49720892,
+    49720488,
+    49720249,
+    49720467
+   ],
+   "created_at": "2026-09-15T17:37:12Z",
+   "created_at_i": 1789493832,
+   "num_comments": 308,
+   "objectID": "49715927",
+   "points": 254,
+   "story_id": 49715927,
+   "title": "Why I'm still bearish on LLMs after Navier-Stokes",
+   "updated_at": "2026-09-16T11:39:57Z",
+   "url": "https://dank.systems/posts/2026-09-15-ai-bear.html"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "pavel_lishin"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "There's a 100% Chance <em>AI</em> Agents Are Ruining the Internet"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.404media.co/theres-a-100-chance-<em>ai</em>-agents-are-already-ruining-the-internet/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_pavel_lishin",
+    "story_49715113"
+   ],
+   "author": "pavel_lishin",
+   "children": [
+    49715688,
+    49715525,
+    49715664,
+    49715923,
+    49715532,
+    49716451,
+    49716484,
+    49715517,
+    49716079,
+    49716416,
+    49721005,
+    49716777,
+    49715453,
+    49715848,
+    49716126,
+    49715519,
+    49715898,
+    49715615,
+    49715589,
+    49717598,
+    49716238,
+    49715714,
+    49716342,
+    49715419,
+    49715576,
+    49715721,
+    49721412,
+    49718365,
+    49715837,
+    49715500,
+    49715614
+   ],
+   "created_at": "2026-09-15T16:38:45Z",
+   "created_at_i": 1789490325,
+   "num_comments": 161,
+   "objectID": "49715113",
+   "points": 222,
+   "story_id": 49715113,
+   "title": "There's a 100% Chance AI Agents Are Ruining the Internet",
+   "updated_at": "2026-09-16T11:30:12Z",
+   "url": "https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "eustoria"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Cartesian – <em>AI</em> 3D Modeling for Design"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.formas.<em>ai</em>/cartesian"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_eustoria",
+    "story_49713999"
+   ],
+   "author": "eustoria",
+   "children": [
+    49714750,
+    49715180,
+    49719634,
+    49717722,
+    49714648,
+    49717150,
+    49721048,
+    49714972,
+    49714937,
+    49716592,
+    49716419,
+    49721139,
+    49714567,
+    49719337,
+    49717380,
+    49718894,
+    49714439,
+    49714888,
+    49715356,
+    49714817,
+    49715739,
+    49714986,
+    49717124,
+    49721302,
+    49717564,
+    49714922,
+    49715675,
+    49720950
+   ],
+   "created_at": "2026-09-15T15:26:45Z",
+   "created_at_i": 1789486005,
+   "num_comments": 78,
+   "objectID": "49713999",
+   "points": 108,
+   "story_id": 49713999,
+   "title": "Cartesian – AI 3D Modeling for Design",
+   "updated_at": "2026-09-16T11:39:18Z",
+   "url": "https://www.formas.ai/cartesian"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "jbkcc"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "<em>AI</em> is breaking our proxies for expertise"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.seangoedecke.com/<em>ai</em>-is-breaking-our-proxies-for-expertise/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_jbkcc",
+    "story_49712416"
+   ],
+   "author": "jbkcc",
+   "children": [
+    49713762,
+    49714181,
+    49712822,
+    49713616,
+    49714763,
+    49714568,
+    49714742,
+    49714531,
+    49713480,
+    49713652,
+    49714324,
+    49713102,
+    49714564,
+    49715141,
+    49712959,
+    49713831,
+    49714815
+   ],
+   "created_at": "2026-09-15T13:41:55Z",
+   "created_at_i": 1789479715,
+   "num_comments": 77,
+   "objectID": "49712416",
+   "points": 88,
+   "story_id": 49712416,
+   "title": "AI is breaking our proxies for expertise",
+   "updated_at": "2026-09-16T11:38:28Z",
+   "url": "https://www.seangoedecke.com/ai-is-breaking-our-proxies-for-expertise/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "bashtian"
+    },
+    "story_text": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Hey HN,<p>I always had the problem that building HTML pages is really simple now, but trying to save data required hosting it somewhere, and sharing it afterwards was not easy. Over the last few months, I've been building an app called Capsule (it’s also the file extension name) written in Rust with Tauri 2.0 that allows packing an HTML app and its data into a single SQLite file.<p>The HTML file and any related assets are directly embedded in the database. User data can either be saved as a localStorage key/value store or via a MongoDB-inspired collections API as documents, saved in a table in the file. You can also save other assets, like PDF files or images, directly in the database to keep different documents together. All data can be easily exported to CSV or JSON if needed.<p>Privacy and security were a big priority for me, so documents cannot do anything out of the box. They don’t have direct access to the file system and they require permission to access the internet. The permission model is still something I’m working to improve. Capsule documents can also use local or remote <em>AI</em> models for document specific <em>AI</em> features.<p>One downside with this approach is that multiple people working on it will create different copies. To make it possible to merge different copies of the same file, each data entry has a unique UUID and timestamp.<p>I’m planning to open up the file format specification for the 1.0 version of the app so other apps can read or write Capsule files.<p>You can try it out in the web preview at <a href=\"https://withcapsule.app/preview\" rel=\"nofollow\">https://withcapsule.app/preview</a> with pre-built templates or use any <em>AI</em> provider of your choice to create a custom, Capsule-optimized app by using the following prompt:<p>&quot;Please read the app wizard instructions at <a href=\"https://withcapsule.app/prompt.txt\" rel=\"nofollow\">https://withcapsule.app/prompt.txt</a> and help me design an app.“<p>I’m still working on the file format but there are migrations for each new version, so data should never be lost when using newer versions of the app in the future. Please let me know if you have any ideas or use cases where this might make sense or does not work."
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "Show HN: Capsule – Single-file web apps that save their data into SQLite"
+    },
+    "url": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "https://withcapsule.app/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_bashtian",
+    "story_49712278",
+    "show_hn",
+    "front_page"
+   ],
+   "author": "bashtian",
+   "children": [
+    49714845,
+    49722553,
+    49714916,
+    49713800,
+    49713834,
+    49712892,
+    49714056,
+    49714987,
+    49713981,
+    49723525,
+    49712736,
+    49722938,
+    49720288,
+    49723714,
+    49717756,
+    49724396,
+    49715991,
+    49722484,
+    49712708,
+    49714281,
+    49713101,
+    49713528,
+    49714427,
+    49715649,
+    49714553,
+    49719730,
+    49715212,
+    49713984,
+    49715109,
+    49719818,
+    49718577,
+    49721696,
+    49722284,
+    49713204,
+    49713231,
+    49720862,
+    49721049,
+    49715791,
+    49715933,
+    49716616,
+    49722351,
+    49713943,
+    49721236,
+    49715780,
+    49715044,
+    49716280,
+    49718939,
+    49714336,
+    49713352,
+    49717801,
+    49718210,
+    49715645,
+    49716439,
+    49720503,
+    49716541,
+    49713829,
+    49713998,
+    49712757,
+    49715445,
+    49715377,
+    49713473,
+    49713460,
+    49717192,
+    49712942,
+    49722789,
+    49712823,
+    49715540,
+    49718412,
+    49716023,
+    49716353,
+    49715673,
+    49717922,
+    49714779
+   ],
+   "created_at": "2026-09-15T13:31:40Z",
+   "created_at_i": 1789479100,
+   "num_comments": 143,
+   "objectID": "49712278",
+   "points": 335,
+   "story_id": 49712278,
+   "story_text": "Hey HN,<p>I always had the problem that building HTML pages is really simple now, but trying to save data required hosting it somewhere, and sharing it afterwards was not easy. Over the last few months, I&#x27;ve been building an app called Capsule (it’s also the file extension name) written in Rust with Tauri 2.0 that allows packing an HTML app and its data into a single SQLite file.<p>The HTML file and any related assets are directly embedded in the database. User data can either be saved as a localStorage key&#x2F;value store or via a MongoDB-inspired collections API as documents, saved in a table in the file. You can also save other assets, like PDF files or images, directly in the database to keep different documents together. All data can be easily exported to CSV or JSON if needed.<p>Privacy and security were a big priority for me, so documents cannot do anything out of the box. They don’t have direct access to the file system and they require permission to access the internet. The permission model is still something I’m working to improve. Capsule documents can also use local or remote AI models for document specific AI features.<p>One downside with this approach is that multiple people working on it will create different copies. To make it possible to merge different copies of the same file, each data entry has a unique UUID and timestamp.<p>I’m planning to open up the file format specification for the 1.0 version of the app so other apps can read or write Capsule files.<p>You can try it out in the web preview at <a href=\"https:&#x2F;&#x2F;withcapsule.app&#x2F;preview\" rel=\"nofollow\">https:&#x2F;&#x2F;withcapsule.app&#x2F;preview</a> with pre-built templates or use any AI provider of your choice to create a custom, Capsule-optimized app by using the following prompt:<p>&quot;Please read the app wizard instructions at <a href=\"https:&#x2F;&#x2F;withcapsule.app&#x2F;prompt.txt\" rel=\"nofollow\">https:&#x2F;&#x2F;withcapsule.app&#x2F;prompt.txt</a> and help me design an app.“<p>I’m still working on the file format but there are migrations for each new version, so data should never be lost when using newer versions of the app in the future. Please let me know if you have any ideas or use cases where this might make sense or does not work.",
+   "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+   "updated_at": "2026-09-16T11:39:57Z",
+   "url": "https://withcapsule.app/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "throwworhtthrow"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Ex-FTC boss Khan: break out the handcuffs for <em>AI</em> CEOs, citing 1934 precedent"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.theregister.com/<em>ai</em>-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-<em>ai</em>-ceos-citing-1934-precedent/5296325"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_throwworhtthrow",
+    "story_49706223"
+   ],
+   "author": "throwworhtthrow",
+   "children": [
+    49706911,
+    49706873,
+    49709513,
+    49709435,
+    49708548,
+    49709022,
+    49712666,
+    49707797,
+    49706781,
+    49706959,
+    49709737,
+    49707354,
+    49719436,
+    49718109,
+    49712154,
+    49717576,
+    49707770,
+    49707159,
+    49706268,
+    49706990
+   ],
+   "created_at": "2026-09-15T00:40:14Z",
+   "created_at_i": 1789432814,
+   "num_comments": 135,
+   "objectID": "49706223",
+   "points": 225,
+   "story_id": 49706223,
+   "title": "Ex-FTC boss Khan: break out the handcuffs for AI CEOs, citing 1934 precedent",
+   "updated_at": "2026-09-16T11:34:42Z",
+   "url": "https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "theanonymousone"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://entelligence.<em>ai</em>/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_theanonymousone",
+    "story_49703003"
+   ],
+   "author": "theanonymousone",
+   "children": [
+    49703554,
+    49703387,
+    49703469,
+    49703312,
+    49704458,
+    49703917,
+    49703885,
+    49703353,
+    49716169,
+    49703609,
+    49705452,
+    49703683,
+    49703725,
+    49705598,
+    49707723,
+    49704281,
+    49714296,
+    49715085,
+    49703889,
+    49705301,
+    49703925,
+    49703322,
+    49711431,
+    49705483,
+    49703111,
+    49703547,
+    49703830,
+    49703409,
+    49705280,
+    49703827,
+    49703408,
+    49703416
+   ],
+   "created_at": "2026-09-14T19:56:20Z",
+   "created_at_i": 1789415780,
+   "num_comments": 151,
+   "objectID": "49703003",
+   "points": 162,
+   "story_id": 49703003,
+   "title": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+   "updated_at": "2026-09-16T11:30:44Z",
+   "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "guld"
+    },
+    "story_text": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "<a href=\"https://arxiv.org/abs/2605.31022\" rel=\"nofollow\">https://arxiv.org/abs/2605.31022</a><p><a href=\"https://github.com/SakanaAI/pc-alm\" rel=\"nofollow\">https://github.com/SakanaAI/pc-alm</a>"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "Backprop Alternative: Augmented Lagrangian Predictive Coding"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://pub.sakana.<em>ai</em>/pc-alm/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_guld",
+    "story_49701182"
+   ],
+   "author": "guld",
+   "children": [
+    49706920,
+    49708353,
+    49710369,
+    49707455,
+    49707559,
+    49706851,
+    49715082,
+    49712826,
+    49711652,
+    49701183,
+    49704756,
+    49707235
+   ],
+   "created_at": "2026-09-14T18:03:12Z",
+   "created_at_i": 1789408992,
+   "num_comments": 45,
+   "objectID": "49701182",
+   "points": 122,
+   "story_id": 49701182,
+   "story_text": "<a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2605.31022\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2605.31022</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;SakanaAI&#x2F;pc-alm\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;SakanaAI&#x2F;pc-alm</a>",
+   "title": "Backprop Alternative: Augmented Lagrangian Predictive Coding",
+   "updated_at": "2026-09-16T10:11:12Z",
+   "url": "https://pub.sakana.ai/pc-alm/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "luk4"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "For <em>AI</em> leaders Doom is a form of hype"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://erkansaka.net/2026/09/10/<em>ai</em>-doom-rhetoric-safety-hype/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_luk4",
+    "story_49699384"
+   ],
+   "author": "luk4",
+   "children": [
+    49699729,
+    49699763,
+    49699887,
+    49700015,
+    49699592,
+    49699828,
+    49699781,
+    49700050,
+    49699702,
+    49699834,
+    49699962,
+    49705141,
+    49699898,
+    49699841,
+    49699776,
+    49699546,
+    49699855,
+    49699661,
+    49699778,
+    49699938,
+    49704664,
+    49700503,
+    49699617,
+    49699735,
+    49699752,
+    49701873,
+    49699728,
+    49699525,
+    49699803,
+    49699618,
+    49700106,
+    49699744,
+    49700347,
+    49699598,
+    49699570
+   ],
+   "created_at": "2026-09-14T16:15:05Z",
+   "created_at_i": 1789402505,
+   "num_comments": 181,
+   "objectID": "49699384",
+   "points": 131,
+   "story_id": 49699384,
+   "title": "For AI leaders Doom is a form of hype",
+   "updated_at": "2026-09-16T00:25:11Z",
+   "url": "https://erkansaka.net/2026/09/10/ai-doom-rhetoric-safety-hype/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "toebee"
+    },
+    "story_text": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Hey HN, Toby from Nari Labs here.<p>We've been working on making OSS speech models super-fast. Last year, we built Dia, the first OSS text-to-speech model capable of doing natural dialogue. Since then, so many more great speech models have been released to the public.<p>But the market is still dominated by closed source models. We think that's an inference problem. Existing systems such as vLLM / SGLang are not well suited for multimodal inference. To prove this, we built an inference engine specialized for Qwen3-TTS and open-sourced it (<a href=\"https://github.com/nari-labs/nari-qwen3-tts\" rel=\"nofollow\">https://github.com/nari-labs/nari-qwen3-tts</a>). Running at sub-50 ms latency at 10 RPS, this showed open models can be run much faster and cheaper.<p>Since then, we've been working hard to bring cheap, fast, and high quality serving to all. And we've even beat closed models at their game!<p>Measured on the highly cited Coval (YC S24) voice <em>AI</em> benchmarks, our Qwen3-TTS endpoint not just is #2 in latency, but #1 in accuracy (WER) compared to 11Labs, Cartesia etc. while being the cheapest endpoint. Our Qwen3-ASR endpoint has the lowest latency and #2 accuracy, just 0.1% away from #1. It is the second cheapest model on the list.<p>It took a lot of clever inference engineering to make these models quick, perform well while keeping costs low. Interestingly, Alibaba's official endpoints seem to perform worse in terms of accuracy and latency compared to ours. But nonetheless, much love to the Qwen team for OSS-ing these amazing speech models.<p>We want to continue to push prices down to make speech technology a commodity - so that every app can have great TTS and STT without worrying about unit costs. We're also working on other parts of audio such as diarization - as well as video and world model inference. More to come!"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "Show HN: Nari Qwen3-TTS and Qwen3-ASR – High accuracy, low latency and cost"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://narilabs.com/blog/nari-labs-leads-coval-voice-<em>ai</em>-benchmarks/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_toebee",
+    "story_49699267",
+    "show_hn"
+   ],
+   "author": "toebee",
+   "children": [
+    49701055,
+    49706674,
+    49707098,
+    49714358,
+    49701701,
+    49704759,
+    49702762,
+    49701336,
+    49702361,
+    49702076,
+    49702667,
+    49712540,
+    49704988,
+    49699268,
+    49701631,
+    49701647,
+    49709650
+   ],
+   "created_at": "2026-09-14T16:07:58Z",
+   "created_at_i": 1789402078,
+   "num_comments": 31,
+   "objectID": "49699267",
+   "points": 90,
+   "story_id": 49699267,
+   "story_text": "Hey HN, Toby from Nari Labs here.<p>We&#x27;ve been working on making OSS speech models super-fast. Last year, we built Dia, the first OSS text-to-speech model capable of doing natural dialogue. Since then, so many more great speech models have been released to the public.<p>But the market is still dominated by closed source models. We think that&#x27;s an inference problem. Existing systems such as vLLM &#x2F; SGLang are not well suited for multimodal inference. To prove this, we built an inference engine specialized for Qwen3-TTS and open-sourced it (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;nari-labs&#x2F;nari-qwen3-tts\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;nari-labs&#x2F;nari-qwen3-tts</a>). Running at sub-50 ms latency at 10 RPS, this showed open models can be run much faster and cheaper.<p>Since then, we&#x27;ve been working hard to bring cheap, fast, and high quality serving to all. And we&#x27;ve even beat closed models at their game!<p>Measured on the highly cited Coval (YC S24) voice AI benchmarks, our Qwen3-TTS endpoint not just is #2 in latency, but #1 in accuracy (WER) compared to 11Labs, Cartesia etc. while being the cheapest endpoint. Our Qwen3-ASR endpoint has the lowest latency and #2 accuracy, just 0.1% away from #1. It is the second cheapest model on the list.<p>It took a lot of clever inference engineering to make these models quick, perform well while keeping costs low. Interestingly, Alibaba&#x27;s official endpoints seem to perform worse in terms of accuracy and latency compared to ours. But nonetheless, much love to the Qwen team for OSS-ing these amazing speech models.<p>We want to continue to push prices down to make speech technology a commodity - so that every app can have great TTS and STT without worrying about unit costs. We&#x27;re also working on other parts of audio such as diarization - as well as video and world model inference. More to come!",
+   "title": "Show HN: Nari Qwen3-TTS and Qwen3-ASR – High accuracy, low latency and cost",
+   "updated_at": "2026-09-16T11:39:18Z",
+   "url": "https://narilabs.com/blog/nari-labs-leads-coval-voice-ai-benchmarks/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "nathannaveen"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Dropping eBPF CPU Cost by About 90% with Memoization (Not <em>AI</em> Gen)"
+    },
+    "url": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_nathannaveen",
+    "story_49697477"
+   ],
+   "author": "nathannaveen",
+   "children": [
+    49709280,
+    49705469,
+    49707404,
+    49708181,
+    49711681,
+    49707453,
+    49706732,
+    49705421,
+    49708568,
+    49707628,
+    49707342,
+    49708142,
+    49708717,
+    49706048,
+    49708259
+   ],
+   "created_at": "2026-09-14T14:29:23Z",
+   "created_at_i": 1789396163,
+   "num_comments": 29,
+   "objectID": "49697477",
+   "points": 152,
+   "story_id": 49697477,
+   "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+   "updated_at": "2026-09-16T11:19:28Z",
+   "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "rbanffy"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Adversarial Fashion Makes a Statement on <em>AI</em> Panopticon"
+    },
+    "url": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "https://spectrum.ieee.org/adversarial-fashion"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_rbanffy",
+    "story_49697094"
+   ],
+   "author": "rbanffy",
+   "children": [
+    49699906,
+    49700131,
+    49698562,
+    49699161,
+    49703060,
+    49704114,
+    49701065,
+    49707452,
+    49700083,
+    49703896,
+    49704414,
+    49698868,
+    49703041,
+    49701861,
+    49698521,
+    49701417,
+    49699178,
+    49698906,
+    49710294
+   ],
+   "created_at": "2026-09-14T14:04:53Z",
+   "created_at_i": 1789394693,
+   "num_comments": 48,
+   "objectID": "49697094",
+   "points": 111,
+   "story_id": 49697094,
+   "title": "Adversarial Fashion Makes a Statement on AI Panopticon",
+   "updated_at": "2026-09-16T08:09:41Z",
+   "url": "https://spectrum.ieee.org/adversarial-fashion"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "tosh"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Apple's Siri <em>AI</em> Can Be Swapped Out for Claude, ChatGPT, Code Shows"
+    },
+    "url": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_tosh",
+    "story_49695409"
+   ],
+   "author": "tosh",
+   "children": [
+    49697285,
+    49696013,
+    49698265,
+    49695932,
+    49698507,
+    49695715,
+    49696473,
+    49697732,
+    49700129,
+    49698134,
+    49695576,
+    49695755,
+    49697668,
+    49697910,
+    49706258,
+    49698775,
+    49695635,
+    49699494,
+    49697617,
+    49699713,
+    49696456,
+    49695904,
+    49696900,
+    49703814,
+    49697295,
+    49696598,
+    49700002,
+    49698729,
+    49700763,
+    49696734,
+    49697300,
+    49697273,
+    49696435,
+    49696532
+   ],
+   "created_at": "2026-09-14T12:01:32Z",
+   "created_at_i": 1789387292,
+   "num_comments": 161,
+   "objectID": "49695409",
+   "points": 225,
+   "story_id": 49695409,
+   "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
+   "updated_at": "2026-09-16T10:59:43Z",
+   "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "joebuckwilliams"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Big <em>AI</em> sets out its terms for regulatory capture"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.theregister.com/<em>ai</em>-and-ml/2026/09/14/big-<em>ai</em>-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_joebuckwilliams",
+    "story_49694596"
+   ],
+   "author": "joebuckwilliams",
+   "children": [
+    49697104,
+    49698311,
+    49699370,
+    49698547,
+    49696788,
+    49698864,
+    49696933,
+    49696766,
+    49697964
+   ],
+   "created_at": "2026-09-14T10:28:28Z",
+   "created_at_i": 1789381708,
+   "num_comments": 71,
+   "objectID": "49694596",
+   "points": 119,
+   "story_id": 49694596,
+   "title": "Big AI sets out its terms for regulatory capture",
+   "updated_at": "2026-09-16T08:05:27Z",
+   "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "simonpure"
+    },
+    "title": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "Open-source <em>AI</em> and open models reading list"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.interconnects.<em>ai</em>/p/open-source-<em>ai</em>-reading-list"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_simonpure",
+    "story_49690260"
+   ],
+   "author": "simonpure",
+   "children": [
+    49694247,
+    49690877,
+    49693446,
+    49694343,
+    49694284,
+    49692666,
+    49691444
+   ],
+   "created_at": "2026-09-14T00:22:51Z",
+   "created_at_i": 1789345371,
+   "num_comments": 30,
+   "objectID": "49690260",
+   "points": 156,
+   "story_id": 49690260,
+   "title": "Open-source AI and open models reading list",
+   "updated_at": "2026-09-16T08:08:42Z",
+   "url": "https://www.interconnects.ai/p/open-source-ai-reading-list"
+  },
+  {
+   "_highlightResult": {
+    "author": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "u1hcw9nx"
+    },
+    "title": {
+     "matchLevel": "none",
+     "matchedWords": [],
+     "value": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher"
+    },
+    "url": {
+     "fullyHighlighted": false,
+     "matchLevel": "full",
+     "matchedWords": [
+      "ai"
+     ],
+     "value": "https://www.vals.<em>ai</em>/blogs/fable-solves-cyphral-distich"
+    }
+   },
+   "_tags": [
+    "story",
+    "author_u1hcw9nx",
+    "story_49688695"
+   ],
+   "author": "u1hcw9nx",
+   "children": [
+    49693804,
+    49692135,
+    49689302,
+    49689988,
+    49693728,
+    49689080,
+    49689163,
+    49689335,
+    49689430,
+    49689061,
+    49692041,
+    49689388,
+    49689415,
+    49689089,
+    49690063,
+    49689251,
+    49689091,
+    49700918,
+    49689423,
+    49689130,
+    49690788,
+    49696963,
+    49690842,
+    49694509,
+    49689811,
+    49689214,
+    49716626,
+    49692983,
+    49692395,
+    49689548,
+    49691142,
+    49715436,
+    49694099,
+    49694315,
+    49690783,
+    49692588,
+    49692241,
+    49690625,
+    49691322,
+    49695387,
+    49690909,
+    49691888,
+    49693988,
+    49691093,
+    49697875,
+    49690934,
+    49690134,
+    49690096,
+    49694743,
+    49690732,
+    49690793,
+    49693813,
+    49691139,
+    49689230,
+    49692597,
+    49689453,
+    49690245,
+    49692407,
+    49693268,
+    49696687,
+    49690010,
+    49690045,
+    49694027,
+    49692142,
+    49697378,
+    49694229,
+    49693783,
+    49693545,
+    49695064,
+    49689212,
+    49694274,
+    49691925,
+    49689220,
+    49694734,
+    49693345,
+    49696978,
+    49691944,
+    49694696,
+    49689908,
+    49691442,
+    49689235,
+    49691990,
+    49707463,
+    49694575,
+    49693104,
+    49695283,
+    49696523,
+    49692280,
+    49691097,
+    49690904,
+    49693839,
+    49692363,
+    49689170,
+    49689327,
+    49710164,
+    49692350,
+    49689910,
+    49692323,
+    49691791,
+    49690744,
+    49690572,
+    49692307,
+    49695742,
+    49691370,
+    49703538,
+    49693241,
+    49691397,
+    49693793,
+    49695129,
+    49693682,
+    49689768
+   ],
+   "created_at": "2026-09-13T21:06:13Z",
+   "created_at_i": 1789333573,
+   "num_comments": 567,
+   "objectID": "49688695",
+   "points": 1210,
+   "story_id": 49688695,
+   "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+   "updated_at": "2026-09-16T11:31:57Z",
+   "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich"
+  }
+ ],
+ "hitsPerPage": 20,
+ "nbHits": 10234,
+ "nbPages": 50,
+ "page": 0,
+ "params": "query=AI&tags=story&numericFilters=points%3E80&advancedSyntax=true&analyticsTags=backend",
+ "processingTimeMS": 24,
+ "processingTimingsMS": {
+  "_request": {
+   "roundTrip": 13
+  },
+  "fetch": {
+   "scanning": 22,
+   "total": 23
+  },
+  "total": 24
+ },
+ "query": "AI",
+ "serverTimeMS": 25
+}

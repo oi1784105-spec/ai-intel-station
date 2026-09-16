@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+    <channel>
+        <title>AI | VentureBeat</title>
+        <link>https://venturebeat.com/category/ai/feed/</link>
+        <description>Transformative tech coverage that matters</description>
+        <lastBuildDate>Wed, 16 Sep 2026 10:57:51 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <copyright>Copyright 2026, VentureBeat</copyright>
+        <item>
+            <title><![CDATA[Enterprise AI's real risk isn't autonomous agents. It's the complexity between them.]]></title>
+            <link>https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them</link>
+            <guid isPermaLink="false">4kSKkAv49UJ4Wk7hUrj0zk</guid>
+            <pubDate>Thu, 27 Aug 2026 14:01:00 GMT</pubDate>
+            <description><![CDATA[<p>Presented by Gravitee</p><p><a href="https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them">Read more</a></p>]]></description>
+            <category>AI</category>
+            <enclosure url="https://images.ctfassets.net/jdtwqhzvc2n1/5ScHW6mZ2rQr3EvsxrwooK/43df8725b6e12cd4bcf550bb7b3b1cb4/Gravitee_hero.jpg?w=1200&amp;q=80" length="0" type="image/jpg"/>
+            <media:content url="https://images.ctfassets.net/jdtwqhzvc2n1/5ScHW6mZ2rQr3EvsxrwooK/43df8725b6e12cd4bcf550bb7b3b1cb4/Gravitee_hero.jpg?w=1200&amp;q=80" medium="image" type="image/jpeg"/>
+        </item>
+        <item>
+            <title><![CDATA[When agents act on their own, governance has to live in the data layer]]></title>
+            <link>https://venturebeat.com/security/when-agents-act-on-their-own-governance-has-to-live-in-the-data-layer</link>
+            <guid isPermaLink="false">2G8SplXx1SzxILJIjU6KQx</guid>
+            <pubDate>Thu, 27 Aug 2026 12:01:00 GMT</pubDate>
+            <description><![CDATA[<p>Presented by EDB</p><p><a href="https://venturebeat.com/security/when-agents-act-on-their-own-governance-has-to-live-in-the-data-layer">Read more</a></p>]]></description>
+            <category>AI</category>
+            <category>Security</category>
+            <enclosure url="https://images.ctfassets.net/jdtwqhzvc2n1/9VRh8KJhBqcFviSV8ClXc/feea8ec8fe76ffa0bc5cdb3dd95e1492/EDB_hero.jpeg?w=1200&amp;q=80" length="0" type="image/jpeg"/>
+            <media:content url="https://images.ctfassets.net/jdtwqhzvc2n1/9VRh8KJhBqcFviSV8ClXc/feea8ec8fe76ffa0bc5cdb3dd95e1492/EDB_hero.jpeg?w=1200&amp;q=80" medium="image" type="image/jpeg"/>
+        </item>
+        <item>
+            <title><![CDATA[Orchestration is the new challenge for CX in the age of AI agents]]></title>
+            <link>https://venturebeat.com/orchestration/orchestration-is-the-new-challenge-for-cx-in-the-age-of-ai-agents</link>
+            <guid isPermaLink="false">7mB2i7HWrsGgSUa5qmwuYz</guid>
+            <pubDate>Wed, 26 Aug 2026 14:30:00 GMT</pubDate>
+            <description><![CDATA[<p>Presented by Tata Communications</p><p><a href="https://venturebeat.com/orchestration/orchestration-is-the-new-challenge-for-cx-in-the-age-of-ai-agents">Read more</a></p>]]></description>
+            <category>AI</category>
+            <category>Orchestration</category>
+            <enclosure url="https://images.ctfassets.net/jdtwqhzvc2n1/1RK5pjHAxWRLsDy5iAC3Iy/4f9c39b5925645c365440e487ffe2157/Tata_hero.jpg?w=1200&amp;q=80" length="0" type="image/jpg"/>
+            <media:content url="https://images.ctfassets.net/jdtwqhzvc2n1/1RK5pjHAxWRLsDy5iAC3Iy/4f9c39b5925645c365440e487ffe2157/Tata_hero.jpg?w=1200&amp;q=80" medium="image" type="image/jpeg"/>
+        </item>
+        <item>
+            <title><![CDATA[VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push]]></title>
+            <link>https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push</link>
+            <guid isPermaLink="false">1T57vZE1VvtZKQQXLSMrX6</guid>
+            <pubDate>Wed, 19 Aug 2026 14:18:12 GMT</pubDate>
+            <description><![CDATA[<p>Rob Strechay, until recently managing director and principal analyst at theCUBE Research, has joined VentureBeat as our first Lead Analyst and a founding analyst of VentureBeat Research. His arrival is the next step in a deliberate move at VentureBeat toward deeper specialization: analysis built for the technical decision-makers — the directors, VPs, CIOs, and CTOs — who are evaluating, buying, and deploying enterprise AI.</p><p><a href="https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push">Read more</a></p>]]></description>
+            <author>mmarshall@venturebeat.com (Matt Marshall)</author>
+            <category>AI</category>
+            <enclosure url="https://images.ctfassets.net/jdtwqhzvc2n1/14iDGoOPdfaOw0DODBNL9w/7f4d8c6b70797d9bf23a623cbfa3fea3/6ca16f96-3171-4f7e-8c89-f466a3901415.png?w=1200&amp;q=80" length="0" type="image/png"/>
+            <media:content url="https://images.ctfassets.net/jdtwqhzvc2n1/14iDGoOPdfaOw0DODBNL9w/7f4d8c6b70797d9bf23a623cbfa3fea3/6ca16f96-3171-4f7e-8c89-f466a3901415.png?w=1200&amp;q=80" medium="image" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think.]]></title>
+            <link>https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think</link>
+            <guid isPermaLink="false">5M2gv6mk7MEHXAvBa4H7z0</guid>
+            <pubDate>Tue, 19 May 2026 17:45:00 GMT</pubDate>
+            <description><![CDATA[<p>For a quarter century, the Google search box has been one of the most recognizable interfaces in computing: a thin white rectangle, a blinking cursor, a few typed words, and a list of blue links. On Tuesday, Google will formally retire that paradigm.</p><p><a href="https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think">Read more</a></p>]]></description>
+            <author>michael.nunez@venturebeat.com (Michael Nuñez)</author>
+            <category>Technology</category>
+            <category>Infrastructure</category>
+            <category>Business</category>
+            <category>AI</category>
+            <enclosure url="https://images.ctfassets.net/jdtwqhzvc2n1/1TD0Sl7Zq6nnBSZMK9FXpl/41ce2cc6da055da7647670c71ba8aa6b/Nuneybits_Vector_art_of_an_oversized_white_search_bar_rimmed_in_695cac3f-1536-4438-acc1-51c16e2ff51f.webp?w=1200&amp;q=80" length="0" type="image/webp"/>
+            <media:content url="https://images.ctfassets.net/jdtwqhzvc2n1/1TD0Sl7Zq6nnBSZMK9FXpl/41ce2cc6da055da7647670c71ba8aa6b/Nuneybits_Vector_art_of_an_oversized_white_search_bar_rimmed_in_695cac3f-1536-4438-acc1-51c16e2ff51f.webp?w=1200&amp;q=80" medium="image" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Railway secures $100 million to challenge AWS with AI-native cloud infrastructure]]></title>
+            <link>https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud</link>
+            <guid isPermaLink="false">1l2gUXhw9OMzMzsSp8yAFk</guid>
+            <pubDate>Thu, 22 Jan 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B funding round, as surging demand for artificial intelligence applications exposes the limitations of legacy cloud infrastructure.</p><p><a href="https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud">Read more</a></p>]]></description>
+            <author>michael.nunez@venturebeat.com (Michael Nuñez)</author>
+            <category>Infrastructure</category>
+            <category>AI</category>
+            <enclosure url="https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=1200&amp;q=80" length="0" type="image/webp"/>
+            <media:content url="https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=1200&amp;q=80" medium="image" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Claude Code costs up to $200 a month. Goose does the same thing for free.]]></title>
+            <link>https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free</link>
+            <guid isPermaLink="false">2CUHNkdUg4dnjDFiMtJJQ</guid>
+            <pubDate>Mon, 19 Jan 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[<p>The artificial intelligence coding revolution comes with a catch: it&#39;s expensive.</p><p><a href="https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free">Read more</a></p>]]></description>
+            <author>michael.nunez@venturebeat.com (Michael Nuñez)</author>
+            <category>AI</category>
+            <category>Infrastructure</category>
+            <enclosure url="https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=1200&amp;q=80" length="0" type="image/webp"/>
+            <media:content url="https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=1200&amp;q=80" medium="image" type="image/webp"/>
+        </item>
+    </channel>
+</rss>

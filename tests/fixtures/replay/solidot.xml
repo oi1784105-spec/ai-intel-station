@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>奇客Solidot&#8211;传递最新科技情报</title>
+<link>https://www.solidot.org</link>
+<description><![CDATA[奇客的知识，重要的东西。]]></description>
+<atom:link href="https://www.solidot.org/index.rss" rel="self" type="application/rss+xml"></atom:link>
+<language>zh-cn</language>
+<pubDate>Wed, 16 Sep 2026 19:40:32 +0800</pubDate>
+<ttl>20</ttl>
+<item>
+<title><![CDATA[FAST 发现极短周期、最轻双中子星系统]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85396]]></link>
+<description><![CDATA[天文学家利用中国天眼（500 米口径球面射电望远镜，FAST）开展大规模银道面脉冲星系统性搜寻，迄今已成功发现约 900 颗新脉冲星。通过持续后续精准观测，研究讨团队识别了一颗处于紧致轨道的双中子星系统  PSRJ1856-0039。该双中子星系统轨道周期仅 2.36 小时，在人类已知双中子星系统中位列第二短。极短的轨道周期意味着两颗中子星间距极小、双星相互绕转轨道的致密程度极高，是目前已知相对论效应表现最显著的双中子星系统之一。同时该系统刷新了人类已知双中子星质量下限，整体总质量仅为 2.488 倍太阳质量，为迄今发现的总质量最轻的双中子星组合。其中可见脉冲星质量约 1.30 倍太阳质量，伴星中子星的质量约 1.19 倍太阳质量。该系统将在约 8200 万年后发生并合，最终大概率形成一颗更大质量的中子星。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 19:09:25 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[Mistral 与 Mozilla 合作推出 Firefox Smart Window]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85395]]></link>
+<description><![CDATA[法国 AI 公司 Mistral 与 Mozilla 合作推出注重隐私保护的 AI 浏览助手 Firefox Smart Window(beta)。Smart Window 使用了 Mistral 的开放权重模型，能帮助用户梳理复杂搜索，记住浏览过的重要信息，根据当前标签页查找关键信息，目前主要为法国和北美用户提供服务，今年晚些时候会扩大到英国和德国用户。Smart Window 的对话内容默认不会存储在 Mozilla 的服务器上，Mistral 等合作伙伴也承诺不保留任何数据。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 18:53:58 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[Mozilla 报告称中国开放权重模型与美国前沿模型仅相差 4.4 个月]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85394]]></link>
+<description><![CDATA[Mozilla 发表《State of Open Source AI》报告，称美国科技公司的前沿 AI 模型性能仅领先中国公司最优秀的开放权重模型 4.4 个月。由于前沿模型价格更昂贵，很多公司都将开放权重模型用于处理日常工作，将前沿模型用于处理特定工作负荷。美国闭源前沿模型优势主要在于专家级专业工作、高强度检索以及长上下文。
+配送公司 DoorDash 将月之暗面的 Kimi 模型用于处理日常工作，将 Anthropic 的闭源模型 Fable 用于更复杂的任务。前沿模型完成一项任务的成本经常达到了最先进开放权重模型的五倍。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 18:30:50 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[SDL3 移植到 HarmonyOS / OpenHarmony]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85393]]></link>
+<description><![CDATA[广泛用于游戏和应用、提供跨平台软硬件抽象层的 SDL3 库已移植到华为的 HarmonyOS / OpenHarmony 操作系统。游戏工作室 Outfit7 资助了 Ryan "Icculus" Gordon 的移植工作。HarmonyOS 是华为开发的私有操作系统，适用于智能手机、平板电脑、 PC、智能设备等多种终端，其架构采用了微内核设计。OpenHarmony 则是 HarmonyOS 的开源版本。Icculus 透露，支持 HarmonyOS/OpenHarmony 的 SDL3 移植版本已用于部分商业游戏。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 16:57:02 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[时光机器遭遇大规模机器流量]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85392]]></link>
+<description><![CDATA[互联网档案馆披露，它的时光机器（Wayback Machine）服务遭遇了大规模机器流量的持续攻击，因此不得不采取防护措施，导致正常用户在访问该服务时可能会遇到“429 错误”——代表请求过多的 HTTP 状态码。如果用户被误伤，它对此表示歉意，称正努力区分机器流量和正常用户流量。时光机器备份了互联网内容的历史存档，很多内容除了时光机器可能在其它地方都找不到了。时光机器是重要的知识库，因此也是 AI 公司和互联网公司网络爬虫重要的抓取目标。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 16:32:47 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[Fedora 45 Beta 释出]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85391]]></link>
+<description><![CDATA[Fedora 项目宣布释出 Fedora 45 Beta，正式版预计于 10 月 20 日释出。Fedora 45 的主要变化包括：用 kmscon 取代了内核控制台（in-kernel console），提供了更流畅的渲染，更出色的 Unicode 与字体支持，增强了系统稳定性；默认要求在安装前验证软件包签名的有效性，防止意外安装未签名的软件包；通过 oo7 标准化桌面密钥管理，取代了  GNOME Keyring 和 KWallet 等后端实现；软件方面的更新包括 GNOME 51，Go 1.27、Python 3.15、GCC 16.2、Glibc 2.44、LLVM 23、RPM 6.1 等等。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 15:26:30 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[Firefox 156 释出]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85390]]></link>
+<description><![CDATA[Mozilla 释出了 Firefox 156 正式版，以及 Firefox 157 Beta 版本。Firefox 156 主要变化包括：改进了内置 PDF 浏览器的性能，启动速度提高最多 45%；改进了根据网页自适应尺寸的大型 JPEG 图像的内存和 CPU 占用；修正了 Bilibili 上 MP4 高采样率 FLAC 音频无法播放问题，Firefox 在 macOS 上能设置自动打开，等等。Firefox 157 正式版将于 9 月 29 日释出。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 14:25:49 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[日本百岁老人人数首次超过 10 万人]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85389]]></link>
+<description><![CDATA[根据日本厚生劳动省公布的数据，日本全国百岁以上老人达到 107,677 人，较去年增加 7914 人。百岁以上老人连续 56 年增加，首次超过 10 万人。其中女性为 94,298 人，占 87.6%，男性为 13,379 人。与去年相比，男性增加 1400 人，女性增加 6514 人。女性最年长者是京都市的岸本Fuyo，她出生于 1911 年（明治 44 年）12 月 20 日，现年 114 岁。男性最年长者是熊本市的加藤光，他出生于 1914 年（大正 3 年）5 月 2 日，现年 112 岁。2025 年日本人的平均寿命为女性 87.33 岁，男性 81.35 岁。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 13:35:44 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[夜晚睡眠光照太亮可能会损伤心脏]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85388]]></link>
+<description><![CDATA[研究人员分析了 英国生物样本库（UK Biobank）11,071 名参与者的数据，参与者在一周时间内手腕佩戴了光线和运动传感器。研究开始时参与者均未有心血管疾病。在几年之后他们接受了心脏 MRI 检查。研究人员主要针对两类人群，其一是夜间睡眠时几乎没有任何光；其二是接触至少 3 lux（照度单位）的光，这些光线可能来自透过窗帘射入的街灯，家用电器上的 LED 灯。在考虑个人背景、生活方式、健康状况和环境因素后，研究人员发现，夜间睡眠时的光照水平如果超过3 lux，每增加一点光照都与可测量的、细微的心脏损伤有关。相比在最黑暗房间内睡觉的参与者，光照暴露量最高的参与者左心室体积增大 2.4%、心壁增厚 1.5%，以及心脏收缩能力下降 1.9%。虽然心脏变化微小，但与心血管疾病及中风存在关联。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 00:45:24 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[出于兴趣阅读有助于促进终身的身心健康]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85387]]></link>
+<description><![CDATA[WHO 的数据显示，全球逾 10 亿人有心理健康障碍，其中焦虑症和抑郁症等病症造成了巨大的个人痛苦和经济损失。全世界约有七分之一 10-19 岁青少年有心理障碍，占该年龄段疾病负担的 15%。抑郁症、焦虑症和行为障碍是导致疾病和残疾的主因，而自杀则是 15-29 岁人群的第三大死因，凸显了为青少年提供心理健康支持的迫切性。人们已经认识到，环境因素会影响大脑健康、认知能力、心理健康及身体健康，而这些因素可通过改变行为加以改善。因此通过改善生活方式，人们不仅能提升大脑健康和认知能力，还能降低患心理健康障碍和躯体疾病的风险。剑桥大学的研究人员指出，出于兴趣阅读以及参加读书会，是一种有助于促进终身身心健康的低成本干预措施。阅读投入与大脑及心理健康的改善、认知表现的提升以及认知衰退风险的降低密切相关。对成人的调查数据显示，阅读与压力减轻、共情能力增强、幸福感提升以及孤独感降低有关。对青少年研究显示，出于兴趣阅读与注意力、记忆力、执行功能及学业成绩相关，同时也与较少的心理健康问题相关。
+<p></p>
+]]></description>
+<pubDate>Wed, 16 Sep 2026 00:03:18 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[英国殖民之前的澳大利亚原居民人口约 222 万]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85386]]></link>
+<description><![CDATA[在英国舰队于 1788 年登陆澳大利亚前，这块大陆生活了多少原居民？在英国殖民澳大利亚 140 多年后的 1930 年代，人口学家 Alfred Radcliffe-Brown 首次对原居民的人口总数进行了估计。他估计澳洲原居民的人口在 25 万到 30 万之间，他强调这是一个最低估计值。现在研究人员使用了五种不同的方法重新进行了估计，得出的中位数是——殖民前澳大利亚的原住民约有 222 万。研究人员称，原住民人口至少 100 万以上，有可能在 200 万至 300 万之间，甚至可能超过 500 万。殖民后原居民的人口锐减则是疾病以及暴力导致的。到 1861 年，原住民人口仅剩约 17.7-19.3 万人。时至今日原居民人口仍然未达到殖民前的水平。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 23:17:02 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[F-Droid 上的应用有多少是在 AI 帮助下编写的？]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85385]]></link>
+<description><![CDATA[今天有无数开发者在 LLM 帮助下编写程序，其中包括了开源开发者。那么 Android FOSS 应用商店 F-Droid 中 AI 辅助开发应用的比例有多高？一位 FOSS 维护者对 9 月 12 日 F-Droid 推送更新的 102 款应用及其代码库进行了分析，发现其中 74 款应用（72.5%）主要是 AI 编写的，10 款应用难以明确归类（9.8%），
+18 款应用几乎没有 AI 参与的迹象（17.6%）。有 4 个托管在 Codeberg 上的应用主要是 AI 编写的，而 Codeberg 最近宣布了 AI 政策，禁止了此类 AI 应用，但要清除此类应用显然需要更多时间。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 20:45:43 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[廉价太阳能改变世界能源格局]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85384]]></link>
+<description><![CDATA[巴基斯坦水泥公司 Bestway Cement 正在扩建其太阳能发电设施，计划年底前在现有 26MW 装机容量的基础上增加 6.34MW 装机容量。太阳能满足了该公司逾四分之一的电力需求。受益于中国制造的廉价太阳能组件，Bestway 及其竞争对手加入了全球数百万企业和家庭的行列，在屋顶、庭院、花园等空地上安装太阳能电池板。截至 2025 年底，全球太阳能装机容量已接近 1.2TW。由廉价中国光伏板推动的太阳能革命——以及个人发电模式的兴起——正在改变发展中国家乃至工业化国家的能源格局。在较贫穷国家，数以百万计的人们如今获得了更可靠的电力供应，而这是通过他们自身努力实现的，而非依赖于大规模的基础设施建设。标普全球太阳能与储能研究经理 Josefin Berg 表示，太阳能的增长正在彻底改变电力系统，使其从集中式结构转变为一种任何人都能发电的模式。本世纪初，太阳能电池板的成本约为每瓦发电容量 5-6 美元。如今已降至每瓦约 12 美分。Ember 预计非洲今年将新增约 17 GW 的太阳能装机容量。菲律宾电力分销商 Meralco 表示，今年上半年屋顶太阳能发电量达到了 372 GWh，该国的家用太阳能电池板只需三年多时间即可收回成本。南非国有电力公司 Eskom 估计，截至今年 3 月的一年内，其售电量减少了 11.7 TWh，约 7% 的降幅归因于屋顶太阳能电池板和电池系统的普及。太阳能在阴雨天气发电量会大幅下降，未来的电网系统将需要考虑这一情况。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 17:19:15 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[一款在浏览器里运行、部署在自己服务器上的 SQL 客户端]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85383]]></link>
+<description><![CDATA[Yusuf Gundogdu 写道：LibreDB Studio 是一个 MIT 协议的 SQL 客户端，不装在本地而是跑在服务器上，浏览器打开就能用，一条 docker run 就起来。16 个驱动覆盖 42 种数据库，PostgreSQL、MySQL、MongoDB、Redis、ClickHouse 这些都在内。9 月 8 日发布了 0.15.0 版本。我觉得值得一提的是他们把 AI 那部分做了实测：28 个模型跑同一套六项数据库任务，27 个通过 Ollama 完全在本地运行，最快的 qwen2.5:7b 只有 4.7 GB，一次完整运行中位数 6 秒，最小的 2.5 GB。数据逐个模型公开，包括没通过的和卡在哪一步。另外只读不是靠解析 SQL 挡的，是数据库自己挡的：PostgreSQL 上开只读事务，SQLite 上每条语句前重设 query_only。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 16:43:13 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[美国军方首次证实在太空部署了武器]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85382]]></link>
+<description><![CDATA[美国空军部长 Troy Meink 周一在 Air and Space Forces Association 的《Air, Space &amp; Cyber Conference》会议上首次公开宣传，美国已在轨道上部署了太空控制武器。他没有披露太空武器的任何细节，但披露其存在这一事实，凸显了五角大楼在轨道战思维上的重大转变——直到几年前，还没有任何美国军方高级官员愿意公开讨论这一话题。如今军方官员已开始公开讨论轨道作战、卫星防御性反制措施，以及一种旨在瘫痪敌方在轨卫星的新型陆基武器。Meink 也未说明这些太空武器是何时部署的。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 16:07:55 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[科学家演示水下太阳能电池]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85381]]></link>
+<description><![CDATA[西南联合研究生院与云南大学研究员研究员张文华与合作者研究表明，太阳能电池可在南海海面下 10 米处正常运行，可在水下工作两小时，可产生 324 兆瓦时的电能，足以给锂离子电池充电；若持续置于 10 米水深的环境中，其运行寿命可达约 5.5 年。这些发现表明，水下太阳能电池有望为远离陆地的水下传感器、摄像头和通信系统提供动力。尽管太阳能电池早已能够为陆地上的各类技术提供绿色能源，但由于阳光在水下短距离内就会迅速衰减，研究人员一直难以在海底收集太阳能，用于水产养殖监测及其他用途。为克服这一难题，张文华团队首先开发了一套定制化的实验室系统，配备定制的光学滤光片，以模拟不同水深下的光照条件。研究人员开发的高效宽能带隙浸没式太阳能电池，能够吸收从蓝光到橙光的光谱。将电池在充满氮气的手套箱中储存 300 天后，其效率仍保留了初始值的约 96%。此外，在模拟 10米 水深条件下运行 1160 小时后，电池几乎未出现性能衰减，表明其在水下具有卓越的耐久性。研究团队将钙钛矿太阳能电池与水下机器人集成，并将其部署在南海涠洲岛附近 10 米水深处，以测试其实际应用性能。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 15:30:14 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[Steam Frame 起售价 1059 美元]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85380]]></link>
+<description><![CDATA[Valve 正式发售了新 VR 设备 Steam Frame，即日起开放排队预购，起售价 1059 美元（捆绑《Half-Life: Alyx》）。Steam Frame 重 440g，其一大创新是后置的电池模组与前置的镜片模组分离，用户体验到的前部重量感要轻得多，整个设备的重量主要集中在脑后面的电池上，这一设计的缺点是如果用户想要头向后靠在头枕上，那么电池可能会成为障碍。Steam Frame 运行基于 Arch 的 SteamOS 3，桌面环境是 KDE Plasma，它是一款 Linux VR 设备。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 14:59:44 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[NVIDIA中国开发者日定档10月苏州，现场设认证考试与黑客松决赛]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85379]]></link>
+<description><![CDATA[NVIDIA 宣布将于 2026 年 10 月 15—16 日在苏州举办中国开发者日。日程分为两日：首日为动手实践日，包含 2026 黑客松总决赛路演、全天实战培训及实训营，同时开放四门 Associate 级别认证现场考试；次日为主论坛，设 LLM、AI 模型与运行时、物理AI/机器人、AI基础设施四个分论坛，并举行黑客松颁奖典礼。
+<br>
+
+值得注意的细节：认证考试可在现场完成，对希望获得 NVIDIA 官方技术背书但不愿单独约考的开发者有一定吸引力。活动偏向实战而非产品宣讲，适合关注推理优化、训练基础设施和机器人方向的工程师。注册已开放，名额限制未公布，建议提早。
+https://www.nvidia.cn/developer-day/?ncid=partn-270555
+<br>
+
+<br>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 14:44:22 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[Windows 11 的 9 月例行安全更新再次引发了大量故障]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85378]]></link>
+<description><![CDATA[微软上周推送了 9 月份的例行安全更新，修复了近千个 bug。一周后，微软证实这次更新又给用户带来了一系列新 bug：Windows 11 26H1 和 Windows Server 2012 等多个 Windows 版本的远程桌面服务（RDS）出现问题； Windows 11 26H1、25H2 和 24H2 版本对 USB Audio Class 1.0 设备的支持出现问题，受影响的用户可能会遇到无音频输出、声音设置和音量控制失效，多声道音频问题；对电子表格 Excel 的 bug 修正导致粘贴功能失效。
+微软表示它正在着手修复新 bug，但没有给出修复时间。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 14:29:05 +0800</pubDate>
+</item>
+<item>
+<title><![CDATA[XCancel 服务再次下线]]></title>
+<link><![CDATA[https://www.solidot.org/story?sid=85377]]></link>
+<description><![CDATA[在重新上线一周时间后，基于 Nitter 开源项目的实例 XCancel 再次下线，运营者表示“由于正在进行的法律诉讼有了新进展，我们不得不再次暂停此项服务，直至另行通知。我们无法透露更多详情”。8 月 24 日， X/Twitter 向 Nitter 及其实例发出停止侵权通知 ，指控 Nitter 抓取数据并要求永久关闭 Nitter 实例和项目代码库。8 月 25 日，Nitter 的 GitHub 项目归档。9 月 6 日，Nitter 项目宣布在听取法律建议之后决定恢复服务，一天后 XCancel 成为第一个重新上线的 Nitter 实例。9 月 14 日，XCancel 再次下线。
+<p></p>
+]]></description>
+<pubDate>Tue, 15 Sep 2026 14:20:12 +0800</pubDate>
+</item>
+</channel>
+</rss>

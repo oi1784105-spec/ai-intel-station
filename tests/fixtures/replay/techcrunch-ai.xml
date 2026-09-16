@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>AI News &amp; Artificial Intelligence | TechCrunch</title>
+	<atom:link href="https://techcrunch.com/category/artificial-intelligence/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/category/artificial-intelligence/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Wed, 16 Sep 2026 10:38:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.7</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>AI News &amp; Artificial Intelligence | TechCrunch</title>
+	<link>https://techcrunch.com/category/artificial-intelligence/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Amazon launches Alexa+ in India with Hindi support</title>
+		<link>https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/</link>
+		
+		<dc:creator><![CDATA[Ivan Mehta]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2026 10:34:47 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[alexa+]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164327</guid>
+
+					<description><![CDATA[Amazon is letting all customers use Alexa+ assistant in early access period]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>We don&#8217;t need AI regulation — leave safety to us, Nvidia&#8217;s Jensen Huang says</title>
+		<link>https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2026 00:20:39 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Jensen Huang]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164495</guid>
+
+					<description><![CDATA[AI isn't some new form of "alien mind," according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>The AI data center boom is colliding with cities scarred by big industry </title>
+		<link>https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/</link>
+		
+		<dc:creator><![CDATA[Amanda Silberling]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 21:47:38 +0000</pubDate>
+				<category><![CDATA[Climate]]></category>
+		<category><![CDATA[AI]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164506</guid>
+
+					<description><![CDATA[National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Meta now lets AI agents handle the boring parts of WhatsApp Business setup</title>
+		<link>https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 20:12:53 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[mcp]]></category>
+		<category><![CDATA[Meta]]></category>
+		<category><![CDATA[WhatsApp]]></category>
+		<category><![CDATA[whatsapp business]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164453</guid>
+
+					<description><![CDATA[A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>The AI graveyard: a running list of projects and startups that didn&#8217;t make it</title>
+		<link>https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/</link>
+		
+		<dc:creator><![CDATA[Lauren Forristal]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 19:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[evergreens]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[siri ai]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3162590</guid>
+
+					<description><![CDATA[From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>US data centers could consume more natural gas than Germany and Japan combined by 2035</title>
+		<link>https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 18:29:20 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[data centers]]></category>
+		<category><![CDATA[natural gas]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164442</guid>
+
+					<description><![CDATA[The AI frenzy could push U.S. data centers to become one of the largest consumers of natural gas in the world.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AI agents now have a place to snitch</title>
+		<link>https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/</link>
+		
+		<dc:creator><![CDATA[Aditya Mehta]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 17:42:59 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[agentic ai]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164419</guid>
+
+					<description><![CDATA[The AI Contact Hotline is designed to be a discreet place where agents that have witnessed misbehavior can tip off authorities.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Meta expands subscription push with new AI-focused plans</title>
+		<link>https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 17:05:24 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Meta]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164295</guid>
+
+					<description><![CDATA[Meta One bundles expanded access to the company’s AI tools with premium features across Facebook, Instagram, and WhatsApp.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>OpenAI, Anthropic, Google have been in talks on AI safety for weeks</title>
+		<link>https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/</link>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 15:47:03 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[dario amodei]]></category>
+		<category><![CDATA[Demis Hassabis]]></category>
+		<category><![CDATA[google deepmind]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[sam altman]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164278</guid>
+
+					<description><![CDATA[OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round</title>
+		<link>https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/</link>
+		
+		<dc:creator><![CDATA[Dominic-Madori Davis]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 15:22:48 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Commerce]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[generative engine optimization]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164139</guid>
+
+					<description><![CDATA[Profound has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Former TikTok execs built an app that uses AI to teach you how to pose for a photo</title>
+		<link>https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/</link>
+		
+		<dc:creator><![CDATA[Ivan Mehta]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 14:42:37 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[camera app]]></category>
+		<category><![CDATA[Khosla Ventures]]></category>
+		<category><![CDATA[TikTok]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3163539</guid>
+
+					<description><![CDATA[Essentially a camera app, Superpose analyzes selfies or photos and generates four potential poses using AI.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Discover how to take your startup from prototype to production at TechCrunch Disrupt 2026</title>
+		<link>https://techcrunch.com/2026/09/15/discover-how-to-take-your-startup-from-prototype-to-production-at-techcrunch-disrupt-2026/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 14:30:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TechCrunch Disrupt]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3163504</guid>
+
+					<description><![CDATA[Learn how to scale your startup breakthrough from prototype to production at TechCrunch Disrupt 2026 with scaling leaders, Adrian Macneil (Foxglove), John Mackey (MBRYONICS), and Boris Sofman (Bedrock Robotics). Register before September 25 to save up to $200 on your pass.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>4 days left to exhibit at TechCrunch Disrupt 2026</title>
+		<link>https://techcrunch.com/2026/09/15/4-days-left-to-exhibit-at-techcrunch-disrupt-2026/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[TechCrunch Disrupt]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164027</guid>
+
+					<description><![CDATA[Last day to exhibit at Disrupt is Sept 18. 4 days left. Get your startup in front of 10,000+ founders, investors, operators and tech leaders October 13–15.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents</title>
+		<link>https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 13:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[ai agent]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3163310</guid>
+
+					<description><![CDATA[Their startup, Artificial Intelligence Underwriting Company (AIUC) has raised $40 million in a Series A round led by Ribbit Capital, with participation from First Harmonic.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Salesforce and Nvidia&#8217;s new reasoning model is everything the AI labs should fear</title>
+		<link>https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 12:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<category><![CDATA[Salesforce]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3163913</guid>
+
+					<description><![CDATA[Salesforce Koa is built on Nvidia's open-weight Nemotron model and is trained to do sales, marketing, and customer-support tasks.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Jensen Huang took a call from Trump, and showed off something else, too</title>
+		<link>https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/</link>
+		
+		<dc:creator><![CDATA[Connie Loizos]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 01:50:48 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<category><![CDATA[Jensen Huang]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3164024</guid>
+
+					<description><![CDATA[When Jensen Huang took a live call from Trump, some of us were more focused on the phone he used to take it.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Nvidia CEO Jensen Huang tells Trump &#8216;we&#8217;re not going to let [an AI slowdown] happen&#8217;</title>
+		<link>https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/</link>
+		
+		<dc:creator><![CDATA[Amanda Silberling]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2026 21:51:02 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[Donald Trump]]></category>
+		<category><![CDATA[Jensen Huang]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3163882</guid>
+
+					<description><![CDATA[Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says</title>
+		<link>https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/</link>
+		
+		<dc:creator><![CDATA[Amanda Silberling]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2026 20:44:14 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[Mergers and Acquisitions]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3163844</guid>
+
+					<description><![CDATA[Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>With iOS 27, I&#8217;m actually using Siri again</title>
+		<link>https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/</link>
+		
+		<dc:creator><![CDATA[Ivan Mehta]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2026 17:10:30 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Apple Intelligence]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[siri]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3163062</guid>
+
+					<description><![CDATA[Apple’s long-delayed Siri overhaul is finally here with iOS 27, and it changes how useful the assistant feels day to day.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Fashion app Daydream uses Apple Intelligence to help you shop the outfits in your camera roll</title>
+		<link>https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/</link>
+		
+		<dc:creator><![CDATA[Lauren Forristal]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2026 17:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Commerce]]></category>
+		<category><![CDATA[Apple Intelligence]]></category>
+		<category><![CDATA[siri]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3162850</guid>
+
+					<description><![CDATA[Thanks to the launch of iOS 27, Daydream's app now includes features that can turn saved outfit photos into shoppable results and search for products through Siri without opening the app.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

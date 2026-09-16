@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "last_run_id": "20260916T125419Z-420f47",
+  "last_run_at": "2026-09-16T12:54:19Z",
+  "last_success_at": "2026-09-16T11:59:46Z",
+  "total_articles": 231,
+  "source_count": 16,
+  "success_rate_7d": 0.6,
+  "window_days": 30,
+  "highlights": [
+    {
+      "article_id": "d9308836ffedd860",
+      "title": "OpenAI 发布适用于编程和计算机应用的 GPT-6 Astra",
+      "url": "https://www.infoq.cn/article/IfxYoy1PPkFQUpjWVBVr?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 6.533,
+      "reasons": [
+        "3 个独立来源同时报道",
+        "涉及发布/上线"
+      ],
+      "cluster_size": 3,
+      "independent_sources": 3
+    },
+    {
+      "article_id": "5242db3638517680",
+      "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "url": "https://www.qbitai.com/2026/09/490400.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
+      "score": 6.267,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "27eaf55f42400614",
+      "title": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
+      "url": "https://www.qbitai.com/2026/09/490396.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
+      "image_url": null,
+      "score": 6.264,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "6290d59b65a29478",
+      "title": "华为坤灵升级“4+10+N”场景化方案，发布“经纬计划”和50个样板点",
+      "url": "https://www.leiphone.com/category/industrynews/3eVYZT04EAfdhQZ3.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa608a8347c.jpg?imageMogr2/quality/90",
+      "score": 6.028,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "cbc158125a42359f",
+      "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
+      "url": "https://mistral.ai/news/mistral-x-mozilla/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.899,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "HN 162 分 · 41 评论"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    }
+  ]
+}

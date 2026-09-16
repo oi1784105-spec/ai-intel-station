@@ -1,0 +1,169 @@
+<rss version="2.0">
+  <channel>
+    <title>InfoQ - 促进软件开发领域知识与创新的传播</title>
+    <link>https://www.infoq.cn</link>
+    <description>InfoQ 是一个实践驱动的社区资讯站点，致力于促进软件开发领域知识与创新的传播。</description>
+    <pubDate>Wed, 16 Sep 2026 19:40:30 GMT</pubDate>
+    <copyright>Copyright © 2019, Geekbang Technology Ltd. All rights reserved. 极客邦控股（北京）有限公司</copyright>
+    <item>
+      <title>亚马逊 CTO 要来中国了，说实话，这比泛滥的 AI 发布会值得关注</title>
+      <link>https://www.infoq.cn/article/5PVJPjNlo2g1XKl90u1F?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/5PVJPjNlo2g1XKl90u1F?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>王一鹏</author>
+      <guid>https://www.infoq.cn/article/5PVJPjNlo2g1XKl90u1F?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 19:20:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>实测 Vibe Key：开口使唤 AI，真有当甲方的感觉</title>
+      <link>https://www.infoq.cn/article/joXcPA6XF1QWgik9OALj?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/joXcPA6XF1QWgik9OALj?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>林绮蓓</author>
+      <guid>https://www.infoq.cn/article/joXcPA6XF1QWgik9OALj?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 18:48:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Agent 的经济账，不能只算 Token——阿里用 Qoder Cloud Agents 给出答案</title>
+      <link>https://www.infoq.cn/article/8leHq71KkbQfo930ptvc?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/8leHq71KkbQfo930ptvc?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>凌敏</author>
+      <guid>https://www.infoq.cn/article/8leHq71KkbQfo930ptvc?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 18:36:54 GMT</pubDate>
+    </item>
+    <item>
+      <title>从概率生成到稳定交付：AIGC专业内容生产的工程化挑战</title>
+      <link>https://www.infoq.cn/video/bj4Q9E2PBJfUWIRZkutu?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/video/bj4Q9E2PBJfUWIRZkutu?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>QCon全球软件开发大会</author>
+      <guid>https://www.infoq.cn/video/bj4Q9E2PBJfUWIRZkutu?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 17:59:39 GMT</pubDate>
+    </item>
+    <item>
+      <title>借助会话追踪与成本控制排查 AI 智能体故障</title>
+      <link>https://www.infoq.cn/article/EixaQZkFMDLhlfE7RUK7?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/EixaQZkFMDLhlfE7RUK7?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：Mark Silvester</author>
+      <guid>https://www.infoq.cn/article/EixaQZkFMDLhlfE7RUK7?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 17:12:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Go 要从服务器杀进单片机？TinyGo 同时押注 UEFI、Wasm 和无线通信</title>
+      <link>https://www.infoq.cn/article/d4hdvQuOU1sbCZESvw4j?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/d4hdvQuOU1sbCZESvw4j?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：Olimpiu Pop</author>
+      <guid>https://www.infoq.cn/article/d4hdvQuOU1sbCZESvw4j?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 15:32:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>模型再强，为什么 Demo 还是进不了生产？</title>
+      <link>https://www.infoq.cn/article/j2kBZR1JiZxATpU7gjtS?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/j2kBZR1JiZxATpU7gjtS?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>火山引擎</author>
+      <guid>https://www.infoq.cn/article/j2kBZR1JiZxATpU7gjtS?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 14:45:55 GMT</pubDate>
+    </item>
+    <item>
+      <title>自主团队被捧过头了？Simon Rohrer 直言：你们交付的根本不是产品</title>
+      <link>https://www.infoq.cn/article/zZ1VxUIIPts70RtVpGhB?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/zZ1VxUIIPts70RtVpGhB?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：Ben Linders</author>
+      <guid>https://www.infoq.cn/article/zZ1VxUIIPts70RtVpGhB?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 13:23:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Java新闻汇总：Simple JSON API、GlassFish、Jakarta EE、JNoSQL和Open Liberty、LangChain4j</title>
+      <link>https://www.infoq.cn/article/BAafGhU4GTtbxrRrSEPW?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/BAafGhU4GTtbxrRrSEPW?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：Michael Redlich</author>
+      <guid>https://www.infoq.cn/article/BAafGhU4GTtbxrRrSEPW?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 11:06:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>从接住告警到自我进化：快手智能运维助手实践｜QCon上海</title>
+      <link>https://www.infoq.cn/article/keHKo56wrachdtEhekUD?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/keHKo56wrachdtEhekUD?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>QCon全球软件开发大会</author>
+      <guid>https://www.infoq.cn/article/keHKo56wrachdtEhekUD?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Cloudflare将每天90亿次请求的JavaScript CDN迁移到其开发者平台</title>
+      <link>https://www.infoq.cn/article/J5iJdjq6bIeRZHZF8fXO?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/J5iJdjq6bIeRZHZF8fXO?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：Leela Kumili</author>
+      <guid>https://www.infoq.cn/article/J5iJdjq6bIeRZHZF8fXO?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 09:10:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>129亿美元卖身英伟达之后，是时候重新理解Hugging Face了</title>
+      <link>https://www.infoq.cn/article/foEzSr8xfG0STQ1wgbti?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/foEzSr8xfG0STQ1wgbti?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>蔡芳芳</author>
+      <guid>https://www.infoq.cn/article/foEzSr8xfG0STQ1wgbti?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Wed, 16 Sep 2026 08:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>缓存不该困在一台服务器里</title>
+      <link>https://www.infoq.cn/article/zfjt89uVj0EGxf6aeaw4?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/zfjt89uVj0EGxf6aeaw4?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>李文朋</author>
+      <guid>https://www.infoq.cn/article/zfjt89uVj0EGxf6aeaw4?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 23:00:52 GMT</pubDate>
+    </item>
+    <item>
+      <title>Agent开始调用基础设施，Kubernetes准备好了吗？</title>
+      <link>https://www.infoq.cn/article/jGTsO1DrV87muOqyDPGS?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/jGTsO1DrV87muOqyDPGS?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>蔡芳芳</author>
+      <guid>https://www.infoq.cn/article/jGTsO1DrV87muOqyDPGS?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 20:38:38 GMT</pubDate>
+    </item>
+    <item>
+      <title>飞书与豆包工作合体后首亮相：Agent 能进群，还能帮你写周报、做PPT</title>
+      <link>https://www.infoq.cn/article/aCRVupdyEAHtENIiIDwq?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/aCRVupdyEAHtENIiIDwq?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>李冬梅</author>
+      <guid>https://www.infoq.cn/article/aCRVupdyEAHtENIiIDwq?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 18:37:10 GMT</pubDate>
+    </item>
+    <item>
+      <title>支付宝 xUI -- “阿宝”背后的 Agentic 终端交互引擎</title>
+      <link>https://www.infoq.cn/article/at1UIEMQbHewc34wvFQ8?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/at1UIEMQbHewc34wvFQ8?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：魏凤笛</author>
+      <guid>https://www.infoq.cn/article/at1UIEMQbHewc34wvFQ8?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 18:27:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>QQ 飞车 Agentic 研发转型过程中的Loop Engineering</title>
+      <link>https://www.infoq.cn/article/ifpS7rhLq24FjWYM6IqW?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/ifpS7rhLq24FjWYM6IqW?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：任磊达</author>
+      <guid>https://www.infoq.cn/article/ifpS7rhLq24FjWYM6IqW?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 17:24:16 GMT</pubDate>
+    </item>
+    <item>
+      <title>OpenAI 发布适用于编程和计算机应用的 GPT-6 Astra</title>
+      <link>https://www.infoq.cn/article/IfxYoy1PPkFQUpjWVBVr?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/IfxYoy1PPkFQUpjWVBVr?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>作者：Daniel Dominguez</author>
+      <guid>https://www.infoq.cn/article/IfxYoy1PPkFQUpjWVBVr?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 16:52:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>京东上线“东东”购物助手：在原来的APP里长出了一个“更懂你”的Agent</title>
+      <link>https://www.infoq.cn/video/UYi5ApclOl1ovCNtONTZ?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/video/UYi5ApclOl1ovCNtONTZ?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>凌敏</author>
+      <guid>https://www.infoq.cn/video/UYi5ApclOl1ovCNtONTZ?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 16:42:41 GMT</pubDate>
+    </item>
+    <item>
+      <title>OpenAI故意欠技术债，等Codex来还：仅2名工程师，把核心存储从Python重写成Rust</title>
+      <link>https://www.infoq.cn/article/QtIy65SxjN0Q4riY7tCo?utm_source=rss&amp;utm_medium=article</link>
+      <description>&lt;div align=&#39;right&#39;&gt;&lt;a href=&#39;https://www.infoq.cn/article/QtIy65SxjN0Q4riY7tCo?utm_source=rss&amp;utm_medium=article&#39;&gt;点击查看原文&gt;&lt;/a&gt;&lt;/div&gt;</description>
+      <author>褚杏娟</author>
+      <guid>https://www.infoq.cn/article/QtIy65SxjN0Q4riY7tCo?utm_source=rss&amp;utm_medium=article</guid>
+      <pubDate>Tue, 15 Sep 2026 16:09:20 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

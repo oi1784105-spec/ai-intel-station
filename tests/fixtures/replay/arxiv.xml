@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>cs.AI updates on arXiv.org</title>
+    <link>http://rss.arxiv.org/rss/cs.AI</link>
+    <description>cs.AI updates on the arXiv.org e-print archive.</description>
+    <atom:link href="http://rss.arxiv.org/rss/cs.AI" rel="self" type="application/rss+xml"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Sep 2026 04:00:01 +0000</lastBuildDate>
+    <managingEditor>rss-help@arxiv.org</managingEditor>
+    <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+    <skipDays>
+      <day>Sunday</day>
+      <day>Saturday</day>
+    </skipDays>
+    <item>
+      <title>ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</title>
+      <link>https://arxiv.org/abs/2609.13356</link>
+      <description>arXiv:2609.13356v1 Announce Type: new 
+Abstract: In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture &amp; System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum &amp; MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&amp;D workflow where agent swarms autonomously manage cluster operations, data curation, and rapid diagnostic evaluation. Extensive evaluations show that ZGCM-1-7B is competitive across 7B model family on general benchmarks. On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1. We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss. Across the full development lifecycle, we distill eight actionable empirical findings-spanning architectural scaling, SFT quality pruning, long-context generalization, and agentic co-training dynamics. To facilitate community research, we open-source model weights from the pre-training, mid-training, and post-training stages, intermediate checkpoints, training code, per-stage data and data recipes, and W&amp;B logs.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13356v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Jiyan He, Guang Liang, Hao Liu, Haoxiang Guan, Jinbo Sun, Junyi Guo, Wenjun Feng, Yantai Xie, Yifei Shen, Bin Shao, Chuyang Wei, Kai Chen, Kexin Zhou, Minghang Zhu, Shuxin Zheng, Tie-Yan Liu, Taine Zhao, Wenhui Zhu, Xueyin Xu, Xiaoqing Zhang, Yatao Li, Yuxuan Ren</dc:creator>
+    </item>
+    <item>
+      <title>Converge Then Diversify: Decoupling Convergence and Diversity in Multi-Objective Bayesian Optimisation</title>
+      <link>https://arxiv.org/abs/2609.13396</link>
+      <description>arXiv:2609.13396v1 Announce Type: new 
+Abstract: Multi-objective Bayesian optimisation (MOBO) is a sample-efficient approach for optimising expensive black-box functions with multiple objectives. In MOBO, the goal is to adequately approximate the Pareto front; that is, to obtain a high-quality solution set with 1) good convergence (closeness to the Pareto front) and 2) good diversity (spread across the Pareto front). Existing MOBO methods typically aim to accomplish these two tasks simultaneously, i.e., driving the search towards the Pareto front while maintaining a diverse set of nondominated solutions, such that the solutions, ideally, can gradually approach the entire front. When sufficient search budgets are available, this approach is effective. However, considering both convergence and diversity throughout the search is not easy and requires careful design. Under very tight budgets, there may not be enough solutions generated to be able to simultaneously approach the entire Pareto front. To address this issue, this paper proposes a \textit{converge-then-diversify} (CTD) approach that decouples convergence and diversity into two stages. In the first stage, CTD focuses on convergence, aiming to quickly drive the search toward a single point on the Pareto front. In the second stage, CTD focuses on diversity, aiming to spread solutions across the front. We present two simple instantiations of CTD by using widely adopted acquisition functions in the area. Experimental results show that, across all 446 pairwise comparisons, CTD statistically outperforms state-of-the-art methods in 72.9\% of the cases, performs equivalently in 21.1\%, and is statistically worse in only 6.1\%, with the advantage being particularly evident in settings with very tight evaluation budgets or in high-dimensional problems.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13396v1</guid>
+      <category>cs.AI</category>
+      <category>stat.ML</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Chao Jiang, Yueling Huang, Miqing Li</dc:creator>
+    </item>
+    <item>
+      <title>Generalized Agent Iteration: One Formal Framework for Iterative Policy Improvement and Recursive Self-Improvement</title>
+      <link>https://arxiv.org/abs/2609.13406</link>
+      <description>arXiv:2609.13406v1 Announce Type: new 
+Abstract: When we speak of recursive self-improvement (RSI), are we speaking of a phenomenon, a mechanism, or a prospect? Towards autonomous and evolving intelligence, RSI is being claimed at many scales, while no single framework that formally describes these emerging instances exists. Its counterpart in the classical realm, iterative policy improvement, is characterized by generalized policy iteration (GPI), a framework of broad applicability with well-understood theoretical properties, but only where the update principle and the evaluation base lie outside the agent. In this paper, we propose Generalized Agent Iteration (GAI), a formal framework that describes iterative policy improvement and RSI as two cases of a single learning paradigm. GAI defines the agent as a configuration of modifiable components within a system and models the learning process as a cycle of agent evaluation and agent improvement. Two pivotal dials then distinguish the instances: whether the improving mechanism is part of the agent and whether the standard it is measured against is grounded outside it. The former dial delineates the boundary between GPI and RSI, and the latter determines a system's polarity as anchored, goal drift, or fully self-referential. Moreover, we use these coordinates to place existing systems on the same two axes and make the defects of recursive self-improvement statable one condition at a time. We see this paper as a first step toward exploring a formal characterization of RSI that rests on the classical account, makes existing systems comparable, and provides a principled basis for analyzing and designing new ones.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13406v1</guid>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</dc:rights>
+      <dc:creator>Hongyao Tang, Yi Ma, Pengyi Li, Yifu Yuan</dc:creator>
+    </item>
+    <item>
+      <title>Vibe Patenting: Evaluating LLM Judges for Professional Patent-Drafting Agents</title>
+      <link>https://arxiv.org/abs/2609.13422</link>
+      <description>arXiv:2609.13422v1 Announce Type: new 
+Abstract: LLM judges are increasingly used to evaluate and improve AI-generated outputs, yet their reliability for complex professional work remains unclear. We study this problem through Vibe Patenting, an end-to-end patent-drafting testbed for AI-agent evaluation. A separately-invoked LLM judge evaluates generated patent drafts and provides structured feedback for iterative revision. Across multiple inventions and drafting-agent configurations, judge-guided revision consistently improves judge-assessed quality, while unguided revision tends to saturate. Notably, iterative judge feedback enables a low-reasoning agent to approach the performance of a substantially more expensive high-reasoning agent. Stronger models and increased reasoning generally improve judge-assessed drafting quality, while domain-specific agentic workflows provide further gains. We validate the judge against independent evaluation by a professional patent attorney and find meaningful but strongly metric-dependent agreement and systematic calibration differences. These results highlight both the utility and limitations of LLM judges as evaluators and optimization signals for complex professional workflows.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13422v1</guid>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+      <category>cs.MA</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Toshiaki Koike-Akino, Vlad Blaykhman, Ye Wang, Jing Liu, Gene V. Vinokur</dc:creator>
+    </item>
+    <item>
+      <title>Toward Self-Adaptive Physical AI: Can LLM Agents Manage Long-Horizon Physical Tasks?</title>
+      <link>https://arxiv.org/abs/2609.13436</link>
+      <description>arXiv:2609.13436v1 Announce Type: new 
+Abstract: Large Language Model (LLM) agents offer a promising path toward autonomously managing long-term physical tasks without human intervention. However, physical tasks require agents to continuously observe the environment, make consequential actions, and remain effective as the environment changes. Existing approaches either require substantial data and retraining, or primarily focus on agents operating in the virtual world. In this work, we explore the feasibility of building a self-adaptive physical AI agent that manages long-term physical tasks in a zero-shot manner and adapts to environmental changes without human intervention. We design a multi-agent framework that integrates planning, tool calling, observation, and verification, and evaluate it on agricultural tasks against reinforcement learning (RL) agents under different weather patterns. Our results show that zero-shot LLM agents can achieve comparable management outcomes to RL agents under the same weather pattern and adapt more effectively than RL when evaluated under a shifted environment, highlighting a promising path toward self-adaptive physical AI agents.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13436v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Varun Kaushik, Yayun Tan, Xiaofan Yu</dc:creator>
+    </item>
+    <item>
+      <title>LabAgent: Customize Any Research Hubs for Scientific Discoveries Using AI Agents</title>
+      <link>https://arxiv.org/abs/2609.13437</link>
+      <description>arXiv:2609.13437v1 Announce Type: new 
+Abstract: Scientific research is a continuous process that emphasizes inheritance. Methods developed by predecessors are often expanded upon by new researchers to explore more novel and in-depth scientific questions. However, the change of lab staff, such as student graduation, leads to a lack of personnel capable of replicating methods. Methods that have been developed with significant effort and resources cannot be continued. To address these limitations, we propose LabAgent, a reproduce and discovery harness tailored for a lab's continuous work. LabAgent employs two mechanisms to guarantee that all skills can be executed and verified and to record the corrective methods and experiences, allowing for direct correction or avoidance of similar errors. We applied LabAgent to drug property prediction, biomedical problem analysis, protein variant effect prediction, and statistical genetics in life science domains. LabAgent ranks first over commercial generalist agents in every domain, and demonstrates accurate reproduction of a published figure. Overall, these results demonstrate that LabAgent can effectively integrate and reasonably expand laboratory knowledge.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13437v1</guid>
+      <category>cs.AI</category>
+      <category>q-bio.BM</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:creator>Lei Liu, Yikun Zhang, Jialin Chen, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao</dc:creator>
+    </item>
+    <item>
+      <title>TimeThink: Eliciting Compositional Reasoning in Timeseries Large Language Models</title>
+      <link>https://arxiv.org/abs/2609.13457</link>
+      <description>arXiv:2609.13457v1 Announce Type: new 
+Abstract: Timeseries multimodal large language models (TS-MLLMs) have recently begun leveraging the reasoning capabilities of large language models (LLMs) for question-answering tasks. However, these models often fail to capture dynamic temporal patterns, providing only implicit reasoning that lacks the underlying explanations critical for high-stakes applications like healthcare. While reinforcement learning (RL)-based timeseries language models aim to address this, they often fall short because they are trained on narrow, in-distribution data and struggle with out-of-distribution compositional questions. To address these challenges, we present TimeThink, a synthetic framework for eliciting compositional timeseries reasoning. Core timeseries primitives (e.g., trend, seasonality) are domain-independent and can be deterministically generated. Guided by this premise, TimeThink first designs a synthetic data generator that produces atomic and composite question-answer pairs, providing objective ground truth with reasoning traces. Building on this framework, TimeThink employs a reinforcement learning with verifiable rewards (RLVR) training strategy that encourages explicit reasoning. Unlike template-reliant methods, this approach enables the model to learn the underlying logic of composition rather than simply imitating traces. Extensive experiments show that TimeThink, trained only on synthetic data, significantly outperforms strong baselines on both synthetic and real-world benchmarks.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13457v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Sudarshan Regmi, Arvind Pillai, Yu Yvonne Wu, Yuliang Chen, Bibek Panthi, Tess Z. Griffin, Michael V. Heinz, Lisa Marsch, Nicholas C. Jacobson, Andrew Campbell</dc:creator>
+    </item>
+    <item>
+      <title>Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures</title>
+      <link>https://arxiv.org/abs/2609.13463</link>
+      <description>arXiv:2609.13463v1 Announce Type: new 
+Abstract: The increasing deployment of AI agents in long-horizon tasks yields massive execution logs. Diagnosing failures within these records is crucial for reliability, as it transforms outcome-level signals into actionable interventions. The sheer scale of the data renders human review impractical, driving the need for automated root-cause attribution (RCA). However, automated RCA methods using LLMs suffer from low diagnostic accuracy, especially as execution traces grow larger. They struggle because relevant information is often sparse, distributed across distant actions, and disconnected from the visible failure, reducing root-cause attribution to a massive search problem. Existing RCA methods typically rely on one-shot LLM judgments to diagnose failures from execution traces. While effective for shorter trajectories, these judges tend to settle on a plausible diagnosis early, leaving critical evidence in longer traces unexamined. We introduce Continual Search, an iterative framework that nudges the judge, over successive turns, to keep searching for unresolved diagnostic evidence. We evaluate Continual Search across four existing RCA benchmarks. Recognizing the lack of massive execution traces in current benchmarks, we introduce MegaRCA-Mix to evaluate RCA at scale. MegaRCA-Mix provides a challenging testbed of 50 human-annotated failure trials spanning long-horizon, execution-heavy tasks. Across multiple benchmark suites and model families, Continual Search consistently improves attribution performance. On MegaRCA-Mix, for example, it improves GPT-5.5's F1 score by more than 40\%, from $0.349$ to $0.498$. More interestingly, within the same model family, lower-tier models can even surpass their higher-tier counterparts, demonstrating that effective search supersedes raw model scale.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13463v1</guid>
+      <category>cs.AI</category>
+      <category>cs.HC</category>
+      <category>cs.LG</category>
+      <category>cs.SE</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Harsh Raj, David Lee, Anas Mahmoud, Renxiong Wang, Razvan-Gabriel Dumitru, Chenguang Wang, Tong Zhao, Yunzhong He, Darvin Yi, Vipul Gupta</dc:creator>
+    </item>
+    <item>
+      <title>Governing at Machine Speed: An Adaptive Intelligence Architecture for Real-Time AI Policy Enforcement</title>
+      <link>https://arxiv.org/abs/2609.13466</link>
+      <description>arXiv:2609.13466v1 Announce Type: new 
+Abstract: Enterprise AI adoption has reached 78% of organizations globally, yet the infrastructure to govern that adoption has not kept pace. This paper identifies and characterizes the attestation deficit, a structural condition in which organizations maintain governance policies but cannot produce auditable, tamper-evident evidence of enforcement within regulatory timelines. Drawing on empirical data from the Stanford 2026 AI Index Report (362 documented incidents), the IBM/Ponemon 2026 Cost of a Data Breach study (USD 4.99M average cost, 92% lacking access controls), and the EY/AIUC-1 Consortium survey (38% end-to-end monitoring, 17% agent-to-agent coverage), this paper demonstrates that the governance failure is organizational and architectural rather than technical. To address this deficit, we propose AGIL (Adaptive Governance Intelligence Layer), a conceptual five-layer architecture designed to use machine learning for real-time AI governance enforcement. The proposed layers include: (1) Autonomous Discovery for shadow AI detection via behavioral fingerprinting, (2) Behavioral Risk Classification unifying security, hallucination, privacy, and accountability scoring, (3) a Policy Enforcement Gateway for inline permit/deny/modify decisions at sub-100ms latency, (4) a Continuous Attestation Engine generating tamper-evident audit trails as a byproduct of enforcement, and (5) Adaptive Policy Intelligence for ML-driven policy evolution across jurisdictions. AGIL is presented as a theoretical framework and architectural proposal; empirical validation through controlled deployment remains a direction for future work.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13466v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Sandeep Bokkasam, B. Durgalakshmi</dc:creator>
+    </item>
+    <item>
+      <title>OrchSLM: Probing the Dynamics of Small Language Model Orchestration</title>
+      <link>https://arxiv.org/abs/2609.13470</link>
+      <description>arXiv:2609.13470v1 Announce Type: new 
+Abstract: Although large language models (LLMs) have demonstrated remarkable capabilities, their reliance on cloud-scale infrastructure poses fundamental challenges for deployment in agentic pipelines, including latency, privacy, connectivity, and substantial computational cost. Small language models (SLMs) offer a compelling alternative: recent studies suggest that many repetitive and narrowly scoped subtasks in agentic workloads may be better served by specialized SLMs than by monolithic LLMs. However, the limited capacity and context windows of SLMs can constrain long-horizon reasoning and interaction-heavy orchestration strategies such as iterative verification and debate. This motivates a complementary, non-interactive paradigm in which heterogeneous SLMs independently generate candidate solutions and a router orchestrates their cached samples without further model interaction. To further understand the mechanisms of such orchestration, we introduce OrchSLM, a routing framework that unifies existing non-interactive orchestration methods and exposes their underlying design choices as controllable parameters. Using OrchSLM as a systematic probe, we reveal how orchestration behavior emerges from diverse knobs, including the task structure, model-pool composition, and multi-agent consensus.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13470v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Chengxi Zhang, Yu Yao</dc:creator>
+    </item>
+    <item>
+      <title>Grounded Adjudication of Variations across Extracted TimeLines (GAVEL): Comparing Clinical Timelines Against Their Case Reports</title>
+      <link>https://arxiv.org/abs/2609.13475</link>
+      <description>arXiv:2609.13475v1 Announce Type: new 
+Abstract: Existing pipelines for clinical timeline extraction from case reports are evaluated using an expert reference and are limited by imperfect reference annotations and imprecise event alignment. We developed GAVEL, an LLM judge protocol that compares two timelines with the case report and returns a discrepancy type, verdict, and report passage for each difference. We evaluated the event matcher, reviewed 2,738 findings from GPT5.6sol and DeepSeek V3.2, ranked six LLM extractors and two human annotators, and tested GAVEL guided merging. True match rates were 60% immediately below and 48% immediately above the 0.10 cutoff. Manual review confirmed 89.4% and 88.6% of findings. Across 126 reports, merged timelines were preferred in 77.0% of comparisons (95% CI, 69.8 to 84.1%) and reduced discrepancies attributed to the evaluated timeline from 7.63 to 0.85 per report. GAVEL supports report-based comparison and revision without treating either timeline as ground truth.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13475v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:creator>Jack Cummins, Sayantan Kumar, Ketan Tamirisa, Jeremy C. Weiss</dc:creator>
+    </item>
+    <item>
+      <title>Token Efficient Task Execution via Application Behavior Modeling for Web Agents</title>
+      <link>https://arxiv.org/abs/2609.13491</link>
+      <description>arXiv:2609.13491v1 Announce Type: new 
+Abstract: The strong performance of AI Agents across an impressive variety of tasks is driving an unprecedented investment in agentic infrastructures, however the cost of processing tokens is fast increasing. Web agents automate the execution of web-application tasks described in natural language, by analyzing the web-application's user interface (UI) and interacting with it. This work introduces OdoBot, a novel web-agent architecture that completes tasks at a fraction of the cost when compared to conventional web agents. This is achieved by leveraging a behavioral model of the underlying application constructed by analyzing successful task-execution demonstrations. Our experiments with 45 tasks on the Canvas Learning Management System (LMS) demonstrate that OdoBot uses 44% and 80% fewer tokens than two state-of-the-art competitor agents (Agent-E and WebVoyager), while also surpassing WebVoyager in terms of task success rate.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13491v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Alexandru Ianta, Eleni Stroulia</dc:creator>
+    </item>
+    <item>
+      <title>Fraglingo: Molecular Design via Attachment-Aware Autoregressive Fragment Generation</title>
+      <link>https://arxiv.org/abs/2609.13519</link>
+      <description>arXiv:2609.13519v1 Announce Type: new 
+Abstract: Molecular design is most effective when generation mirrors the edits chemists actually make: extending a scaffold, replacing a substituent, or decorating a scaffold at a specified attachment site while optimizing molecular properties. Fragment-based molecular design naturally supports this workflow, yet existing approaches often separate fragment selection from attachment prediction, first choosing a fragment from a fixed vocabulary and then predicting how it should be connected. This decoupling restricts generation to a closed fragment vocabulary and treats attachment as a separate prediction problem. We introduce Fraglingo, an autoregressive fragment-based molecular generator that jointly models fragment identity and attachment in a continuous latent space. Fraglingo predicts an attachment-aware fragment embedding and retrieves the next fragment through latent-space nearest-neighbor search. To encode attachment context, we introduce a wildcard-anchored readout that represents the growing molecule from the perspective of its active attachment site, enabling the predicted embedding to capture both the molecular context and the required attachment. Because generation operates in a continuous embedding space rather than over fixed fragment identifiers, new fragments can be added to the inference-time vocabulary without retraining, provided their embeddings can be computed by the trained fragment encoder. This retrieval-based formulation provides a unified generation primitive for molecule generation, scaffold generation, scaffold decoration, and molecular optimization. On controlled property-conditional benchmarks, Fraglingo achieves stronger joint property control than comparably trained baselines while maintaining competitive validity, uniqueness, and novelty. Furthermore, Fraglingo generalizes to fragment libraries up to 4x larger than those used during training without retraining.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13519v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Thao Nguyen, Jeonghwan Kim, Zhenhailong Wang, Heng Ji</dc:creator>
+    </item>
+    <item>
+      <title>From Legal Text to AI-specific Risk Sources: A Systematic Analysis of the EU AI Act's High-Risk Requirements</title>
+      <link>https://arxiv.org/abs/2609.13535</link>
+      <description>arXiv:2609.13535v1 Announce Type: new 
+Abstract: The EU AI Act introduces mandatory requirements for high-risk AI systems with the explicit goal of ensuring the development and operation of trustworthy AI. At the same time, AI risk management practices rely on structured risk taxonomies to systematically identify and treat AI-specific risk sources. As both the AI Act and established risk taxonomies aim to address AI-induced risks, a natural question is whether they align in the risk sources they cover. However, no clear mapping exists between the risks implicitly addressed by the Act's high-risk requirements and established taxonomies, leaving practitioners without a structured basis for aligning regulatory obligations with AI risk management practice. This paper presents a systematic classification of the requirements extracted from the EU AI Act Section 2 (Requirements for high-risk AI systems), revealing that only a minority directly address AI-specific risk sources, while the majority impose organizational process and documentation obligations. From the AI risk-related requirements, a consolidated list of distinct AI-specific risk sources is derived. The resulting EU AI Act Risk Source List takes an important step towards bridging the gap between legal obligation and AI risk management practice, providing a structured reference for explicit comparison between existing AI risk taxonomies and the risk sources implicitly addressed by the EU AI Act. Important Note: This is the authors' preprint. The paper was presented at the 4th International Conference on Frontiers of Artificial Intelligence, Ethics, and Multidisciplinary Applications. A link to the conference's official proceedings will be provided upon publication.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13535v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Ronald Schnitzer, Mike Auer, Rumpa Choudhury, Andreas Hapfelmeier, Maximilian Hoeving, Isabelle Painter, Josiane Xavier Parreira, Sonja Zillner</dc:creator>
+    </item>
+    <item>
+      <title>Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents</title>
+      <link>https://arxiv.org/abs/2609.13543</link>
+      <description>arXiv:2609.13543v1 Announce Type: new 
+Abstract: LLM agents are predominantly benchmarked on short, single-task trajectories, yet real deployments run for hours under contention, surfacing a different class of failures. We use the Clinical Environment Simulator (CES), in which an agent manages an entire emergency-department shift under continuous time and resource pressure, as a testbed: long-horizon execution failures manifest measurably in a single rollout under structured, multi-dimensional grading. On CES, current agents reach the correct diagnosis in most cases yet fail to deliver complete and timely critical actions, revealing an execution gap. We attribute this gap to three long-horizon failure modes, each operationalized as a per-trace counter: instruction-adherence drift, treatment incompleteness, and a severity-equity gap in timeliness. We then introduce Asclepius, an adaptive agent scaffolding with a self-evolving harness that rewrites the operating manual between shifts from trace-level feedback, an externalized clinical skills library for high-stakes regimen knowledge, and three isolated subagents that partition per-turn decisions across the patient queue. On held-out batches never observed during harness evolution, Asclepius improves critical-action correctness by 22% (p = 0.024) over a strong baseline agent framework while preserving diagnostic accuracy, with consistent gains across five LLM judges from three model families; on the full ten-batch set, improvements reach 25% on critical actions and 13% on timeliness. The three failure modes form a coupled bottleneck: decisive reductions appear only when all three components act together.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13543v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Grace Chang Yuan, Xiaoman Zhang, Sung Eun Kim, Luyang Luo, Pranav Rajpurkar</dc:creator>
+    </item>
+    <item>
+      <title>AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents</title>
+      <link>https://arxiv.org/abs/2609.13548</link>
+      <description>arXiv:2609.13548v1 Announce Type: new 
+Abstract: Web agents can utilize reusable tools to reduce the cost and latency of low-level browser interaction, but automatically discovered tool collections can be large, redundant, and poorly aligned with user demand. We present AutoTailor, a meta-agentic framework for constructing and maintaining a compact set of trajectory-derived Model Context Protocol (MCP) APIs. Offline, AutoTailor converts web trajectories into parameterized browser-automation programs, applies a Quality Filter to remove APIs with unsuitable granularity and redundant functionality, and applies a Usage Likelihood Filter to prioritize broadly useful capabilities while preserving semantic coverage. Online, Dynamic Reselection monitors task outcomes and API usage, identifies recurring coverage gaps, adds relevant candidates, and prunes persistently unused capabilities. We evaluate AutoTailor on 106 WebArena Postmill tasks. Offline filtering reduces the initial 1,283 unrefined APIs to 87, and Dynamic Reselection produces a 33-API set. With reasoning and acting (ReAct) fallback, this set achieves 90.6% correctness, compared with 87.5% for ReAct alone, while reducing average total request-token cost by 57.8% and latency by 29.4%. Without ReAct, it achieves 60.1% correctness, marginally matching the performance of unrefined set, while reducing request-token usage by 94.9%. Together, these results show that static filtering produces a compact inventory of APIs expected to support core, high-likelihood tasks, while dynamic reselection further tailors that inventory to observed user needs. This combination improves accuracy and latency while sharply reducing token usage and end-to-end cost, demonstrating the value of user-aligned capability management for efficient web agents.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13548v1</guid>
+      <category>cs.AI</category>
+      <category>cs.SE</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Xinyun Cao, Adriana Szekeres, Fazle Elahi Faisal</dc:creator>
+    </item>
+    <item>
+      <title>Toward a Decision-Assurance Layer for AI-Assisted Flight Planning in Air Traffic Management</title>
+      <link>https://arxiv.org/abs/2609.13552</link>
+      <description>arXiv:2609.13552v1 Announce Type: new 
+Abstract: Generative AI is increasingly being used informally in Air Traffic Management (ATM) for tasks such as flight plan generation, trajectory interpretation, and constraint checking. Although these tools can reduce workload and accelerate planning, their non-deterministic outputs create safety and operational risks in human-in-the-loop settings. This paper proposes the AI Trust and Assurance Layer (ATAL), a model-agnostic decision assurance architecture that evaluates whether AI-generated flight-planning outputs are sufficiently reliable for operational use. ATAL combines semantic stability under prompt variation, operational consistency of structured outputs, and normative constraint validation against domain rules, and maps these signals to a Decision Readiness Level (DRL) for human operators. An ATM-inspired experimental study shows how unsafe, inconsistent, or misleading outputs can be identified before influencing flight-plan validation or execution. Although demonstrated in aviation, the framework is also transferable to other safety-critical decision-support domains that require human oversight under regulatory constraints.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13552v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:creator>Alexandre Barreto (George Mason University), Shou Matsumoto (George Mason University), Jorge Valverde-Rebaza (Tecnol\'ogico de Monterrey), Cleiton Ataide (DECEA: Department of Airspace Control), Paulo Costa (George Mason University)</dc:creator>
+    </item>
+    <item>
+      <title>Carbon-Aware Routing for Function Calling in Edge-Cloud LLM Systems</title>
+      <link>https://arxiv.org/abs/2609.13559</link>
+      <description>arXiv:2609.13559v1 Announce Type: new 
+Abstract: Large Language Models (LLMs) with function-calling capabilities are becoming critical for modern agentic AI systems. Nevertheless, current deployments typically route inferences to powerful cloud-based models, incurring significant energy use and carbon emissions. We address this sustainability challenge with a carbon-aware routing framework that distributes function-calling queries across a three-tier edge-cloud architecture, combining edge and cloud LLMs on heterogeneous hardware. At its core, a lightweight k-NN predictor operating in a unified semantic-lexical embedding space estimates query-specific accuracy, delay, and power consumption on each edge tier. These predictions are then combined with real-time grid carbon intensity to route every query to the lowest-emission tier capable of executing it successfully. Evaluated on state-of-the-art function-calling benchmarks and LLM families, our framework matches cloud-level accuracy while reducing operational carbon emissions by $4\times$ on average.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13559v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Aikaterini Maria Panteleaki, Varatheepan Paramanayakam, Spyros Tragoudas, Iraklis Anagnostopoulos</dc:creator>
+    </item>
+    <item>
+      <title>A Hybrid Agentic AI Framework for Intelligent Supply Chain Analytics</title>
+      <link>https://arxiv.org/abs/2609.13561</link>
+      <description>arXiv:2609.13561v1 Announce Type: new 
+Abstract: Efficient utilization of supply chain analytics for decision making remains a significant challenge for planners, as critical tasks such as database querying, key performance indicator (KPI) analysis, demand forecasting, and performance diagnosis require heterogeneous expertise spanning data engineering, operations research, and domain knowledge. In this work, we propose an agentic system for supply chain analytics that bridges the gap between business decision-making and technical expertise, where a coordinator agent interprets user intent and delegates sub-tasks to specialized agents. The system supports both exploratory analysis and deterministic workflows, enabling planners to transition between ad hoc questions and structured processes. Domain logic is encapsulated within specialist agents and prompts, yielding a scalable, modular, and auditable design and lowering the cost of functional extension through prompt-centric development. We evaluate the proposed architecture on a test environment that replicates multi-echelon inventory management operations. Results show that our multi-agent design achieves a 90\% accuracy, which is competitive with a single agent baseline while reducing input token usage by roughly fourfold, substantially improving scalability and cost-efficiency. Furthermore, we provide case studies to demonstrate interpretable suboptimality detection and automated forecast optimization, illustrating how agentic architectures can effectively combine open-ended exploratory analysis and deterministic supply chain analytics workflows, and provide a practical pathway toward more accessible and extensible decision-support systems.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13561v1</guid>
+      <category>cs.AI</category>
+      <category>cs.MA</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Xian Yeow Lee, Teppei Inoue, Haiyan Wang, Chetan Gupta</dc:creator>
+    </item>
+    <item>
+      <title>Planning or Learning: Reliability and Cost in Multi-Asset Maintenance</title>
+      <link>https://arxiv.org/abs/2609.13566</link>
+      <description>arXiv:2609.13566v1 Announce Type: new 
+Abstract: Industrial maintenance systems involve multiple interacting assets and shared resources, making it challenging to balance reliability and operational cost using a single decision framework. While recent work has focused on reinforcement learning (RL) for maintenance scheduling, direct comparisons with planning approaches under identical settings remain limited. In this work, we empirically compare planning and RL for multi-asset bearing maintenance using run-to-failure data. We examine how these methods behave when balancing preventive maintenance against tolerable failures across a range of failure penalty scenarios. We observed a consistent behavioral difference driven by objective formulation. Planning enforces reliability as a hard constraint and produces zero-failure policies whose total cost is largely insensitive to the magnitude of failure penalties. RL agents optimize expected cost and often trade off preventive maintenance against occasional failures as penalties vary, resulting in lower costs under low-penalty regimes but persistent non-zero failures even when penalties are high. We also investigate lightweight constraint mechanisms, including reward shaping and action masking, to encourage RL's reliability. From a practical perspective, planning may be more suitable when strict reliability is required and deployment horizons are short, whereas RL may provide cost-efficient policies when limited failures are acceptable and long-run operational efficiency is prioritized. Overall, this study clarifies the trade-offs between reliability and cost in multi-asset maintenance and suggests that planning and RL are complementary approaches. Beyond these findings, the controlled benchmark protocol itself that unifies environment, cost model, and evaluation across paradigms, offers a reusable template for comparing decision-making approaches in other maintenance settings.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13566v1</guid>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Xian Yeow Lee, Chandrasekar Venkatraman, Ahmed Farahat</dc:creator>
+    </item>
+    <item>
+      <title>Causal multi-modal AI for personalized chemosensitivity prediction</title>
+      <link>https://arxiv.org/abs/2609.13567</link>
+      <description>arXiv:2609.13567v1 Announce Type: new 
+Abstract: Chemotherapy improves survival for some patients with breast cancer, but doctors cannot reliably predict who. Current guidelines rely on recurrence scores as a proxy for treatment benefit, which may contribute to the overprescription of chemotherapy. Here we present a causal multi-modal AI model that predicts personalized chemosensitivity using routinely collected pathology and clinical information. We developed our model on a multi-national dataset of 9,141 patients (twelve cohorts, nine countries) and evaluated it on another 1,994 patients (five cohorts, three countries). The model generated treatment-specific recurrence probabilities for each patient, with near-perfect calibration and strong prognostic discrimination across both 5- and 10-year follow-up horizons. Moreover, its chemotherapy benefit predictions demonstrated robust predictive performance, and out-performed existing recurrence-score-based tests. Compared to the standard of care, using the model to support personally tailored therapeutic decisions could reduce the number of patients receiving chemotherapy by 30% while achieving the same recurrence-free rate. Tumors predicted to be highly chemosensitive displayed concordant molecular and morphological programs of proliferation, cell cycle progression, and replication stress. The model's predictive capabilities transferred zero-shot to non-breast cancers, indicating our causal multi-modal AI approach may provide a universal strategy to predict treatment outcomes across cancer types.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13567v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Dhruva Biswas, Jeroen Berrevoets, Alec McClean, Linus Bao, Jungkyu Park, Ken G. Zeng, Joseph Cappadona, Cerise Tang, Chuwen Liu, Bartosz Machura, Yin Wu, Valerie Speirs, Hatem Soliman, Rohit Bhargava, Sheheryar Kabraji, Thaer Khoury, David Page, Brian Piening, Carlo Bifulco, Claudia Meurs, Pieter Westenend, Sylvie Chabaud, Jerome Lemonnier, Paul H. Cottu, Florence Dalenc, Fabrice Andre, Frederique Madeleine Penault-Llorca, Thomas Bachelot, Frederick Howard, Francisco J. Esteva, Kevin Kalinsky, Lajos Pusztai, Jan Witowski, Krzysztof J. Geras</dc:creator>
+    </item>
+    <item>
+      <title>How User-AI Mistreatment Occurs and Matters in Conversational Systems?</title>
+      <link>https://arxiv.org/abs/2609.13579</link>
+      <description>arXiv:2609.13579v1 Announce Type: new 
+Abstract: Safety research often focuses on model-generated harms, but users may also direct hostility, coercion, and adversarial pressure at models. Understanding how and when that occurs is essential for accurately interpreting model behaviour, alignment drift, and real-world deployment risks. In this paper, we audit 777K English LMSYS-Chat-1M conversations with two independent detectors: an eight-category lexicon for hostility directed at the model, and the dataset's moderation signal; and show that they capture different, weakly overlapping phenomena. The lexicon identifies insults, threats, and jailbreak coercion aimed at the assistant, while moderation flags are dominated by toxic-content solicitation rather than hostility at the model. Together, they mark about 5% of user turns; adjusting the narrower lexicon-harassment union for measured precision puts mistreatment aimed at the assistant at 0.90%. These absolute rates describe arena-style evaluation traffic and should not be read as deployment-wide base rates. We find that user hostility varies 13-fold across models, driven largely by who each model attracts rather than by model behaviour: first-turn hostility spreads far wider than post-response hostility, and more than fifteenfold separates the extremes even after deduplicating opening prompts. Within conversations, assistant apologies are consistently associated with higher odds of next-turn hostility under both detectors; the effect survives restricting to non-refused prior turns and to jailbreak-free conversations, and is positive in 20 of 23 models. Yet across models, more apologetic models receive less hostility overall. Finally, hostility also shows temporal structure, with coercive openings front-loading the first turn while affective hostility accumulates over a session. We release the lexicon, the detector cross-validation pipeline, and all derived tables.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13579v1</guid>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+      <category>cs.CY</category>
+      <category>cs.HC</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Fanqi Zeng, Sadid A. Hasan, Chaocheng He</dc:creator>
+    </item>
+    <item>
+      <title>FLoKD: Adaptive Knowledge Distillation for Federated Low-Rank LLM over Wireless Networks</title>
+      <link>https://arxiv.org/abs/2609.13580</link>
+      <description>arXiv:2609.13580v1 Announce Type: new 
+Abstract: Large language models (LLMs) have demonstrated strong capabilities across a wide range of natural language processing tasks. However, conventional fine-tuning typically relies on centralized data collection, bringing in privacy concerns. Federated learning (FL) enables collaborative LLM fine-tuning without sharing raw client data, but its deployment over bandwidth-constrained wireless networks is hindered by the communication overhead of model-parameter transmission. Although Low-Rank Adaptation (LoRA) reduces the number of trainable parameters, its communication cost still increases with model scale. Knowledge distillation avoids parameter sharing via output logits, but token-level logits in LLMs incur high communication cost due to sequence length and vocabulary size. Reducing logits lowers the cost but weakens supervision and degrades accuracy. To address these limitations, we propose FLoKD, an adaptive knowledge-distillation framework for federated LoRA fine-tuning of LLMs over wireless networks, which communicates intermediate LoRA activations as the distillation signal rather than logits or full parameters. Since transmitting all blocks over the entire public dataset remains costly, we further propose a transformer block importance scoring framework that selectively transmits the most informative blocks, and two dataset selection strategies that discard public samples deviating from the local data distribution and prioritise those most informative for distillation. Extensive experiments across multiple generative language datasets, including WikiText-103, PTB, and Dialog, demonstrate that our proposed framework reduces communication overhead by 50-65% while achieving rapid convergence to competitive perplexity compared to baselines.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13580v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Xinlu Zhang, Na Yan, Yang Su, Yansha Deng, Toktam Mahmoodi</dc:creator>
+    </item>
+    <item>
+      <title>$\tau$-Elicitation: Benchmarking multi-turn entity extraction in voice agents</title>
+      <link>https://arxiv.org/abs/2609.13602</link>
+      <description>arXiv:2609.13602v1 Announce Type: new 
+Abstract: Voice agents often need to collect names, addresses, identifiers, dates, and times exactly, yet end-to-end benchmarks obscure where capture fails. We introduce $\tau$-Elicitation, a 200-task voice benchmark spanning 10 entity types, controlled difficulty, caller realisms, and three environments. A matched text agent passes all tasks, but four voice configurations achieve robust exact success from 0.14 to 0.41. Agents increase verification for hard and unfamiliar entities and sometimes for incorrect captures, but not for their weakest caller voice; only 24 to 37 percent of verified errors are repaired. A scaffold that prescribes spelling, read-back, correction, and confirmation raises robust Pass$^3$ by 14 to 31 points, at a cost of 21 to 28 seconds per call. Realisms such as spelling variations and restarts do not detectably affect exact success; mispronunciation increases repair effort. These results identify strategy selection and successful recovery as the central bottlenecks in exact spoken entity collection.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13602v1</guid>
+      <category>cs.AI</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Soham Ray, Victor Barres</dc:creator>
+    </item>
+    <item>
+      <title>Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents</title>
+      <link>https://arxiv.org/abs/2609.13637</link>
+      <description>arXiv:2609.13637v1 Announce Type: new 
+Abstract: Persistent agents need evaluations that distinguish identity facts they can recall from those they express and enact. We introduce PAI-Bench, a provider-neutral benchmark for fidelity to a versioned, update-governed identity contract. It separates recall, composition, behavioral enactment, resistance, persistence, lineage, and role-conditioned updates while keeping scoring oracles outside the target process. Two frozen campaigns cover sixteen synthetic profiles, thirty-two probes, and three independently initialized target configurations, yielding 1,536 retained responses. A judge-independent literal audit finds direct-parent identifiers in 48/48 atomic responses but only 1/48 implicit self-portraits. On eight profiles, explicit field cues increase joint presence of three identity identifiers from 0/8 to 7/8 under the same four-sentence instruction. A separate startup body-label substitution increases full-designation presence from 1/8 to 7/8 while parents remain absent. These contrasts reveal prompt-dependent component selection and component-specific sensitivity to startup cues in the tested deployments. Replaying identical factorial responses also yields a Claude headline mean 12.5 percentage points below Astra's, demonstrating evaluator sensitivity separately from target behavior. The studies use single target samples per condition, with post-hoc audits and follow-ups. PAI-Bench provides a reproducible evaluation protocol for measuring factual availability, identity expression, and behavioral enactment as distinct aspects of identity-contract fidelity.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2609.13637v1</guid>
+      <category>cs.AI</category>
+      <category>cs.MA</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 -0400</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Zhenyu Zhao, Roy Zhao</dc:creator>
+    </item>
+    

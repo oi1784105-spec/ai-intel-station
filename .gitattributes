@@ -1,0 +1,10 @@
+# 仓库内统一使用 LF 换行。Windows 检出时工作区换行由 Git 自行处理，
+# 避免每次改动都被记录成「整个文件变了」，也避免 CI 的 bash 步骤遇到 CR。
+* text=auto eol=lf
+
+# 二进制文件不参与任何换行转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.docx binary

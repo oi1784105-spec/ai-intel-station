@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 本地临时文件
+_scratch/
+tmp/
+build/
+*.tmp
+*.bak
+
+# Agent 工作状态（实施计划的正式版本在 docs/PLAN.md）
+.hermes/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+desktop.ini
+
+# 注意：data/ 与 dist/ 必须提交。
+# data/*.json 既是站点数据源，也是「定时任务每天真的在跑」的唯一证据；
+# dist/index.html 是「打包 html 交付」的产物，提交后可直接从仓库下载。
+# 但 CI 的临时输出目录不提交。

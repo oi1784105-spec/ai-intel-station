@@ -1,0 +1,59 @@
+name: 检查
+
+# 日常提交的快速反馈。目标只有一个：**不访问网络**也能判定改动是否破坏了管线。
+# 全靠离线重放样本，因此稳定、快速、可在任意环境复现。
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 安装依赖
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: 离线重放能否产出可复现的站点数据
+        run: |
+          python collect.py \
+            --input tests/fixtures/replay \
+            --now 2026-09-16T12:00:00Z \
+            --data-dir build/replay-a \
+            --trigger fixture
+          python collect.py \
+            --input tests/fixtures/replay \
+            --now 2026-09-16T12:00:00Z \
+            --data-dir build/replay-b \
+            --trigger fixture
+          for f in news.json update-status.json meta.json runs.json; do
+            cmp "build/replay-a/$f" "build/replay-b/$f"
+          done
+          echo "两次重放产物逐字节一致"
+
+      - name: 单元测试与验收测试
+        run: python -m pytest tests/ -q
+
+      - name: 构建单文件站点并校验自包含
+        run: |
+          python build_site.py --data build/replay-a --out build/dist --check

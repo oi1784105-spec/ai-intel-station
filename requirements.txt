@@ -1,0 +1,5 @@
+# 运行时依赖（4 个，均已锁定版本以保证「干净环境可复现」）
+httpx==0.28.1
+feedparser==6.0.14
+pydantic==2.13.4
+python-dateutil==2.9.0.post0

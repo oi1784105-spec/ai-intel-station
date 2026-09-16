@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+	xmlns="http://www.w3.org/2005/Atom"
+	xmlns:thr="http://purl.org/syndication/thread/1.0"
+	xml:lang="en-US"
+	>
+	<title type="text">AI | The Verge</title>
+	<subtitle type="text">The Verge is about technology and how it makes us feel. Founded in 2011, we offer our audience everything from breaking news to reviews to award-winning features and investigations, on our site, in video, and in podcasts.</subtitle>
+
+	<updated>2026-09-16T11:25:21+00:00</updated>
+
+	<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence" />
+	<id>https://www.theverge.com/rss/ai-artificial-intelligence/index.xml</id>
+	<link rel="self" type="application/atom+xml" href="https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" />
+
+	<icon>https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-rss-large_80b47e.png?w=150&amp;h=150&amp;crop=1</icon>
+		<entry>
+			
+			<author>
+				<name>Richard Lawler</name>
+			</author>
+			
+			<title type="html"><![CDATA[AI and data centers are incredibly unpopular in every poll]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september" />
+			<id>https://www.theverge.com/?p=995917</id>
+			<updated>2026-09-16T07:25:21-04:00</updated>
+			<published>2026-09-15T19:34:25-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Policy" /><category scheme="https://www.theverge.com" term="Politics" />
+							<summary type="html"><![CDATA[Poll data released Tuesday by The New York Times and Siena University confirms what we've already been seeing, and what politicians are responding to - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Graphic image of a data center." data-caption="" data-portal-copyright="Image: Cath Virginia / The Verge, Getty Images" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Poll data released Tuesday <a href="https://www.nytimes.com/2026/09/15/us/politics/ai-polls-midterms.html">by <em>The New York Times</em> and Siena University</a> confirms what we've <a href="https://www.theverge.com/policy/916210/ai-midterm-elections-data-centers-jobs">already been seeing</a>, and <a href="https://www.theverge.com/ai-artificial-intelligence/983677/now-politicians-say-they-are-against-data-centers">what politicians are responding to</a> - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed in early September (ahead of the recent <a href="https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel">AI safety slowdown discussion</a>) said they were opposed, with only 14 percent saying they strongly support. The split was about even among 2024 Donald Trump voters, at 49 percent support to 45 percent oppose, while people who had voted for Kamala Harris or who didn't vote leaned opp …</p>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Stevie Bonifield</name>
+			</author>
+			
+			<title type="html"><![CDATA[Meta&#8217;s new One subscriptions put a price on social media and AI]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/tech/995453/meta-one-subscriptions-ai" />
+			<id>https://www.theverge.com/?p=995453</id>
+			<updated>2026-09-15T10:45:00-04:00</updated>
+			<published>2026-09-15T11:00:00-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Facebook" /><category scheme="https://www.theverge.com" term="Instagram" /><category scheme="https://www.theverge.com" term="Meta" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Social Media" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[Shortly after launching its new do-everything AI assistant Muse, Meta's launching subscription bundles that pair its standalone app subscriptions with extra AI usage. Some of the new Meta One bundles were in testing earlier this year, but are now available globally starting today, with several tiers for individual users, creators, and businesses. Meta says the [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Two visuals showing perks for Meta One Core and Premium plans" data-caption="" data-portal-copyright="" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Meta-One-Bundle-plans-for-individuals.png?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Shortly after launching its new do-everything <a href="https://www.theverge.com/tech/993391/meta-muse-ai-hands-on">AI assistant Muse</a>, Meta's launching subscription bundles that pair its standalone app subscriptions with extra AI usage. Some of the new <a href="https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai">Meta One bundles</a> were <a href="https://www.theverge.com/tech/938500/facebook-whatsapp-instagram-meta-ai-subscriptions">in testing</a> earlier this year, but are now available globally starting today, with several tiers for individual users, creators, and businesses. Meta says the "core experience" on its apps and Meta AI will still be free, and users can still get its subscriptions for Facebook, Instagram, and WhatsApp without a bundle. It also says it plans to expand the bundles to include "Edits, AI glasses, and more over time." </p>
+<p class="wp-block-paragraph">There are two bundles for in …</p>
+<p><a href="https://www.theverge.com/tech/995453/meta-one-subscriptions-ai">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Jennifer Pattison Tuohy</name>
+			</author>
+			
+			<title type="html"><![CDATA[This doorbell camera lets a human security guard watch your front door]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs" />
+			<id>https://www.theverge.com/?p=995365</id>
+			<updated>2026-09-15T09:47:48-04:00</updated>
+			<published>2026-09-15T09:36:45-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Smart Home" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[DIY home security company SimpliSafe is bringing its AI-powered proactive security feature to the front door. The new SimpliSafe Video Doorbell Series 2 launches today for $199.99 and works with the company's Active Guard Outdoor Protection (starting at $49.99 a month). This combines AI analysis with live agents to detect potential threats and respond proactively. [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="The new SimpliSafe Video Doorbell Series 2 adds 2K resolution and dual band Wi-Fi. | Image: Simplisafe" data-portal-copyright="Image: Simplisafe" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/SimpliSafe-Video-Doorbell-Series-2_06_250844.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+	The new SimpliSafe Video Doorbell Series 2 adds 2K resolution and dual band Wi-Fi. | Image: Simplisafe	</figcaption>
+</figure>
+<p class="wp-block-paragraph">DIY home security company SimpliSafe is bringing its AI-powered proactive security feature to the front door. The new <a href="https://simplisafe.com/video-doorbell-series-2">SimpliSafe Video Doorbell Series 2</a> launches today for $199.99 and works with the company's <a href="https://www.theverge.com/2024/10/15/24268192/simplisafe-active-guard-outdoor-protection-live-monitoring-outdoor-camera">Active Guard Outdoor Protection </a>(starting at $49.99 a month). This combines AI analysis with live agents to detect potential threats and respond proactively.</p>
+<p class="wp-block-paragraph">When the camera detects suspicious activity - using a combination of on-device AI, cloud-based computer vision, and facial recognition - a SimpliSafe monitoring agent can drop in on the camera to "see, speak to, and attempt to deter potential intruders and package thieves," <a href="https://support.simplisafe.com/articles/outdoor-cameras/what-is-simplisafe-active-guard-outdoor-protection">accord …</a></p>
+<p><a href="https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Hayden Field</name>
+			</author>
+			
+			<title type="html"><![CDATA[Is Big Tech’s AI slowdown a safety pact or a cartel?]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel" />
+			<id>https://www.theverge.com/?p=995186</id>
+			<updated>2026-09-15T12:43:21-04:00</updated>
+			<published>2026-09-14T18:59:41-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Anthropic" /><category scheme="https://www.theverge.com" term="Google" /><category scheme="https://www.theverge.com" term="OpenAI" /><category scheme="https://www.theverge.com" term="Policy" /><category scheme="https://www.theverge.com" term="Report" /><category scheme="https://www.theverge.com" term="Tech" /><category scheme="https://www.theverge.com" term="xAI" />
+							<summary type="html"><![CDATA[When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to "pace the frontier," signing on at least partially to a [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Enlightened robots standing next to each other." data-caption="" data-portal-copyright="Image: Cath Virginia / The Verge, Getty Images" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/STKS522_AGI_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="has-drop-cap wp-block-paragraph">When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to "pace the frontier," signing on at least partially to a proposal for embedding third-party auditors, regulating domestic labs, and reaching a global slowdown agreement. Their critics, however, argued they simply wanted to stop would-be competitors, kneecap the open-source movement, and avoid real legal safeguards - <a href="https://www.tiktok.com/t/ZTUCseghH/">some</a> dubbed it an outright "cartel." </p>
+<p class="wp-block-paragraph">The truth  …</p>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Jay Peters</name>
+			</author>
+			
+			<title type="html"><![CDATA[What execs and politicians are saying about slowing down AI development]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei" />
+			<id>https://www.theverge.com/?p=995141</id>
+			<updated>2026-09-15T12:54:56-04:00</updated>
+			<published>2026-09-14T17:21:42-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Anthropic" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="OpenAI" /><category scheme="https://www.theverge.com" term="Policy" /><category scheme="https://www.theverge.com" term="Politics" /><category scheme="https://www.theverge.com" term="xAI" />
+							<summary type="html"><![CDATA[Dario Amodei kicked off a flood of statements over the past few days about AI safety by publishing a long essay titled "We Must Pace the Frontier" detailing why AI development should be slowed down. Other AI leaders and politicians are speaking out in favor of or opposing his points, and we've compiled some of [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="" data-portal-copyright="Image: The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK202_DARIO_AMODEI_CVIRGINIA_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Dario Amodei kicked off a flood of statements over the past few days about AI safety by publishing a long essay titled <a href="https://darioamodei.com/post/we-must-pace-the-frontier">"We Must Pace the Frontier"</a> detailing why AI development should be slowed down. Other AI leaders and politicians are speaking out in favor of or opposing his points, and we've compiled some of them here.</p>
+<h4 class="wp-block-heading">Anthropic CEO Dario Amodei</h4>
+<p class="wp-block-paragraph">Amodei's Saturday morning essay outlined three steps for pacing AI development: embedded third-party evaluators that can verify if a company is adhering to safety practices and commitments and report incidents, coordination between frontier AI companies in democratic countries on standards and li …</p>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Jay Peters</name>
+			</author>
+			
+			<title type="html"><![CDATA[Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit" />
+			<id>https://www.theverge.com/?p=995079</id>
+			<updated>2026-09-14T18:48:52-04:00</updated>
+			<published>2026-09-14T16:03:37-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Nvidia" /><category scheme="https://www.theverge.com" term="Policy" /><category scheme="https://www.theverge.com" term="Politics" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[Nvidia CEO Jensen Huang took a call from President Trump on Monday while onstage at the All-In Podcast's All-In Summit. It's not the first time Huang has taken a call from the president during work, but this time he put Trump on speakerphone before a big crowd. During the call, the president launched into his [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="NVIDIA CEO Jensen Huang speaks during the G20 Innovation Ministerial in Chapel Hill, North Carolina, on September 2, 2026. (Photo by Matt RAMEY / AFP via Getty Images) | AFP via Getty Images" data-portal-copyright="AFP via Getty Images" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292612804.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+	NVIDIA CEO Jensen Huang speaks during the G20 Innovation Ministerial in Chapel Hill, North Carolina, on September 2, 2026. (Photo by Matt RAMEY / AFP via Getty Images) | AFP via Getty Images	</figcaption>
+</figure>
+<p class="wp-block-paragraph">Nvidia CEO Jensen Huang took a call from President Trump on Monday while onstage at the All-In Podcast's All-In Summit. It's not the first time Huang has <a href="https://www.theverge.com/tech/986389/oops-hot-mic">taken a call from the president</a> during work, but this time he put Trump on speakerphone before a big crowd. </p>
+<p class="wp-block-paragraph">During the call, the president launched into his take on recent fears about AI development, which he called a "hoax," and told the crowd that "the robots will not be taking over." </p>
+<p class="wp-block-paragraph">It's already a <a href="https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei">frothy week</a> for AI news. The call with the president followed Anthropic CEO Dario Amodei's long essay published this weekend titled <a href="https://darioamodei.com/post/we-must-pace-the-frontier">"We Must Pace the Frontier"</a> where he argued for slowing  …</p>
+<p><a href="https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Tom Warren</name>
+			</author>
+			
+			<title type="html"><![CDATA[Microsoft says ‘people matter more than AI’ following safety concerns]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct" />
+			<id>https://www.theverge.com/?p=994566</id>
+			<updated>2026-09-14T09:35:55-04:00</updated>
+			<published>2026-09-14T09:00:00-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Microsoft" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[Microsoft is publishing a 37-page "humanist AI code of conduct" today, amid growing safety concerns over AI model progress. Anthropic CEO Dario Amodei called for a coordinated slow down of AI development over the weekend, after researchers warned recently that AI model progress could outpace our ability to safely deploy increasingly complex systems and verify [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Vector illustration of the Microsoft logo." data-caption="" data-portal-copyright="Image: Cath Virginia / The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK095_MICROSOFT_2_CVirginia_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Microsoft is publishing a 37-page "<a href="https://microsoft.ai/code-of-conduct/">humanist AI code of conduct</a>" today, amid growing safety concerns over AI model progress. Anthropic CEO Dario Amodei <a href="https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development">called for a coordinated slow down</a> of AI development over the weekend, after researchers warned recently that AI model progress could outpace our ability to safely deploy increasingly complex systems and verify and control the actions of AI agents.</p>
+<p class="wp-block-paragraph">Microsoft's AI code of conduct makes it clear that "people matter more than AI," and that AI models are not conscious and "should not be designed to imitate consciousness." Microsoft also rejects "the pursuit of legal personhood, or the idea that m …</p>
+<p><a href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Terrence O’Brien</name>
+			</author>
+			
+			<title type="html"><![CDATA[Trump and Mike Johnson think the AI industry is overreacting]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting" />
+			<id>https://www.theverge.com/?p=994441</id>
+			<updated>2026-09-13T15:41:48-04:00</updated>
+			<published>2026-09-13T15:41:48-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Anthropic" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="OpenAI" /><category scheme="https://www.theverge.com" term="Policy" /><category scheme="https://www.theverge.com" term="Politics" /><category scheme="https://www.theverge.com" term="xAI" />
+							<summary type="html"><![CDATA[Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to "pace the frontier" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered tentative support for Amodei's proposal. Donald Trump and House Speaker Mike Johnson, however, [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="A photo of Donald Trump with an illustrated background." data-caption="" data-portal-copyright="Image: Cath Virginia / The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Yesterday, Anthropic CEO Dario Amodei published a <a href="https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development">lengthy open letter</a> saying it was time to "pace the frontier" and slow down AI development. OpenAI's <a href="https://x.com/sama/status/2098811563415150910">Sam Altman</a> and <a href="https://x.com/elonmusk/status/2098789109980332057">Elon Musk</a> both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered <a href="https://x.com/demishassabis/status/2098909516582490602">tentative support</a> for Amodei's proposal. </p>
+<p class="wp-block-paragraph">Donald Trump and House Speaker Mike Johnson, however, seem to think the AI executives are being <a href="https://www.wsj.com/tech/ai/trump-defends-white-houses-light-touch-on-ai-regulation-c4ed2488">overreactive</a> and fear that a pause could lead to China outpacing the US in the AI race. According to the <em><a href="https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed">Financial Times</a></em>, Trump said "Look, we're leading China in AI … and, frankly, I want to keep it that way, because whoever wins AI, wins."</p>
+<p class="wp-block-paragraph">Jo …</p>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Terrence O’Brien</name>
+			</author>
+			
+			<title type="html"><![CDATA[OpenAI’s rogue AI tried to hack another company in May]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack" />
+			<id>https://www.theverge.com/?p=994383</id>
+			<updated>2026-09-13T16:54:00-04:00</updated>
+			<published>2026-09-12T17:41:36-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="OpenAI" />
+							<summary type="html"><![CDATA[In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now independent researchers have said that a swarm of OpenAI agents were responsible for the attack. Not only that, but the AI tried to steal users' API keys. At the time, RubyGems described it as a [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Maroon OpenAI logo on yellow background" data-caption="" data-portal-copyright="" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now <a href="https://www.rubyhack.ai/">independent researchers</a> have said that a swarm of OpenAI agents were responsible for the attack. Not only that, but the AI tried to steal users' API keys. </p>
+<p class="wp-block-paragraph">At the time, RubyGems described it as a "<a href="https://x.com/maciejmensfeld/status/2054164602577940619">major malicious attack</a>" and shut down signups for four days as it tried to mitigate the damage and collect data. Researchers said that the contents of the packages that brought RubyGems to its knees were clearly authored by an LLM, and that the agents submitting those packages self-identified as being from OpenAI. They said the …</p>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Terrence O’Brien</name>
+			</author>
+			
+			<title type="html"><![CDATA[Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised" />
+			<id>https://www.theverge.com/?p=994384</id>
+			<updated>2026-09-12T17:16:28-04:00</updated>
+			<published>2026-09-12T17:16:28-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="OpenAI" />
+							<summary type="html"><![CDATA[OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the possibility of building an AI that was beyond human control. On the latter, he [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="" data-portal-copyright="Image: The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK201_SAM_ALTMAN_CVIRGINIA2D-1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an <a href="https://fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/">interview</a> with <em><a href="https://youtu.be/2my-NU6LuCM">Fortune</a></em>. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the possibility of building an AI that was beyond human control. On the latter, he said it was "absolutely" possible, but vowed to take actions to prevent that from happening, even if it meant pausing training, adding that "there are risks we should not be able to incur on behalf of humanity."</p>
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">"We're not rushing into an IPO. I actually think that, given everything happening with safety, th …</p></blockquote>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+	</feed>

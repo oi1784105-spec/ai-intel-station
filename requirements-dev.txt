@@ -1,0 +1,4 @@
+-r requirements.txt
+
+# 测试与校验依赖
+pytest==9.1.1

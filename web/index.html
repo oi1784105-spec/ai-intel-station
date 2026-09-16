@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日 AI 情报站</title>
+<meta name="description" content="每天自动汇总中文与英文来源的 AI 情报，含跨源事件聚合与可解释的重点推荐。">
+<script>
+// 主题必须在首次绘制前定好，否则会先闪一下深色再切浅色。
+// 故这段刻意放在 <head> 里同步执行，而不是等下面主脚本的 DOMContentLoaded。
+(function () {
+  var theme;
+  try {
+    theme = localStorage.getItem("ai-intel-theme");
+    if (theme !== "light" && theme !== "dark") {
+      theme = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches)
+        ? "light" : "dark";
+    }
+  } catch (error) {
+    theme = "dark";
+  }
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<style>
+/* 深色是默认值；浅色由 `[data-theme="light"]` 覆盖。
+   主题值一律由 JS 显式写到 <html> 上（含「跟随系统」的解析结果），
+   这样调色板只需定义一份，不必在媒体查询里再复制一遍。 */
+:root{
+  color-scheme:dark;
+  --bg:#0d1117; --panel:#161b22; --panel-2:#1c2128; --line:#2d333b;
+  --fg:#e6edf3; --fg-dim:#9198a1; --fg-faint:#7d8590;
+  --accent:#4a9eff; --accent-soft:rgba(74,158,255,.12);
+  --ok:#3fb950; --warn:#d29922; --bad:#f85149; --cluster:#bc8cff;
+  --radius:10px; --maxw:1180px;
+  --thumb-w:96px; --thumb-h:72px;
+  --ph-tint:18%;
+}
+html[data-theme="light"]{
+  color-scheme:light;
+  --bg:#ffffff; --panel:#f6f8fa; --panel-2:#eef1f4; --line:#d8dee4;
+  --fg:#1f2328; --fg-dim:#59636e; --fg-faint:#6b7684;
+  --accent:#0969da; --accent-soft:rgba(9,105,218,.10);
+  --ok:#1a7f37; --warn:#9a6700; --bad:#cf222e; --cluster:#8250df;
+  --ph-tint:26%;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+button{font-family:inherit}
+
+/* ---------- 顶栏 ---------- */
+header{border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:20}
+.head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:16px 0 12px}
+.head h1{font-size:20px;margin:0;letter-spacing:.3px}
+.head .tag{font-size:12px;color:var(--fg-dim);border:1px solid var(--line);
+  border-radius:999px;padding:2px 9px}
+.head .spacer{flex:1}
+.stamp{font-size:12.5px;color:var(--fg-dim);font-variant-numeric:tabular-nums}
+.stamp b{color:var(--fg);font-weight:600}
+
+/* ---------- 主题切换 ---------- */
+.theme-toggle{
+  align-self:center;flex:none;width:32px;height:32px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--panel-2);color:var(--fg-dim);
+  font-size:15px;line-height:1;display:inline-flex;align-items:center;justify-content:center;
+  transition:.12s}
+.theme-toggle:hover{border-color:var(--accent);color:var(--fg)}
+.theme-toggle .i-sun{display:none}
+html[data-theme="light"] .theme-toggle .i-sun{display:inline}
+html[data-theme="light"] .theme-toggle .i-moon{display:none}
+
+/* ---------- 健康度 ---------- */
+.health{display:flex;gap:10px;flex-wrap:wrap;padding:0 0 14px;font-size:12.5px}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);
+  background:var(--panel-2);border-radius:999px;padding:3px 11px;color:var(--fg-dim)}
+.pill b{color:var(--fg);font-variant-numeric:tabular-nums}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--fg-faint);flex:none}
+.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}
+
+/* ---------- 今日重点 ---------- */
+section{padding:22px 0}
+h2{font-size:14px;margin:0 0 12px;color:var(--fg-dim);font-weight:600;
+  letter-spacing:.6px;text-transform:uppercase;display:flex;align-items:center;gap:9px}
+h2::before{content:"";width:3px;height:14px;border-radius:2px;background:var(--accent)}
+h2 .hint{font-size:11.5px;font-weight:400;letter-spacing:0;text-transform:none;
+  color:var(--fg-faint)}
+/* 宽屏下重点区排两列：单列时标题普遍不长，右半边会留出大片空白。 */
+#highlights{display:grid;gap:9px;grid-template-columns:1fr}
+/* 故意**不做**「奇数条时最后一条独占整行」：试过，跨全宽的那条会因标题短而在
+   右侧留下更扎眼的空洞。宁可末尾空半格 —— 那是网格排布的常规形态，读者不会误解。 */
+@media(min-width:1024px){#highlights{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.hl{border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);
+  padding:13px 15px;border-left:3px solid var(--accent);transition:border-color .15s}
+.hl:hover{border-color:var(--accent)}
+.hl .row1{display:flex;align-items:baseline;gap:10px}
+.hl .rank{font-size:12px;color:var(--fg-faint);font-variant-numeric:tabular-nums;flex:none;
+  min-width:16px}
+.hl .score{font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums;flex:none;
+  border:1px solid var(--accent);border-radius:5px;padding:0 5px;line-height:1.5}
+.hl .hl-title{font-weight:600;font-size:15.5px;line-height:1.45}
+.hl .meta{margin-top:7px;font-size:12.5px;color:var(--fg-dim);display:flex;
+  gap:8px;flex-wrap:wrap;align-items:center}
+/* 重点条目上的来源名与理由都做成可点按钮：点一下即把它当作筛选条件，
+   不必再手动到下面的筛选条里找。视觉上仍保持标签样。 */
+.hl .why,.hl .hl-src{
+  background:var(--accent-soft);border:1px solid transparent;border-radius:5px;
+  padding:1px 7px;color:var(--accent);font-size:12px;cursor:pointer;transition:.12s}
+.hl .why:hover,.hl .hl-src:hover{border-color:var(--accent)}
+.hl .hl-src{background:transparent;font-weight:600;color:var(--fg)}
+/* 不可筛选的理由保持纯文本外观：做成可点却点不出结果，比不可点更糟。 */
+.hl .why.plain,.hl .why.plain:hover{background:transparent;border-color:transparent;
+  color:var(--fg-dim);cursor:default}
+
+/* ---------- 控制条 ---------- */
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:transparent;color:var(--fg-dim);
+  border-radius:999px;padding:3px 11px;font-size:12.5px;cursor:pointer;
+  display:inline-flex;gap:6px;align-items:center;transition:.12s}
+.chip:hover{border-color:var(--accent);color:var(--fg)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip[aria-pressed="true"] .n{color:rgba(255,255,255,.8)}
+.chip .n{color:var(--fg-faint);font-variant-numeric:tabular-nums}
+.controls .spacer{flex:1}
+input[type=search],select{
+  background:var(--panel);border:1px solid var(--line);color:var(--fg);border-radius:7px;
+  padding:6px 11px;font-size:13px;font-family:inherit;outline:none}
+input[type=search]{width:216px}
+input[type=search]:focus,select:focus{border-color:var(--accent)}
+
+/* ---------- 当前筛选指示 ---------- */
+.active-filters{display:flex;gap:7px;flex-wrap:wrap;align-items:center;
+  padding:10px 0 0;font-size:12.5px}
+.active-filters[hidden]{display:none}
+.af-label{color:var(--fg-faint)}
+.af-token{border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:2px 10px;font-size:12.5px;cursor:pointer;
+  display:inline-flex;gap:6px;align-items:center;transition:.12s}
+.af-token:hover{background:var(--accent);color:#fff}
+.af-token .x{opacity:.75;font-size:13px;line-height:1}
+.af-token:hover .x{opacity:1}
+.af-clear{border:1px solid var(--line);background:transparent;color:var(--fg-dim);
+  border-radius:999px;padding:2px 11px;font-size:12.5px;cursor:pointer;transition:.12s}
+.af-clear:hover{border-color:var(--bad);color:var(--bad)}
+
+/* ---------- 列表 ---------- */
+.summary-line{font-size:12.5px;color:var(--fg-faint);padding:12px 0 0}
+ul.cards{list-style:none;margin:0;padding:0;display:grid;gap:10px;
+  grid-template-columns:repeat(auto-fill,minmax(360px,1fr));align-items:stretch}
+li.card{border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);
+  padding:12px 14px;display:grid;grid-template-columns:var(--thumb-w) 1fr;gap:12px;
+  transition:border-color .15s;height:100%}
+li.card:hover{border-color:var(--fg-faint)}
+.card-body{display:flex;flex-direction:column;gap:7px;min-width:0}
+
+/* 缩略图：有图显图，无图显源色占位块。两者的盒子尺寸完全一致，
+   卡片高度因此与配图有无无关，同一行的卡片必然等高。 */
+.thumb{width:var(--thumb-w);height:var(--thumb-h);border-radius:8px;overflow:hidden;
+  flex:none;background:var(--panel-2);border:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+/* 占位块：色相由 JS 通过 `--src-hue` 传到样式表，字母则一律用主题前景色。
+   试过让字母也用源色，但固定亮度在不同色相上的感知明度差很多
+   （黄/青比蓝暗得多），浅色主题下 ON / TA 这类就明显发虚、读不清。
+   源色改由背景淡底承载，字母只负责可读性。 */
+.thumb.ph{display:flex;align-items:center;justify-content:center;
+  background:hsl(var(--src-hue,220) 62% 52% / var(--ph-tint))}
+.thumb.ph span{font-size:19px;font-weight:800;letter-spacing:.5px;line-height:1;
+  user-select:none;color:var(--fg)}
+
+.card-top{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--fg-dim);
+  min-width:0}
+.src{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--fg);
+  min-width:0}
+.src .swatch{width:8px;height:8px;border-radius:2px;flex:none}
+.src .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-top .t{margin-left:auto;font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}
+/* 语言标签可直接点：把「看到一条英文条目想只看英文」的动作从两步缩成一步。 */
+.lang{border:1px solid var(--line);background:transparent;color:var(--fg-dim);
+  border-radius:4px;padding:0 5px;font-size:11px;cursor:pointer;flex:none;
+  line-height:1.55;transition:.12s}
+.lang:hover{border-color:var(--accent);color:var(--accent)}
+
+.card h3{margin:0;font-size:15px;font-weight:600;line-height:1.45;overflow-wrap:anywhere;
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;
+  overflow:hidden}
+.card p{margin:0;font-size:13px;color:var(--fg-dim);overflow-wrap:anywhere;
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;
+  overflow:hidden}
+.card-foot{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:3px;
+  min-height:22px;align-content:flex-start}
+.badge{font-size:11.5px;border:1px solid var(--line);border-radius:5px;padding:1px 7px;
+  color:var(--fg-dim)}
+.badge.sig{color:var(--accent);border-color:var(--accent-soft);background:var(--accent-soft)}
+.badge.cluster{color:var(--cluster);border-color:var(--cluster)}
+.badge.note{color:var(--warn);border-color:var(--warn)}
+.badge.official{color:var(--ok);border-color:var(--ok)}
+
+/* ---------- 折叠面板 ---------- */
+details.panel{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+  padding:11px 14px;margin-top:10px}
+details.panel summary{cursor:pointer;font-size:13px;color:var(--fg-dim);font-weight:600;
+  list-style:none}
+details.panel summary::-webkit-details-marker{display:none}
+details.panel summary::before{content:"▸ ";color:var(--fg-faint)}
+details.panel[open] summary::before{content:" "}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin-top:11px;font-size:12.5px}
+th,td{text-align:left;padding:5px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--fg-faint);font-weight:600}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:none}
+
+footer{border-top:1px solid var(--line);margin-top:24px;padding:16px 0 30px;
+  font-size:12px;color:var(--fg-faint);line-height:1.8}
+footer code{background:var(--panel-2);border-radius:4px;padding:1px 5px;font-size:11.5px}
+.err{border:1px solid var(--bad);background:var(--panel);border-radius:var(--radius);
+  padding:14px 16px;color:var(--fg);font-size:13.5px;line-height:1.7}
+.err b{color:var(--bad)}
+.empty{color:var(--fg-faint);font-size:13px;padding:18px 0}
+@media(max-width:600px){
+  .head{padding:13px 0 10px}
+  input[type=search]{width:100%}
+  ul.cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="head">
+      <h1>每日 AI 情报站</h1>
+      <span class="tag" id="tag-range">—</span>
+      <span class="spacer"></span>
+      <span class="stamp" id="stamp">正在载入…</span>
+      <button class="theme-toggle" id="themeToggle" type="button"
+              aria-label="切换明暗模式" title="切换明暗模式">
+        <svg class="i-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <path fill="currentColor" d="M20.7 14.3A8.6 8.6 0 0 1 9.7 3.3a8.9 8.9 0 1 0 11 11Z"/>
+        </svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.4" fill="currentColor"/>
+          <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M12 1.8v2.6M12 19.6v2.6M1.8 12h2.6M19.6 12h2.6M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div class="health" id="health"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>今日重点<span class="hint">标签可点击，点一下即筛出同类条目</span></h2>
+    <div id="highlights"></div>
+  </section>
+
+  <section style="padding-top:0" id="listSection">
+    <div class="controls">
+      <div class="chips" id="filters"></div>
+      <span class="spacer"></span>
+      <input type="search" id="q" placeholder="搜索标题或摘要…" aria-label="搜索">
+      <select id="sort" aria-label="排序方式">
+        <option value="score">按重要度</option>
+        <option value="time">按发布时间</option>
+      </select>
+    </div>
+    <div class="active-filters" id="activeFilters" hidden></div>
+    <div class="summary-line" id="summaryLine"></div>
+  </section>
+
+  <section style="padding-top:6px">
+    <ul class="cards" id="cards"></ul>
+    <div class="empty" id="empty" hidden>没有符合条件的条目。</div>
+  </section>
+
+  <section>
+    <details class="panel" id="srcPanel">
+      <summary>信息源状态与运行记录</summary>
+      <div id="srcBody"></div>
+    </details>
+  </section>
+</main>
+
+<footer class="wrap" id="foot"></footer>
+
+<script>
+"use strict";
+
+// 构建版会把这里替换成内联数据，使单个 HTML 文件双击即可打开（不经 HTTP 也能工作）。
+const INLINE_DATA = /*__INLINE_DATA__*/ null;
+
+const NOTE_TEXT = {
+  missing: "源站未提供发布时间",
+  unparseable: "源站时间格式无法解析",
+  future_date: "源站时间晚于当前时刻，判定为不可信",
+  implausible: "源站时间早于 2000 年，判定为不可信",
+  tz_assumed: "源站未标注时区，按 UTC 处理",
+  tz_corrected: "源站时区标注有误，已按北京时间校正",
+};
+const STATUS_TEXT = {
+  ok: "正常", no_new: "无新增", parse_warning: "解析异常",
+  stale: "疑似停更", failed: "抓取失败",
+};
+const LANG_TEXT = { zh: "中", en: "EN", other: "其他" };
+const SIGNAL_RE = /^(涉及|命中多重信号：)/;
+//: 重点条目级的跨源理由（形如 `3 个独立来源同时报道`）。这条理由只存在于重点条目上，
+//: 条目本身并没有它，所以不能按字符串筛，得映射到「多来源报道」这个筛选维度。
+const CLUSTER_REASON_RE = /^\d+\s*个独立来源同时报道/;
+
+// 「全部 / 中文 / 英文 / …」这一排的口径与文案，同时供筛选指示条复用。
+const FILTER_DEFS = [
+  ["all", "全部"],
+  ["zh", "中文"],
+  ["en", "英文"],
+  ["official", "官方源"],
+  ["clustered", "多来源报道"],
+  ["today", "今天"],
+  ["week", "近 7 天"],
+];
+const FILTER_LABEL = Object.fromEntries(FILTER_DEFS);
+
+// `cluster` 存 `{id, label}`：点重点条目的跨源标签时锁定到**同一个事件簇**。
+// label 直接用被点的那句理由原文，指示条上显示的即用户点的那句，不做二次翻译。
+const state = { filter: "all", source: null, signal: null, cluster: null, query: "", sort: "score" };
+
+/* ---------------- 数据载入 ---------------- */
+
+async function loadData() {
+  if (INLINE_DATA) return INLINE_DATA;
+  const one = async (p) => {
+    const res = await fetch(p, { cache: "no-store" });
+    if (!res.ok) throw new Error(p + " → HTTP " + res.status);
+    return res.json();
+  };
+  const safe = async (p) => { try { return await one(p); } catch (_) { return null; } };
+  const news = await one("data/news.json");
+  const [status, meta, runs] = await Promise.all([
+    safe("data/update-status.json"), safe("data/meta.json"), safe("data/runs.json"),
+  ]);
+  return { news, status, meta, runs };
+}
+
+/* ---------------- 工具 ---------------- */
+
+function hueOf(id) {
+  let h = 0;
+  for (let i = 0; i < id.length; i += 1) h = (h * 31 + id.charCodeAt(i)) % 360;
+  return h;
+}
+function sourceColor(id) {
+  return "hsl(" + hueOf(id) + " 62% 52%)";
+}
+//: 源名一律走英文展示名。数据里缺 `source_name_en` 时回退原名，
+//: 使页面在「管线已更新 / 数据未重跑」的过渡态下照样可用。
+function srcLabel(item) {
+  return (item && (item.source_name_en || item.source_name)) || "未知来源";
+}
+function sourceLabelById(sources, id) {
+  const found = (sources || []).find((s) => s.id === id);
+  if (!found) return id;
+  return found.name_en || found.name || id;
+}
+//: 无图占位块上的字母标识：取英文源名前两个词的首字母（`Google AI Blog` → `GA`）。
+function monogram(name) {
+  const words = String(name || "?").replace(/[^\p{L}\p{N}\s]/gu, " ").split(/\s+/).filter(Boolean);
+  if (!words.length) return "?";
+  if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+  return (words[0][0] + words[1][0]).toUpperCase();
+}
+function el(tag, cls, text) {
+  const node = document.createElement(tag);
+  if (cls) node.className = cls;
+  // 一律用 textContent：摘要等字段来自第三方 feed，绝不能当 HTML 注入。
+  if (text != null) node.textContent = text;
+  return node;
+}
+function button(cls, label, title) {
+  const node = el("button", cls, label);
+  node.type = "button";
+  if (title) node.title = title;
+  return node;
+}
+function relative(iso, now) {
+  const t = new Date(iso).getTime();
+  const s = (now - t) / 1000;
+  if (!isFinite(s)) return "时间未知";
+  if (s < 0) return "刚刚";
+  if (s < 3600) return Math.max(1, Math.floor(s / 60)) + " 分钟前";
+  if (s < 86400) return Math.floor(s / 3600) + " 小时前";
+  const d = Math.floor(s / 86400);
+  return d < 30 ? d + " 天前" : Math.floor(d / 30) + " 个月前";
+}
+function localStamp(iso) {
+  const d = new Date(iso);
+  if (!isFinite(d.getTime())) return "—";
+  const p = (n) => String(n).padStart(2, "0");
+  return (d.getMonth() + 1) + "-" + p(d.getDate()) + " " + p(d.getHours()) + ":" + p(d.getMinutes());
+}
+
+/* ---------------- 明暗模式 ---------------- */
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  try { localStorage.setItem("ai-intel-theme", theme); } catch (_) { /* 隐私模式下写入会失败，忽略 */ }
+}
+
+function setupTheme() {
+  const button = document.getElementById("themeToggle");
+  button.onclick = () => {
+    const next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    applyTheme(next);
+  };
+  // 用户没有显式选择过时跟随系统；一旦手动选过，就以手动选择为准（localStorage 里已有值）。
+  if (window.matchMedia) {
+    const query = window.matchMedia("(prefers-color-scheme: light)");
+    const onChange = (event) => {
+      let saved = null;
+      try { saved = localStorage.getItem("ai-intel-theme"); } catch (_) { saved = null; }
+      if (saved !== "light" && saved !== "dark") {
+        document.documentElement.setAttribute("data-theme", event.matches ? "light" : "dark");
+      }
+    };
+    if (query.addEventListener) query.addEventListener("change", onChange);
+    else if (query.addListener) query.addListener(onChange);
+  }
+}
+
+/* ---------------- 渲染 ---------------- */
+
+function renderHeader(data, now) {
+  const news = data.news, counts = news.counts || {};
+  const status = data.status, meta = data.meta;
+
+  document.getElementById("tag-range").textContent =
+    "滚动窗口 " + news.window_days + " 天 · 来源 " + news.sources.length + " 个";
+  const stamp = document.getElementById("stamp");
+  stamp.textContent = "";
+  stamp.append("数据更新 " + localStamp(news.generated_at));
+  const total = el("b", null, " " + counts.total + " 条");
+  stamp.append(" · ", total);
+
+  const health = document.getElementById("health");
+  health.textContent = "";
+  const sources = (status && status.sources) || [];
+  const okCount = sources.filter((s) => s.status === "ok" || s.status === "no_new").length;
+  const warnCount = sources.filter((s) => s.status === "parse_warning" || s.status === "stale").length;
+  const badCount = sources.filter((s) => s.status === "failed").length;
+
+  const add = (cls, label, value, title) => {
+    const pill = el("span", "pill");
+    if (title) pill.title = title;
+    pill.append(el("span", "dot " + cls), el("span", null, label),
+      el("b", null, String(value)));
+    health.append(pill);
+  };
+  if (sources.length) {
+    add("ok", "正常", okCount);
+    if (warnCount) add("warn", "需关注", warnCount);
+    if (badCount) add("bad", "失败", badCount);
+  }
+  // 这里原本写着「覆盖来源」，但喂给它的是官方源数量；下面筛选条里已有同名口径的
+  // 「官方源」胶囊，两处数字不同名同义，容易读成矛盾。标签与筛选条统一。
+  add("ok", "官方源", counts.official || 0);
+  // 「近 24 小时」与筛选条里的「今天」是同一个数（都是 counts.last_24h），
+  // 同一屏出现两个同值不同名的指标只会让人怀疑哪个才对，故只保留筛选条里那个。
+  if (counts.with_image) add("ok", "含配图", counts.with_image);
+  if (meta && meta.success_rate_7d != null) {
+    add("ok", "近 7 天运行成功率", Math.round(meta.success_rate_7d * 100) + "%",
+      "近 7 天各次运行的源级成功率。它与左侧「正常 / 失败」不是同一口径："
+      + "后者只反映本轮各源的抓取状态，一次失败就会拉低成功率，两者数值不同属正常。");
+  }
+  if (counts.without_published_at) {
+    add("warn", "发布时间未知", counts.without_published_at);
+  }
+}
+
+//: 决定一条重点理由「点了会发生什么」。返回 null 表示它只是说明性文字，不做成可点标签。
+//: 实测踩过的坑：「3 个独立来源同时报道」是重点条目级的判定，直接按它筛会筛出 0 条，
+//: 看起来像功能坏了；这类理由必须映射到对应的筛选维度才算「点了有用」。
+function reasonAction(data, now, article, reason) {
+  if (SIGNAL_RE.test(reason)) {
+    return {
+      title: "筛出命中「" + reason + "」的全部条目",
+      run: () => {
+        state.signal = reason; state.filter = "all"; state.source = null;
+        state.cluster = null;
+        jumpToList(data, now);
+      },
+    };
+  }
+  if (CLUSTER_REASON_RE.test(reason)) {
+    // 锁定到这条重点所属的**同一个事件簇**，而不是放宽成「全部跨源条目」：
+    // 用户点的是「这条事件被 3 家报道」，想看的就是这 3 家。
+    const clusterId = (article && article.cluster_id) || null;
+    if (!clusterId) return null;   // 数据里没有簇信息时不做成假按钮
+    return {
+      title: "筛出与这条重点同属一个事件的全部报道",
+      run: () => {
+        state.cluster = { id: clusterId, label: reason };
+        state.filter = "all"; state.signal = null; state.source = null;
+        jumpToList(data, now);
+      },
+    };
+  }
+  return null;
+}
+
+
+function renderHighlights(data, now) {
+  const box = document.getElementById("highlights");
+  box.textContent = "";
+  const list = (data.meta && data.meta.highlights) || [];
+  if (!list.length) {
+    box.append(el("div", "empty", "本次运行没有产生重点条目。"));
+    return;
+  }
+  const byId = new Map((data.news.articles || []).map((a) => [a.id, a]));
+
+  list.forEach((h, i) => {
+    const article = byId.get(h.article_id);
+    const card = el("div", "hl");
+    const row1 = el("div", "row1");
+    row1.append(el("span", "rank", String(i + 1)));
+    const scoreBadge = el("span", "score", h.score.toFixed(2));
+    // 分数是要解释的，不能只丢一个数字给读者。
+    scoreBadge.title = "重要度评分：由来源权重、跨源命中度、时效、信号词与社区热度加权得出，"
+      + "只用于把已入选的重点条目排出先后";
+    row1.append(scoreBadge);
+    const title = el("a", "hl-title", h.title);
+    title.href = h.url; title.target = "_blank"; title.rel = "noopener noreferrer";
+    row1.append(title);
+    card.append(row1);
+
+    const meta = el("div", "meta");
+    const sourceId = article ? article.source_id : null;
+    const src = button("hl-src", srcLabel(article || h), "只看该来源的条目");
+    if (sourceId) {
+      src.style.color = sourceColor(sourceId);
+      src.onclick = () => focusSource(data, now, sourceId);
+    } else {
+      src.disabled = true;
+      src.style.cursor = "default";
+    }
+    meta.append(src);
+
+    if (article && article.published_at) {
+      meta.append(el("span", null, "· " + relative(article.published_at, now)));
+    }
+    // 只有能一键复用的标签才做成可点，其余保持纯文本。
+    (h.reasons || []).forEach((reason) => {
+      const action = reasonAction(data, now, article, reason);
+      if (!action) {
+        meta.append(el("span", "why plain", reason));
+        return;
+      }
+      const chip = button("why", reason, action.title);
+      chip.onclick = action.run;
+      meta.append(chip);
+    });
+    card.append(meta);
+    box.append(card);
+  });
+}
+
+function buildThumb(article) {
+  const box = el("div", "thumb");
+  if (article.image_url) {
+    const img = el("img");
+    img.src = article.image_url;
+    img.alt = "";               // 装饰性配图，标题已表达内容，避免读屏重复播报
+    img.loading = "lazy";       // 226 张图全部立刻请求会明显拖慢首屏
+    img.decoding = "async";
+    // 多数源站的 CDN 会按 Referer 拦外链，带上本站地址容易被拒
+    img.referrerPolicy = "no-referrer";
+    // 外链图片随时可能 404 或防盗链失败，必须退回占位块而不是留一个破图标
+    img.onerror = () => { box.replaceWith(buildPlaceholder(article)); };
+    box.append(img);
+    return box;
+  }
+  return buildPlaceholder(article);
+}
+
+function buildPlaceholder(article) {
+  // 占位块要一眼看出是「设计的一部分」，否则会被当成图片加载失败。
+  // 因此用中性边框 + 源色淡底 + 源色字母标识，不用虚线框或破图图标。
+  // 具体颜色交给样式表按主题取，这里只提供色相。
+  const box = el("div", "thumb ph");
+  box.style.setProperty("--src-hue", String(hueOf(article.source_id)));
+  const mark = el("span", null, monogram(srcLabel(article)));
+  mark.title = srcLabel(article) + " 未提供配图";
+  box.append(mark);
+  return box;
+}
+
+function cardFor(article, now, data) {
+  const li = el("li", "card");
+  li.append(buildThumb(article));
+
+  const body = el("div", "card-body");
+
+  const top = el("div", "card-top");
+  const src = el("span", "src");
+  const swatch = el("span", "swatch");
+  swatch.style.background = sourceColor(article.source_id);
+  const name = el("span", "nm", srcLabel(article));
+  name.title = "只看 " + srcLabel(article);
+  src.append(swatch, name);
+  top.append(src);
+
+  if (article.published_at) {
+    const when = el("span", "t", relative(article.published_at, now));
+    when.title = new Date(article.published_at).toLocaleString();
+    top.append(when);
+  } else {
+    const unknown = el("span", "t", "发布时间未知");
+    unknown.title = NOTE_TEXT[article.published_note] || "源站未提供可采信的发布时间";
+    top.append(unknown);
+  }
+  body.append(top);
+
+  const h3 = el("h3");
+  const link = el("a", null, article.title);
+  link.href = article.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+  link.title = article.title;   // 标题被截断成两行，悬停可看全文
+  h3.append(link);
+  body.append(h3);
+
+  if (article.summary) {
+    const p = el("p", null, article.summary);
+    p.title = article.summary;  // 摘要在三行处截断，悬停可看全文
+    body.append(p);
+  }
+
+  const foot = el("div", "card-foot");
+  // 语言标签：界面保持中文，但每条内容属于哪一侧要一眼可辨，且能直接点开筛选。
+  const langKey = LANG_TEXT[article.lang] ? article.lang : "other";
+  if (langKey !== "other") {
+    const lang = button("lang", LANG_TEXT[langKey], "只看" + FILTER_LABEL[langKey] + "条目");
+    lang.onclick = () => { state.filter = langKey; state.source = null; state.signal = null;
+      state.cluster = null; renderAll(data, now); };
+    foot.append(lang);
+  } else {
+    foot.append(el("span", "lang", "其他"));
+  }
+  if (article.source_official) foot.append(el("span", "badge official", "官方一手源"));
+  if (article.independent_sources > 1) {
+    foot.append(el("span", "badge cluster",
+      "跨源事件 · " + article.independent_sources + " 个来源"));
+  }
+  (article.reasons || []).filter((r) => SIGNAL_RE.test(r))
+    .forEach((r) => foot.append(el("span", "badge sig", r.replace(/^命中多重信号：/, ""))));
+  if (article.heat) foot.append(el("span", "badge", "热度 " + article.heat));
+  if (article.published_note && article.published_note !== "tz_corrected") {
+    foot.append(el("span", "badge note", NOTE_TEXT[article.published_note] || article.published_note));
+  }
+  body.append(foot);
+
+  li.append(body);
+  return li;
+}
+
+function passes(article, now) {
+  if (state.source && article.source_id !== state.source) return false;
+  if (state.signal && !(article.reasons || []).includes(state.signal)) return false;
+  if (state.cluster && article.cluster_id !== state.cluster.id) return false;
+  if (state.filter === "zh" && article.lang !== "zh") return false;
+  if (state.filter === "en" && article.lang !== "en") return false;
+  if (state.filter === "official" && !article.source_official) return false;
+  if (state.filter === "clustered" && !article.cluster_id) return false;
+  if (state.filter === "today" || state.filter === "week") {
+    if (!article.published_at) return false;
+    const age = now - new Date(article.published_at).getTime();
+    if (age > (state.filter === "today" ? 86400 : 7 * 86400) * 1000) return false;
+  }
+  if (state.query) {
+    const hay = (article.title + " " + (article.summary || "")).toLowerCase();
+    if (hay.indexOf(state.query.toLowerCase()) < 0) return false;
+  }
+  return true;
+}
+
+//: 当前生效的条件清单。集中在这里算，筛选条、指示条、空态文案三处才能保证口径一致。
+function activeConditions(data) {
+  const list = [];
+  if (state.filter !== "all") list.push({ label: FILTER_LABEL[state.filter] || state.filter, reset: () => { state.filter = "all"; } });
+  if (state.source) list.push({ label: "来源：" + sourceLabelById(data.news.sources, state.source), reset: () => { state.source = null; } });
+  if (state.signal) list.push({ label: "信号：" + state.signal, reset: () => { state.signal = null; } });
+  if (state.cluster) list.push({ label: state.cluster.label, reset: () => { state.cluster = null; } });
+  if (state.query) list.push({ label: "搜索：" + state.query, reset: () => { state.query = ""; } });
+  return list;
+}
+
+function clearAllFilters(data, now) {
+  state.filter = "all"; state.source = null; state.signal = null; state.cluster = null;
+  state.query = "";
+  const input = document.getElementById("q");
+  if (input) input.value = "";
+  renderAll(data, now);
+}
+
+function focusSource(data, now, sourceId) {
+  state.source = sourceId; state.filter = "all"; state.signal = null; state.cluster = null;
+  jumpToList(data, now);
+}
+
+function jumpToList(data, now) {
+  renderAll(data, now);
+  const target = document.getElementById("listSection");
+  if (target && target.scrollIntoView) target.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderActiveFilters(data) {
+  const box = document.getElementById("activeFilters");
+  box.textContent = "";
+  const conditions = activeConditions(data);
+  box.hidden = conditions.length === 0;
+  if (!conditions.length) return;
+
+  box.append(el("span", "af-label", "当前筛选"));
+  conditions.forEach((condition) => {
+    const token = button("af-token", null, "移除「" + condition.label + "」");
+    token.append(el("span", null, condition.label), el("span", "x", "×"));
+    token.onclick = () => { condition.reset(); renderAll(data, Date.now()); };
+    box.append(token);
+  });
+  const clear = button("af-clear", "清除全部", "清空所有筛选条件，回到全部条目");
+  clear.onclick = () => clearAllFilters(data, Date.now());
+  box.append(clear);
+}
+
+function renderList(data, now) {
+  const counts = data.news.counts || {};
+  const defs = [
+    ["all", "全部", counts.total],
+    ["zh", "中文", counts.zh],
+    ["en", "英文", counts.en],
+    ["official", "官方源", counts.official],
+    ["clustered", "多来源报道", counts.clustered],
+    ["today", "今天", counts.last_24h],
+    ["week", "近 7 天", counts.last_7d],
+  ];
+  const chips = document.getElementById("filters");
+  chips.textContent = "";
+  defs.forEach(([key, label, n]) => {
+    const node = button("chip");
+    node.setAttribute("aria-pressed", String(state.filter === key && !state.source));
+    node.append(el("span", null, label), el("span", "n", String(n == null ? 0 : n)));
+    node.onclick = () => {
+      state.filter = key; state.source = null; state.signal = null; state.cluster = null;
+      renderAll(data, now);
+    };
+    chips.append(node);
+  });
+  if (state.source) {
+    const node = button("chip");
+    node.setAttribute("aria-pressed", "true");
+    node.append(el("span", null, "来源：" + sourceLabelById(data.news.sources, state.source)));
+    node.onclick = () => { state.source = null; renderAll(data, now); };
+    chips.append(node);
+  }
+  if (state.signal) {
+    const node = button("chip");
+    node.setAttribute("aria-pressed", "true");
+    node.append(el("span", null, "信号：" + state.signal));
+    node.onclick = () => { state.signal = null; renderAll(data, now); };
+    chips.append(node);
+  }
+  if (state.cluster) {
+    const node = button("chip");
+    node.setAttribute("aria-pressed", "true");
+    node.append(el("span", null, state.cluster.label));
+    node.onclick = () => { state.cluster = null; renderAll(data, now); };
+    chips.append(node);
+  }
+
+  const sorted = (data.news.articles || []).filter((a) => passes(a, now)).sort((a, b) => {
+    if (state.sort === "time") {
+      return new Date(b.published_at || 0) - new Date(a.published_at || 0);
+    }
+    return (b.score || 0) - (a.score || 0);
+  });
+
+  const cards = document.getElementById("cards");
+  cards.textContent = "";
+  sorted.forEach((a) => cards.append(cardFor(a, now, data)));
+
+  document.getElementById("empty").hidden = sorted.length > 0;
+
+  const conditions = activeConditions(data);
+  const total = (data.news.articles || []).length;
+  document.getElementById("summaryLine").textContent = conditions.length
+    ? "显示 " + sorted.length + " / " + total + " 条 · 已应用 " + conditions.length + " 个筛选条件"
+    : "显示全部 " + sorted.length + " 条 · 未应用筛选";
+
+  renderActiveFilters(data);
+}
+
+//: 一次筛选变化要同时刷新列表与指示条，统一走这里，避免漏刷一处。
+function renderAll(data, now) {
+  renderList(data, now);
+}
+
+function renderSources(data, now) {
+  const body = document.getElementById("srcBody");
+  body.textContent = "";
+  const counts = new Map();
+  (data.news.articles || []).forEach((a) => counts.set(a.source_id, (counts.get(a.source_id) || 0) + 1));
+
+  const statuses = new Map(((data.status && data.status.sources) || []).map((s) => [s.id, s]));
+
+  const table = el("table");
+  const thead = el("thead");
+  const hr = el("tr");
+  ["来源", "状态", "最新条目", "窗口内", "含配图", "本次新增", "耗时"].forEach((t) => hr.append(el("th", null, t)));
+  thead.append(hr);
+  table.append(thead);
+
+  const tbody = el("tbody");
+  data.news.sources.forEach((source) => {
+    const st = statuses.get(source.id) || {};
+    const tr = el("tr");
+    const nameCell = el("td");
+    const swatch = el("span", "swatch");
+    swatch.style.cssText = "display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:7px;background:" + sourceColor(source.id);
+    const node = button("chip", source.name_en || source.name, "只看该来源的条目");
+    node.style.fontSize = "12.5px";
+    node.onclick = () => focusSource(data, now, source.id);
+    nameCell.append(swatch, node);
+    tr.append(nameCell);
+
+    const statusCell = el("td");
+    const cls = st.status === "failed" ? "bad" : (st.status === "stale" || st.status === "parse_warning") ? "warn" : "ok";
+    statusCell.append(el("span", "dot " + cls), el("span", null, " " + (STATUS_TEXT[st.status] || "—")));
+    if (st.error) statusCell.title = st.error;
+    tr.append(statusCell);
+
+    tr.append(el("td", null, st.latest_published_at ? localStamp(st.latest_published_at) : "—"));
+    tr.append(el("td", "num", String(counts.get(source.id) || 0)));
+    tr.append(el("td", "num", String(st.items_with_image == null ? "—" : st.items_with_image)));
+    tr.append(el("td", "num", String(st.items_new == null ? "—" : st.items_new)));
+    tr.append(el("td", "num", (st.duration_ms == null ? "—" : st.duration_ms + "ms")));
+    tbody.append(tr);
+  });
+  table.append(tbody);
+
+  const scroll = el("div", "table-scroll");
+  scroll.append(table);
+  body.append(scroll);
+
+  const runs = (data.runs && data.runs.runs) || [];
+  if (runs.length) {
+    const label = el("p", null, "最近 " + Math.min(runs.length, 10) + " 次运行（共记录 " + runs.length + " 次）：");
+    label.style.cssText = "margin:14px 0 0;font-size:12.5px;color:var(--fg-dim)";
+    const rt = el("table");
+    const rh = el("thead"), rhr = el("tr");
+    ["运行时间", "触发", "结论", "源数", "新增", "存储", "耗时"].forEach((t) => rhr.append(el("th", null, t)));
+    rh.append(rhr); rt.append(rh);
+    const rb = el("tbody");
+    runs.slice(-10).reverse().forEach((run) => {
+      const tr = el("tr");
+      tr.append(el("td", null, localStamp(run.started_at)));
+      tr.append(el("td", null, run.trigger === "cron" ? "定时" : run.trigger === "fixture" ? "离线重放" : "手动"));
+      tr.append(el("td", null, run.overall));
+      tr.append(el("td", "num", String(run.sources.length)));
+      tr.append(el("td", "num", String(run.total_new)));
+      tr.append(el("td", "num", String(run.total_in_store)));
+      tr.append(el("td", "num", (run.duration_ms / 1000).toFixed(1) + "s"));
+      rb.append(tr);
+    });
+    rt.append(rb);
+    body.append(label, rt);
+  }
+}
+
+function renderFooter(data) {
+  const foot = document.getElementById("foot");
+  foot.textContent = "";
+  const meta = data.meta || {};
+  const p1 = el("p");
+  p1.append("数据仅供个人学习与信息汇总使用，版权归各来源所有；点击标题跳转原文。");
+  foot.append(p1);
+  const p2 = el("p");
+  p2.append("管线：python collect.py　·　离线复现：python collect.py --input tests/fixtures/replay --now 2026-09-16T12:00:00Z");
+  foot.append(p2);
+  if (meta.last_run_id) {
+    const p3 = el("p");
+    p3.append("最近运行 " + meta.last_run_id + "　·　窗口 " + meta.window_days + " 天　·　来源 " + meta.source_count + " 个");
+    foot.append(p3);
+  }
+}
+
+function fail(message) {
+  const box = document.getElementById("highlights");
+  box.textContent = "";
+  const err = el("div", "err");
+  err.append(el("b", null, "数据加载失败"), el("span", null, " " + message));
+  box.append(err);
+  const hint = el("p", null,
+    "若你是直接双击打开本文件，浏览器会因同源策略拒绝读取 data/*.json。"
+    + "请改用构建版 dist/index.html（数据已内联进 HTML），或在本目录起一个静态服务器：python -m http.server");
+  hint.style.cssText = "font-size:12.5px;color:var(--fg-dim);margin-top:10px";
+  box.append(hint);
+}
+
+(async function main() {
+  try {
+    setupTheme();
+    const data = await loadData();
+    const now = Date.now();
+    renderHeader(data, now);
+    renderHighlights(data, now);
+    renderList(data, now);
+    renderSources(data, now);
+    renderFooter(data);
+
+    document.getElementById("q").addEventListener("input", (event) => {
+      state.query = event.target.value.trim();
+      renderAll(data, now);
+    });
+    document.getElementById("sort").addEventListener("change", (event) => {
+      state.sort = event.target.value;
+      renderAll(data, now);
+    });
+  } catch (error) {
+    fail(error && error.message ? error.message : String(error));
+  }
+})();
+</script>
+</body>
+</html>

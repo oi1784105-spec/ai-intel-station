@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>OSCHINA 社区最新新闻</title>
+    <link>https://www.oschina.net/news/rss</link>
+    <description>OSCHINA - 中文开源技术交流社区</description>
+    <language>zh-CN</language>
+    <pubDate>Wed, 16 Sep 2026 19:31:33 +0800</pubDate>
+	<image>
+		<link>https://www.oschina.net</link>
+		<url>https://www.oschina.net/img/logo.gif</url>
+		<title>OsChina.NET</title>
+	</image>
+	<item>
+        <title><![CDATA[开源中国董事长马越亮相2026数字价值年会：以Token治理破解AI落地焦虑，让每一分AI投入都有答案]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502530]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[9月15日至17日，由钛媒体集团与ITValue联合主办的2026 ITValue Summit数字价值年会在三亚海棠湾万丽酒店举行。本届年会以“AI的系统落地”为主题，汇聚了来自全国各地的CIO、CTO及企业数字化决策者。9月16日下午，开源中国董事长马越时隔多年重返ITValue舞台，发表主题演讲，围绕“AI是成本还是产能”这一企业普遍关切的...]]></description>
+        <pubDate>Wed, 16 Sep 2026 19:31:33 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502530]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[从提交一份PR开始：上海开源大赛open supOS赛题专家解读]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502529]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[2026 年，工业 AI 从试点走向规模化。工业企业中应用大模型和智能体的比例，从 2024 年的 9.6% 升到 2025 年的 47.5%，上海也提出目标，到“十五五”末规上企业智能体应用普及率超过 80%。 数字好看，落地却仍存在堵点。设备数据散落在几十套系统里，IT 和 OT 各自说各自的方言，想让 AI 进工厂，先得有人把数据接上、把...]]></description>
+        <pubDate>Wed, 16 Sep 2026 17:58:45 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502529]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[灵界 OS 5.0 稳定版 · 代码可读性大修复]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502526]]></link>
+        <category>软件更新新闻</category>
+        <description><![CDATA[这次更新，工程量比看起来大得多。 你们之前看到的版本，是混淆压缩后的产物。变量名全是 e、t、n、r，函数名也糊成一片。改一个功能，得先猜半天这个变量到底指什么。 但这次，我把整个代码库的骨架重新捋了一遍： 所有文件变量名、函数名、组件名，全部恢复原样 所有文件重新格式化 命名统一 文档优化 文件管理器、终端...]]></description>
+        <pubDate>Wed, 16 Sep 2026 17:30:03 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502526]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[🔥🔥GOTC 2026 生态合作伙伴全球招募，这次玩点不一样的！]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502523]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[去年，GOTC 2025 在北京落幕：3,000+ 人次现场参会，600 万+ 线上观看，4 亿+ 媒体曝光。 今年，我们把镜头推得更近——GOTC 2026 全球开源技术峰会全面升级：从「主论坛 + 分论坛」的演讲型峰会，进化为全球化大型「开源 × AI 生态创新活动」。观众不只是听众，更是参与者、共建者与传播者。 2026：从&quot;听峰会&quot;到&quot;逛现场...]]></description>
+        <pubDate>Wed, 16 Sep 2026 17:21:48 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502523]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[华为坤灵升级“4+10+N”场景化方案，发布“经纬计划”和50个样板点]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502522]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[[中国，上海，2026年9月16日] 今日，华为坤灵新品发布会2026在上海举行。华为常务董事、ICT BG CEO杨超斌宣布，华为坤灵全面升级 “4+10+N” 一站式场景化方案，发布20款新品，并面向中国分销伙伴发布“经纬计划”和50个样板点，让智能世界触手可及。 华为常务董事、ICT BG CEO杨超斌发表主题演讲 围绕四大特质，升级“4...]]></description>
+        <pubDate>Wed, 16 Sep 2026 17:10:30 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502522]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[千问办公上架deepin ，一句话开启 AI 办公]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502521]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[问办公在 deepin 应用商店已经不是新面孔了。上架这段时间，它历经版本迭代，不少 deepin 用户已经下载试用，并收获好评。 千问办公的加入，进一步丰富 deepin 社区与 Linux 生态的智能办公应用选择。 deepin 用户可在 deepin 应用商店搜索“千问办公”，一键下载，即刻体验一站式 AI 办公。 对话即交付 不止于聊天 千问...]]></description>
+        <pubDate>Wed, 16 Sep 2026 17:03:35 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502521]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[添翼AI 3.0重磅发布！东软重塑医疗AI，迈入业务智能新时代]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502520]]></link>
+        <category>软件更新新闻</category>
+        <description><![CDATA[医学从不为新奇背书。当医疗人工智能走过以参数量和排行榜为标尺的阶段，一个更朴素，也更坚硬的问题，正摆在整个行业面前：AI究竟是挂在系统之外的一件“外挂”，一个新的“工具”，还是能长进医疗血脉、理解复杂任务并把事情真正做成的一种“原生能力”？东软集团在本届医学人工智能大会上给出了回答。 9月15日，由《中...]]></description>
+        <pubDate>Wed, 16 Sep 2026 16:55:05 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502520]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[百度地图赛题专家解读来了，助力选手冲击决赛百万奖池]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502518]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[互联网地图过去只是导航工具，如今越来越多地承担开发基础设施的角色，给智能体和大模型应用提供位置感知能力，定位、路线规划、时空数据正从给 App 调用转向给 AI 调用。 工业场景里，园区、能源设施、物流网络都要在地图上实时展示海量设备数据，设备监控要同时呈现上万个点位。持续更新、高频交互之下，传统渲染方式容...]]></description>
+        <pubDate>Wed, 16 Sep 2026 16:13:32 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502518]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[轻量级运维极速引擎 OpsFlash v0.5.1 正式发布]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502516]]></link>
+        <category>软件更新新闻</category>
+        <description><![CDATA[新增： 执行记录：全量记录命令、脚本、批量任务、隧道操作的执行历史，首页仪表盘统计 + 执行记录页面筛选/搜索/分页/详情 首页仪表盘：今日成功/失败/成功率统计卡片 + 最常执行/最近执行/最近失败 TOP10 列表，按类型跳转对应页面 OpsFlash 轻量级运维极速引擎 (The Flash Engine for Micro-Ops) OpsFlash 是一款基于...]]></description>
+        <pubDate>Wed, 16 Sep 2026 15:20:58 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502516]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[ProcHub v0.6.0 Windows 托盘单击直接显示主界面，告别误操作困扰]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502515]]></link>
+        <category>软件更新新闻</category>
+        <description><![CDATA[ProcHub 是一款跨平台进程管理工具，这次更新重点优化了 Windows 平台的托盘交互体验，让日常操作更顺手。 单击托盘图标就能直接显示主界面，右键才弹出菜单，符合大多数用户的操作直觉。 托盘交互优化 之前 Windows 下托盘图标单击和右键都会弹出菜单，需要多一次点击才能看到主界面。现在单击直接显示窗口，右键才显示...]]></description>
+        <pubDate>Wed, 16 Sep 2026 15:08:16 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502515]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[把你的代码写进C919！中国商飞硬核赛题公布]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502513]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[一架大飞机在图纸阶段，就要把流体的行为算明白。燃油在管路里怎么流，喷嘴喷出的介质如何雾化，阀门动作后压力波怎样往下游传，这些都要靠数值仿真提前预演。 飞机上的流体系统分层明显。系统级的管路网络跨度几十米，关心压力、流量、温度在整条链路上的分布与响应；发动机喷嘴这类局部结构只有毫米级尺寸，要看清内部...]]></description>
+        <pubDate>Wed, 16 Sep 2026 14:29:43 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502513]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[Java 27 正式发布：G1 成为默认垃圾回收器，后量子加密进入 TLS 1.3]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502512/oracle-the-arrival-of-java-27]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[Java 27 今天（9 月 15 日）正式 GA，这是 2026 年的第二个功能版本，包含 9 个 JEP。当中有几个挺值得说明的转向。 最实在的改动是 G1 成了所有环境的默认垃圾回收器（JEP 523）。以前 G1 只在某些环境默认，这次统一了行为，让开发者在使用 Java 27 时默认就有一个稳定的 GC 配置，不用再为不同部署环境踩不同的默认值...]]></description>
+        <pubDate>Wed, 16 Sep 2026 11:31:06 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502512/oracle-the-arrival-of-java-27]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[2026 “AI 推理”硬件革命已到来，显卡却有大半时间在闲着]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502511/ieee-inference-hardware-revolution]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[过去几年 AI 的叙事几乎全在&quot;训练更大的模型&quot;，到 2026 年，风向变了。黄仁勋在 GTC 2026 上把这一年叫做&quot;推理的拐点&quot;。IEEE Spectrum 这篇特稿想说明的一件事是：推理其实和你想象的不一样，它正在逼着整个硬件行业换打法。 先说为什么推理突然变成主角。推理模型会一遍遍自我追问（chain of thought），高推理强度下产...]]></description>
+        <pubDate>Wed, 16 Sep 2026 11:18:00 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502511/ieee-inference-hardware-revolution]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[Cloudflare 想让你既能被搜索引擎收录，又可以拒绝 AI 训练]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502510/cloudflare-accountable-mixed-use-ai-crawlers]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[网站站长过去得在一个很别扭的选择里二选一：让内容被拿去训练 AI，或者冒着失去搜索可见度的风险拒绝。这个两难来自一个现实——互联网上最大的那些组织用的都是&quot;混合用途爬虫&quot;：同一个爬虫既做搜索索引，又做 AI 训练。你拒绝一个，等于两个都拒绝。 Cloudflare 近日推出的方案想把这个选择题拆开。新的 Disallow AI ...]]></description>
+        <pubDate>Wed, 16 Sep 2026 11:01:48 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502510/cloudflare-accountable-mixed-use-ai-crawlers]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[亲手优化出 DeepSeek V4.1 算子的工程师，决定继续留在这场加速里]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502509]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[DeepSeek 的机器学习系统工程师刘胜与，最近写了篇长文，标题透露出一种无力感：《我不得不把才华埋葬在昨天》。发出来就刷屏了，外网被翻译成多语言传播。 先说他写了什么。他是 DeepSeek V4.1 主 Attention 算子的作者——head dim = 512 的 MQA attention 是他独立实现并交付的。V4.1 在小模型和推理效率上的表现，有...]]></description>
+        <pubDate>Wed, 16 Sep 2026 10:57:19 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502509]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[全能 Go Agent 框架 covonaut v1.1.3 发布：TUI 库迎来更人性化的交互]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502508]]></link>
+        <category>软件更新新闻</category>
+        <description><![CDATA[covonaut 是一个 Go 语言生产级 Agent 开发框架，基于 Go 1.25 构建，MIT 开源。框架覆盖 Agent 循环、工具注册与生命周期钩子、MCP 协议桥接、A2A 多智能体协作、图引擎（DAG 与 Pregel）、会话管理、工作流编排等功能，并自带一套完整的终端图形界面库。 v1.1.3 变更 本次发布聚焦终端界面交互。 输入刻度条（Input R...]]></description>
+        <pubDate>Tue, 15 Sep 2026 23:03:42 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502508]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[华为发布全球首个3D数据中心，携手产业共建AIDC新范式]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502507]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[9月15日，2026 AIDC产业发展大会暨3D数据中心现场会在安徽芜湖举行。现场华为正式发布全球首个3D数据中心，发行《3D数据中心》专著书籍，并开放《3D数据中心概要设计图库》，携手产业共建AIDC（人工智能数据中心）新范式。 为解决大型AI算力中心的安全性和跨不同代际AI芯片的兼容性，华为通过系统架构创新，打造新一代3...]]></description>
+        <pubDate>Tue, 15 Sep 2026 19:57:16 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502507]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[6500 美元的双臂人形机械臂，OpenArm 把硬件开源做到能复现]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502506]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[物理 AI 研究一直卡在一个尴尬的地方：软件栈开源得热火朝天，硬件却始终是实验室里那台没法复现的定制臂。OpenArm 想把这个口子撕开——一台 7 自由度的全开源人形臂，整套 bimanual 系统卖 6500 美元。 这个价格在同类里算激进。更激进的是它的定位：不是给你一台能拿东西的机械臂，而是给物理 AI 一个能全球复现实验条...]]></description>
+        <pubDate>Tue, 15 Sep 2026 19:26:10 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502506]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[Apache DolphinScheduler 3.4.3 发布！]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502505]]></link>
+        <category>软件更新新闻</category>
+        <description><![CDATA[近日，Apache DolphinScheduler 3.4.3 正式发布。本次版本围绕调度、权限、安全、性能和稳定性等核心能力持续优化，并针对任务实例与工作流实例查询、API 权限控制、敏感信息保护、任务失败恢复等多个生产环境中的实际场景进行了改进和修复。此外，预计将在 3.5.0 版本添加调度补火策略， 作为面向复杂数据工作流场景的开...]]></description>
+        <pubDate>Tue, 15 Sep 2026 18:31:08 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502505]]></guid>
+    </item>
+	<item>
+        <title><![CDATA[🔥🔥智博会直击｜开源中国受邀分享「甬动开源·星火征集令」正式发布]]></title>
+        <link><![CDATA[https://www.oschina.net/news/502504]]></link>
+        <category>综合新闻</category>
+        <description><![CDATA[9 月 11 日，2026 年&quot;浙里源生态&quot;系列活动之工业软件开源根技术创新发展专题对接活动，在第十六届智慧城市与智能经济博览会（智博会）期间举行。开源中国副总裁、教育及创新生态业务CEO李晨受邀出席，带来《开源中国 - All4AI 开源社区建设经验》主题分享，并现场发布「甬动开源·星火征集令」宁波开源项目加速计划。 高...]]></description>
+        <pubDate>Tue, 15 Sep 2026 17:59:43 +0800</pubDate>
+        <guid><![CDATA[https://www.oschina.net/news/502504]]></guid>
+    </item>
+	

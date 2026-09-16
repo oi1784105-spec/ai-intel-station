@@ -1,0 +1,91 @@
+name: 每日更新情报站并部署
+
+# 单一 workflow 同时负责「定时采集」与「Pages 部署」。
+#
+# 为什么不拆成两个：用 `GITHUB_TOKEN` 推送的提交**不会递归触发**其它 workflow
+# （GitHub 的防循环机制）。若把部署拆到 `on: push` 的第二个 workflow，
+# 定时任务提交数据后部署不会启动，页面会永远停在旧版本。
+#
+# 时区换算：cron 用 UTC。`0 22 * * *` = 北京时间次日 06:00，
+# 在中文读者起床前完成当天更新。
+on:
+  schedule:
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+    inputs:
+      rebuild:
+        description: "忽略已有数据重建（修正解析配置后使用）"
+        type: boolean
+        default: false
+
+# 采集任务不可并发：两个实例同时写 data/ 会互相覆盖。
+# `cancel-in-progress: false` 让排队等待而不是取消进行中的运行，
+# 保证每次运行都能把数据完整落盘并提交。
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # 单次运行实测约 15 秒（含一次源超时可达 ~80 秒）；30 分钟足够，
+    # 同时避免某个源卡死时把 workflow 拖到 6 小时的默认上限。
+    timeout-minutes: 30
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      # 采集失败不应让 workflow 整体失败：单个源挂掉是常态，
+      # collect.py 会把整轮结论标成 partial 但退出码保持 0。
+      # 只有「全部源都失败」才返回 1，那才是需要人工介入的情况。
+      - name: 采集并更新数据
+        run: |
+          python collect.py --trigger cron ${{ github.event.inputs.rebuild == 'true' && '--rebuild' || '' }}
+
+      - name: 运行测试
+        run: |
+          pip install -r requirements-dev.txt
+          python -m pytest tests/ -q
+
+      - name: 构建单文件站点并校验自包含
+        run: python build_site.py --check
+
+      - name: 提交数据变更
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "数据无变化，跳过提交"
+          else
+            git commit -m "chore(data): 每日自动更新 $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: 部署到 GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

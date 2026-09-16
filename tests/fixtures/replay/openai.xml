@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[OpenAI News]]></title>
+        <description><![CDATA[The OpenAI blog]]></description>
+        <link>https://openai.com/news</link>
+        <image>
+            <url>https://openai.com/apple-icon.png</url>
+            <title>OpenAI News</title>
+            <link>https://openai.com/news</link>
+        </image>
+        <generator>OpenAI</generator>
+        <lastBuildDate>Wed, 16 Sep 2026 10:42:45 GMT</lastBuildDate>
+        <atom:link href="https://openai.com/news/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[How Fyxer built an AI executive assistant people trust]]></title>
+            <description><![CDATA[Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.]]></description>
+            <link>https://openai.com/index/fyxer</link>
+            <guid isPermaLink="true">https://openai.com/index/fyxer</guid>
+            <category><![CDATA[Startup]]></category>
+            <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Perplexity trusts GPT-6 Astra with end-to-end systems]]></title>
+            <description><![CDATA[Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.]]></description>
+            <link>https://openai.com/index/perplexity-improving-accuracy-with-astra</link>
+            <guid isPermaLink="true">https://openai.com/index/perplexity-improving-accuracy-with-astra</guid>
+            <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Rapidly scaling online storage to serve over 1 billion ChatGPT users]]></title>
+            <description><![CDATA[Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.]]></description>
+            <link>https://openai.com/index/scaling-storage-one-billion-users-part-one</link>
+            <guid isPermaLink="true">https://openai.com/index/scaling-storage-one-billion-users-part-one</guid>
+            <category><![CDATA[Engineering]]></category>
+            <pubDate>Fri, 11 Sep 2026 10:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Cognition helps Devin test its own work with GPT‑6 Astra]]></title>
+            <description><![CDATA[GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.]]></description>
+            <link>https://openai.com/index/cognition-devin-testing-with-astra</link>
+            <guid isPermaLink="true">https://openai.com/index/cognition-devin-testing-with-astra</guid>
+            <pubDate>Fri, 11 Sep 2026 16:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules]]></title>
+            <description><![CDATA[César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.]]></description>
+            <link>https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials</link>
+            <guid isPermaLink="true">https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials</guid>
+            <category><![CDATA[Applied AI]]></category>
+            <pubDate>Thu, 10 Sep 2026 16:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Now everyone can put data to work]]></title>
+            <description><![CDATA[Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.]]></description>
+            <link>https://openai.com/index/put-data-to-work</link>
+            <guid isPermaLink="true">https://openai.com/index/put-data-to-work</guid>
+            <category><![CDATA[Product]]></category>
+            <pubDate>Thu, 10 Sep 2026 15:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Introducing ChatGPT for Financial Services]]></title>
+            <description><![CDATA[Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.]]></description>
+            <link>https://openai.com/index/introducing-chatgpt-financial-services</link>
+            <guid isPermaLink="true">https://openai.com/index/introducing-chatgpt-financial-services</guid>
+            <category><![CDATA[Product]]></category>
+            <pubDate>Thu, 10 Sep 2026 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Expanding AI access and cyber defense for federal, state, local, and tribal governments]]></title>
+            <description><![CDATA[OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.]]></description>
+            <link>https://openai.com/index/expanding-ai-access-us-government</link>
+            <guid isPermaLink="true">https://openai.com/index/expanding-ai-access-us-government</guid>
+            <category><![CDATA[Global Affairs]]></category>
+            <pubDate>Thu, 10 Sep 2026 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Build more natural voice experiences with GPT‑Live‑1 in the API]]></title>
+            <description><![CDATA[GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.]]></description>
+            <link>https://openai.com/index/introducing-gpt-live-1-in-the-api</link>
+            <guid isPermaLink="true">https://openai.com/index/introducing-gpt-live-1-in-the-api</guid>
+            <category><![CDATA[Product]]></category>
+            <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Introducing the Agents API]]></title>
+            <description><![CDATA[Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.]]></description>
+            <link>https://openai.com/index/introducing-the-agents-api</link>
+            <guid isPermaLink="true">https://openai.com/index/introducing-the-agents-api</guid>
+            <category><![CDATA[Product]]></category>
+            <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The AI policy window is open. We need to act.]]></title>
+            <description><![CDATA[Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.]]></description>
+            <link>https://openai.com/index/ai-policy-window</link>
+            <guid isPermaLink="true">https://openai.com/index/ai-policy-window</guid>
+            <category><![CDATA[Global Affairs]]></category>
+            <pubDate>Wed, 09 Sep 2026 13:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[GPT-6 Astra: The next generation in intelligence for work]]></title>
+            <description><![CDATA[Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.]]></description>
+            <link>https://openai.com/index/gpt-6-astra-next-generation-work</link>
+            <guid isPermaLink="true">https://openai.com/index/gpt-6-astra-next-generation-work</guid>
+            <category><![CDATA[Product]]></category>
+            <pubDate>Wed, 09 Sep 2026 11:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Paul Christiano joins OpenAI Foundation Board]]></title>
+            <description><![CDATA[Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.]]></description>
+            <link>https://openai.com/index/paul-christiano-joins-openai-foundation-board</link>
+            <guid isPermaLink="true">https://openai.com/index/paul-christiano-joins-openai-foundation-board</guid>
+            <category><![CDATA[Company]]></category>
+            <pubDate>Wed, 09 Sep 2026 17:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How GPT-5.6 Sol helps run quantum computing experiments]]></title>
+            <description><![CDATA[See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.]]></description>
+            <link>https://openai.com/index/codex-quantum-computing-experiments</link>
+            <guid isPermaLink="true">https://openai.com/index/codex-quantum-computing-experiments</guid>
+            <category><![CDATA[Applied AI]]></category>
+            <pubDate>Tue, 08 Sep 2026 17:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Work Now Within Reach]]></title>
+            <description><![CDATA[Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.]]></description>
+            <link>https://openai.com/index/the-work-now-within-reach</link>
+            <guid isPermaLink="true">https://openai.com/index/the-work-now-within-reach</guid>
+            <category><![CDATA[Company]]></category>
+            <pubDate>Tue, 08 Sep 2026 13:00:00 GMT</pubDate>
+        </item>
+        
