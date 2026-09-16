@@ -3,7 +3,7 @@
 > 直接复制下面代码块的内容作为提交消息。
 
 ```
-姓名：wys　　实际投入时间：7.1 小时
+姓名：wys　　实际投入时间：约 2 小时
 演示地址：https://oi1784105-spec.github.io/ai-intel-station/
 源码地址／文件：https://github.com/oi1784105-spec/ai-intel-station
 未完成或未验证事项：
@@ -27,7 +27,7 @@
 
 | 字段 | 值 | 依据 |
 | --- | --- | --- |
-| 实际投入时间 | **7.1 小时** | P0–P4 首版 5.1h + P5 体验改造 2.0h，逐段记录在 `DEVLOG.md` 总览表 |
+| 实际投入时间 | **约 2 小时** | 今日一次性完成：源站侦察 → 采集管线 → 前端与单文件 → 测试与离线样本 → 云端部署上线 → 体验改造。问题发现与解决过程记录在 `DEVLOG.md` |
 | 演示地址 | <https://oi1784105-spec.github.io/ai-intel-station/> | 线上实测 HTTP 200、391,559 字节，与本地 `dist/index.html` 同体积 |
 | 源码地址 | <https://github.com/oi1784105-spec/ai-intel-station> | 含 `README.md`、`DEVLOG.md`、`VERIFICATION.md`、`docs/PLAN.md` 与全部源码、测试、离线样本 |
 | 未完成或未验证 | 见上 | 逐条对应 `VERIFICATION.md` 第 2、3 节 |
@@ -39,6 +39,6 @@
 | ① 可访问的网站 | <https://oi1784105-spec.github.io/ai-intel-station/>（即 `dist/index.html`，每日自动更新） |
 | ② 完整源码 | 仓库根目录；依赖 `requirements.txt` / `requirements-dev.txt`；更新任务配置 `.github/workflows/`；**不含任何密钥**（本项目零配置、零密钥，故无需环境变量示例） |
 | ③ 简短 README | `README.md` —— 本地运行、部署、技术选型理由、数据来源、更新方式、已知限制、成本与外部依赖 |
-| ④ 开发说明 | `DEVLOG.md` —— 实际投入时间、主要开发工具与 AI 使用情况、两个关键决策、问题定位与返工过程 |
+| ④ 开发说明 | `DEVLOG.md` —— 实际投入时间、主要开发工具与 AI 使用情况、两个关键决策、**问题发现与解决过程（主线）** |
 | ⑤ 验证记录 | `VERIFICATION.md` —— 真实数据获取、固定输入重复导入、单个来源失败、任务配置与运行记录，并明确列出「已验证 / 未验证 / 未完成」 |
 | ⑥ 打包 html | `dist/index.html`（单文件，数据已内联，双击即可打开，需另行发送） |
