@@ -86,6 +86,13 @@ jobs:
         with:
           path: dist
 
+      # 必须先配置 Pages，否则 deploy-pages 会以 "Get Pages site failed: Not Found" 失败。
+      # `enablement: true` 让 workflow 在 Pages 尚未启用时自动启用（首次运行即通，无需手动点设置）。
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - name: 部署到 GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
