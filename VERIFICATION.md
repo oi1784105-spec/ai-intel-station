@@ -310,7 +310,7 @@ python -m pytest tests/ -q                        # → 205 passed
 python build_site.py --check                      # → dist/index.html，校验通过
 
 # 5) 前端真实点击校验（需要 Chrome；无 Chrome 时该步跳过，不影响其它步骤）
-python tools/verify_ui.py                         # → 39 / 39 通过
+python tools/verify_ui.py                         # → 89 / 89 通过
 ```
 
 > 说明：第 5 步依赖本机 Chrome（`C:\Program Files\Google\Chrome\Application\chrome.exe`）。
