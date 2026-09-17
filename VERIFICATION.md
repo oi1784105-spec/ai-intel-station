@@ -213,7 +213,7 @@ python tools/verify_ui.py
 
 ```bash
 python build_site.py --check
-# → 已生成 dist/index.html（606.0 KB / 620,486 字节）
+# → 已生成 dist/index.html（605.9 KB / 620,486 字节）
 # → 自包含校验通过：单文件无外部本地资源引用，数据已内联。
 ```
 
@@ -284,7 +284,7 @@ Simon Willison 3、MIT Tech Review AI 3、量子位 2、OpenAI News 1。
 （见 `pipeline/report.py::success_rate_7d`）—— 只要有一个源失败，整轮就不计入；
 源级成功率则按**源次**计算。这也解释了为什么前者看起来低：20 轮里的 7 次失败**全部**来自同一个源（该源 20 轮里 7 成功 / 7 失败 / 6 轮无新条目）。
 
-> 这 389 条与构建产物 `dist/index.html`（606.0 KB / 620,486 字节 / `sha256:f5554500b8adbbe9…`）是**同一批**数据：
+> 这 389 条与构建产物 `dist/index.html`（605.9 KB / 620,486 字节 / `sha256:f5554500b8adbbe9…`）是**同一批**数据：
 > 页面由 `build_site.py` 把数据内联进来，页脚读数「全站共 389 条（其中 5 条为重点）」即此项的直接证据。
 > 重建一次产物再核哈希，字节与哈希**完全一致**（构建可复现）。
 >
