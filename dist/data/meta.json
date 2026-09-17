@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260917T133519Z-88ed28",
-  "last_run_at": "2026-09-17T13:35:19Z",
-  "last_success_at": "2026-09-17T13:35:19Z",
-  "total_articles": 389,
+  "last_run_id": "20260917T143832Z-c56091",
+  "last_run_at": "2026-09-17T14:38:32Z",
+  "last_success_at": "2026-09-17T14:38:32Z",
+  "total_articles": 395,
   "source_count": 16,
-  "success_rate_7d": 0.65,
+  "success_rate_7d": 0.6667,
   "window_days": 30,
   "highlights": [
     {
@@ -15,7 +15,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 6.186,
+      "score": 6.164,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、融资/并购"
@@ -30,7 +30,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aaba3c3140cd.png?imageView2/2/w/740",
-      "score": 5.992,
+      "score": 5.97,
       "reasons": [
         "命中多重信号：安全、监管/政策"
       ],
@@ -44,7 +44,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab90b323607.jpg?imageMogr2/quality/90",
-      "score": 5.964,
+      "score": 5.942,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -58,7 +58,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab3509cbe8b.png?imageMogr2/quality/90",
-      "score": 5.825,
+      "score": 5.803,
       "reasons": [
         "命中多重信号：发布/上线、融资/并购"
       ],
@@ -72,7 +72,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 5.753,
+      "score": 5.731,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
