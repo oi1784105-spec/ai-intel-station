@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260917T020742Z-634837",
-  "last_run_at": "2026-09-17T02:07:42Z",
-  "last_success_at": "2026-09-17T02:07:42Z",
-  "total_articles": 299,
+  "last_run_id": "20260917T133519Z-88ed28",
+  "last_run_at": "2026-09-17T13:35:19Z",
+  "last_success_at": "2026-09-17T13:35:19Z",
+  "total_articles": 389,
   "source_count": 16,
-  "success_rate_7d": 0.6316,
+  "success_rate_7d": 0.65,
   "window_days": 30,
   "highlights": [
     {
@@ -15,7 +15,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 6.425,
+      "score": 6.186,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、融资/并购"
@@ -24,62 +24,60 @@
       "independent_sources": 2
     },
     {
+      "article_id": "06200a4e6d08fb28",
+      "title": "蚂蚁集团全员接入千问办公，打造大型企业办公标杆",
+      "url": "https://www.leiphone.com/category/industrynews/U3X9WHILcYX0kh4l.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aaba3c3140cd.png?imageView2/2/w/740",
+      "score": 5.992,
+      "reasons": [
+        "命中多重信号：安全、监管/政策"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "f199c3b38d265fe3",
+      "title": "豆包座舱助手发布，首款合作车型即将开启预售",
+      "url": "https://www.leiphone.com/category/industrynews/4zVPQ7JUQYXHp2wh.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab90b323607.jpg?imageMogr2/quality/90",
+      "score": 5.964,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "80f8e5beaba21391",
+      "title": "周鸿祎：不会再投资新能源汽车，已经吃过一次亏；OpenAI洽谈新融资，估值或超1.2万亿美元；花呗、抖音月付等将退出支付选项？多平台回应",
+      "url": "https://www.leiphone.com/category/zaobao/adwK3kvuEMxa03Tj.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab3509cbe8b.png?imageMogr2/quality/90",
+      "score": 5.825,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
       "article_id": "5242db3638517680",
       "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
       "url": "https://www.qbitai.com/2026/09/490400.html",
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 5.992,
+      "score": 5.753,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
-    },
-    {
-      "article_id": "27eaf55f42400614",
-      "title": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
-      "url": "https://www.qbitai.com/2026/09/490396.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": null,
-      "score": 5.989,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "c141c885bc5391d8",
-      "title": "Berlin-based Langdock moves its parent company from the US to Germany",
-      "url": "https://www.euronews.com/business/2026/09/16/why-this-fast-growing-german-ai-start-up-is-moving-its-parent-company-from-the-us",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.799,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "HN 49 分 · 18 评论"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "cbc158125a42359f",
-      "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
-      "url": "https://mistral.ai/news/mistral-x-mozilla/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.774,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "HN 538 分 · 187 评论"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
     }
   ]
 }
