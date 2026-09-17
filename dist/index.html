@@ -463,6 +463,11 @@ footer code{font-family:var(--mono);font-size:11px;background:var(--surface-cont
      处方与 .card-txt 一致 —— 给网格项显式 min-width:0，省略号机制才能接管。 */
   .lead-grid,.lead-hero,.lead-side,.lead-side>*{min-width:0}
   .lead-cross-list li{min-width:0}
+  /* 同类隐患一次兜住：手机/平板上凡是 1fr 轨道，自动最小值都取内容 min-content。
+     这一节里 .lead-grid 已经钉过，同源的 .lead-mini 与 .cards 也钉上（不影响正常宽度，
+     只在「内容比轨道还宽」时生效，避免整页被顶出屏幕）。 */
+  .lead-mini>*{min-width:0}
+  .cards>*{min-width:0}
   /* ② 数据面板的源表是 table-layout:auto，单元格的最小宽度把表撑到 364px，
      展开后整页被拖到 422px。让它在面板内部自己横向滚动。 */
   .panel-in{overflow-x:auto}
@@ -499,19 +504,24 @@ footer code{font-family:var(--mono);font-size:11px;background:var(--surface-cont
   .lead-cross-list .cross-title{white-space:normal;overflow:visible;text-overflow:clip;
     overflow-wrap:anywhere}
 
-  /* 报头：Ctrl K 是桌面键盘提示，触屏上既无意义又会挤掉输入框占位文字；
-     搜索框吃掉剩余宽度，不再固定宽度 */
+  /* 报头改两行。真机 393px 实测：单行时站名会画出自己的盒子、压在搜索框上 12px ——
+     根因是 .mast-left{min-width:0} 允许左栏被压扁，而里面的 .brand{flex-shrink:0}
+     拒绝收缩；内容溢出父盒照样绘制，于是「文字压住输入框」。分两行后左右两侧不再争宽度，
+     构造上不可能再压。Ctrl K 是桌面键盘提示，触屏上既无意义又会挤掉占位文字，一并隐藏。 */
   .kbd{display:none}
-  .mast-in{gap:10px;padding-top:8px;padding-bottom:8px}
-  .mast-left{gap:10px}
-  .mast-right{flex:1 1 auto;gap:4px}
+  .mast-in{flex-wrap:wrap;gap:4px;padding-top:2px;padding-bottom:4px}
+  .mast-left{flex:1 1 100%;gap:10px}
+  .mast-right{flex:1 1 100%;gap:6px;min-width:0}
   .searchbox{flex:1 1 auto;min-width:0}
-  .searchbox input{width:100%;font-size:13px;padding:0 12px 0 28px}
+  .searchbox input{width:100%;height:36px;font-size:13px;padding:0 12px 0 28px}
   .searchbox svg{left:9px;width:14px;height:14px}
+  /* 两行报头压在 80px 以内（粘在顶部的东西不该抢屏）：站名行 32px 是触控下限不能动，
+     就收内距与行距，图标按钮 38 → 36 */
+  .icon-btn{width:36px;height:36px}
 
   /* 区块标题：桌面是「标题 —— 右对齐英文小标签」，手机那行小标签会把左侧说明挤成窄条，
      改为竖排，说明文字拿满整行 */
-  .deck{flex-direction:column;align-items:flex-start;gap:6px}
+  .deck{flex-direction:column;align-items:flex-start;gap:8px}
   .deck-left{width:100%}
   .deck-sub{flex:1 1 100%}
   .deck-right{white-space:normal}
@@ -521,13 +531,40 @@ footer code{font-family:var(--mono);font-size:11px;background:var(--surface-cont
   .ledger-l{row-gap:6px}
   .ledger-l .sep{display:none}
 
-  /* 卡片与特稿：内距收一档，把省下的宽度让给标题与摘要（缩略图尺寸不动，太小反而看不清） */
-  .card{padding:16px}
-  .card h3{font-size:16px}
+  /* 手机字号体系：桌面那套是给宽栏排的（头条 27/31px、卡片 17px、正文 12px、行高 1.28），
+     搬到 358px 栏宽里就成了「巨大标题 + 密集小字」，层级也倒挂（「今日重点」24px 比站名 18px 还大）。
+     这里统一收一档并放松行高，中文长标题才不糊成一片。
+     注意：CSS 里那条 .lead-hero .sum 从未生效 —— JS 渲染出来的类名是 lead-sum，
+     所以头条正文一直继承 body 的 13px 无衬线。这里按类名写对，手机端先修。 */
+  .deck h2{font-size:20px}
+  .deck-sub{font-size:12.5px;line-height:1.65}
+  /* 元信息行：「NO.016.19 6.19 · TMTPost · 14 小时前 · 2 个独立来源」。
+     CSS 里那条 .lead-no 从未生效 —— JS 渲染出来的类名是 lead-meta，所以这行一直是
+     继承 body 的 13px 无衬线（编号也没加粗）。手机端按真实类名写，并改成可换行的等宽小字 */
+  .lead-meta{display:flex;flex-wrap:wrap;align-items:center;gap:2px 8px;
+    font-family:var(--mono);font-size:11.5px;line-height:1.55;color:var(--fg-2);margin-bottom:10px}
+  .lead-meta .no{font-weight:600;color:var(--fg)}
+  .lead-meta .sep{color:var(--fg-dim)}
   .lead-hero{padding:18px}
-  .lead-hero h3{font-size:22px}
+  .lead-hero h3{font-size:19px;line-height:1.45;letter-spacing:0}
+  .lead-hero .lead-sum{font-family:var(--serif);font-size:14px;line-height:1.8;color:var(--fg-2)}
+  /* 这一列两侧被来源标签和时间夹着，标题列宽本来就窄；字号一涨就多折一行、
+     末尾只剩一个字（实测过 12.5px 的样子），所以这里保持 12px 不动 */
+  .lead-cross-list li{font-size:12px}
+
+  /* 卡片与特稿：内距收一档，把省下的宽度让给标题与摘要（缩略图尺寸不动，太小反而看不清）。
+     正文提到 13px 后，卡片的最小内容宽涨到 352px —— 手机只有一列，而 1fr 的自动最小值
+     （min-content）取的就是它，于是在 360px 视口上轨道被顶到 352、溢出屏幕 9px。
+     用 minmax(0,1fr) 把自动最小值钉死为 0，再给卡片 min-width:0 兜底；
+     标题与摘要是 line-clamp 的收缩盒，会在窄框里正常截断，不会画到卡片外面。 */
+  .cards{grid-template-columns:minmax(0,1fr)}
+  .card{min-width:0;padding:16px}
+  .card h3{font-size:16px;line-height:1.5}
+  .card p{font-size:13px;line-height:1.75}
   .lead-item{padding:16px}
-  .lead-item h4{font-size:15px}
+  .lead-item h4{font-size:15px;line-height:1.5}
+  .lead-item p{font-size:12.5px;line-height:1.75}
+  .lead-mini h5{font-size:14.5px;line-height:1.5}
   .foot-in{padding-top:22px;padding-bottom:22px}
 }
 @media print{.masthead,.console,.mast-actions{display:none}}

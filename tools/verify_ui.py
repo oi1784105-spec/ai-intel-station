@@ -562,7 +562,10 @@ RETURN_HARNESS = r"""
 # 前两段都在 1500px 视口上跑，窄屏缺陷在那里根本不会出现。手机这一段要真的在窄视口里跑：
 # headless 的窗口宽度最小只有 512px（flags 也绕不过），所以用 390px 宽的 iframe 内嵌，
 # 媒体查询才会按手机宽度求值；探针的报告写在 iframe 里，得回写父文档，--dump-dom 才读得到。
-MOBILE_WIDTH = 390
+# 两个宽度都跑：390px 是 iPhone 常见宽度，360px 是安卓常见宽度。
+# 上一版只在 390px 上验，结果 360px 下 .cards 的 1fr 轨道被 min-content 顶到 352px、
+# 整页溢出 9px 没被发现 —— 窄屏断言只在窄视口里才有意义，且要覆盖真实的两种窄。
+MOBILE_WIDTHS = (360, 390)
 
 MOBILE_HARNESS = r"""
 <script>
@@ -572,6 +575,8 @@ MOBILE_HARNESS = r"""
 window.addEventListener("load", function () {
   const out = [];
   const ok = (name, pass, extra) => out.push([name, !!pass, extra == null ? "" : String(extra)]);
+  // 同一份 harness 在两个宽度下各跑一次，标签带上真实视口宽度，报告里能分清是哪一档红的。
+  const TAG = "手机 " + innerWidth + "px：";
   try {
     const root = document.documentElement;
     const cw = root.clientWidth;
@@ -603,25 +608,25 @@ window.addEventListener("load", function () {
     };
 
     const closed = overflow();
-    ok("手机 390px：页面不横向滚动", closed.scrollW <= cw + 1,
+    ok(TAG + "页面不横向滚动", closed.scrollW <= cw + 1,
        "文档宽 " + closed.scrollW + "px / 视口 " + cw + "px");
-    ok("手机 390px：没有元素越过右缘被裁", closed.bad.length === 0,
+    ok(TAG + "没有元素越过右缘被裁", closed.bad.length === 0,
        closed.bad.length ? closed.bad.slice(0, 5).join(" / ") : "0 个");
 
     const panel = document.querySelector("details.panel");
     if (panel) panel.open = true;
     const opened = overflow();   // 读几何会强制同步重排，不需要等
     if (panel) panel.open = false;
-    ok("手机 390px：展开「数据面板」源表后仍不横向滚动", opened.scrollW <= cw + 1,
+    ok(TAG + "展开「数据面板」源表后仍不横向滚动", opened.scrollW <= cw + 1,
        "文档宽 " + opened.scrollW + "px / 视口 " + cw + "px");
 
     const mast = document.querySelector(".masthead");
-    ok("手机 390px：粘性报头高度 ≤80px（不抢屏）",
+    ok(TAG + "粘性报头高度 ≤80px（不抢屏）",
        !!mast && mast.getBoundingClientRect().height <= 80,
        mast ? Math.round(mast.getBoundingClientRect().height) + "px" : "找不到报头");
 
     const kbd = document.querySelector(".kbd");
-    ok("手机 390px：隐藏桌面快捷键提示 Ctrl K", !vis(kbd),
+    ok(TAG + "隐藏桌面快捷键提示 Ctrl K", !vis(kbd),
        kbd ? "display=" + getComputedStyle(kbd).display : "无该元素");
 
     const inp = document.querySelector("#q");
@@ -636,12 +641,12 @@ window.addEventListener("load", function () {
       fits = need <= avail;
       detail = "占位文字需 " + Math.round(need) + "px / 可放 " + Math.round(avail) + "px";
     }
-    ok("手机 390px：搜索框放得下占位文字", fits, detail);
+    ok(TAG + "搜索框放得下占位文字", fits, detail);
 
     const deck = document.querySelector(".deck");
     const sub = document.querySelector("#hlSub");
     const stacked = !!deck && getComputedStyle(deck).flexDirection === "column";
-    ok("手机 390px：「今日重点」标题区竖排，说明文字占满整行",
+    ok(TAG + "「今日重点」标题区竖排，说明文字占满整行",
        stacked && !!sub && sub.getBoundingClientRect().width >= cw - 2 * 16 - 2,
        (stacked ? "竖排" : "仍是横排") + "，说明宽 " +
        (sub ? Math.round(sub.getBoundingClientRect().width) : 0) + "px");
@@ -653,20 +658,74 @@ window.addEventListener("load", function () {
       const h = el.getBoundingClientRect().height;
       if (h < 32) small.push(el.tagName.toLowerCase() + " " + Math.round(h) + "px");
     });
-    ok("手机 390px：可点控件触控高度 ≥32px（WCAG 2.5.8 的 24px 之上）", small.length === 0,
+    ok(TAG + "可点控件触控高度 ≥32px（WCAG 2.5.8 的 24px 之上）", small.length === 0,
        small.length ? small.slice(0, 5).join(" / ") : "全部达标");
 
     const thumb = document.querySelector("#cards li.card .thumb");
-    ok("手机 390px：卡片缩略图仍在（没为了挤宽度砍配图）",
+    ok(TAG + "卡片缩略图仍在（没为了挤宽度砍配图）",
        !!thumb && thumb.getBoundingClientRect().height >= 60,
        thumb ? Math.round(thumb.getBoundingClientRect().width) + "×" +
                Math.round(thumb.getBoundingClientRect().height) : "无缩略图");
 
     const unread = [...document.querySelectorAll("#visitBar button")]
       .find((b) => b.textContent.includes("只看未读"));
-    ok("手机 390px：阅读账本没被窄屏藏掉（「只看未读」在且够大）",
+    ok(TAG + "阅读账本没被窄屏藏掉（「只看未读」在且够大）",
        vis(unread) && unread.getBoundingClientRect().height >= 32,
        unread ? Math.round(unread.getBoundingClientRect().height) + "px" : "找不到「只看未读」");
+    // 报头两行：站名与搜索框不再争同一行的宽度。
+    // 真机 393px 曾实测到站名压住输入框 12px —— .mast-left{min-width:0} 允许左栏被压扁，
+    // 而里面的 .brand{flex-shrink:0} 拒绝收缩，内容溢出父盒照样绘制。
+    const brand = document.querySelector(".brand-name");
+    const sbox = document.querySelector(".searchbox");
+    let overlap = true, gapDetail = "找不到站名或搜索框";
+    if (brand && sbox) {
+      const a = brand.getBoundingClientRect(), b = sbox.getBoundingClientRect();
+      overlap = !(a.right <= b.left || b.right <= a.left || a.bottom <= b.top || b.bottom <= a.top);
+      const rows = new Set([...document.querySelectorAll(".mast-in > *")]
+        .map((e) => Math.round(e.getBoundingClientRect().y))).size;
+      gapDetail = overlap
+        ? "矩形相交：站名 right=" + Math.round(a.right) + " / 搜索框 left=" + Math.round(b.left)
+        : "垂直间隔 " + Math.round(b.top - a.bottom) + "px，报头分 " + rows + " 行";
+    }
+    ok(TAG + "报头里站名与搜索框不重叠", !overlap, gapDetail);
+
+    // 「被别的元素盖住」是看不见的坏：命中测试直接判它还能不能点到。
+    const covered = [];
+    ["#q", "#reloadBtn", "#themeToggle"].forEach((sel) => {
+      const el = document.querySelector(sel);
+      if (!el) { covered.push(sel + " 不存在"); return; }
+      const r = el.getBoundingClientRect();
+      const top = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+      if (top !== el && !el.contains(top)) {
+        covered.push(sel + " 被 " + (top ? top.tagName.toLowerCase() : "空") + " 盖住");
+      }
+    });
+    ok(TAG + "搜索框与两个图标按钮都点得到（没被压住）", covered.length === 0,
+       covered.join(" / ") || "三个都命中自己");
+
+    // 手机字号体系：桌面那套（头条 27px、行高 1.28）搬到 358px 栏宽里就是「巨字密排」。
+    const fs = (el) => (el ? parseFloat(getComputedStyle(el).fontSize) : 0);
+    const lhr = (el) => {
+      if (!el) return 0;
+      const cs = getComputedStyle(el);
+      const f = parseFloat(cs.fontSize);
+      return f ? parseFloat(cs.lineHeight) / f : 0;
+    };
+    const heroH3 = document.querySelector(".lead-hero h3");
+    const heroSum = document.querySelector(".lead-hero .lead-sum");
+    const deckH2 = document.querySelector(".deck h2");
+    const brandName = document.querySelector(".brand-name");
+    ok(TAG + "头条标题 ≤20px 且行高 ≥1.35（不是巨字密排）",
+       !!heroH3 && fs(heroH3) <= 20 && lhr(heroH3) >= 1.35,
+       heroH3 ? fs(heroH3) + "px / 行高比 " + lhr(heroH3).toFixed(2) : "找不到头条标题");
+    ok(TAG + "「今日重点」不比站名大（层级不倒挂）",
+       !!deckH2 && fs(deckH2) <= fs(brandName) + 2,
+       deckH2 ? "区块标题 " + fs(deckH2) + "px vs 站名 " + fs(brandName) + "px" : "找不到区块标题");
+    // 头条正文的类名是 lead-sum，而 CSS 里那条 .lead-hero .sum 从未生效 —— 这条断言盯死它。
+    ok(TAG + "头条正文按真实类名拿到了排版（13.5–15.5px 衬线）",
+       !!heroSum && fs(heroSum) >= 13.5 && fs(heroSum) <= 15.5,
+       heroSum ? fs(heroSum) + "px " + getComputedStyle(heroSum).fontFamily.split(",")[0].replace(/["']/g, "")
+               : "找不到头条正文");
   } catch (error) {
     out.push(["移动端 harness 崩溃", false, String((error && error.message) || error)]);
   }
@@ -747,8 +806,6 @@ def main() -> int:
     scratch_dir = Path(tempfile.mkdtemp(prefix="hermes-verify-ui-"))
     # 回访阶段的两次加载共用同一个 profile，localStorage 才留得下来；用完即删。
     profile = Path(tempfile.mkdtemp(prefix="hermes-verify-ui-profile-"))
-    # 手机阶段单独一个 profile：一是要「干净访客」的初始状态，二是避免附着到上一轮的 Chrome。
-    mobile_profile = Path(tempfile.mkdtemp(prefix="hermes-verify-ui-mobile-"))
 
     def stage(name: str, harness: str) -> Path:
         page = scratch_dir / name
@@ -775,19 +832,25 @@ def main() -> int:
 
         # 第三段：手机端。前两段都在 1500px 视口上跑，窄屏缺陷在那里不会出现。
         inner = stage("mobile-inner.html", MOBILE_HARNESS)
-        frame = scratch_dir / "mobile-frame.html"
-        frame.write_text(MOBILE_FRAME.format(width=MOBILE_WIDTH, src=inner.as_uri()), encoding="utf-8")
-        dom3, err3 = _run_mobile_frame(frame, mobile_profile)
-        rows3 = _report(dom3)
-        if rows3 is None:
-            print("移动端阶段未取到测试报告；DOM 长度 =", len(dom3))
-            print(err3[-2000:])
-            return 1
-        rows += rows3
+        for width in MOBILE_WIDTHS:
+            frame = scratch_dir / f"mobile-frame-{width}.html"
+            frame.write_text(MOBILE_FRAME.format(width=width, src=inner.as_uri()), encoding="utf-8")
+            # 每次 Chrome 调用都换一个独立 profile：共用会附着到上一轮没退干净的实例，
+            # --dump-dom 交空（这个坑前两段都踩过）。顺带保证是「干净访客」，没有已读状态。
+            profile_i = Path(tempfile.mkdtemp(prefix=f"hermes-verify-ui-mobile-{width}-"))
+            try:
+                dom3, err3 = _run_mobile_frame(frame, profile_i)
+            finally:
+                shutil.rmtree(profile_i, ignore_errors=True)
+            rows3 = _report(dom3)
+            if rows3 is None:
+                print(f"移动端阶段（{width}px）未取到测试报告；DOM 长度 =", len(dom3))
+                print(err3[-2000:])
+                return 1
+            rows += rows3
     finally:
         shutil.rmtree(scratch_dir, ignore_errors=True)
         shutil.rmtree(profile, ignore_errors=True)
-        shutil.rmtree(mobile_profile, ignore_errors=True)
 
     failed = [row for row in rows if not row[1]]
     for name, passed, extra in rows:
