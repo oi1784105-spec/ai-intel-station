@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17T01:58:55+00:00",
-  "run_id": "20260917T015855Z-4a6a71",
-  "trigger": "manual",
+  "generated_at": "2026-09-17T02:07:42+00:00",
+  "run_id": "20260917T020742Z-634837",
+  "trigger": "cron",
   "offline": false,
-  "overall": "partial",
-  "total_in_store": 276,
-  "new_this_run": 11,
-  "deduped_this_run": 200,
+  "overall": "success",
+  "total_in_store": 299,
+  "new_this_run": 23,
+  "deduped_this_run": 204,
   "window_days": 30,
   "health": {
-    "ok": 5,
-    "no_new": 10,
+    "ok": 3,
+    "no_new": 13,
     "parse_warning": 0,
     "stale": 0,
-    "failed": 1,
-    "success_rate_7d": 0.6111
+    "failed": 0,
+    "success_rate_7d": 0.6316
   },
   "sources": [
     {
       "id": "qbitai",
       "name": "量子位",
       "name_en": "QbitAI",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 10,
       "items_kept": 10,
@@ -31,10 +31,10 @@
       "items_summary_dropped": 3,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 9,
-      "latest_published_at": "2026-09-17T01:09:25+00:00",
-      "duration_ms": 129,
+      "items_new": 0,
+      "items_dup": 10,
+      "latest_published_at": "2026-09-16T13:08:20+00:00",
+      "duration_ms": 1848,
       "error": null
     },
     {
@@ -50,10 +50,10 @@
       "items_summary_dropped": 20,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 19,
-      "latest_published_at": "2026-09-17T01:05:00+00:00",
-      "duration_ms": 137,
+      "items_new": 2,
+      "items_dup": 18,
+      "latest_published_at": "2026-09-17T02:00:00+00:00",
+      "duration_ms": 1068,
       "error": null
     },
     {
@@ -72,7 +72,7 @@
       "items_new": 0,
       "items_dup": 18,
       "latest_published_at": "2026-09-16T10:38:00+00:00",
-      "duration_ms": 825,
+      "duration_ms": 2927,
       "error": null
     },
     {
@@ -82,16 +82,16 @@
       "status": "ok",
       "http_status": 200,
       "items_seen": 50,
-      "items_kept": 29,
-      "items_filtered": 21,
+      "items_kept": 30,
+      "items_filtered": 20,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 26,
-      "latest_published_at": "2026-09-17T01:30:24+00:00",
-      "duration_ms": 330,
+      "items_new": 1,
+      "items_dup": 29,
+      "latest_published_at": "2026-09-17T01:58:30+00:00",
+      "duration_ms": 2736,
       "error": null
     },
     {
@@ -110,14 +110,14 @@
       "items_new": 0,
       "items_dup": 11,
       "latest_published_at": "2026-09-16T04:04:59+00:00",
-      "duration_ms": 395,
+      "duration_ms": 1658,
       "error": null
     },
     {
       "id": "sspai",
       "name": "少数派",
       "name_en": "Sspai",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 10,
       "items_kept": 2,
@@ -126,10 +126,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 1,
+      "items_new": 0,
+      "items_dup": 2,
       "latest_published_at": "2026-09-17T00:25:30+00:00",
-      "duration_ms": 210,
+      "duration_ms": 1410,
       "error": null
     },
     {
@@ -148,14 +148,14 @@
       "items_new": 0,
       "items_dup": 6,
       "latest_published_at": "2026-09-16T15:54:21+00:00",
-      "duration_ms": 191,
+      "duration_ms": 1481,
       "error": null
     },
     {
       "id": "tmtpost",
       "name": "钛媒体",
       "name_en": "TMTPost",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 18,
       "items_kept": 5,
@@ -164,10 +164,10 @@
       "items_summary_dropped": 7,
       "items_with_image": 13,
       "items_out_of_window": 0,
-      "items_new": 5,
-      "items_dup": 0,
+      "items_new": 0,
+      "items_dup": 5,
       "latest_published_at": "2026-09-17T01:53:15+00:00",
-      "duration_ms": 826,
+      "duration_ms": 2221,
       "error": null
     },
     {
@@ -186,27 +186,27 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-09-16T17:00:00+00:00",
-      "duration_ms": 1241,
+      "duration_ms": 470,
       "error": null
     },
     {
       "id": "google-ai",
       "name": "Google AI Blog",
       "name_en": "Google AI Blog",
-      "status": "failed",
-      "http_status": null,
-      "items_seen": 0,
-      "items_kept": 0,
+      "status": "no_new",
+      "http_status": 200,
+      "items_seen": 20,
+      "items_kept": 20,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
-      "items_with_image": 0,
-      "items_out_of_window": 0,
+      "items_with_image": 20,
+      "items_out_of_window": 5,
       "items_new": 0,
-      "items_dup": 0,
-      "latest_published_at": null,
-      "duration_ms": 65181,
-      "error": "timeout：请求超时"
+      "items_dup": 15,
+      "latest_published_at": "2026-09-15T16:00:00+00:00",
+      "duration_ms": 322,
+      "error": null
     },
     {
       "id": "techcrunch-ai",
@@ -224,7 +224,7 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-09-16T21:07:24+00:00",
-      "duration_ms": 2151,
+      "duration_ms": 43,
       "error": null
     },
     {
@@ -243,7 +243,7 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-09-16T23:40:00+00:00",
-      "duration_ms": 595,
+      "duration_ms": 59,
       "error": null
     },
     {
@@ -262,7 +262,7 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-09-16T12:47:34+00:00",
-      "duration_ms": 1625,
+      "duration_ms": 150,
       "error": null
     },
     {
@@ -281,7 +281,7 @@
       "items_new": 0,
       "items_dup": 9,
       "latest_published_at": "2026-09-16T18:09:49+00:00",
-      "duration_ms": 756,
+      "duration_ms": 232,
       "error": null
     },
     {
@@ -300,26 +300,26 @@
       "items_new": 0,
       "items_dup": 21,
       "latest_published_at": "2026-09-16T23:06:39+00:00",
-      "duration_ms": 4749,
+      "duration_ms": 615,
       "error": null
     },
     {
       "id": "arxiv",
       "name": "arXiv cs.AI",
       "name_en": "arXiv cs.AI",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
-      "items_seen": 634,
+      "items_seen": 297,
       "items_kept": 20,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 20,
+      "items_new": 20,
+      "items_dup": 0,
       "latest_published_at": "2026-09-16T04:00:00+00:00",
-      "duration_ms": 1789,
+      "duration_ms": 333,
       "error": null
     }
   ],
@@ -331,7 +331,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 6.428,
+      "score": 6.425,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、融资/并购"
@@ -346,7 +346,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 5.995,
+      "score": 5.992,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -360,7 +360,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 5.992,
+      "score": 5.989,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -374,7 +374,7 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.802,
+      "score": 5.799,
       "reasons": [
         "2 个独立来源同时报道",
         "HN 49 分 · 18 评论"
@@ -389,7 +389,7 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.777,
+      "score": 5.774,
       "reasons": [
         "2 个独立来源同时报道",
         "HN 538 分 · 187 评论"
