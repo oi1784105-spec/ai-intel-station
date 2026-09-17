@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17T13:35:19+00:00",
-  "run_id": "20260917T133519Z-88ed28",
+  "generated_at": "2026-09-17T14:38:32+00:00",
+  "run_id": "20260917T143832Z-c56091",
   "trigger": "cron",
   "offline": false,
   "overall": "success",
-  "total_in_store": 389,
-  "new_this_run": 90,
-  "deduped_this_run": 148,
+  "total_in_store": 395,
+  "new_this_run": 6,
+  "deduped_this_run": 230,
   "window_days": 30,
   "health": {
-    "ok": 11,
-    "no_new": 5,
+    "ok": 3,
+    "no_new": 13,
     "parse_warning": 0,
     "stale": 0,
     "failed": 0,
-    "success_rate_7d": 0.65
+    "success_rate_7d": 0.6667
   },
   "sources": [
     {
       "id": "qbitai",
       "name": "量子位",
       "name_en": "QbitAI",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 10,
       "items_kept": 10,
@@ -31,17 +31,17 @@
       "items_summary_dropped": 5,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 10,
-      "items_dup": 0,
+      "items_new": 0,
+      "items_dup": 10,
       "latest_published_at": "2026-09-17T12:03:24+00:00",
-      "duration_ms": 1990,
+      "duration_ms": 1714,
       "error": null
     },
     {
       "id": "infoq-ai",
       "name": "InfoQ 中国 AI",
       "name_en": "InfoQ China",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 20,
       "items_kept": 20,
@@ -50,10 +50,10 @@
       "items_summary_dropped": 20,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 13,
-      "items_dup": 7,
+      "items_new": 0,
+      "items_dup": 20,
       "latest_published_at": "2026-09-17T13:00:00+00:00",
-      "duration_ms": 1424,
+      "duration_ms": 1377,
       "error": null
     },
     {
@@ -69,17 +69,17 @@
       "items_summary_dropped": 0,
       "items_with_image": 17,
       "items_out_of_window": 0,
-      "items_new": 13,
-      "items_dup": 5,
-      "latest_published_at": "2026-09-17T10:14:00+00:00",
-      "duration_ms": 3494,
+      "items_new": 1,
+      "items_dup": 17,
+      "latest_published_at": "2026-09-17T12:31:00+00:00",
+      "duration_ms": 8815,
       "error": null
     },
     {
       "id": "oschina",
       "name": "开源中国",
       "name_en": "OSChina",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 50,
       "items_kept": 35,
@@ -88,17 +88,17 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 9,
-      "items_dup": 26,
+      "items_new": 0,
+      "items_dup": 35,
       "latest_published_at": "2026-09-17T11:05:20+00:00",
-      "duration_ms": 2820,
+      "duration_ms": 3065,
       "error": null
     },
     {
       "id": "ifanr",
       "name": "爱范儿",
       "name_en": "iFanr",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 20,
       "items_kept": 9,
@@ -107,10 +107,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 20,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 6,
+      "items_new": 0,
+      "items_dup": 9,
       "latest_published_at": "2026-09-17T08:47:56+00:00",
-      "duration_ms": 1454,
+      "duration_ms": 1674,
       "error": null
     },
     {
@@ -129,14 +129,14 @@
       "items_new": 0,
       "items_dup": 1,
       "latest_published_at": "2026-09-17T00:25:30+00:00",
-      "duration_ms": 1390,
+      "duration_ms": 1534,
       "error": null
     },
     {
       "id": "solidot",
       "name": "Solidot",
       "name_en": "Solidot",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 20,
       "items_kept": 7,
@@ -145,17 +145,17 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 4,
+      "items_new": 0,
+      "items_dup": 7,
       "latest_published_at": "2026-09-17T10:31:46+00:00",
-      "duration_ms": 1419,
+      "duration_ms": 1413,
       "error": null
     },
     {
       "id": "tmtpost",
       "name": "钛媒体",
       "name_en": "TMTPost",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 19,
       "items_kept": 11,
@@ -164,10 +164,10 @@
       "items_summary_dropped": 7,
       "items_with_image": 16,
       "items_out_of_window": 0,
-      "items_new": 11,
-      "items_dup": 0,
+      "items_new": 0,
+      "items_dup": 11,
       "latest_published_at": "2026-09-17T11:36:15+00:00",
-      "duration_ms": 3136,
+      "duration_ms": 3699,
       "error": null
     },
     {
@@ -176,7 +176,7 @@
       "name_en": "OpenAI News",
       "status": "no_new",
       "http_status": 200,
-      "items_seen": 1206,
+      "items_seen": 1207,
       "items_kept": 20,
       "items_filtered": 0,
       "items_tz_corrected": 0,
@@ -186,7 +186,7 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-09-16T17:00:00+00:00",
-      "duration_ms": 414,
+      "duration_ms": 557,
       "error": null
     },
     {
@@ -205,7 +205,7 @@
       "items_new": 0,
       "items_dup": 15,
       "latest_published_at": "2026-09-15T16:00:00+00:00",
-      "duration_ms": 387,
+      "duration_ms": 3224,
       "error": null
     },
     {
@@ -221,10 +221,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 4,
-      "items_dup": 16,
-      "latest_published_at": "2026-09-17T05:00:00+00:00",
-      "duration_ms": 89,
+      "items_new": 3,
+      "items_dup": 17,
+      "latest_published_at": "2026-09-17T14:06:14+00:00",
+      "duration_ms": 42,
       "error": null
     },
     {
@@ -240,10 +240,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 10,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 9,
-      "latest_published_at": "2026-09-17T11:30:00+00:00",
-      "duration_ms": 108,
+      "items_new": 2,
+      "items_dup": 8,
+      "latest_published_at": "2026-09-17T14:00:00+00:00",
+      "duration_ms": 142,
       "error": null
     },
     {
@@ -262,7 +262,7 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-09-16T12:47:34+00:00",
-      "duration_ms": 96,
+      "duration_ms": 76,
       "error": null
     },
     {
@@ -281,33 +281,33 @@
       "items_new": 0,
       "items_dup": 9,
       "latest_published_at": "2026-09-16T18:09:49+00:00",
-      "duration_ms": 256,
+      "duration_ms": 197,
       "error": null
     },
     {
       "id": "hn",
       "name": "Hacker News",
       "name_en": "Hacker News",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
-      "items_seen": 23,
-      "items_kept": 23,
+      "items_seen": 21,
+      "items_kept": 21,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 18,
+      "items_new": 0,
+      "items_dup": 21,
       "latest_published_at": "2026-09-17T12:50:16+00:00",
-      "duration_ms": 643,
+      "duration_ms": 674,
       "error": null
     },
     {
       "id": "arxiv",
       "name": "arXiv cs.AI",
       "name_en": "arXiv cs.AI",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 304,
       "items_kept": 20,
@@ -316,10 +316,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 20,
-      "items_dup": 0,
+      "items_new": 0,
+      "items_dup": 20,
       "latest_published_at": "2026-09-17T04:00:00+00:00",
-      "duration_ms": 328,
+      "duration_ms": 250,
       "error": null
     }
   ],
@@ -331,7 +331,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 6.186,
+      "score": 6.164,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、融资/并购"
@@ -346,7 +346,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aaba3c3140cd.png?imageView2/2/w/740",
-      "score": 5.992,
+      "score": 5.97,
       "reasons": [
         "命中多重信号：安全、监管/政策"
       ],
@@ -360,7 +360,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab90b323607.jpg?imageMogr2/quality/90",
-      "score": 5.964,
+      "score": 5.942,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -374,7 +374,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab3509cbe8b.png?imageMogr2/quality/90",
-      "score": 5.825,
+      "score": 5.803,
       "reasons": [
         "命中多重信号：发布/上线、融资/并购"
       ],
@@ -388,7 +388,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 5.753,
+      "score": 5.731,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
