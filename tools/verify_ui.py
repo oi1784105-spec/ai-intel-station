@@ -5,6 +5,9 @@
 比只看静态 DOM 强的地方在于：能验证「点一下到底有没有筛出正确子集」。
 
 不放进 tests/ 的原因：它需要已构建的 dist 与无头 Chrome，不属于 pytest 的单元测试范畴。
+
+共三段：① 1500px 交互（点筛选/来源/徽标/主题）② 1500px 回访（同一 profile 连开两次，
+验「刷新后仍保留」）③ 390px 手机（iframe 内嵌窄视口，验窄屏不横向滚动、触控尺寸等）。
 """
 
 from __future__ import annotations
@@ -555,6 +558,161 @@ RETURN_HARNESS = r"""
 </script>
 """
 
+# ---------------------------------------------------------------- 移动端阶段
+# 前两段都在 1500px 视口上跑，窄屏缺陷在那里根本不会出现。手机这一段要真的在窄视口里跑：
+# headless 的窗口宽度最小只有 512px（flags 也绕不过），所以用 390px 宽的 iframe 内嵌，
+# 媒体查询才会按手机宽度求值；探针的报告写在 iframe 里，得回写父文档，--dump-dom 才读得到。
+MOBILE_WIDTH = 390
+
+MOBILE_HARNESS = r"""
+<script>
+// 同步探针，挂在 load 事件里 —— 不依赖任何定时器，也就不会跟 --virtual-time-budget 抢时间。
+// （原先写成 async IIFE + setTimeout：父文档没有待办任务时虚拟时间会立刻耗尽，
+//   --dump-dom 在探针写完之前就抓取，报告时有时无。）
+window.addEventListener("load", function () {
+  const out = [];
+  const ok = (name, pass, extra) => out.push([name, !!pass, extra == null ? "" : String(extra)]);
+  try {
+    const root = document.documentElement;
+    const cw = root.clientWidth;
+    const vis = (el) => {
+      if (!el) return false;
+      const s = getComputedStyle(el);
+      const r = el.getBoundingClientRect();
+      return s.display !== "none" && s.visibility !== "hidden" && r.width > 0 && r.height > 0;
+    };
+    // 被祖先裁剪（overflow 非 visible）或落在折叠 <details> 里的元素不算版面溢出 ——
+    // Chrome 对折叠的 details 用 content-visibility 跳过渲染并裁剪，那些盒子位置是假的。
+    const clipped = (el) => {
+      let c = el.parentElement;
+      while (c && c !== root) {
+        if (getComputedStyle(c).overflowX !== "visible") return true;
+        if (c.tagName === "DETAILS" && !c.open) return true;
+        c = c.parentElement;
+      }
+      return false;
+    };
+    const overflow = () => {
+      const bad = [];
+      document.querySelectorAll("body *").forEach((el) => {
+        if (!vis(el) || clipped(el)) return;
+        const r = el.getBoundingClientRect();
+        if (r.right > cw + 0.5 || r.left < -0.5) bad.push(el.tagName.toLowerCase());
+      });
+      return { scrollW: root.scrollWidth, bad };
+    };
+
+    const closed = overflow();
+    ok("手机 390px：页面不横向滚动", closed.scrollW <= cw + 1,
+       "文档宽 " + closed.scrollW + "px / 视口 " + cw + "px");
+    ok("手机 390px：没有元素越过右缘被裁", closed.bad.length === 0,
+       closed.bad.length ? closed.bad.slice(0, 5).join(" / ") : "0 个");
+
+    const panel = document.querySelector("details.panel");
+    if (panel) panel.open = true;
+    const opened = overflow();   // 读几何会强制同步重排，不需要等
+    if (panel) panel.open = false;
+    ok("手机 390px：展开「数据面板」源表后仍不横向滚动", opened.scrollW <= cw + 1,
+       "文档宽 " + opened.scrollW + "px / 视口 " + cw + "px");
+
+    const mast = document.querySelector(".masthead");
+    ok("手机 390px：粘性报头高度 ≤80px（不抢屏）",
+       !!mast && mast.getBoundingClientRect().height <= 80,
+       mast ? Math.round(mast.getBoundingClientRect().height) + "px" : "找不到报头");
+
+    const kbd = document.querySelector(".kbd");
+    ok("手机 390px：隐藏桌面快捷键提示 Ctrl K", !vis(kbd),
+       kbd ? "display=" + getComputedStyle(kbd).display : "无该元素");
+
+    const inp = document.querySelector("#q");
+    let fits = false;
+    let detail = "找不到搜索框";
+    if (inp) {
+      const cs = getComputedStyle(inp);
+      const ctx = document.createElement("canvas").getContext("2d");
+      ctx.font = cs.fontSize + " " + cs.fontFamily;
+      const need = ctx.measureText(inp.placeholder).width;
+      const avail = inp.getBoundingClientRect().width - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      fits = need <= avail;
+      detail = "占位文字需 " + Math.round(need) + "px / 可放 " + Math.round(avail) + "px";
+    }
+    ok("手机 390px：搜索框放得下占位文字", fits, detail);
+
+    const deck = document.querySelector(".deck");
+    const sub = document.querySelector("#hlSub");
+    const stacked = !!deck && getComputedStyle(deck).flexDirection === "column";
+    ok("手机 390px：「今日重点」标题区竖排，说明文字占满整行",
+       stacked && !!sub && sub.getBoundingClientRect().width >= cw - 2 * 16 - 2,
+       (stacked ? "竖排" : "仍是横排") + "，说明宽 " +
+       (sub ? Math.round(sub.getBoundingClientRect().width) : 0) + "px");
+
+    // 触控高度只算真正的控件。卡片标题那种行内文字链不算 —— WCAG 2.5.8 对行内文本有豁免。
+    const small = [];
+    document.querySelectorAll("button, select, input:not([type=checkbox]), summary").forEach((el) => {
+      if (!vis(el)) return;
+      const h = el.getBoundingClientRect().height;
+      if (h < 32) small.push(el.tagName.toLowerCase() + " " + Math.round(h) + "px");
+    });
+    ok("手机 390px：可点控件触控高度 ≥32px（WCAG 2.5.8 的 24px 之上）", small.length === 0,
+       small.length ? small.slice(0, 5).join(" / ") : "全部达标");
+
+    const thumb = document.querySelector("#cards li.card .thumb");
+    ok("手机 390px：卡片缩略图仍在（没为了挤宽度砍配图）",
+       !!thumb && thumb.getBoundingClientRect().height >= 60,
+       thumb ? Math.round(thumb.getBoundingClientRect().width) + "×" +
+               Math.round(thumb.getBoundingClientRect().height) : "无缩略图");
+
+    const unread = [...document.querySelectorAll("#visitBar button")]
+      .find((b) => b.textContent.includes("只看未读"));
+    ok("手机 390px：阅读账本没被窄屏藏掉（「只看未读」在且够大）",
+       vis(unread) && unread.getBoundingClientRect().height >= 32,
+       unread ? Math.round(unread.getBoundingClientRect().height) + "px" : "找不到「只看未读」");
+  } catch (error) {
+    out.push(["移动端 harness 崩溃", false, String((error && error.message) || error)]);
+  }
+  // 结果挂到全局，由父页在它自己的 load 里取走：父页的 load 必然晚于 iframe 的 load，
+  // 「谁先好」就不再靠时间赌。
+  window.__MOBILE_REPORT__ = JSON.stringify(out);
+});
+</script>
+"""
+
+MOBILE_FRAME = """<!doctype html><meta charset="utf-8">
+<style>html,body{{margin:0}}iframe{{width:{width}px;height:2400px;border:0;display:block}}</style>
+<iframe src="{src}"></iframe>
+<script>
+window.addEventListener("load", function () {{
+  var f = document.querySelector("iframe");
+  var rep = null;
+  try {{ rep = f.contentWindow.__MOBILE_REPORT__; }} catch (e) {{ rep = null; }}
+  var pre = document.createElement("pre");
+  pre.id = "TESTREPORT";
+  pre.textContent = rep == null
+    ? JSON.stringify([["移动端探针没写出结果（iframe 未加载或被同源策略挡住）", false, ""]])
+    : rep;
+  document.body.appendChild(pre);
+}});
+</script>
+"""
+
+
+def _run_mobile_frame(page: Path, profile: Path) -> tuple[str, str]:
+    """跑一次无头 Chrome，但视口按手机给（靠 390px 宽的 iframe）。
+
+    必须带独立 --user-data-dir：不带的话，这一轮会附着到上一轮还没退干净的 Chrome 实例上，
+    --dump-dom 直接交空（前两段在 1500px 跑得通，第三段就「未取到测试报告」）。
+    """
+    args = [
+        str(CHROME), "--headless=new", "--disable-gpu", "--no-sandbox",
+        "--window-size=512,2440", f"--user-data-dir={profile}",
+        # 探针要把报告写进父文档；滚动条要隐藏，iOS Safari 用的是悬浮滚动条，不该吃掉宽度。
+        "--allow-file-access-from-files", "--hide-scrollbars", "--force-device-scale-factor=1",
+        "--virtual-time-budget=20000", "--dump-dom", page.as_uri(),
+    ]
+    proc = subprocess.run(args, capture_output=True, text=True,
+                          encoding="utf-8", errors="replace", timeout=180)
+    return proc.stdout or "", proc.stderr or ""
+
 
 def _run_page(page: Path, profile: Path | None = None) -> tuple[str, str]:
     """跑一次无头 Chrome，返回 (dump 出的 DOM, stderr)。"""
@@ -589,6 +747,8 @@ def main() -> int:
     scratch_dir = Path(tempfile.mkdtemp(prefix="hermes-verify-ui-"))
     # 回访阶段的两次加载共用同一个 profile，localStorage 才留得下来；用完即删。
     profile = Path(tempfile.mkdtemp(prefix="hermes-verify-ui-profile-"))
+    # 手机阶段单独一个 profile：一是要「干净访客」的初始状态，二是避免附着到上一轮的 Chrome。
+    mobile_profile = Path(tempfile.mkdtemp(prefix="hermes-verify-ui-mobile-"))
 
     def stage(name: str, harness: str) -> Path:
         page = scratch_dir / name
@@ -612,9 +772,22 @@ def main() -> int:
             print(err2[-2000:])
             return 1
         rows += rows2
+
+        # 第三段：手机端。前两段都在 1500px 视口上跑，窄屏缺陷在那里不会出现。
+        inner = stage("mobile-inner.html", MOBILE_HARNESS)
+        frame = scratch_dir / "mobile-frame.html"
+        frame.write_text(MOBILE_FRAME.format(width=MOBILE_WIDTH, src=inner.as_uri()), encoding="utf-8")
+        dom3, err3 = _run_mobile_frame(frame, mobile_profile)
+        rows3 = _report(dom3)
+        if rows3 is None:
+            print("移动端阶段未取到测试报告；DOM 长度 =", len(dom3))
+            print(err3[-2000:])
+            return 1
+        rows += rows3
     finally:
         shutil.rmtree(scratch_dir, ignore_errors=True)
         shutil.rmtree(profile, ignore_errors=True)
+        shutil.rmtree(mobile_profile, ignore_errors=True)
 
     failed = [row for row in rows if not row[1]]
     for name, passed, extra in rows:

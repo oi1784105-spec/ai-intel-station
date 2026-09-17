@@ -448,17 +448,87 @@ footer code{font-family:var(--mono);font-size:11px;background:var(--surface-cont
 @media (max-width:1080px){.telemetry{display:none}}
 @media (max-width:860px){
   .readmeter{display:none}
-  .searchbox input{width:150px}
+  /* 150px 时占位文字放不下（需要 26+81+44=151px），放到 210px */
+  .searchbox input{width:210px}
   .mast-left{gap:10px}
   .modal-item{grid-template-columns:1fr;gap:4px}
 }
+/* ---------------- 窄屏（<1024px：手机与竖屏平板） ----------------
+   电脑端版式由 @media (min-width:1024px) 的 12 栏网格负责，下面这段只在窄屏生效，
+   ≥1024px 的渲染逐字节不受影响。 */
+@media (max-width:1023px){
+  /* ① 横向溢出。「今日重点」在窄屏是单栏 1fr 网格，而 1fr 轨道的自动最小值会取内容的
+     min-content：「同一事件的其他来源报道」那条 white-space:nowrap 的标题把轨道撑到 531px，
+     390px 视口下整页被拖到 549px（右侧一截全被裁掉）。
+     处方与 .card-txt 一致 —— 给网格项显式 min-width:0，省略号机制才能接管。 */
+  .lead-grid,.lead-hero,.lead-side,.lead-side>*{min-width:0}
+  .lead-cross-list li{min-width:0}
+  /* ② 数据面板的源表是 table-layout:auto，单元格的最小宽度把表撑到 364px，
+     展开后整页被拖到 422px。让它在面板内部自己横向滚动。 */
+  .panel-in{overflow-x:auto}
+
+  /* ③ 触控尺寸 —— 这是「手指 vs 鼠标」的问题，不是版式问题，所以手机与平板同待遇：
+     图标位 38px；文字型筛选控件（来源/语言/理由/跨源标签等）拉起 32px 高。
+     桌面 17–20px 的文字链给鼠标够用，手指不行 —— 手机端最细的是「语言」筛选，只有 11×10px。 */
+  .icon-btn{width:38px;height:38px}
+  .icon-btn svg{width:17px;height:17px}
+  .searchbox input{height:38px}
+  .tabs{gap:4px}
+  .tab,.chip{padding:8px 12px}
+  #filters .chip{padding:8px 14px}
+  .af-token,.af-clear{padding:6px 10px}
+  .ops{padding-top:12px;gap:12px}
+  .ops select{padding:8px 28px 8px 10px}
+  .check input{width:16px;height:16px}
+  .bookmark{width:36px;height:36px}
+  .dispatch,.why{padding:6px 0}
+  .brand,.hl-src,.nm,.why,.dispatch,.lang,.badge-btn,.badge.cluster,.af-x,.af-clear,.af-token,
+  .ops select,.op-chip,.foot-nav a,.foot-nav button,.lander a,.fnote a{min-height:32px;
+    display:inline-flex;align-items:center}
+  .lang{padding:0 4px}
+  .af-x{justify-content:center;min-width:26px}
+  #srcBody .chip{min-height:32px;padding:4px 0}
+}
 @media (max-width:640px){
+  /* 手机再收一档：留白、报头两行、卡片内距 */
   .wrap,.mast-in,.console-in,.foot-in{padding-left:16px;padding-right:16px}
   .brand-name{font-size:18px}
   .edition{display:none}
+
+  /* 手机没有横向空间给省略号，同题标题改为换行显示完整标题 */
+  .lead-cross-list .cross-title{white-space:normal;overflow:visible;text-overflow:clip;
+    overflow-wrap:anywhere}
+
+  /* 报头：Ctrl K 是桌面键盘提示，触屏上既无意义又会挤掉输入框占位文字；
+     搜索框吃掉剩余宽度，不再固定宽度 */
+  .kbd{display:none}
+  .mast-in{gap:10px;padding-top:8px;padding-bottom:8px}
+  .mast-left{gap:10px}
+  .mast-right{flex:1 1 auto;gap:4px}
+  .searchbox{flex:1 1 auto;min-width:0}
+  .searchbox input{width:100%;font-size:13px;padding:0 12px 0 28px}
+  .searchbox svg{left:9px;width:14px;height:14px}
+
+  /* 区块标题：桌面是「标题 —— 右对齐英文小标签」，手机那行小标签会把左侧说明挤成窄条，
+     改为竖排，说明文字拿满整行 */
+  .deck{flex-direction:column;align-items:flex-start;gap:6px}
+  .deck-left{width:100%}
+  .deck-sub{flex:1 1 100%}
+  .deck-right{white-space:normal}
+
+  /* 统计条在手机上必然折行，折行后行尾会挂一个孤零零的「·」——
+     改为靠 flex 间距分隔，分隔符在窄屏隐藏 */
+  .ledger-l{row-gap:6px}
+  .ledger-l .sep{display:none}
+
+  /* 卡片与特稿：内距收一档，把省下的宽度让给标题与摘要（缩略图尺寸不动，太小反而看不清） */
+  .card{padding:16px}
+  .card h3{font-size:16px}
   .lead-hero{padding:18px}
   .lead-hero h3{font-size:22px}
-  .searchbox input{width:120px}
+  .lead-item{padding:16px}
+  .lead-item h4{font-size:15px}
+  .foot-in{padding-top:22px;padding-bottom:22px}
 }
 @media print{.masthead,.console,.mast-actions{display:none}}
 </style>
