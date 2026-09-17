@@ -1,40 +1,40 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-16T13:38:43+00:00",
-  "run_id": "20260916T133843Z-54060d",
+  "generated_at": "2026-09-17T00:12:20+00:00",
+  "run_id": "20260917T001220Z-875b61",
   "trigger": "cron",
   "offline": false,
   "overall": "success",
-  "total_in_store": 234,
-  "new_this_run": 3,
-  "deduped_this_run": 227,
+  "total_in_store": 265,
+  "new_this_run": 31,
+  "deduped_this_run": 200,
   "window_days": 30,
   "health": {
-    "ok": 3,
-    "no_new": 13,
+    "ok": 8,
+    "no_new": 8,
     "parse_warning": 0,
     "stale": 0,
     "failed": 0,
-    "success_rate_7d": 0.625
+    "success_rate_7d": 0.6471
   },
   "sources": [
     {
       "id": "qbitai",
       "name": "量子位",
       "name_en": "QbitAI",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 10,
       "items_kept": 10,
       "items_filtered": 0,
       "items_tz_corrected": 0,
-      "items_summary_dropped": 4,
+      "items_summary_dropped": 3,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 10,
-      "latest_published_at": "2026-09-16T08:51:02+00:00",
-      "duration_ms": 1638,
+      "items_new": 1,
+      "items_dup": 9,
+      "latest_published_at": "2026-09-16T13:08:20+00:00",
+      "duration_ms": 1810,
       "error": null
     },
     {
@@ -53,7 +53,7 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-09-16T11:20:27+00:00",
-      "duration_ms": 1432,
+      "duration_ms": 1348,
       "error": null
     },
     {
@@ -72,7 +72,7 @@
       "items_new": 0,
       "items_dup": 18,
       "latest_published_at": "2026-09-16T10:38:00+00:00",
-      "duration_ms": 3683,
+      "duration_ms": 2392,
       "error": null
     },
     {
@@ -91,7 +91,7 @@
       "items_new": 0,
       "items_dup": 28,
       "latest_published_at": "2026-09-16T11:31:33+00:00",
-      "duration_ms": 4036,
+      "duration_ms": 2552,
       "error": null
     },
     {
@@ -110,7 +110,7 @@
       "items_new": 0,
       "items_dup": 11,
       "latest_published_at": "2026-09-16T04:04:59+00:00",
-      "duration_ms": 1614,
+      "duration_ms": 1782,
       "error": null
     },
     {
@@ -129,14 +129,14 @@
       "items_new": 0,
       "items_dup": 1,
       "latest_published_at": "2026-09-14T08:35:27+00:00",
-      "duration_ms": 1190,
+      "duration_ms": 1207,
       "error": null
     },
     {
       "id": "solidot",
       "name": "Solidot",
       "name_en": "Solidot",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 20,
       "items_kept": 6,
@@ -145,29 +145,29 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 6,
-      "latest_published_at": "2026-09-16T10:53:58+00:00",
-      "duration_ms": 1269,
+      "items_new": 1,
+      "items_dup": 5,
+      "latest_published_at": "2026-09-16T15:54:21+00:00",
+      "duration_ms": 1216,
       "error": null
     },
     {
       "id": "tmtpost",
       "name": "钛媒体",
       "name_en": "TMTPost",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 19,
-      "items_kept": 9,
-      "items_filtered": 10,
+      "items_kept": 8,
+      "items_filtered": 11,
       "items_tz_corrected": 0,
       "items_summary_dropped": 6,
-      "items_with_image": 10,
+      "items_with_image": 15,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 9,
-      "latest_published_at": "2026-09-16T10:06:51+00:00",
-      "duration_ms": 2958,
+      "items_new": 1,
+      "items_dup": 7,
+      "latest_published_at": "2026-09-16T23:20:00+00:00",
+      "duration_ms": 2512,
       "error": null
     },
     {
@@ -176,17 +176,17 @@
       "name_en": "OpenAI News",
       "status": "ok",
       "http_status": 200,
-      "items_seen": 1194,
+      "items_seen": 1198,
       "items_kept": 20,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 19,
-      "latest_published_at": "2026-09-16T13:00:00+00:00",
-      "duration_ms": 493,
+      "items_new": 4,
+      "items_dup": 16,
+      "latest_published_at": "2026-09-16T17:00:00+00:00",
+      "duration_ms": 648,
       "error": null
     },
     {
@@ -205,7 +205,7 @@
       "items_new": 0,
       "items_dup": 15,
       "latest_published_at": "2026-09-15T16:00:00+00:00",
-      "duration_ms": 194,
+      "duration_ms": 358,
       "error": null
     },
     {
@@ -221,17 +221,17 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 19,
-      "latest_published_at": "2026-09-16T13:23:02+00:00",
-      "duration_ms": 191,
+      "items_new": 10,
+      "items_dup": 10,
+      "latest_published_at": "2026-09-16T21:07:24+00:00",
+      "duration_ms": 115,
       "error": null
     },
     {
       "id": "verge-ai",
       "name": "The Verge AI",
       "name_en": "The Verge AI",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 10,
       "items_kept": 10,
@@ -240,10 +240,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 10,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 10,
-      "latest_published_at": "2026-09-16T12:00:00+00:00",
-      "duration_ms": 133,
+      "items_new": 7,
+      "items_dup": 3,
+      "latest_published_at": "2026-09-16T23:40:00+00:00",
+      "duration_ms": 179,
       "error": null
     },
     {
@@ -262,14 +262,14 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-09-16T12:47:34+00:00",
-      "duration_ms": 129,
+      "duration_ms": 165,
       "error": null
     },
     {
       "id": "simonw",
       "name": "Simon Willison",
       "name_en": "Simon Willison",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 30,
       "items_kept": 11,
@@ -278,10 +278,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 6,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 11,
-      "latest_published_at": "2026-09-15T22:47:07+00:00",
-      "duration_ms": 210,
+      "items_new": 1,
+      "items_dup": 10,
+      "latest_published_at": "2026-09-16T18:09:49+00:00",
+      "duration_ms": 237,
       "error": null
     },
     {
@@ -290,17 +290,17 @@
       "name_en": "Hacker News",
       "status": "ok",
       "http_status": 200,
-      "items_seen": 21,
-      "items_kept": 21,
+      "items_seen": 23,
+      "items_kept": 23,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 19,
-      "latest_published_at": "2026-09-16T08:08:57+00:00",
-      "duration_ms": 627,
+      "items_new": 6,
+      "items_dup": 17,
+      "latest_published_at": "2026-09-16T23:06:39+00:00",
+      "duration_ms": 478,
       "error": null
     },
     {
@@ -319,25 +319,25 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-09-16T04:00:00+00:00",
-      "duration_ms": 467,
+      "duration_ms": 656,
       "error": null
     }
   ],
   "highlights": [
     {
-      "article_id": "d9308836ffedd860",
-      "title": "OpenAI 发布适用于编程和计算机应用的 GPT-6 Astra",
-      "url": "https://www.infoq.cn/article/IfxYoy1PPkFQUpjWVBVr?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 6.517,
+      "article_id": "45231684ed619de6",
+      "title": "【钛晨报】部署八个方面重点任务，《文化和旅游发展“十五五”规划》印发；美“星舰”计划进行首次地球轨道试飞；Anew Labs已完成2.9亿美元融资，红杉中国、高瓴、IDG、五源、高榕等参与",
+      "url": "https://www.tmtpost.com/8142323.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
+      "score": 6.465,
       "reasons": [
-        "3 个独立来源同时报道",
-        "涉及发布/上线"
+        "2 个独立来源同时报道",
+        "涉及发布/上线、融资/并购"
       ],
-      "cluster_size": 3,
-      "independent_sources": 3
+      "cluster_size": 2,
+      "independent_sources": 2
     },
     {
       "article_id": "5242db3638517680",
@@ -346,7 +346,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 6.252,
+      "score": 6.032,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -360,7 +360,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.249,
+      "score": 6.029,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -368,18 +368,19 @@
       "independent_sources": 1
     },
     {
-      "article_id": "6290d59b65a29478",
-      "title": "华为坤灵升级“4+10+N”场景化方案，发布“经纬计划”和50个样板点",
-      "url": "https://www.leiphone.com/category/industrynews/3eVYZT04EAfdhQZ3.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa608a8347c.jpg?imageMogr2/quality/90",
-      "score": 6.013,
+      "article_id": "c141c885bc5391d8",
+      "title": "Berlin-based Langdock moves its parent company from the US to Germany",
+      "url": "https://www.euronews.com/business/2026/09/16/why-this-fast-growing-german-ai-start-up-is-moving-its-parent-company-from-the-us",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.839,
       "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "2 个独立来源同时报道",
+        "HN 49 分 · 18 评论"
       ],
-      "cluster_size": 1,
-      "independent_sources": 1
+      "cluster_size": 2,
+      "independent_sources": 2
     },
     {
       "article_id": "cbc158125a42359f",
@@ -388,10 +389,10 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.898,
+      "score": 5.807,
       "reasons": [
         "2 个独立来源同时报道",
-        "HN 199 分 · 62 评论"
+        "HN 520 分 · 184 评论"
       ],
       "cluster_size": 2,
       "independent_sources": 2
