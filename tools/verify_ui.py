@@ -148,9 +148,21 @@ HARNESS = r"""
   const bottomVoid = sideRect && lastBlock
     ? Math.round(sideRect.bottom - lastBlock.getBoundingClientRect().bottom) : null;
   ok("重点区右栏底部不留空洞（拉满到与特稿齐平）",
-     !!sideRect && !!heroRect && Math.abs(sideRect.height - heroRect.height) <= 1 && bottomVoid <= 4,
-     "特稿高 " + Math.round(heroRect ? heroRect.height : 0) + " / 侧栏高 "
-       + Math.round(sideRect ? sideRect.height : 0) + " / 底部空洞 " + bottomVoid + "px");
+   !!sideRect && !!heroRect && Math.abs(sideRect.height - heroRect.height) <= 1 && bottomVoid <= 4,
+   "特稿高 " + Math.round(heroRect ? heroRect.height : 0) + " / 侧栏高 "
+     + Math.round(sideRect ? sideRect.height : 0) + " / 底部空洞 " + bottomVoid + "px");
+
+  // 第五版给窄屏加的横向轮播，绝不能在电脑端留痕：桌面仍是 12 栏网格，
+  // 控制条恒为 display:none（轮播只在 <1024px 存在）。像素级不变量另有截图哈希比对。
+  const leadGrid = document.getElementById("highlights");
+  const gcs = leadGrid ? getComputedStyle(leadGrid) : null;
+  const hlBar = document.getElementById("hlBar");
+  ok("电脑端「今日重点」仍是网格版式（轮播的 flex 轨道只在窄屏）",
+   !!gcs && gcs.display === "grid" && gcs.scrollSnapType === "none",
+   gcs ? gcs.display + " / snap=" + gcs.scrollSnapType : "找不到 #highlights");
+  ok("电脑端不显示轮播控制条（箭头/指示点/暂停全藏）",
+   !hlBar || getComputedStyle(hlBar).display === "none",
+   hlBar ? getComputedStyle(hlBar).display : "控制条没渲染");
 
   // 未读必须「读得清」：正文对比度 ≥ 7:1（AAA）。看淡是「读过了」的特权，不是默认状态。
   const lum = (c) => {
@@ -726,7 +738,98 @@ window.addEventListener("load", function () {
        !!heroSum && fs(heroSum) >= 13.5 && fs(heroSum) <= 15.5,
        heroSum ? fs(heroSum) + "px " + getComputedStyle(heroSum).fontFamily.split(",")[0].replace(/["']/g, "")
                : "找不到头条正文");
-  } catch (error) {
+
+    // ---------- 「今日重点」横向轮播（第五版）----------
+    // 坏的样子有两种：一种点不动（假按钮），一种点得动但看不见在动。
+    // 这里两种都盯：控件必须真能切，且切换必须真的改变了滚动位置。
+    const track = document.getElementById("highlights");
+    const slides = track ? [...track.querySelectorAll(".hl")] : [];
+    const tcs = track ? getComputedStyle(track) : null;
+    const bar = document.getElementById("hlBar");
+    const dots = document.getElementById("hlDots");
+    const prevBtn = document.getElementById("hlPrev");
+    const nextBtn = document.getElementById("hlNext");
+    const toggleBtn = document.getElementById("hlToggle");
+    const HL = window.__HL__ || {};
+    ok(TAG + "「今日重点」是横向吸附轨道（不是原来那摞竖排卡片）",
+       !!tcs && tcs.display === "flex" && tcs.scrollSnapType.indexOf("x") === 0 &&
+       tcs.overflowX === "auto",
+       tcs ? tcs.display + " / snap=" + tcs.scrollSnapType + " / overflow-x=" + tcs.overflowX
+           : "找不到 #highlights");
+    ok(TAG + "轨道留得住手指滑动（touch-action 没被禁掉）",
+       !!tcs && tcs.touchAction !== "none", tcs ? "touch-action=" + tcs.touchAction : "");
+    ok(TAG + "屏数 = 重点条目数 = 指示点数",
+       slides.length >= 3 && !!dots && dots.children.length === slides.length,
+       "屏 " + slides.length + " / 点 " + (dots ? dots.children.length : 0));
+    ok(TAG + "一次主要展示一条：屏宽 = 轨道宽 − 32px",
+       slides.length > 0 && slides.every((s) =>
+         Math.abs(s.getBoundingClientRect().width - (track.clientWidth - 32)) <= 2),
+       slides.map((s) => Math.round(s.getBoundingClientRect().width)).join("/") +
+       " vs 轨道 " + Math.round(track.clientWidth));
+    const peek = track.clientWidth - slides[0].getBoundingClientRect().width - 12;
+    ok(TAG + "静止时露出下一屏的边（看得出左右还有内容）", peek >= 8 && peek <= 40,
+       "露出 " + Math.round(peek) + "px");
+    // 「一大片空白」是这一版最容易犯的错：各屏高度被最高那屏顶齐，
+    // 内容少的屏中间就会空出半张卡。这里量「内容占框高的比例」。
+    const fills = slides.map((s) => {
+      const cs2 = getComputedStyle(s);
+      const inner = [...s.children].reduce((a, c) => a + c.getBoundingClientRect().height, 0);
+      const own = inner + parseFloat(cs2.paddingTop || 0) + parseFloat(cs2.paddingBottom || 0);
+      return Math.round(own / s.getBoundingClientRect().height * 100);
+    });
+    ok(TAG + "每屏内容都填得住（占比 ≥75%，不是半张白卡）", fills.every((f) => f >= 75),
+       "各屏 " + fills.join("/") + "%");
+    ok(TAG + "每屏等高（矮的几屏不塌成矮条）",
+       slides.every((s) => Math.abs(s.getBoundingClientRect().height -
+         slides[0].getBoundingClientRect().height) <= 2),
+       slides.map((s) => Math.round(s.getBoundingClientRect().height)).join("/"));
+    ok(TAG + "内容没有被硬切（框高 ≥ 内容高，超出会画到框外）",
+       slides.every((s) => s.scrollHeight <= Math.round(s.getBoundingClientRect().height) + 2),
+       slides.map((s) => s.scrollHeight + "/" + Math.round(s.getBoundingClientRect().height)).join(" "));
+    ok(TAG + "滑动的动画由浏览器原生平滑滚动给（轨道声明 scroll-behavior:smooth）",
+       !!tcs && tcs.scrollBehavior === "smooth", tcs ? "scroll-behavior=" + tcs.scrollBehavior : "");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    ok(TAG + "减弱动效时改走一跳到位（代码确实读了这条偏好，不是写死 smooth）",
+       HL.smooth === !reduce, "smooth=" + HL.smooth + " reduce=" + reduce);
+    ok(TAG + "控制条可见：左右箭头 + 指示点 + 暂停", !!bar && getComputedStyle(bar).display === "flex",
+       bar ? getComputedStyle(bar).display : "找不到 #hlBar");
+    ok(TAG + "箭头与暂停按钮触控尺寸 ≥32px",
+       [prevBtn, nextBtn, toggleBtn].every((b) => !!b && b.getBoundingClientRect().height >= 32 &&
+         b.getBoundingClientRect().width >= 32),
+       [prevBtn, nextBtn, toggleBtn].map((b) => b ? Math.round(b.getBoundingClientRect().width) + "×" +
+         Math.round(b.getBoundingClientRect().height) : "缺").join(" / "));
+    const dotBad = [];
+    [...(dots ? dots.children : [])].forEach((d, i) => {
+      const r = d.getBoundingClientRect();
+      const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+      if (r.height < 32) dotBad.push("第" + (i + 1) + "颗只有 " + Math.round(r.height) + "px 高");
+      else if (!d.contains(hit)) dotBad.push("第" + (i + 1) + "颗被别的元素盖住");
+    });
+    ok(TAG + "每颗指示点都点得到（≥32px 且没被压住）", dotBad.length === 0,
+       dotBad.join(" / ") || dots.children.length + " 颗全部可点");
+    ok(TAG + "当前屏有且只有一颗指示点高亮",
+       [...dots.children].filter((d) => d.getAttribute("aria-current") === "true").length === 1, "");
+    // 真点一遍：箭头 / 指示点 / 暂停都得「点哪去哪」，不是摆设。
+    const start = HL.target;
+    if (nextBtn) nextBtn.click();
+    const afterNext = HL.target;
+    if (prevBtn) { prevBtn.click(); prevBtn.click(); }
+    const afterPrev = HL.target;
+    if (dots && dots.children[2]) dots.children[2].click();
+    ok(TAG + "点「下一条」真的切到下一屏", afterNext === start + 1, start + " → " + afterNext);
+    ok(TAG + "点「上一条」首尾相接（第 1 屏往回 = 最后一屏）", afterPrev === slides.length - 1,
+       afterNext + " → " + afterPrev + "，共 " + slides.length + " 屏");
+    ok(TAG + "点第 3 颗指示点真的切到第 3 屏", HL.target === 2, afterPrev + " → " + HL.target);
+    ok(TAG + "自动轮播默认是开着的（不是摆个轮播壳子）", HL.playing === true && HL.paused === false,
+       "playing=" + HL.playing + " paused=" + HL.paused);
+    if (toggleBtn) toggleBtn.click();
+    ok(TAG + "按「暂停」真的停下并换成「播放」",
+       HL.playing === false && HL.paused === true && toggleBtn.textContent.indexOf("播放") >= 0,
+       "playing=" + HL.playing + " 按钮=" + toggleBtn.textContent);
+    if (toggleBtn) toggleBtn.click();
+    ok(TAG + "再按一下真的继续", HL.playing === true && HL.paused === false,
+       "playing=" + HL.playing);
+      } catch (error) {
     out.push(["移动端 harness 崩溃", false, String((error && error.message) || error)]);
   }
   // 结果挂到全局，由父页在它自己的 load 里取走：父页的 load 必然晚于 iframe 的 load，

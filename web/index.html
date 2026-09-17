@@ -245,6 +245,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   color:var(--fg);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .lead-mini .lead-item:hover h5{color:var(--fg-2)}
 .lead-mini .sig{font-family:var(--mono);font-size:10px;color:var(--fg-2);margin-top:8px}
+/* 窄屏轮播的控制条（← 分页指示器 →）。轮播只在 <1024px 存在，所以这条在桌面恒为
+   display:none —— 桌面版式与像素都不受影响；窄屏那段再把它打开。 */
+.hl-bar{display:none}
 /* ---------------- 编排控制台：账本行 + 分类页签 + 检索算符 ---------------- */
 .console{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
   background:var(--surface);padding:12px 0;margin-top:32px}
@@ -493,6 +496,76 @@ footer code{font-family:var(--mono);font-size:11px;background:var(--surface-cont
   .lang{padding:0 4px}
   .af-x{justify-content:center;min-width:26px}
   #srcBody .chip{min-height:32px;padding:4px 0}
+
+  /* ④ 窄屏「今日重点」改横向 Banner 轮播：同一区域、同一时间只展示一条重点。
+     桌面那套 12 栏网格原封不动（改不到），窄屏这里只改布局与交互：
+     · display:contents 拆掉 .lead-side / .lead-mini 两个纯包装盒，让每张重点卡（都带 .hl）
+       自己成为一屏 —— DOM 结构一个节点都不动，所以桌面渲染逐字节不变；
+       （注意：display:contents 只改布局归属、不改选择器匹配树，所以下面一律用后代选择器
+        #highlights .hl —— 本轮就先用子选择器 .lead-grid>.hl 写过一版，结果拆盒后的 4 屏
+        全被压成 32px，探针一眼看出来。）
+     · 滑动靠原生滚动 + scroll-snap：手指拖动是浏览器自己的行为，不会和卡片上的点击抢事件；
+       自动播放与箭头只做「滚到第 k 屏」，左右滑动动画由 scroll-behavior:smooth 给（不是闪切）；
+     · 每屏自带 1px 描边 + surface 底色（沿用 --line / --surface），所以边框不靠
+       「相邻兄弟加线」那套，拆盒后不会缺边。 */
+  .lead-grid{display:flex;flex-wrap:nowrap;align-items:stretch;gap:12px;
+    padding:2px 32px 6px 0;   /* 右内距 = 屏宽让出的那 32px：最后一屏才吸得齐左缘 */
+    border:0;background:transparent;overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none}
+  .lead-grid::-webkit-scrollbar{display:none}
+  .lead-side,.lead-mini{display:contents}
+  #highlights .hl{flex:0 0 100%;min-width:0;
+    scroll-snap-align:start;scroll-snap-stop:always;
+    border:1px solid var(--line);background:var(--surface);
+    display:flex;flex-direction:column;justify-content:flex-start}
+  /* 屏宽 = 轨道内容宽（= 轨道宽 − 32px 右内距），于是静止时下一屏正好露出 20px 的边：
+     看得出左右还有内容、现在停在第几条；滑动时也是「上一屏 → 当前 → 下一屏」
+     一路横向挪过去，不是整块闪换。 */
+  /* 每屏高度由最高那屏（头条）决定，矮的那几屏余量落在哪是要紧的：
+     内容堆在顶部、标签行用 margin-top:auto 钉在底部（跟头条的 .lead-cross 同一招），
+     余量集中成一条「正文与标签之间」的空档 —— 比把内容浮在正中好看，也不像破图。
+     有配图的那几屏再让缩略图吃掉余量：竖着撑满脚部，留白就没了。 */
+  #highlights .hl .lead-foot{margin-top:auto}
+  #highlights .lead-item:has(.lead-thumb) .lead-foot{flex:1 1 auto;align-items:flex-end}
+  #highlights .lead-thumb{height:auto;min-height:80px;align-self:stretch}
+  /* 正文摘要自己吃掉余量：每屏高度由最高那屏定，矮的几屏与其留一大块白，
+     不如多显示几行正文（末尾仍是省略号，看到「…」就知道还有内容）。
+     这样空白由数据自己填 —— 摘要长就多显示，短就少显示，不用写死高度。 */
+  #highlights .hl .lead-sum,#highlights .lead-item p{flex:1 1 auto;min-height:0}
+  /* 头条那屏的配图在窄屏收起。它是唯一带大图的卡（其余带图的卡只有 112×80 缩略图），
+     图一留着整条轮播就被它顶到 520px 高，而矮的几屏只有 270px 内容 —— 中间空出一大片
+     「正文与标签之间的白」。收掉图，整条落到 ~380px：带缩略图的那两屏由缩略图竖着撑满，
+     纯文字的那两屏余量不到三成，看着是留白不是破图。
+     图不是丢了：电脑端照旧显示大图，手机上这条情报在下方「全部情报」的卡片里
+     仍带自己的配图（thumbFor 会渲染）。取舍已写进 DEVLOG。 */
+  #highlights .lead-fig{display:none}
+  /* 标题与正文用省略号收，不是硬切：看到「…」就知道还有内容，完整版在原文与下方列表里。
+     注意 line-clamp 必须配 display:-webkit-box 才生效（本轮就差点写出第三条死规则）。 */
+  #highlights .lead-hero h3,#highlights .lead-item h4,#highlights .lead-mini h5{
+    display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+  #highlights .lead-hero h3{font-size:20px;-webkit-line-clamp:3}
+  #highlights .lead-hero .lead-sum{display:-webkit-box;-webkit-box-orient:vertical;
+    overflow:hidden;-webkit-line-clamp:4}
+  #highlights .lead-item h4,#highlights .lead-mini h5{-webkit-line-clamp:3}
+  /* 控制条：左右箭头、每一颗分页指示点、暂停/播放都是真按钮，点了就真起作用；
+     指示点的触控高度给到 32px（手指问题），视觉上仍是 8px 的小方点。 */
+  .hl-bar{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;
+    margin-top:14px}
+  .hl-arrow{width:38px;height:38px;flex:0 0 auto;display:inline-flex;align-items:center;
+    justify-content:center;border:1px solid var(--line);background:var(--surface);color:var(--fg);
+    font-family:var(--mono);font-size:15px;line-height:1}
+  .hl-arrow:hover{background:var(--hover)}
+  .hl-dots{display:flex;align-items:center;gap:2px}
+  .hl-dot{width:24px;height:32px;padding:0;border:0;background:transparent;
+    display:inline-flex;align-items:center;justify-content:center}
+  .hl-dot span{width:8px;height:8px;display:block;border:1px solid var(--line-strong)}
+  .hl-dot:hover span{border-color:var(--fg)}
+  .hl-dot[aria-current="true"] span{background:var(--fg);border-color:var(--fg)}
+  .hl-toggle{height:32px;padding:0 10px;display:inline-flex;align-items:center;gap:6px;
+    border:1px solid var(--line);background:var(--surface);color:var(--fg-2);
+    font-family:var(--mono);font-size:11px;letter-spacing:.06em}
+  .hl-toggle:hover{background:var(--hover);color:var(--fg)}
 }
 @media (max-width:640px){
   /* 手机再收一档：留白、报头两行、卡片内距 */
@@ -565,6 +638,17 @@ footer code{font-family:var(--mono);font-size:11px;background:var(--surface-cont
   .lead-item h4{font-size:15px;line-height:1.5}
   .lead-item p{font-size:12.5px;line-height:1.75}
   .lead-mini h5{font-size:14.5px;line-height:1.5}
+
+  /* 轮播在手机上再收一档：整条高度由最高那屏（头条）决定，矮的那几屏内容堆在顶部、
+     标签行钉在底部（见上面 №4 的说明），余量因此集中在一条空档里而不是散成几块。
+     所以只要把头条收住，整条就收住了 —— 头条的配图已在窄屏收起，标题 3 行、正文 4 行，
+     都用省略号收（看到「…」就知道还有内容，完整版在原文与下方列表里）。
+     矮的那几屏把字号提一档：不然在一屏大框里就是一行小字，没有 Banner 的分量。 */
+  #highlights .lead-item h4,#highlights .lead-mini h5{font-size:19px;line-height:1.45}
+  /* 第四版定的手机字号（头条 19px）不能被上面那条 id 选择器盖掉 —— 第四版的
+     「头条字体太大」就是这条断言盯的，窄屏轮播不该把它改回去。 */
+  #highlights .lead-hero h3{font-size:19px}
+  #highlights .lead-item p{font-size:14.5px;line-height:1.7;-webkit-line-clamp:8}
   .foot-in{padding-top:22px;padding-bottom:22px}
 }
 @media print{.masthead,.console,.mast-actions{display:none}}
@@ -1135,7 +1219,196 @@ function renderHighlights(data, now) {
     side.appendChild(mini);
   }
   host.appendChild(side);
+  syncHlCarousel();   // 窄屏轮播的屏数与指示点，跟着「今日重点」的条目一起重建
 }
+
+/* ---------------- 窄屏「今日重点」横向轮播 ----------------
+   窄屏（<1024px）下 .lead-grid 是一条横向吸附轨道，每张重点卡（.hl）自己是一屏。
+   · 滑动交给原生滚动 + scroll-snap：手指拖动是浏览器自己的行为，不会和卡片上的点击抢事件；
+     自动播放、左右箭头、分页指示器都只做同一件事 ——「滚到第 k 屏」，
+     左右滑动的动画由 CSS 的 scroll-behavior:smooth 给（不是突然闪切）；
+   · 桌面（≥1024px）整段不生效：matchMedia 为 false 时连 DOM 都不改，桌面渲染逐字节不变。
+   诚实性底线：箭头与每一颗指示点都是真按钮，点哪一屏就滚到哪一屏，这里没有摆设控件。 */
+const HL_MQ = "(max-width:1023px)";
+const HL_EVERY = 6000;    // 每屏停留多久
+const HL_RESUME = 8000;   // 手动划走之后，隔这么久再恢复自动轮播
+const HL_REDUCE = window.matchMedia
+  ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;   // 只是「少一点动」，不是「不轮播」
+/* 状态挂到 window 供无头校验读取（不参与渲染）。tools/verify_ui.py 的窄屏段靠它断言
+   「箭头/指示点真的滚到了那一屏」「自动播放真的在推进」，不然这些只能靠肉眼。 */
+const HL_STATE = {
+  n: 0, idx: 0, target: 0, playing: false, hold: false, paused: false,
+  inView: true, reduce: false, smooth: false,
+};
+window.__HL__ = HL_STATE;
+
+function hlSlides() {
+  const track = $("highlights");
+  return track ? Array.from(track.querySelectorAll(".hl")) : [];
+}
+function hlAt() {   // 离左缘最近的那一屏就是当前屏（滚到哪里都不会算错）
+  const track = $("highlights"), slides = hlSlides();
+  if (!track || !slides.length) return 0;
+  const base = track.getBoundingClientRect().left;
+  let best = 0, dist = Infinity;
+  slides.forEach((s, i) => {
+    const d = Math.abs(s.getBoundingClientRect().left - base);
+    if (d < dist) { dist = d; best = i; }
+  });
+  return best;
+}
+function hlPaint(idx) {
+  HL_STATE.idx = idx;
+  const dots = $("hlDots");
+  if (!dots) return;
+  Array.from(dots.children).forEach((b, i) => {
+    b.setAttribute("aria-current", i === idx ? "true" : "false");
+  });
+}
+function hlGoTo(i, byUser) {
+  const track = $("highlights"), slides = hlSlides();
+  if (!track || !slides.length) return;
+  const n = slides.length;
+  const next = ((i % n) + n) % n;   // 首尾相接：最后一条的「下一条」回到第一条，反之亦然
+  const box = track.getBoundingClientRect();
+  // 用两屏的左缘差算滚动目标：间距、内距怎么变都不会差一屏
+  const left = slides[next].getBoundingClientRect().left - box.left + track.scrollLeft;
+  const reduce = !!(HL_REDUCE && HL_REDUCE.matches);
+  HL_STATE.reduce = reduce;
+  HL_STATE.smooth = !reduce;                       // 关了动效就一跳到位，不做滑动动画
+  track.scrollTo({ left, behavior: reduce ? "auto" : "smooth" });
+  HL_STATE.target = next;
+  hlPaint(next);
+  if (byUser) hlResumeSoon(HL_RESUME);   // 手动切完继续自动轮播，只是先歇一会
+}
+function hlTick() {
+  if (!HL_STATE.playing || HL_STATE.hold || HL_STATE.inView === false || document.hidden) return;
+  hlGoTo(HL_STATE.target + 1, false);
+}
+function hlStart() {
+  if (HL_STATE.playing || HL_STATE.paused) return;   // 「暂停」是用户按下的，得等他按回来
+  HL_STATE.playing = true;
+  HL_STATE.timer = setInterval(hlTick, HL_EVERY);
+}
+function hlStop() {
+  HL_STATE.playing = false;
+  clearInterval(HL_STATE.timer);
+}
+/* 暂停/播放：真按钮，按一下就真停、再按一下就真走（WCAG 2.2.2 要求的暂停机制）。
+   动效减弱只影响「滑不滑动」，不影响「能不能轮播」，所以这里不掺 prefers-reduced-motion。 */
+function hlTogglePlay() {
+  HL_STATE.paused = !HL_STATE.paused;
+  const btn = $("hlToggle");
+  if (btn) {
+    btn.setAttribute("aria-pressed", HL_STATE.paused ? "true" : "false");
+    btn.textContent = HL_STATE.paused ? "播放" : "暂停";
+  }
+  if (HL_STATE.paused) hlStop();
+  else { HL_STATE.hold = false; hlStart(); }
+}
+function hlHoldNow() { HL_STATE.hold = true; }
+function hlResumeSoon(delay) {
+  clearTimeout(HL_STATE.resume);
+  HL_STATE.resume = setTimeout(() => { HL_STATE.hold = false; }, delay || 0);
+}
+function hlBar() {   // 控制条插在轨道后面（轨道重建时它留在原地，只重建指示点）
+  const track = $("highlights");
+  if (!track || !track.parentNode) return null;
+  let bar = $("hlBar");
+  if (!bar) {
+    bar = el("div", "hl-bar");
+    bar.id = "hlBar";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "今日重点轮播控制");
+    const prev = button("hl-arrow", "←", "上一条重点");
+    const next = button("hl-arrow", "→", "下一条重点");
+    prev.id = "hlPrev";
+    next.id = "hlNext";
+    const dots = el("div", "hl-dots");
+    dots.id = "hlDots";
+    const toggle = button("hl-toggle", "暂停", "暂停或继续自动轮播");
+    toggle.id = "hlToggle";
+    toggle.setAttribute("aria-pressed", "false");
+    prev.addEventListener("click", () => hlGoTo(HL_STATE.target - 1, true));
+    next.addEventListener("click", () => hlGoTo(HL_STATE.target + 1, true));
+    toggle.addEventListener("click", hlTogglePlay);
+    bar.appendChild(prev);
+    bar.appendChild(dots);
+    bar.appendChild(next);
+    bar.appendChild(toggle);
+    // 手指/鼠标停在控制条上、或键盘焦点在里面时不要滑走 —— 读者正在操作（WCAG 2.2.2）
+    bar.addEventListener("pointerenter", hlHoldNow);
+    bar.addEventListener("focusin", hlHoldNow);
+    bar.addEventListener("pointerleave", () => hlResumeSoon(2000));
+    bar.addEventListener("focusout", () => hlResumeSoon(2000));
+    track.parentNode.insertBefore(bar, track.nextSibling);
+  }
+  const dots = $("hlDots");
+  clear(dots);
+  hlSlides().forEach((s, i) => {
+    const head = s.querySelector("h3, h4, h5");
+    const dot = button("hl-dot", null, `第 ${i + 1} 条重点：${(head && head.textContent) || ""}`);
+    dot.appendChild(el("span"));
+    dot.addEventListener("click", () => hlGoTo(i, true));
+    dots.appendChild(dot);
+  });
+  return bar;
+}
+function syncHlCarousel() {
+  const track = $("highlights");
+  if (!track) return;
+  if (!hlBar()) return;
+  HL_STATE.n = hlSlides().length;
+  if (!(window.matchMedia && window.matchMedia(HL_MQ).matches)) {   // 桌面：不碰 DOM、停表
+    hlStop();
+    HL_STATE.hold = false;
+    HL_STATE.target = 0;
+    hlPaint(0);
+    return;
+  }
+  if (track.dataset.hlBound !== "1") {
+    track.dataset.hlBound = "1";
+    track.addEventListener("scroll", () => hlPaint(hlAt()), { passive: true });
+    // 手指按住/正在拖动的那一下不要被自动播放打断
+    track.addEventListener("pointerdown", hlHoldNow);
+    track.addEventListener("touchstart", hlHoldNow, { passive: true });
+    ["pointerup", "pointercancel", "touchend", "touchcancel"].forEach((ev) =>
+      track.addEventListener(ev, () => hlResumeSoon(HL_RESUME), { passive: true }));
+    track.addEventListener("pointerenter", hlHoldNow);
+    track.addEventListener("pointerleave", () => hlResumeSoon(2000));
+    track.addEventListener("keydown", (e) => {   // 焦点在轨道上时左右键翻页
+      if (e.key === "ArrowLeft") { e.preventDefault(); hlGoTo(HL_STATE.target - 1, true); }
+      if (e.key === "ArrowRight") { e.preventDefault(); hlGoTo(HL_STATE.target + 1, true); }
+    });
+    if (window.IntersectionObserver) {
+      new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          HL_STATE.inView = en.isIntersecting && en.intersectionRatio > 0.2;
+        });
+      }, { threshold: [0, 0.2, 0.5] }).observe(track);   // 滚出屏幕就停表，不在看不见的地方空转
+    }
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) hlHoldNow(); else hlResumeSoon(600);
+    });
+  }
+  track.scrollLeft = 0;
+  HL_STATE.target = 0;
+  hlPaint(0);
+  hlStart();
+}
+if (window.matchMedia) {   // 视口跨过 1024px：桌面停表复位，窄屏重建指示点并开始轮播
+  const hlMq = window.matchMedia(HL_MQ);
+  const hlOnMq = () => syncHlCarousel();
+  if (hlMq.addEventListener) hlMq.addEventListener("change", hlOnMq);
+  else if (hlMq.addListener) hlMq.addListener(hlOnMq);
+}
+let hlResizeTimer = null;
+window.addEventListener("resize", () => {   // 同档内改宽度（横竖屏）：按当前屏重新对齐
+  clearTimeout(hlResizeTimer);
+  hlResizeTimer = setTimeout(() => {
+    if (window.matchMedia && window.matchMedia(HL_MQ).matches) hlGoTo(HL_STATE.target, false);
+  }, 200);
+});
 
 /* ---------------- 跨源浮层：把「同一件事的多家报道」逐条摊开 ---------------- */
 function membersOf(clusterId, data) {
