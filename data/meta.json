@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260917T001220Z-875b61",
-  "last_run_at": "2026-09-17T00:12:20Z",
+  "last_run_id": "20260917T015855Z-4a6a71",
+  "last_run_at": "2026-09-17T01:58:55Z",
   "last_success_at": "2026-09-17T00:12:20Z",
-  "total_articles": 265,
+  "total_articles": 276,
   "source_count": 16,
-  "success_rate_7d": 0.6471,
+  "success_rate_7d": 0.6111,
   "window_days": 30,
   "highlights": [
     {
@@ -15,7 +15,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 6.465,
+      "score": 6.428,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、融资/并购"
@@ -30,7 +30,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260916//6aaa4ce8d205f.jpg?imageMogr2/quality/90",
-      "score": 6.032,
+      "score": 5.995,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -44,7 +44,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.029,
+      "score": 5.992,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -58,7 +58,7 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.839,
+      "score": 5.802,
       "reasons": [
         "2 个独立来源同时报道",
         "HN 49 分 · 18 评论"
@@ -73,10 +73,10 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.807,
+      "score": 5.777,
       "reasons": [
         "2 个独立来源同时报道",
-        "HN 520 分 · 184 评论"
+        "HN 538 分 · 187 评论"
       ],
       "cluster_size": 2,
       "independent_sources": 2
