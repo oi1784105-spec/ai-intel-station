@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260918T020957Z-e4a378",
-  "last_run_at": "2026-09-18T02:09:57Z",
-  "last_success_at": "2026-09-18T02:09:57Z",
-  "total_articles": 432,
+  "last_run_id": "20260918T021944Z-592cde",
+  "last_run_at": "2026-09-18T02:19:44Z",
+  "last_success_at": "2026-09-18T02:19:44Z",
+  "total_articles": 434,
   "source_count": 16,
-  "success_rate_7d": 0.7083,
+  "success_rate_7d": 0.72,
   "window_days": 30,
   "highlights": [
     {
@@ -15,7 +15,7 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 6.26,
+      "score": 6.257,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及安全"
@@ -30,7 +30,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 5.924,
+      "score": 5.921,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、融资/并购"
@@ -45,7 +45,7 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.905,
+      "score": 5.901,
       "reasons": [
         "官方来源，涉及融资/并购",
         "官方一手来源",
@@ -61,7 +61,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aaba3c3140cd.png?imageView2/2/w/740",
-      "score": 5.73,
+      "score": 5.727,
       "reasons": [
         "命中多重信号：安全、监管/政策"
       ],
@@ -75,7 +75,7 @@
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.727,
+      "score": 5.724,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
