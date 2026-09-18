@@ -25,6 +25,7 @@
 | 一次真实采集过程 | `python collect.py` |
 | 不访问网络也能复现同一份结果 | `python collect.py --input tests/fixtures/replay --now 2026-09-16T12:00:00Z --data-dir /tmp/x` |
 | 每个信息源当前可用性 | `python tools/audit_sources.py` |
+| **阅读账本**（自选亮点：已读记忆 / 只看未读） | 打开页面 → 点开任意条目即视为已读（该卡片变暗，仍可回看），顶部统计行显示「自上次来访 · 新增 N 篇未读 · 全站未读 M 条 · 已读 R 条」与进度条，右侧有「只看未读 / 只看收藏 / 全部标为已读」。状态只写在本机浏览器（`localStorage`），不上传数据。做了什么、为什么做，见 [`SUBMISSION.md`](SUBMISSION.md) 「自选亮点」 |
 | 管线是否被改坏 | `python -m pytest tests/ -q` |
 | 前端是否被改坏（真实渲染 + 真实点击） | `python tools/verify_ui.py` |
 
