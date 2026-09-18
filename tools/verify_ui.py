@@ -802,6 +802,27 @@ window.addEventListener("load", function () {
     });
     ok(TAG + "每屏内容都填得住（占比 ≥75%，不是半张白卡）", fills.every((f) => f >= 75),
        "各屏 " + fills.join("/") + "%");
+    // 读者反馈：窄屏里给无配图的重点条目摆占位块 + 「本条来源未提供配图」，看着像在报警。
+    // 现在这类条目走纯文字 —— 这里钉两条：① 窄屏不该出现任何「无配图」字样；② 余量确实由
+    // 「摘要 / 来源简介」那一行吃掉（撑开到卡片高度的一截），而不是靠摆东西填。
+    const noimgNotes = [...document.querySelectorAll("#highlights *")].filter((n) => {
+      if (n.children.length || !/无配图/.test(n.textContent || "")) return false;
+      return n.getClientRects().length > 0;   // 只算真渲染出来的（display:none 的拿不到 rect）
+    }).map((n) => (n.className || "?") + ":" + n.textContent.slice(0, 16));
+    ok(TAG + "窄屏不出现任何「无配图」提示（没配图就只显示文字）", noimgNotes.length === 0,
+       noimgNotes.length ? noimgNotes.join(" / ") : "0 处");
+    const tOnly = slides.filter((s) => s.classList.contains("lead-textonly"));
+    const growBad = tOnly.filter((s) => {
+      const g = s.querySelector(".sum-src, .lead-sum");
+      return !g || g.getBoundingClientRect().height < s.getBoundingClientRect().height * 0.3;
+    });
+    ok(TAG + "无配图的屏靠文字行吃掉余量（不摆占位块）",
+       tOnly.length > 0 && growBad.length === 0,
+       tOnly.length ? tOnly.length + " 屏无配图，余量 " +
+         tOnly.map((s) => { const g = s.querySelector(".sum-src, .lead-sum");
+           return g ? Math.round(g.getBoundingClientRect().height) + "/" +
+             Math.round(s.getBoundingClientRect().height) : "无文字行"; }).join(" ") + " px"
+         : "本批数据里没有无配图的重点条目（断言未生效）");
     ok(TAG + "每屏等高（矮的几屏不塌成矮条）",
        slides.every((s) => Math.abs(s.getBoundingClientRect().height -
          slides[0].getBoundingClientRect().height) <= 2),
