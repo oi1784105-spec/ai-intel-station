@@ -231,6 +231,22 @@ HARNESS = r"""
      [...document.querySelectorAll("#srcBody td button.chip")].every((n) => !/[\u4e00-\u9fff]/.test(n.textContent)));
   ok("重点区源名为英文",
      [...document.querySelectorAll("#highlights .hl-src")].every((n) => !/[\u4e00-\u9fff]/.test(n.textContent)));
+  // 验收条款 02：每条资讯展示标题 +「简短摘要或来源简介」。源站 feed 未给摘要的条目
+  // （实测 85 / 398）必须退到来源简介，且该行以「来源简介：」开头 —— 否则读者会把
+  // 我们对这个媒体的说明误当成文章摘要。判据只看卡片内的真实节点，不扫全文。
+  const cardDescs = [...document.querySelectorAll("#cards li.card")];
+  const noDesc = cardDescs.filter((li) => !li.querySelector(".card-txt p") && !li.querySelector(".card-txt .sum-src"));
+  ok("每张卡片都带摘要或来源简介（验收条款 02）", noDesc.length === 0,
+     cardDescs.length + " 张卡片，缺描述 " + noDesc.length + " 张");
+  const blurbLines = [...document.querySelectorAll("#cards li.card .card-txt .sum-src")]
+    .filter((n) => n.textContent.startsWith("来源简介："));
+  ok("来源简介兜底行带显式前缀，与「摘要：来源 feed 原文」区分",
+     blurbLines.length > 0 && blurbLines.every((n) => n.textContent.length > 5),
+     "本页 " + blurbLines.length + " 条来源简介行");
+  const srcIds = [...new Set(articles.map((a) => a.source_id))];
+  ok("数据里出现的每个来源都能查到来源简介",
+     srcIds.every((id) => ((SOURCE_BLURB || {})[id] || "").length > 0),
+     srcIds.filter((id) => !((SOURCE_BLURB || {})[id] || "")).join(",") || (srcIds.length + " 个来源全覆盖"));
   ok("界面文案仍为中文", (document.querySelector("h1") || {}).textContent === "每日 AI 情报站");
   ok("主题已显式设置",
      ["dark", "light"].includes(document.documentElement.getAttribute("data-theme")),
@@ -737,7 +753,14 @@ window.addEventListener("load", function () {
     ok(TAG + "头条正文按真实类名拿到了排版（13.5–15.5px 衬线）",
        !!heroSum && fs(heroSum) >= 13.5 && fs(heroSum) <= 15.5,
        heroSum ? fs(heroSum) + "px " + getComputedStyle(heroSum).fontFamily.split(",")[0].replace(/["']/g, "")
-               : "找不到头条正文");
+                      : "找不到头条正文");
+
+    // 验收条款 02 在窄屏同样成立：手机卡片也不能只剩一个标题。
+    const mDescs = [...document.querySelectorAll("#cards li.card")];
+    const mNoDesc = mDescs.filter((li) => !li.querySelector(".card-txt p") && !li.querySelector(".card-txt .sum-src"));
+    ok(TAG + "窄屏卡片同样带摘要或来源简介",
+       mDescs.length > 0 && mNoDesc.length === 0,
+       mDescs.length + " 张卡片，缺描述 " + mNoDesc.length + " 张");
 
     // ---------- 「今日重点」横向轮播（第五版）----------
     // 坏的样子有两种：一种点不动（假按钮），一种点得动但看不见在动。

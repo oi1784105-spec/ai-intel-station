@@ -13,6 +13,13 @@ build/
 *.tmp
 *.bak
 
+# 密钥 / 环境变量：本项目当前**不需要任何密钥**（全部为公开 RSS / 公开 API），
+# 这里仍按惯例挡住，避免以后随手加 token 时被误提交。
+.env
+.env.*
+*.env
+secrets.json
+
 # Agent 工作状态（实施计划的正式版本在 docs/PLAN.md）
 .hermes/
 

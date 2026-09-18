@@ -355,7 +355,7 @@ h1.brand-name{margin:0;font-weight:600}
 .card:hover h3{color:var(--fg-2)}
 .card p{font-size:12px;line-height:1.7;color:var(--fg-2);margin:0;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.card .sum-src{display:block;font-family:var(--mono);font-size:10px;color:var(--fg-dim);margin-top:6px}
+.sum-src{display:block;font-family:var(--mono);font-size:10px;color:var(--fg-dim);margin-top:6px}
 .card .shot{height:112px;border:1px solid var(--line);background:var(--thumb-bg);overflow:hidden;margin:0 0 12px}
 .card .shot img{width:100%;height:100%;object-fit:cover;object-position:center}
 /* 无图占位块：中性边框 + 源色淡底 + 源色字母标识，一眼看出是设计的一部分，
@@ -864,7 +864,8 @@ function editionOf(ms) {
 /* 相对时间用「此刻」而不是数据生成时刻：读者关心的是「离我多久」。
    但窗口类筛选（今天 / 近 7 天）用 generated_at 作基准，口径才与管线一致。 */
 function relTime(ms, now) {
-  if (ms == null) return "时间未知";
+  // 缺失时只说「发布时间未知」，绝不拿 first_seen_at（采集时间）顶上去冒充发布时间
+  if (ms == null) return "发布时间未知";
   const diff = now - ms;
   if (diff < 60e3) return diff < 0 ? "刚刚" : "1 分钟内";
   const min = Math.floor(diff / 60e3);
@@ -889,6 +890,33 @@ function monogram(name) {
   if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
   return (words[0][0] + words[1][0]).toUpperCase();
 }
+
+/* ---------------- 来源简介：验收条款 02 的兜底文案 ----------------
+   条款要求「每条资讯展示标题、简短摘要或来源简介」。实测 85 / 398 条来自源站 feed
+   未提供摘要，这些卡片原先只有标题。这里按 source_id 补一句**关于这个源是什么的说明**，
+   只说订阅配置里能核实的属性（语言 / 类型 / 是否官方 / 是否做相关性过滤），
+   不描述任何文章内容 —— 界面上一律以「来源简介：」开头，与「摘要：来源 feed 原文」显式区分，
+   读者不会把我们的说明误当成文章摘要。 */
+const SOURCE_BLURB = {
+  "qbitai": "中文 AI 垂类源",
+  "infoq-ai": "InfoQ 中文站的 AI 频道",
+  "leiphone": "中文科技媒体，本站对该源做 AI 相关性过滤",
+  "oschina": "中文开源技术社区，本站对该源做 AI 相关性过滤",
+  "ifanr": "中文科技与消费电子媒体，本站对该源做 AI 相关性过滤",
+  "sspai": "中文数字生活媒体，本站对该源做 AI 相关性过滤",
+  "solidot": "中文科技资讯站，本站对该源做 AI 相关性过滤",
+  "tmtpost": "中文财经科技媒体，本站对该源做 AI 相关性过滤",
+  "openai": "OpenAI 官方新闻源",
+  "google-ai": "Google 官方 AI 博客",
+  "techcrunch-ai": "TechCrunch 的 AI 频道",
+  "verge-ai": "The Verge 的 AI 频道",
+  "mit-techreview-ai": "MIT Technology Review 的 AI 频道",
+  "simonw": "Simon Willison 的博客，本站对该源做 AI 相关性过滤",
+  "hn": "Hacker News 热度榜（Algolia API，附分数与评论数）",
+  "arxiv": "arXiv cs.AI 论文预印本（仅 new / replace）",
+  "venturebeat-ai": "留档源，已知停更，不参与日常采集",
+};
+function sourceBlurb(a) { return SOURCE_BLURB[(a && a.source_id) || ""] || ""; }
 
 /* ---------------- 本地存储：全部只写本机浏览器，不上传 ---------------- */
 function storeGet(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
@@ -1136,7 +1164,11 @@ function leadHero(item, now) {
   const h = el("h3");
   h.appendChild(link(null, item.title || "(无标题)", item.url));
   hero.appendChild(h);
-  if (item.summary) hero.appendChild(el("p", "lead-sum", item.summary));
+  if (item.summary) {
+    hero.appendChild(el("p", "lead-sum", item.summary));
+  } else if (sourceBlurb(item)) {
+    hero.appendChild(el("span", "sum-src", "来源简介：" + sourceBlurb(item)));
+  }
   hero.appendChild(leadFigure(item));
   const cross = leadCross(item);
   if (cross) hero.appendChild(cross);
@@ -1172,7 +1204,11 @@ function leadSideItem(item, index, now, compact) {
   const h = el(compact ? "h5" : "h4");
   h.appendChild(link(null, item.title || "(无标题)", item.url));
   box.appendChild(h);
-  if (item.summary) box.appendChild(el("p", "lead-sum", item.summary));
+  if (item.summary) {
+    box.appendChild(el("p", "lead-sum", item.summary));
+  } else if (sourceBlurb(item)) {
+    box.appendChild(el("span", "sum-src", "来源简介：" + sourceBlurb(item)));
+  }
   const foot = el("div", "lead-foot");
   const tags = el("span", "tags");
   reasonChips(item).slice(0, compact ? 1 : 2).forEach((c) => tags.appendChild(c));
@@ -1734,8 +1770,14 @@ function cardFor(a, now) {
   a1.addEventListener("click", () => setRead(a, li));   // 点开即视为已读
   h3.appendChild(a1);
   txt.appendChild(h3);
-  if (a.summary) txt.appendChild(el("p", null, a.summary));
-  if (a.summary_source === "feed") txt.appendChild(el("span", "sum-src", "摘要：来源 feed 原文"));
+  if (a.summary) {
+    txt.appendChild(el("p", null, a.summary));
+    if (a.summary_source === "feed") txt.appendChild(el("span", "sum-src", "摘要：来源 feed 原文"));
+  } else {
+    // 源站 feed 未给摘要：退到「来源简介」，并把话说清楚是来源说明而不是文章摘要
+    const b = sourceBlurb(a);
+    if (b) txt.appendChild(el("span", "sum-src", "来源简介：" + b));
+  }
   main.appendChild(txt);
   main.appendChild(thumbFor(a));
   li.appendChild(main);
