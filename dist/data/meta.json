@@ -1,13 +1,28 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260917T235931Z-2cd145",
-  "last_run_at": "2026-09-17T23:59:31Z",
-  "last_success_at": "2026-09-17T23:59:31Z",
-  "total_articles": 422,
+  "last_run_id": "20260918T020957Z-e4a378",
+  "last_run_at": "2026-09-18T02:09:57Z",
+  "last_success_at": "2026-09-18T02:09:57Z",
+  "total_articles": 432,
   "source_count": 16,
-  "success_rate_7d": 0.6957,
+  "success_rate_7d": 0.7083,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "bc0cb242a8b24c70",
+      "title": "700 个 AI 智能体本应彼此隔离，却建起留言板联手攻击，独立调查还原 Hugging Face 事件",
+      "url": "https://www.infoq.cn/article/W3tOIQhV5pKhsXP6mgWw?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 6.26,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及安全"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
     {
       "article_id": "45231684ed619de6",
       "title": "【钛晨报】部署八个方面重点任务，《文化和旅游发展“十五五”规划》印发；美“星舰”计划进行首次地球轨道试飞；Anew Labs已完成2.9亿美元融资，红杉中国、高瓴、IDG、五源、高榕等参与",
@@ -15,7 +30,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 5.97,
+      "score": 5.924,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、融资/并购"
@@ -30,7 +45,7 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.95,
+      "score": 5.905,
       "reasons": [
         "官方来源，涉及融资/并购",
         "官方一手来源",
@@ -46,7 +61,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aaba3c3140cd.png?imageView2/2/w/740",
-      "score": 5.776,
+      "score": 5.73,
       "reasons": [
         "命中多重信号：安全、监管/政策"
       ],
@@ -54,29 +69,15 @@
       "independent_sources": 1
     },
     {
-      "article_id": "f199c3b38d265fe3",
-      "title": "豆包座舱助手发布，首款合作车型即将开启预售",
-      "url": "https://www.leiphone.com/category/industrynews/4zVPQ7JUQYXHp2wh.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab90b323607.jpg?imageMogr2/quality/90",
-      "score": 5.747,
+      "article_id": "1f9edf137c60f164",
+      "title": "浏览器 AI 助手新增定时任务、页面调试工具与侧边栏作用域模式",
+      "url": "https://www.oschina.net/news/502557",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.727,
       "reasons": [
-        "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "80f8e5beaba21391",
-      "title": "周鸿祎：不会再投资新能源汽车，已经吃过一次亏；OpenAI洽谈新融资，估值或超1.2万亿美元；花呗、抖音月付等将退出支付选项？多平台回应",
-      "url": "https://www.leiphone.com/category/zaobao/adwK3kvuEMxa03Tj.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260917/6aab3509cbe8b.png?imageMogr2/quality/90",
-      "score": 5.608,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1

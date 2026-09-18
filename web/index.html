@@ -232,6 +232,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .lead-thumb{width:112px;height:80px;flex-shrink:0;border:1px solid var(--line);
   background:var(--thumb-bg);overflow:hidden}
+.lead-ph{display:none}
 .lead-thumb img{width:100%;height:100%;object-fit:cover;object-position:center}
 .lead-mini{display:grid;grid-template-columns:1fr}
 @media (min-width:640px){.lead-mini{grid-template-columns:1fr 1fr}}
@@ -529,6 +530,17 @@ footer code{font-family:var(--mono);font-size:11px;background:var(--surface-cont
   #highlights .hl .lead-foot{margin-top:auto}
   #highlights .lead-item:has(.lead-thumb) .lead-foot{flex:1 1 auto;align-items:flex-end}
   #highlights .lead-thumb{height:auto;min-height:80px;align-self:stretch}
+  /* 第六版：没有配图的重点条目在窄屏补一个源色占位块，让它自己吃掉余量 ——
+     否则这一屏只有标题 + 一行来源简介，在等高的轨道里会塌成「半张白卡」
+     （第六版自检时实测第 2 屏只填 46%，断言「每屏 ≥75%」当场报红）。 */
+  #highlights .lead-ph{display:flex;flex:1 1 auto;min-height:110px;flex-direction:column;gap:7px;
+    align-items:center;justify-content:center;border:1px solid var(--line);
+    background:hsl(var(--src-hue,0) 30% 18%);color:hsl(var(--src-hue,0) 60% 78%)}
+  #highlights .lead-ph .ph-mono{font-family:var(--mono);font-size:20px;font-weight:600;letter-spacing:.06em}
+  #highlights .lead-ph .ph-note{font-family:var(--mono);font-size:10.5px;font-style:normal;
+    letter-spacing:.04em;opacity:.72}
+  :root[data-theme="light"] #highlights .lead-ph{background:hsl(var(--src-hue,0) 44% 93%);
+    color:hsl(var(--src-hue,0) 40% 32%)}
   /* 正文摘要自己吃掉余量：每屏高度由最高那屏定，矮的几屏与其留一大块白，
      不如多显示几行正文（末尾仍是省略号，看到「…」就知道还有内容）。
      这样空白由数据自己填 —— 摘要长就多显示，短就少显示，不用写死高度。 */
@@ -1169,6 +1181,7 @@ function leadHero(item, now) {
   } else if (sourceBlurb(item)) {
     hero.appendChild(el("span", "sum-src", "来源简介：" + sourceBlurb(item)));
   }
+  if (!item.image_url) hero.appendChild(leadPh(item));  // 窄屏撑住这一屏（桌面隐藏）
   hero.appendChild(leadFigure(item));
   const cross = leadCross(item);
   if (cross) hero.appendChild(cross);
@@ -1209,6 +1222,7 @@ function leadSideItem(item, index, now, compact) {
   } else if (sourceBlurb(item)) {
     box.appendChild(el("span", "sum-src", "来源简介：" + sourceBlurb(item)));
   }
+  if (!item.image_url) box.appendChild(leadPh(item));   // 窄屏撑住这一屏（桌面隐藏）
   const foot = el("div", "lead-foot");
   const tags = el("span", "tags");
   reasonChips(item).slice(0, compact ? 1 : 2).forEach((c) => tags.appendChild(c));
@@ -1686,6 +1700,17 @@ function toggleBookmark(a, btn) {
 }
 
 /* ---------------- 卡片 ---------------- */
+function leadPh(a) {
+  // 窄屏轮播专用：没有配图的重点条目补一个「源色 + 首字母」占位块，和列表卡 .thumb.ph 同一套语言。
+  // 否则这一屏只剩标题 + 一行来源简介，在等高的轨道里会塌成半张白卡（第六版自检实测第 2 屏只填 46%）。
+  // 桌面端 .lead-ph 恒 display:none，构造上进不了电脑端版式。
+  const box = el("div", "lead-ph");
+  box.style.setProperty("--src-hue", String(hueOf(a.source_id || a.source_name_en)));
+  box.appendChild(el("span", "ph-mono", monogram(a.source_name_en)));
+  box.appendChild(el("em", "ph-note", "本条来源未提供配图"));
+  return box;
+}
+
 /* 缩略图盒子恒定存在：有图放图，没图放「源色 + 来源字母」的占位块。
    两种情况下盒子尺寸完全一致，所以卡片高度不随配图有无跳动。 */
 function thumbFor(a) {
