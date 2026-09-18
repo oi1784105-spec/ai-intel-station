@@ -20,7 +20,7 @@ build/
 *.env
 secrets.json
 
-# Agent 工作状态（实施计划的正式版本在 docs/PLAN.md）
+# Agent 工作状态（本地临时文件）
 .hermes/
 
 # 编辑器 / 系统
