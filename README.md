@@ -9,7 +9,7 @@
 
 ![桌面端](docs/screenshots/desktop.jpg)
 
-![移动端](docs/screenshots/mobile.jpg)
+<img src="docs/screenshots/mobile.jpg" width="390" alt="移动端">
 
 页面只有两个视图：「今日重点」按事件聚合展示跨源报道，卡片上写明入选理由；「全部情报」可以按关键词、来源、
 语言、今天 / 最近 7 天筛选。
