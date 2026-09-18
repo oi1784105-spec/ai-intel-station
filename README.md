@@ -85,7 +85,7 @@ docs/screenshots/    截图
 
 | 源 | 语言 | 类型 | 说明 |
 | --- | --- | --- | --- |
-| 量子位、InfoQ 中国 AI | zh | rss | AI 垂类，权重最高 |
+| 量子位、InfoQ 中国 AI | zh | rss | AI 垂类，权重高于通用源 |
 | 雷锋网、开源中国、爱范儿、少数派、Solidot、钛媒体 | zh | rss | 通用科技，需要 AI 相关性过滤 |
 | OpenAI News、Google AI Blog | en | rss | 官方一手来源 |
 | TechCrunch AI、The Verge AI、MIT Tech Review AI | en | rss / atom | AI 垂类 |
