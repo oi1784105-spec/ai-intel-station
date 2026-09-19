@@ -1,13 +1,28 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260918T235919Z-da6bf6",
-  "last_run_at": "2026-09-18T23:59:19Z",
-  "last_success_at": "2026-09-18T23:59:19Z",
-  "total_articles": 539,
+  "last_run_id": "20260919T235750Z-2f5348",
+  "last_run_at": "2026-09-19T23:57:50Z",
+  "last_success_at": "2026-09-19T23:57:50Z",
+  "total_articles": 584,
   "source_count": 16,
-  "success_rate_7d": 0.7407,
+  "success_rate_7d": 0.75,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "5dea5bcb21a9e7e7",
+      "title": "Microsoft director: AI scraping 'the largest theft of labor in human history'",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.858,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "HN 104 分 · 29 评论"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
     {
       "article_id": "58d1c7f5bb661945",
       "title": "Researchers used Anthropic’s Claude to hack into OpenAI",
@@ -15,7 +30,7 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.225,
+      "score": 5.726,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及安全"
@@ -24,13 +39,29 @@
       "independent_sources": 2
     },
     {
+      "article_id": "559b0cf1119746d2",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.451,
+      "reasons": [
+        "官方来源，涉及发布/上线",
+        "官方一手来源",
+        "涉及发布/上线"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
       "article_id": "113368b4b5190036",
       "title": "ColorOS 17 发布，OPPO 开始把手机 OS 推向 AgentOS",
       "url": "https://www.infoq.cn/article/gDSf7xBmd08H0eB0GG11?utm_source=rss&utm_medium=article",
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 5.948,
+      "score": 5.449,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线"
@@ -45,42 +76,13 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 5.806,
+      "score": 5.306,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及安全"
       ],
       "cluster_size": 2,
       "independent_sources": 2
-    },
-    {
-      "article_id": "b3566f3850891301",
-      "title": "ZCode, the GLM coding agent, silently uploads your Git history",
-      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.757,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "HN 258 分 · 13 评论"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "633d1f9dd0e47bef",
-      "title": "在 AI「囤粮潮」里，拆解智谱 50 亿美元的「技术账本」",
-      "url": "https://www.leiphone.com/category/industrynews/U0Od1SeYkIPA98cI.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260918/6aacd97738d9d.jpg?imageMogr2/quality/90",
-      "score": 5.735,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
     }
   ]
 }
