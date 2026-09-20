@@ -1,88 +1,83 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260919T235750Z-2f5348",
-  "last_run_at": "2026-09-19T23:57:50Z",
-  "last_success_at": "2026-09-19T23:57:50Z",
-  "total_articles": 584,
+  "last_run_id": "20260920T235742Z-35bcdb",
+  "last_run_at": "2026-09-20T23:57:42Z",
+  "last_success_at": "2026-09-20T23:57:42Z",
+  "total_articles": 655,
   "source_count": 16,
-  "success_rate_7d": 0.75,
+  "success_rate_7d": 0.7586,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "5dea5bcb21a9e7e7",
-      "title": "Microsoft director: AI scraping 'the largest theft of labor in human history'",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.858,
+      "article_id": "c2e8c8e4f5510d38",
+      "title": "阶跃新旗舰 Step 5 Preview 发布，跻身 AA 榜单全球开源前三",
+      "url": "https://www.leiphone.com/category/industrynews/yU1FPmKgLcs3SWmO.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260920//6aaf400109ed2.jpg?imageMogr2/quality/90",
+      "score": 7.316,
       "reasons": [
-        "2 个独立来源同时报道",
-        "HN 104 分 · 29 评论"
+        "3 个独立来源同时报道",
+        "涉及发布/上线、开源、基准/榜单"
       ],
-      "cluster_size": 2,
-      "independent_sources": 2
+      "cluster_size": 3,
+      "independent_sources": 3
     },
     {
-      "article_id": "58d1c7f5bb661945",
-      "title": "Researchers used Anthropic’s Claude to hack into OpenAI",
-      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
+      "article_id": "48daf326e7403bd4",
+      "title": "《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上",
+      "url": "https://www.qbitai.com/2026/09/492849.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 5.726,
+      "score": 5.959,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及安全"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "559b0cf1119746d2",
-      "title": "Introducing the Australian Youth Safety Blueprint",
-      "url": "https://openai.com/index/australian-youth-safety-blueprint",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.451,
-      "reasons": [
-        "官方来源，涉及发布/上线",
-        "官方一手来源",
-        "涉及发布/上线"
+        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "113368b4b5190036",
-      "title": "ColorOS 17 发布，OPPO 开始把手机 OS 推向 AgentOS",
-      "url": "https://www.infoq.cn/article/gDSf7xBmd08H0eB0GG11?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.449,
+      "article_id": "fcf8678845a73baf",
+      "title": "沙利文发布2026年智能体市场研究报告：WorkBuddy稳居企业级、个人应用双榜第一",
+      "url": "https://www.leiphone.com/category/industrynews/U0o8Z4sG9l26lvTQ.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260920/6aaf5da52eae9.png?imageMogr2/quality/90",
+      "score": 5.689,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线"
+        "命中多重信号：发布/上线、基准/榜单"
       ],
-      "cluster_size": 2,
-      "independent_sources": 2
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
-      "article_id": "bc0cb242a8b24c70",
-      "title": "700 个 AI 智能体本应彼此隔离，却建起留言板联手攻击，独立调查还原 Hugging Face 事件",
-      "url": "https://www.infoq.cn/article/W3tOIQhV5pKhsXP6mgWw?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.306,
+      "article_id": "21bfe915385d9a83",
+      "title": "【钛晨报】分类推进高校改革，中办、国办最新部署；启元机器人发布个人机器人，19999元起售；长鑫科技第五代技术平台正式量产",
+      "url": "https://www.tmtpost.com/8146468.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2026/09/69cd65054bfcfff874b0800563e8f895_1789916360.jpg",
+      "score": 5.637,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及安全"
+        "命中多重信号：发布/上线、融资/并购、监管/政策"
       ],
-      "cluster_size": 2,
-      "independent_sources": 2
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "854027030cadb608",
+      "title": "MiniMax Code CLI 开源，取得了 76.7% 的任务通过率",
+      "url": "https://www.oschina.net/news/502619/minimax-code-cli",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.531,
+      "reasons": [
+        "命中多重信号：开源、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
     }
   ]
 }
