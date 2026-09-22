@@ -1,36 +1,21 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260920T235742Z-35bcdb",
-  "last_run_at": "2026-09-20T23:57:42Z",
-  "last_success_at": "2026-09-20T23:57:42Z",
-  "total_articles": 655,
+  "last_run_id": "20260922T003911Z-cf3e7b",
+  "last_run_at": "2026-09-22T00:39:11Z",
+  "last_success_at": "2026-09-22T00:39:11Z",
+  "total_articles": 787,
   "source_count": 16,
-  "success_rate_7d": 0.7586,
+  "success_rate_7d": 0.7667,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "c2e8c8e4f5510d38",
-      "title": "阶跃新旗舰 Step 5 Preview 发布，跻身 AA 榜单全球开源前三",
-      "url": "https://www.leiphone.com/category/industrynews/yU1FPmKgLcs3SWmO.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260920//6aaf400109ed2.jpg?imageMogr2/quality/90",
-      "score": 7.316,
-      "reasons": [
-        "3 个独立来源同时报道",
-        "涉及发布/上线、开源、基准/榜单"
-      ],
-      "cluster_size": 3,
-      "independent_sources": 3
-    },
-    {
-      "article_id": "48daf326e7403bd4",
-      "title": "《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上",
-      "url": "https://www.qbitai.com/2026/09/492849.html",
+      "article_id": "3faffba958e0b043",
+      "title": "长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案",
+      "url": "https://www.qbitai.com/2026/09/493235.html",
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 5.959,
+      "score": 6.051,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -38,43 +23,60 @@
       "independent_sources": 1
     },
     {
-      "article_id": "fcf8678845a73baf",
-      "title": "沙利文发布2026年智能体市场研究报告：WorkBuddy稳居企业级、个人应用双榜第一",
-      "url": "https://www.leiphone.com/category/industrynews/U0o8Z4sG9l26lvTQ.html",
+      "article_id": "d37f5b2c59270d01",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.936,
+      "reasons": [
+        "官方来源，涉及发布/上线",
+        "官方一手来源",
+        "涉及发布/上线"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "1737e5af7ddaed27",
+      "title": "Amazon blocks Meta’s new Muse AI agent from shopping on amazon.com",
+      "url": "https://www.forbes.com/sites/jonmarkman/2026/09/21/amazon-blocks-metas-new-muse-ai-agent-from-shopping-on-amazoncom/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.83,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "HN 139 分 · 146 评论"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "a3e78cc07c06ab9a",
+      "title": "早报｜曝iPhone Duo量产初期良率仅过六成/小米18 Pro加入硬件级防窥/OpenAI新模型24天攻克百道数学未解难题",
+      "url": "https://www.ifanr.com/1679313?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "source_name": "爱范儿",
+      "source_name_en": "iFanr",
+      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/09/img_6ab1c7a129558.png",
+      "score": 5.79,
+      "reasons": [
+        "命中多重信号：开源、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "415e1374cf28c22e",
+      "title": "上市遇故障！iPhone 18 Pro曝出死机问题，苹果启动调查；国产突围！长鑫科技宣布第五代技术平台正式量产；特斯拉Roadster开启预定",
+      "url": "https://www.leiphone.com/category/zaobao/W5fLfeynETtTWpTt.html",
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260920/6aaf5da52eae9.png?imageMogr2/quality/90",
-      "score": 5.689,
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260921/6ab0c66fb34f3.png?imageMogr2/quality/90",
+      "score": 5.598,
       "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "21bfe915385d9a83",
-      "title": "【钛晨报】分类推进高校改革，中办、国办最新部署；启元机器人发布个人机器人，19999元起售；长鑫科技第五代技术平台正式量产",
-      "url": "https://www.tmtpost.com/8146468.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2026/09/69cd65054bfcfff874b0800563e8f895_1789916360.jpg",
-      "score": 5.637,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "854027030cadb608",
-      "title": "MiniMax Code CLI 开源，取得了 76.7% 的任务通过率",
-      "url": "https://www.oschina.net/news/502619/minimax-code-cli",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.531,
-      "reasons": [
-        "命中多重信号：开源、基准/榜单"
+        "命中多重信号：发布/上线、融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
