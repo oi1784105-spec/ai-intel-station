@@ -1,13 +1,71 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260922T003911Z-cf3e7b",
-  "last_run_at": "2026-09-22T00:39:11Z",
+  "last_run_id": "20260923T000820Z-b60b69",
+  "last_run_at": "2026-09-23T00:08:20Z",
   "last_success_at": "2026-09-22T00:39:11Z",
-  "total_articles": 787,
+  "total_articles": 866,
   "source_count": 16,
-  "success_rate_7d": 0.7667,
+  "success_rate_7d": 0.7419,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "b31a42e189d6854f",
+      "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
+      "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 7.139,
+      "reasons": [
+        "3 个独立来源同时报道",
+        "涉及发布/上线"
+      ],
+      "cluster_size": 3,
+      "independent_sources": 3
+    },
+    {
+      "article_id": "46a8cb077ff0cde0",
+      "title": "Nscale’s IPO will test Wall Street’s appetite for concentrated AI bets once again",
+      "url": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 6.188,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及融资/并购"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "84d9a2f3da064b54",
+      "title": "《AGI市场观察》发布：四款国产模型周用量破10万亿tokens，DeepSeek与混元占比近半",
+      "url": "https://www.leiphone.com/category/industrynews/IRBkL55eFXZRCHiy.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260922/6ab265b53fd63.png?imageMogr2/quality/90",
+      "score": 5.835,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "a7253ef8a73b0d82",
+      "title": "【钛晨报】事关轻工纺织产业发展，三部门最新部署；阿里试水千问平板，与字节押注不同的AI终端；“2026中国民营企业500强”发布",
+      "url": "https://www.tmtpost.com/8149326.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
+      "score": 5.633,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "3faffba958e0b043",
       "title": "长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案",
@@ -15,68 +73,9 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.051,
+      "score": 5.561,
       "reasons": [
         "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "d37f5b2c59270d01",
-      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.936,
-      "reasons": [
-        "官方来源，涉及发布/上线",
-        "官方一手来源",
-        "涉及发布/上线"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "1737e5af7ddaed27",
-      "title": "Amazon blocks Meta’s new Muse AI agent from shopping on amazon.com",
-      "url": "https://www.forbes.com/sites/jonmarkman/2026/09/21/amazon-blocks-metas-new-muse-ai-agent-from-shopping-on-amazoncom/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.83,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "HN 139 分 · 146 评论"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "a3e78cc07c06ab9a",
-      "title": "早报｜曝iPhone Duo量产初期良率仅过六成/小米18 Pro加入硬件级防窥/OpenAI新模型24天攻克百道数学未解难题",
-      "url": "https://www.ifanr.com/1679313?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/09/img_6ab1c7a129558.png",
-      "score": 5.79,
-      "reasons": [
-        "命中多重信号：开源、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "415e1374cf28c22e",
-      "title": "上市遇故障！iPhone 18 Pro曝出死机问题，苹果启动调查；国产突围！长鑫科技宣布第五代技术平台正式量产；特斯拉Roadster开启预定",
-      "url": "https://www.leiphone.com/category/zaobao/W5fLfeynETtTWpTt.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260921/6ab0c66fb34f3.png?imageMogr2/quality/90",
-      "score": 5.598,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
