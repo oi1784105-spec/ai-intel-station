@@ -1,27 +1,56 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260923T000820Z-b60b69",
-  "last_run_at": "2026-09-23T00:08:20Z",
-  "last_success_at": "2026-09-22T00:39:11Z",
-  "total_articles": 866,
+  "last_run_id": "20260924T001824Z-be17ae",
+  "last_run_at": "2026-09-24T00:18:24Z",
+  "last_success_at": "2026-09-24T00:18:24Z",
+  "total_articles": 1007,
   "source_count": 16,
-  "success_rate_7d": 0.7419,
+  "success_rate_7d": 0.8667,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "b31a42e189d6854f",
-      "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
-      "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
+      "article_id": "1d5a9cc2d9509da8",
+      "title": "Introducing MentalHealthBench",
+      "url": "https://openai.com/index/introducing-mentalhealthbench",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 7.139,
+      "score": 5.902,
       "reasons": [
-        "3 个独立来源同时报道",
-        "涉及发布/上线"
+        "官方来源，涉及基准/榜单",
+        "官方一手来源",
+        "涉及基准/榜单"
       ],
-      "cluster_size": 3,
-      "independent_sources": 3
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "4dd5ba5d090ef5cc",
+      "title": "蚂蚁密算发布企业级可信智能云服务平台“密算一号”，启动首批定向邀测",
+      "url": "https://www.leiphone.com/category/industrynews/vcFXR69YQUTL9k43.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260923/6ab39a9d621bf.jpg?imageMogr2/quality/90",
+      "score": 5.789,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "b6ac7fdedd6c638c",
+      "title": "启仔远仔，想成为第一个被你带回家的硅基伙伴",
+      "url": "https://www.leiphone.com/category/ai/egX12nldi7K2aLbu.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260923/6ab35c08dabf4.jpg?imageMogr2/quality/90",
+      "score": 5.697,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
       "article_id": "46a8cb077ff0cde0",
@@ -30,7 +59,7 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.188,
+      "score": 5.685,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及融资/并购"
@@ -39,43 +68,15 @@
       "independent_sources": 2
     },
     {
-      "article_id": "84d9a2f3da064b54",
-      "title": "《AGI市场观察》发布：四款国产模型周用量破10万亿tokens，DeepSeek与混元占比近半",
-      "url": "https://www.leiphone.com/category/industrynews/IRBkL55eFXZRCHiy.html",
+      "article_id": "0f7b50e0667755d5",
+      "title": "深度拆解 MiMo-V2.6：1M 上下文只是表面，2.5 万条轨迹才是底牌",
+      "url": "https://www.leiphone.com/category/ai/f8vJztYMmCQ3ENED.html",
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260922/6ab265b53fd63.png?imageMogr2/quality/90",
-      "score": 5.835,
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260923/6ab3503bb4c00.jpg?imageMogr2/quality/90",
+      "score": 5.679,
       "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "a7253ef8a73b0d82",
-      "title": "【钛晨报】事关轻工纺织产业发展，三部门最新部署；阿里试水千问平板，与字节押注不同的AI终端；“2026中国民营企业500强”发布",
-      "url": "https://www.tmtpost.com/8149326.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2024/07/20240718005349865.jpg",
-      "score": 5.633,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "3faffba958e0b043",
-      "title": "长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案",
-      "url": "https://www.qbitai.com/2026/09/493235.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": null,
-      "score": 5.561,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "命中多重信号：发布/上线、开源、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
