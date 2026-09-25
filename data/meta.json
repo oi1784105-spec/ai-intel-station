@@ -1,13 +1,70 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260924T001824Z-be17ae",
-  "last_run_at": "2026-09-24T00:18:24Z",
-  "last_success_at": "2026-09-24T00:18:24Z",
-  "total_articles": 1007,
+  "last_run_id": "20260925T002043Z-89c4a4",
+  "last_run_at": "2026-09-25T00:20:43Z",
+  "last_success_at": "2026-09-25T00:20:43Z",
+  "total_articles": 1099,
   "source_count": 16,
-  "success_rate_7d": 0.8667,
+  "success_rate_7d": 0.9,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "185ddb0abcfc6b08",
+      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+      "url": "https://github.com/devdotfast/whiteboard",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.822,
+      "reasons": [
+        "社区热度 170 分",
+        "涉及开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "0e32f33f8dfba327",
+      "title": "龙蜥社区SkillHub：Workshop实战、云栖颁奖、推荐系统发布，三箭齐发",
+      "url": "https://www.oschina.net/news/502739",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.511,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "5ddf5261653ed564",
+      "title": "龙蜥社区SkillHub推荐系统正式发布，首批技能生态奖项揭晓",
+      "url": "https://www.oschina.net/news/502738",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.502,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "03186d87e60e6ab5",
+      "title": "全球首个！飞捷科思正式推出面向全模态世界感知和物理状态推理的评测基准FysicsReason",
+      "url": "https://www.oschina.net/news/502731",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.456,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "1d5a9cc2d9509da8",
       "title": "Introducing MentalHealthBench",
@@ -15,68 +72,11 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.902,
+      "score": 5.401,
       "reasons": [
         "官方来源，涉及基准/榜单",
         "官方一手来源",
         "涉及基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "4dd5ba5d090ef5cc",
-      "title": "蚂蚁密算发布企业级可信智能云服务平台“密算一号”，启动首批定向邀测",
-      "url": "https://www.leiphone.com/category/industrynews/vcFXR69YQUTL9k43.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260923/6ab39a9d621bf.jpg?imageMogr2/quality/90",
-      "score": 5.789,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "b6ac7fdedd6c638c",
-      "title": "启仔远仔，想成为第一个被你带回家的硅基伙伴",
-      "url": "https://www.leiphone.com/category/ai/egX12nldi7K2aLbu.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260923/6ab35c08dabf4.jpg?imageMogr2/quality/90",
-      "score": 5.697,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "46a8cb077ff0cde0",
-      "title": "Nscale’s IPO will test Wall Street’s appetite for concentrated AI bets once again",
-      "url": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
-      "image_url": null,
-      "score": 5.685,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及融资/并购"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "0f7b50e0667755d5",
-      "title": "深度拆解 MiMo-V2.6：1M 上下文只是表面，2.5 万条轨迹才是底牌",
-      "url": "https://www.leiphone.com/category/ai/f8vJztYMmCQ3ENED.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260923/6ab3503bb4c00.jpg?imageMogr2/quality/90",
-      "score": 5.679,
-      "reasons": [
-        "命中多重信号：发布/上线、开源、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
