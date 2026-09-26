@@ -1,13 +1,27 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260925T002043Z-89c4a4",
-  "last_run_at": "2026-09-25T00:20:43Z",
+  "last_run_id": "20260926T002559Z-a641b4",
+  "last_run_at": "2026-09-26T00:25:59Z",
   "last_success_at": "2026-09-25T00:20:43Z",
-  "total_articles": 1099,
+  "total_articles": 1169,
   "source_count": 16,
-  "success_rate_7d": 0.9,
+  "success_rate_7d": 0.7143,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "92ac3f99ca74a328",
+      "title": "Edge AI Daily 早报（9月26日）",
+      "url": "https://www.tmtpost.com/8152902.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": null,
+      "score": 5.641,
+      "reasons": [
+        "命中多重信号：发布/上线、开源、融资/并购、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "185ddb0abcfc6b08",
       "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
@@ -15,10 +29,38 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.822,
+      "score": 5.411,
       "reasons": [
-        "社区热度 170 分",
+        "社区热度 396 分",
         "涉及开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "e7df320dd4ea0229",
+      "title": "五引擎微内核架构与分层解耦的工程实践",
+      "url": "https://www.oschina.net/news/502743",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.262,
+      "reasons": [
+        "命中多重信号：开源、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "b005ba80ec50da9f",
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.06,
+      "reasons": [
+        "社区热度 367 分"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -30,53 +72,9 @@
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.511,
+      "score": 5.009,
       "reasons": [
         "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "5ddf5261653ed564",
-      "title": "龙蜥社区SkillHub推荐系统正式发布，首批技能生态奖项揭晓",
-      "url": "https://www.oschina.net/news/502738",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.502,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "03186d87e60e6ab5",
-      "title": "全球首个！飞捷科思正式推出面向全模态世界感知和物理状态推理的评测基准FysicsReason",
-      "url": "https://www.oschina.net/news/502731",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.456,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "1d5a9cc2d9509da8",
-      "title": "Introducing MentalHealthBench",
-      "url": "https://openai.com/index/introducing-mentalhealthbench",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.401,
-      "reasons": [
-        "官方来源，涉及基准/榜单",
-        "官方一手来源",
-        "涉及基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
