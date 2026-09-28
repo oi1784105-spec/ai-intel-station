@@ -1,53 +1,37 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260927T002104Z-d2df3d",
-  "last_run_at": "2026-09-27T00:21:04Z",
-  "last_success_at": "2026-09-27T00:21:04Z",
-  "total_articles": 1200,
+  "last_run_id": "20260928T002425Z-ab7fb0",
+  "last_run_at": "2026-09-28T00:24:25Z",
+  "last_success_at": "2026-09-28T00:24:25Z",
+  "total_articles": 1227,
   "source_count": 16,
   "success_rate_7d": 0.7143,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "cb028b10481edd72",
-      "title": "Microsoft abandons personal AI chatbot race with Copilot reboot",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot",
+      "article_id": "a365d26f319b69b0",
+      "title": "Ember-1",
+      "url": "https://fireworks.ai/blog/ember-1",
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.277,
+      "score": 5.087,
       "reasons": [
-        "2 个独立来源同时报道",
-        "HN 143 分 · 136 评论"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "92ac3f99ca74a328",
-      "title": "Edge AI Daily 早报（9月26日）",
-      "url": "https://www.tmtpost.com/8152902.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": null,
-      "score": 5.143,
-      "reasons": [
-        "命中多重信号：发布/上线、开源、融资/并购、安全"
+        "社区热度 325 分"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "185ddb0abcfc6b08",
-      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-      "url": "https://github.com/devdotfast/whiteboard",
+      "article_id": "4aa8cdc749d349a2",
+      "title": "There are no \"rogue\" AI agents",
+      "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 4.918,
+      "score": 5.063,
       "reasons": [
-        "社区热度 410 分",
-        "涉及开源"
+        "社区热度 327 分"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -70,6 +54,20 @@
       "article_id": "3faffba958e0b043",
       "title": "长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案",
       "url": "https://www.qbitai.com/2026/09/493235.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
+      "image_url": null,
+      "score": 4.9,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "48daf326e7403bd4",
+      "title": "《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上",
+      "url": "https://www.qbitai.com/2026/09/492849.html",
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
