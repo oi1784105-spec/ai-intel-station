@@ -1,66 +1,64 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260929T013553Z-166f28",
-  "last_run_at": "2026-09-29T01:35:53Z",
-  "last_success_at": "2026-09-29T01:35:53Z",
-  "total_articles": 1342,
+  "last_run_id": "20260930T010931Z-7c792b",
+  "last_run_at": "2026-09-30T01:09:31Z",
+  "last_success_at": "2026-09-30T01:09:31Z",
+  "total_articles": 1458,
   "source_count": 16,
-  "success_rate_7d": 0.7143,
+  "success_rate_7d": 0.8571,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "4b4cfee992d3fc3e",
-      "title": "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
-      "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+      "article_id": "0399f6c76448ab05",
+      "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
+      "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 7.164,
+      "score": 6.269,
       "reasons": [
-        "3 个独立来源同时报道",
-        "涉及融资/并购"
+        "2 个独立来源同时报道",
+        "涉及发布/上线"
       ],
-      "cluster_size": 3,
-      "independent_sources": 3
+      "cluster_size": 2,
+      "independent_sources": 2
     },
     {
-      "article_id": "216d56bba26ca458",
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
+      "article_id": "94b15e9748d84a29",
+      "title": "Trump orders US government to call AI ‘Super Intelligence’",
+      "url": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
+      "source_name": "The Verge AI",
+      "source_name_en": "The Verge AI",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2250207971.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 6.193,
+      "reasons": [
+        "命中多重信号：发布/上线、监管/政策"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "95cdbb9611f11c62",
+      "title": "Edge AI Daily 早报（9月30日）",
+      "url": "https://www.tmtpost.com/8156593.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
       "image_url": null,
-      "score": 5.813,
+      "score": 5.634,
       "reasons": [
-        "官方来源，涉及融资/并购",
-        "官方一手来源",
-        "涉及融资/并购"
+        "命中多重信号：发布/上线、融资/并购、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "d5cf4e5203d533a7",
-      "title": "阿里Qwen-Audio-3.1-TTS拿下权威语音榜全球冠军",
-      "url": "https://www.leiphone.com/category/industrynews/PeujvZKDt4TjyaPK.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260928/6aba435c95e0a.png?imageView2/2/w/740",
-      "score": 5.788,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "fe038bcf3da8a5c7",
-      "title": "早报｜苹果修复iPhone 18 Pro面容ID卡死重启/AMD收购李飞飞世界模型/智界RX上市，余承东：鸿蒙智行「最好开的车」",
-      "url": "https://www.ifanr.com/1682292?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/09/img_6abb047c253a3.png",
-      "score": 5.781,
+      "article_id": "70a4032c7e0dcea7",
+      "title": "派早报：OpenAI 发布 Dot 智能体、Apple 移动睡眠呼吸暂停迹象提示软件国内获批等",
+      "url": "https://sspai.com/post/115197",
+      "source_name": "少数派",
+      "source_name_en": "Sspai",
+      "image_url": null,
+      "score": 5.619,
       "reasons": [
         "命中多重信号：发布/上线、融资/并购"
       ],
@@ -68,15 +66,15 @@
       "independent_sources": 1
     },
     {
-      "article_id": "71a9d815bedc3f2d",
-      "title": "OpenAI 暂停最新模型训练，称 Agent 曾尝试黑进教育部网站",
-      "url": "https://www.oschina.net/news/502773",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.475,
+      "article_id": "12d2602c2eba8e08",
+      "title": "【钛晨报】重大利好！央行“四箭齐发”，房贷贴息政策落地；中行回应万事达信用卡遭盗刷；英伟达欲拉保险公司入场，为AI芯片融资风险兜底",
+      "url": "https://www.tmtpost.com/8156446.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2026/09/a340e34ed6c3479715a1be2232ba47f2_1790699726.jpg",
+      "score": 5.612,
       "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "命中多重信号：发布/上线、融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
