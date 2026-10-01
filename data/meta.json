@@ -1,27 +1,54 @@
 {
   "schema_version": 1,
-  "last_run_id": "20260930T010931Z-7c792b",
-  "last_run_at": "2026-09-30T01:09:31Z",
-  "last_success_at": "2026-09-30T01:09:31Z",
-  "total_articles": 1458,
+  "last_run_id": "20261001T010908Z-9df9ac",
+  "last_run_at": "2026-10-01T01:09:08Z",
+  "last_success_at": "2026-10-01T01:09:08Z",
+  "total_articles": 1567,
   "source_count": 16,
   "success_rate_7d": 0.8571,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "0399f6c76448ab05",
-      "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
-      "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
-      "image_url": null,
-      "score": 6.269,
+      "article_id": "825263575dac722d",
+      "title": "DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！",
+      "url": "https://www.leiphone.com/category/yanxishe/UUIfK7eeFE9Ws1JI.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260930/6abceaf0bcb61.jpg?imageMogr2/quality/90",
+      "score": 5.804,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线"
+        "命中多重信号：发布/上线、开源"
       ],
-      "cluster_size": 2,
-      "independent_sources": 2
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "c41ee85d9650aa79",
+      "title": "全球开源前二，阶跃终于回来了",
+      "url": "https://www.leiphone.com/category/yanxishe/LjT1ojuhnJ3pBvu4.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260930/6abcc03727d60.jpg?imageMogr2/quality/90",
+      "score": 5.741,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "8bc546d87d7645e4",
+      "title": "世界制造业大会丨国轩高科重磅发布低空飞行高功率电池等三大创新成果",
+      "url": "https://www.leiphone.com/category/industrynews/DOdBNcP5frSITM4c.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260930//6abcbee50f5a6.jpg?imageMogr2/quality/90",
+      "score": 5.74,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
       "article_id": "94b15e9748d84a29",
@@ -30,7 +57,7 @@
       "source_name": "The Verge AI",
       "source_name_en": "The Verge AI",
       "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2250207971.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 6.193,
+      "score": 5.693,
       "reasons": [
         "命中多重信号：发布/上线、监管/政策"
       ],
@@ -38,43 +65,15 @@
       "independent_sources": 1
     },
     {
-      "article_id": "95cdbb9611f11c62",
-      "title": "Edge AI Daily 早报（9月30日）",
-      "url": "https://www.tmtpost.com/8156593.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
+      "article_id": "28785476d08bf0d3",
+      "title": "Anthropic 红队盯上 GLM-5.3：能力追平 Mythos，却连拒绝护栏都是摆设",
+      "url": "https://www.oschina.net/news/502835/anthropic-research-glm-5-3-advanced-cyber-capabilities",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.634,
+      "score": 5.492,
       "reasons": [
-        "命中多重信号：发布/上线、融资/并购、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "70a4032c7e0dcea7",
-      "title": "派早报：OpenAI 发布 Dot 智能体、Apple 移动睡眠呼吸暂停迹象提示软件国内获批等",
-      "url": "https://sspai.com/post/115197",
-      "source_name": "少数派",
-      "source_name_en": "Sspai",
-      "image_url": null,
-      "score": 5.619,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "12d2602c2eba8e08",
-      "title": "【钛晨报】重大利好！央行“四箭齐发”，房贷贴息政策落地；中行回应万事达信用卡遭盗刷；英伟达欲拉保险公司入场，为AI芯片融资风险兜底",
-      "url": "https://www.tmtpost.com/8156446.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2026/09/a340e34ed6c3479715a1be2232ba47f2_1790699726.jpg",
-      "score": 5.612,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
+        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
