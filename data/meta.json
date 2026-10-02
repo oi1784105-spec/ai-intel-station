@@ -1,13 +1,28 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261001T010908Z-9df9ac",
-  "last_run_at": "2026-10-01T01:09:08Z",
-  "last_success_at": "2026-10-01T01:09:08Z",
-  "total_articles": 1567,
+  "last_run_id": "20261002T012501Z-b1eafe",
+  "last_run_at": "2026-10-02T01:25:01Z",
+  "last_success_at": "2026-10-02T01:25:01Z",
+  "total_articles": 1623,
   "source_count": 16,
   "success_rate_7d": 0.8571,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "4eb8f0372a6745fb",
+      "title": "AMD 花 82 亿美元买下李飞飞的 World Labs，她直接空降成首席科学家",
+      "url": "https://www.oschina.net/news/502790/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 6.004,
+      "reasons": [
+        "3 个独立来源同时报道",
+        "涉及融资/并购、监管/政策"
+      ],
+      "cluster_size": 3,
+      "independent_sources": 3
+    },
     {
       "article_id": "825263575dac722d",
       "title": "DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！",
@@ -15,21 +30,7 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260930/6abceaf0bcb61.jpg?imageMogr2/quality/90",
-      "score": 5.804,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "c41ee85d9650aa79",
-      "title": "全球开源前二，阶跃终于回来了",
-      "url": "https://www.leiphone.com/category/yanxishe/LjT1ojuhnJ3pBvu4.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260930/6abcc03727d60.jpg?imageMogr2/quality/90",
-      "score": 5.741,
+      "score": 5.299,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
@@ -43,9 +44,23 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20260930//6abcbee50f5a6.jpg?imageMogr2/quality/90",
-      "score": 5.74,
+      "score": 5.235,
       "reasons": [
         "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "c41ee85d9650aa79",
+      "title": "全球开源前二，阶跃终于回来了",
+      "url": "https://www.leiphone.com/category/yanxishe/LjT1ojuhnJ3pBvu4.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20260930/6abcc03727d60.jpg?imageMogr2/quality/90",
+      "score": 5.235,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -57,23 +72,9 @@
       "source_name": "The Verge AI",
       "source_name_en": "The Verge AI",
       "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2250207971.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 5.693,
+      "score": 5.188,
       "reasons": [
         "命中多重信号：发布/上线、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "28785476d08bf0d3",
-      "title": "Anthropic 红队盯上 GLM-5.3：能力追平 Mythos，却连拒绝护栏都是摆设",
-      "url": "https://www.oschina.net/news/502835/anthropic-research-glm-5-3-advanced-cyber-capabilities",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.492,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
