@@ -1,80 +1,80 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261002T012501Z-b1eafe",
-  "last_run_at": "2026-10-02T01:25:01Z",
-  "last_success_at": "2026-10-02T01:25:01Z",
-  "total_articles": 1623,
+  "last_run_id": "20261003T005946Z-0a15d6",
+  "last_run_at": "2026-10-03T00:59:46Z",
+  "last_success_at": "2026-10-03T00:59:46Z",
+  "total_articles": 1681,
   "source_count": 16,
-  "success_rate_7d": 0.8571,
+  "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "4eb8f0372a6745fb",
-      "title": "AMD 花 82 亿美元买下李飞飞的 World Labs，她直接空降成首席科学家",
-      "url": "https://www.oschina.net/news/502790/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion",
+      "article_id": "fdf289d4f7828299",
+      "title": "OpenAI 发布 GPT‑6.1 Sol：智能水平接近 Astra、价格仅为其五分之一",
+      "url": "https://www.oschina.net/news/502831/openai-gpt-6-1-sol",
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 6.004,
+      "score": 5.304,
       "reasons": [
-        "3 个独立来源同时报道",
-        "涉及融资/并购、监管/政策"
+        "2 个独立来源同时报道",
+        "涉及发布/上线、安全"
       ],
-      "cluster_size": 3,
-      "independent_sources": 3
+      "cluster_size": 2,
+      "independent_sources": 2
     },
     {
-      "article_id": "825263575dac722d",
-      "title": "DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！",
-      "url": "https://www.leiphone.com/category/yanxishe/UUIfK7eeFE9Ws1JI.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260930/6abceaf0bcb61.jpg?imageMogr2/quality/90",
-      "score": 5.299,
+      "article_id": "b6b70248a0d732e4",
+      "title": "AI Makes Me Sad",
+      "url": "https://mondobe.com/ai-makes-me-sad",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 4.97,
       "reasons": [
-        "命中多重信号：发布/上线、开源"
+        "社区热度 180 分"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "8bc546d87d7645e4",
-      "title": "世界制造业大会丨国轩高科重磅发布低空飞行高功率电池等三大创新成果",
-      "url": "https://www.leiphone.com/category/industrynews/DOdBNcP5frSITM4c.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260930//6abcbee50f5a6.jpg?imageMogr2/quality/90",
-      "score": 5.235,
+      "article_id": "f52e74133e2d25d6",
+      "title": "With most information hidden, the game Stratego had stumped AI until now",
+      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 4.944,
+      "reasons": [
+        "社区热度 172 分"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "27eaf55f42400614",
+      "title": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
+      "url": "https://www.qbitai.com/2026/09/490396.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
+      "image_url": null,
+      "score": 4.9,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "3faffba958e0b043",
+      "title": "长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案",
+      "url": "https://www.qbitai.com/2026/09/493235.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
+      "image_url": null,
+      "score": 4.9,
       "reasons": [
         "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "c41ee85d9650aa79",
-      "title": "全球开源前二，阶跃终于回来了",
-      "url": "https://www.leiphone.com/category/yanxishe/LjT1ojuhnJ3pBvu4.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20260930/6abcc03727d60.jpg?imageMogr2/quality/90",
-      "score": 5.235,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "94b15e9748d84a29",
-      "title": "Trump orders US government to call AI ‘Super Intelligence’",
-      "url": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
-      "source_name": "The Verge AI",
-      "source_name_en": "The Verge AI",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2250207971.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 5.188,
-      "reasons": [
-        "命中多重信号：发布/上线、监管/政策"
       ],
       "cluster_size": 1,
       "independent_sources": 1
