@@ -1,52 +1,37 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261003T005946Z-0a15d6",
-  "last_run_at": "2026-10-03T00:59:46Z",
-  "last_success_at": "2026-10-03T00:59:46Z",
-  "total_articles": 1681,
+  "last_run_id": "20261004T002402Z-7b6e81",
+  "last_run_at": "2026-10-04T00:24:02Z",
+  "last_success_at": "2026-10-04T00:24:02Z",
+  "total_articles": 1706,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "fdf289d4f7828299",
-      "title": "OpenAI 发布 GPT‑6.1 Sol：智能水平接近 Astra、价格仅为其五分之一",
-      "url": "https://www.oschina.net/news/502831/openai-gpt-6-1-sol",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
+      "article_id": "88ec389047eee7f9",
+      "title": "Edge AI Daily 早报（10月4日）",
+      "url": "https://www.tmtpost.com/8158829.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
       "image_url": null,
-      "score": 5.304,
+      "score": 5.638,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线、安全"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "b6b70248a0d732e4",
-      "title": "AI Makes Me Sad",
-      "url": "https://mondobe.com/ai-makes-me-sad",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 4.97,
-      "reasons": [
-        "社区热度 180 分"
+        "命中多重信号：发布/上线、开源、监管/政策"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "f52e74133e2d25d6",
-      "title": "With most information hidden, the game Stratego had stumped AI until now",
-      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
+      "article_id": "f289f868e53a6160",
+      "title": "🔥 AI 员工支持知识库文档引用：开源 AI 无代码平台 NocoBase",
+      "url": "https://www.oschina.net/news/502842",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
       "image_url": null,
-      "score": 4.944,
+      "score": 5.482,
       "reasons": [
-        "社区热度 172 分"
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -69,6 +54,20 @@
       "article_id": "3faffba958e0b043",
       "title": "长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案",
       "url": "https://www.qbitai.com/2026/09/493235.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
+      "image_url": null,
+      "score": 4.9,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "48daf326e7403bd4",
+      "title": "《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上",
+      "url": "https://www.qbitai.com/2026/09/492849.html",
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
