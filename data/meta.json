@@ -1,13 +1,55 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261004T002402Z-7b6e81",
-  "last_run_at": "2026-10-04T00:24:02Z",
-  "last_success_at": "2026-10-04T00:24:02Z",
-  "total_articles": 1706,
+  "last_run_id": "20261005T003323Z-2faa8e",
+  "last_run_at": "2026-10-05T00:33:23Z",
+  "last_success_at": "2026-10-05T00:33:23Z",
+  "total_articles": 1729,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "46ca25bb54c0cba3",
+      "title": "Edge AI Daily 早报（10月5日）",
+      "url": "https://www.tmtpost.com/8159215.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": null,
+      "score": 5.644,
+      "reasons": [
+        "命中多重信号：开源、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "e9ee55419dd962c8",
+      "title": "RSI再创奇迹！StartLux推出开源决策模型StartLux-Decision，38项基准中31项高于Jev",
+      "url": "https://www.tmtpost.com/8158976.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/b2a018b154b574a18829975a8f120cfe_1791125319.gif",
+      "score": 5.316,
+      "reasons": [
+        "命中多重信号：发布/上线、开源、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "6b7d3ad5d90c235b",
+      "title": "【数智周报】中国大模型首次进入OpenAI企业付费结算体系；AMD斥资82亿美元收购李飞飞世界模型公司；Anthropic上市文件披露对亚马逊、谷歌依赖加深，2025年营收近46亿美元……",
+      "url": "https://www.tmtpost.com/8158700.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/20261003170145263.png",
+      "score": 5.207,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "88ec389047eee7f9",
       "title": "Edge AI Daily 早报（10月4日）",
@@ -15,7 +57,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": null,
-      "score": 5.638,
+      "score": 5.135,
       "reasons": [
         "命中多重信号：发布/上线、开源、监管/政策"
       ],
@@ -29,51 +71,9 @@
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.482,
+      "score": 4.978,
       "reasons": [
         "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "27eaf55f42400614",
-      "title": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
-      "url": "https://www.qbitai.com/2026/09/490396.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": null,
-      "score": 4.9,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "3faffba958e0b043",
-      "title": "长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案",
-      "url": "https://www.qbitai.com/2026/09/493235.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": null,
-      "score": 4.9,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "48daf326e7403bd4",
-      "title": "《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上",
-      "url": "https://www.qbitai.com/2026/09/492849.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": null,
-      "score": 4.9,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
