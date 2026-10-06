@@ -1,21 +1,66 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261005T003323Z-2faa8e",
-  "last_run_at": "2026-10-05T00:33:23Z",
-  "last_success_at": "2026-10-05T00:33:23Z",
-  "total_articles": 1729,
+  "last_run_id": "20261006T020721Z-9fee17",
+  "last_run_at": "2026-10-06T02:07:21Z",
+  "last_success_at": "2026-10-06T02:07:21Z",
+  "total_articles": 1811,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "46ca25bb54c0cba3",
-      "title": "Edge AI Daily 早报（10月5日）",
-      "url": "https://www.tmtpost.com/8159215.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
+      "article_id": "7ded5c03aba57f68",
+      "title": "Beam: Reflection's 501B open-weight model",
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.644,
+      "score": 5.917,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "HN 316 分 · 91 评论"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "3cbec84de8bf6155",
+      "title": "Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.864,
+      "reasons": [
+        "官方来源，涉及发布/上线",
+        "官方一手来源",
+        "涉及发布/上线"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "d488d7fbc6e5568f",
+      "title": "Termexo v0.10.10 发布：19 个本地 MCP 工具，五种编程 Agent 自动接入",
+      "url": "https://www.oschina.net/news/502845",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.749,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "5ad4b82d7aa831a8",
+      "title": "因涌入大量 AI 报告 Google 冻结其 Bug 悬赏计划",
+      "url": "https://www.solidot.org/story?sid=85538",
+      "source_name": "Solidot",
+      "source_name_en": "Solidot",
+      "image_url": null,
+      "score": 5.557,
       "reasons": [
         "命中多重信号：开源、安全"
       ],
@@ -23,57 +68,15 @@
       "independent_sources": 1
     },
     {
-      "article_id": "e9ee55419dd962c8",
-      "title": "RSI再创奇迹！StartLux推出开源决策模型StartLux-Decision，38项基准中31项高于Jev",
-      "url": "https://www.tmtpost.com/8158976.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/b2a018b154b574a18829975a8f120cfe_1791125319.gif",
-      "score": 5.316,
-      "reasons": [
-        "命中多重信号：发布/上线、开源、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "6b7d3ad5d90c235b",
-      "title": "【数智周报】中国大模型首次进入OpenAI企业付费结算体系；AMD斥资82亿美元收购李飞飞世界模型公司；Anthropic上市文件披露对亚马逊、谷歌依赖加深，2025年营收近46亿美元……",
-      "url": "https://www.tmtpost.com/8158700.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/20261003170145263.png",
-      "score": 5.207,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "88ec389047eee7f9",
-      "title": "Edge AI Daily 早报（10月4日）",
-      "url": "https://www.tmtpost.com/8158829.html",
+      "article_id": "46ca25bb54c0cba3",
+      "title": "Edge AI Daily 早报（10月5日）",
+      "url": "https://www.tmtpost.com/8159215.html",
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": null,
-      "score": 5.135,
+      "score": 5.111,
       "reasons": [
-        "命中多重信号：发布/上线、开源、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "f289f868e53a6160",
-      "title": "🔥 AI 员工支持知识库文档引用：开源 AI 无代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/502842",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 4.978,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
+        "命中多重信号：开源、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
