@@ -1,13 +1,44 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261006T020721Z-9fee17",
-  "last_run_at": "2026-10-06T02:07:21Z",
-  "last_success_at": "2026-10-06T02:07:21Z",
-  "total_articles": 1811,
+  "last_run_id": "20261007T011601Z-587d57",
+  "last_run_at": "2026-10-07T01:16:01Z",
+  "last_success_at": "2026-10-07T01:16:01Z",
+  "total_articles": 1875,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "65b10d5e370b52bc",
+      "title": "Mistral Large 4",
+      "url": "https://mistral.ai/news/mistral-large-4/\\",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 6.883,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及基准/榜单",
+        "HN 1582 分 · 961 评论"
+      ],
+      "cluster_size": 3,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "dabfa79f68b85520",
+      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+      "url": "https://github.com/FeSens/openTPU",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.804,
+      "reasons": [
+        "社区热度 223 分",
+        "涉及开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "7ded5c03aba57f68",
       "title": "Beam: Reflection's 501B open-weight model",
@@ -15,13 +46,27 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.917,
+      "score": 5.525,
       "reasons": [
         "2 个独立来源同时报道",
-        "HN 316 分 · 91 评论"
+        "HN 541 分 · 168 评论"
       ],
       "cluster_size": 2,
       "independent_sources": 2
+    },
+    {
+      "article_id": "747f76e8751f5d3b",
+      "title": "SGAnalog: An End-to-End Circuit Benchmark from Open-Source Silicon Tapeouts",
+      "url": "https://arxiv.org/abs/2610.03934",
+      "source_name": "arXiv cs.AI",
+      "source_name_en": "arXiv cs.AI",
+      "image_url": null,
+      "score": 5.507,
+      "reasons": [
+        "命中多重信号：开源、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
       "article_id": "3cbec84de8bf6155",
@@ -30,53 +75,11 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.864,
+      "score": 5.382,
       "reasons": [
         "官方来源，涉及发布/上线",
         "官方一手来源",
         "涉及发布/上线"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "d488d7fbc6e5568f",
-      "title": "Termexo v0.10.10 发布：19 个本地 MCP 工具，五种编程 Agent 自动接入",
-      "url": "https://www.oschina.net/news/502845",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.749,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "5ad4b82d7aa831a8",
-      "title": "因涌入大量 AI 报告 Google 冻结其 Bug 悬赏计划",
-      "url": "https://www.solidot.org/story?sid=85538",
-      "source_name": "Solidot",
-      "source_name_en": "Solidot",
-      "image_url": null,
-      "score": 5.557,
-      "reasons": [
-        "命中多重信号：开源、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "46ca25bb54c0cba3",
-      "title": "Edge AI Daily 早报（10月5日）",
-      "url": "https://www.tmtpost.com/8159215.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": null,
-      "score": 5.111,
-      "reasons": [
-        "命中多重信号：开源、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
