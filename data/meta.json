@@ -1,13 +1,41 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261008T013724Z-7ab0f7",
-  "last_run_at": "2026-10-08T01:37:24Z",
-  "last_success_at": "2026-10-08T01:37:24Z",
-  "total_articles": 1943,
+  "last_run_id": "20261009T015013Z-f5543e",
+  "last_run_at": "2026-10-09T01:50:13Z",
+  "last_success_at": "2026-10-09T01:50:13Z",
+  "total_articles": 2052,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "51c6cb3bd66a262b",
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "source_name": "The Verge AI",
+      "source_name_en": "The Verge AI",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 6.168,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "9655af284233d720",
+      "title": "Claude Haiku 5.5 降本背后：操作能力暴涨，复杂编程为何仍差一截？",
+      "url": "https://www.leiphone.com/category/ai/n2GjuJRnM4utgaun.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261008/6ac7b88ded3c4.jpg?imageMogr2/quality/90",
+      "score": 5.887,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "65b10d5e370b52bc",
       "title": "Mistral Large 4",
@@ -15,14 +43,28 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 6.376,
+      "score": 5.871,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及基准/榜单",
-        "HN 1994 分 · 1190 评论"
+        "HN 2028 分 · 1210 评论"
       ],
       "cluster_size": 3,
       "independent_sources": 2
+    },
+    {
+      "article_id": "96e1d85ec038c40e",
+      "title": "【钛晨报】中国人民银行发布人民币汇率的政策立场；尊界回应制动踏板支架底座断裂问题；苹果给开发者下硬规定：明年4月所有App必须适配折叠屏",
+      "url": "https://www.tmtpost.com/8161611.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/a340e34ed6c3479715a1be2232ba47f2_1791473039.jpg",
+      "score": 5.598,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
       "article_id": "eac2477d9dd3a375",
@@ -31,55 +73,12 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20261007//6ac5c759057e2.jpg?imageMogr2/quality/90",
-      "score": 6.005,
+      "score": 5.5,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
-    },
-    {
-      "article_id": "1e8f2a3c9bca02ef",
-      "title": "《碳硅道统·跨域迁移治理法典》188集 总纲摘要",
-      "url": "https://www.leiphone.com/category/industrynews/NWhDqDo0wpZbKRgp.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": null,
-      "score": 5.808,
-      "reasons": [
-        "命中多重信号：基准/榜单、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "c9f1171091e7d844",
-      "title": "碳硅道统·跨域迁移治理法典",
-      "url": "https://www.leiphone.com/category/industrynews/XNaGx6kCv9dNhtKY.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": null,
-      "score": 5.806,
-      "reasons": [
-        "命中多重信号：基准/榜单、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "b71cb042bb18dd08",
-      "title": "早报｜苹果一大波新品曝光，最快下周发布/全球纯汽油车份额首次跌破50%/2599 美元起，Surface Laptop Ultra发布",
-      "url": "https://www.ifanr.com/1683053?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/cover.jpg",
-      "score": 5.804,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
     }
   ]
 }
