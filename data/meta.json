@@ -1,81 +1,81 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261010T013427Z-a2754a",
-  "last_run_at": "2026-10-10T01:34:27Z",
-  "last_success_at": "2026-10-10T01:34:27Z",
-  "total_articles": 2134,
+  "last_run_id": "20261011T004413Z-370ec9",
+  "last_run_at": "2026-10-11T00:44:13Z",
+  "last_success_at": "2026-10-11T00:44:13Z",
+  "total_articles": 2199,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "901fd4145cd4ce94",
-      "title": "派早报：英伟达 RTX Spark 新品一览、Anthropic 发布 Claude Haiku 5.5 模型等",
-      "url": "https://sspai.com/post/115532",
-      "source_name": "少数派",
-      "source_name_en": "Sspai",
-      "image_url": null,
-      "score": 6.002,
+      "article_id": "6cfcd180287e1239",
+      "title": "阶跃 Step 5 Preview 登上 OpenRouter 全球第一，10月15日开源！",
+      "url": "https://www.leiphone.com/category/industrynews/7iRgmb0q4JgVbmU8.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261010//6ac9b01ee16ba.jpg?imageMogr2/quality/90",
+      "score": 6.493,
       "reasons": [
-        "3 个独立来源同时报道",
+        "2 个独立来源同时报道",
+        "涉及开源、基准/榜单"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "b76f5215212ac3b0",
+      "title": "比 Astra 还贵！GPT-6.1 Sol 极速版上线，社区吐槽：“500 美元套餐都撑不过一天”",
+      "url": "https://www.infoq.cn/article/soBOt9TSckGlJlBS519y?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 5.878,
+      "reasons": [
+        "2 个独立来源同时报道",
         "涉及发布/上线"
       ],
-      "cluster_size": 3,
-      "independent_sources": 3
+      "cluster_size": 2,
+      "independent_sources": 2
     },
     {
-      "article_id": "254437d8db4e7858",
-      "title": "openJiuwen发布并开源企业级AgentOS，加速智能体规模落地企业",
-      "url": "https://www.qbitai.com/2026/10/502106.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
+      "article_id": "8fa6b3d73987e3eb",
+      "title": "JEPA、空间智能路线正面交锋：WorldArena 2.0 挑战赛开考「能不能被机器人真正用起来」| IROS 2026",
+      "url": "https://www.leiphone.com/category/private/A0uKolgD2esWoUfT.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261010/6ac9b2326d2ea.jpg?imageMogr2/quality/90",
+      "score": 5.699,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "2c9728d3318bed23",
+      "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+      "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 5.922,
+      "score": 5.572,
+      "reasons": [
+        "2 个独立来源同时报道"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "b6b3db19737cba27",
+      "title": "QuotaPanel v0.2.0 点开菜单栏就看到额度，MiMo 额度来源上线",
+      "url": "https://www.oschina.net/news/502955",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.505,
       "reasons": [
         "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "04902b83f5b9f295",
-      "title": "Typesafe AI raises $870M at $7.5B",
-      "url": "https://typesafe.ai/blog/series-ai",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.831,
-      "reasons": [
-        "社区热度 271 分",
-        "涉及融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "5f4c87c391f37474",
-      "title": "做了八年DSP，Credo怎么突然开始做光芯片了？",
-      "url": "https://www.leiphone.com/category/chips/iJYPlZXgggbJ74ZB.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": null,
-      "score": 5.76,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "33508f1f8d42ecc8",
-      "title": "再裁员5000人！保时捷明确回归燃油车，高端车型计划涨价20%；腾讯拟发行50亿美元离岸债券，或筹钱加码AI；OpenAI全面上线GPT-6",
-      "url": "https://www.leiphone.com/category/zaobao/GGmq1RiBgXY2GSVL.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261009/6ac83a95bb8ac.jpg?imageMogr2/quality/90",
-      "score": 5.687,
-      "reasons": [
-        "命中多重信号：发布/上线、开源、融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
