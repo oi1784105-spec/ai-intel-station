@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-11T00:44:13+00:00",
-  "run_id": "20261011T004413Z-370ec9",
+  "generated_at": "2026-10-12T01:05:21+00:00",
+  "run_id": "20261012T010521Z-b9831e",
   "trigger": "cron",
   "offline": false,
   "overall": "success",
-  "total_in_store": 2199,
-  "new_this_run": 71,
-  "deduped_this_run": 152,
+  "total_in_store": 2226,
+  "new_this_run": 33,
+  "deduped_this_run": 167,
   "window_days": 30,
   "health": {
-    "ok": 11,
-    "no_new": 5,
-    "parse_warning": 0,
+    "ok": 9,
+    "no_new": 6,
+    "parse_warning": 1,
     "stale": 0,
     "failed": 0,
     "success_rate_7d": 1.0
@@ -28,13 +28,13 @@
       "items_kept": 10,
       "items_filtered": 0,
       "items_tz_corrected": 0,
-      "items_summary_dropped": 5,
-      "items_with_image": 0,
+      "items_summary_dropped": 4,
+      "items_with_image": 2,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 9,
-      "latest_published_at": "2026-10-10T06:59:02+00:00",
-      "duration_ms": 1370,
+      "items_new": 8,
+      "items_dup": 2,
+      "latest_published_at": "2026-10-11T05:23:47+00:00",
+      "duration_ms": 1601,
       "error": null
     },
     {
@@ -50,17 +50,17 @@
       "items_summary_dropped": 20,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 16,
-      "items_dup": 4,
-      "latest_published_at": "2026-10-10T11:00:00+00:00",
-      "duration_ms": 1025,
+      "items_new": 3,
+      "items_dup": 17,
+      "latest_published_at": "2026-10-11T07:00:00+00:00",
+      "duration_ms": 1268,
       "error": null
     },
     {
       "id": "leiphone",
       "name": "雷锋网",
       "name_en": "Leiphone",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 20,
       "items_kept": 8,
@@ -69,17 +69,17 @@
       "items_summary_dropped": 0,
       "items_with_image": 19,
       "items_out_of_window": 0,
-      "items_new": 8,
-      "items_dup": 0,
+      "items_new": 0,
+      "items_dup": 8,
       "latest_published_at": "2026-10-10T11:40:00+00:00",
-      "duration_ms": 3736,
+      "duration_ms": 29912,
       "error": null
     },
     {
       "id": "oschina",
       "name": "开源中国",
       "name_en": "OSChina",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 50,
       "items_kept": 29,
@@ -88,10 +88,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 13,
-      "items_dup": 16,
+      "items_new": 0,
+      "items_dup": 29,
       "latest_published_at": "2026-10-10T11:09:58+00:00",
-      "duration_ms": 2085,
+      "duration_ms": 4648,
       "error": null
     },
     {
@@ -107,17 +107,17 @@
       "items_summary_dropped": 0,
       "items_with_image": 20,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 4,
-      "latest_published_at": "2026-10-10T09:11:54+00:00",
-      "duration_ms": 1097,
+      "items_new": 2,
+      "items_dup": 5,
+      "latest_published_at": "2026-10-12T00:12:37+00:00",
+      "duration_ms": 1210,
       "error": null
     },
     {
       "id": "sspai",
       "name": "少数派",
       "name_en": "Sspai",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 10,
       "items_kept": 2,
@@ -126,10 +126,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 2,
-      "latest_published_at": "2026-10-09T00:51:10+00:00",
-      "duration_ms": 947,
+      "items_new": 1,
+      "items_dup": 1,
+      "latest_published_at": "2026-10-11T22:34:54+00:00",
+      "duration_ms": 973,
       "error": null
     },
     {
@@ -145,10 +145,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 2,
-      "latest_published_at": "2026-10-10T09:05:17+00:00",
-      "duration_ms": 1396,
+      "items_new": 1,
+      "items_dup": 4,
+      "latest_published_at": "2026-10-10T10:27:26+00:00",
+      "duration_ms": 1665,
       "error": null
     },
     {
@@ -157,17 +157,17 @@
       "name_en": "TMTPost",
       "status": "ok",
       "http_status": 200,
-      "items_seen": 20,
-      "items_kept": 10,
+      "items_seen": 18,
+      "items_kept": 8,
       "items_filtered": 10,
       "items_tz_corrected": 0,
-      "items_summary_dropped": 8,
-      "items_with_image": 13,
+      "items_summary_dropped": 3,
+      "items_with_image": 11,
       "items_out_of_window": 0,
-      "items_new": 10,
+      "items_new": 8,
       "items_dup": 0,
-      "latest_published_at": "2026-10-11T00:33:00+00:00",
-      "duration_ms": 2167,
+      "latest_published_at": "2026-10-12T00:42:38+00:00",
+      "duration_ms": 1982,
       "error": null
     },
     {
@@ -186,7 +186,7 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-10-09T07:00:00+00:00",
-      "duration_ms": 629,
+      "duration_ms": 678,
       "error": null
     },
     {
@@ -205,7 +205,7 @@
       "items_new": 0,
       "items_dup": 13,
       "latest_published_at": "2026-10-07T12:00:00+00:00",
-      "duration_ms": 302,
+      "duration_ms": 315,
       "error": null
     },
     {
@@ -223,8 +223,8 @@
       "items_out_of_window": 0,
       "items_new": 4,
       "items_dup": 16,
-      "latest_published_at": "2026-10-10T21:47:51+00:00",
-      "duration_ms": 95,
+      "latest_published_at": "2026-10-11T21:14:40+00:00",
+      "duration_ms": 97,
       "error": null
     },
     {
@@ -240,10 +240,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 10,
       "items_out_of_window": 0,
-      "items_new": 4,
-      "items_dup": 6,
-      "latest_published_at": "2026-10-10T22:10:17+00:00",
-      "duration_ms": 115,
+      "items_new": 2,
+      "items_dup": 8,
+      "latest_published_at": "2026-10-11T18:33:56+00:00",
+      "duration_ms": 102,
       "error": null
     },
     {
@@ -262,14 +262,14 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-10-09T09:00:00+00:00",
-      "duration_ms": 217,
+      "duration_ms": 230,
       "error": null
     },
     {
       "id": "simonw",
       "name": "Simon Willison",
       "name_en": "Simon Willison",
-      "status": "ok",
+      "status": "no_new",
       "http_status": 200,
       "items_seen": 30,
       "items_kept": 17,
@@ -278,10 +278,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 5,
       "items_out_of_window": 0,
-      "items_new": 2,
-      "items_dup": 15,
+      "items_new": 0,
+      "items_dup": 17,
       "latest_published_at": "2026-10-10T23:58:04+00:00",
-      "duration_ms": 148,
+      "duration_ms": 222,
       "error": null
     },
     {
@@ -290,54 +290,53 @@
       "name_en": "Hacker News",
       "status": "ok",
       "http_status": 200,
-      "items_seen": 22,
-      "items_kept": 22,
+      "items_seen": 21,
+      "items_kept": 21,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 7,
-      "items_dup": 14,
-      "latest_published_at": "2026-10-10T19:39:10+00:00",
-      "duration_ms": 529,
+      "items_new": 4,
+      "items_dup": 17,
+      "latest_published_at": "2026-10-11T22:22:10+00:00",
+      "duration_ms": 802,
       "error": null
     },
     {
       "id": "arxiv",
       "name": "arXiv cs.AI",
       "name_en": "arXiv cs.AI",
-      "status": "no_new",
+      "status": "parse_warning",
       "http_status": 200,
-      "items_seen": 472,
-      "items_kept": 20,
+      "items_seen": 0,
+      "items_kept": 0,
       "items_filtered": 0,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
       "items_new": 0,
-      "items_dup": 20,
-      "latest_published_at": "2026-10-10T04:00:00+00:00",
-      "duration_ms": 388,
-      "error": null
+      "items_dup": 0,
+      "latest_published_at": null,
+      "duration_ms": 93,
+      "error": "响应中没有任何条目（源格式可能已变）"
     }
   ],
   "highlights": [
     {
-      "article_id": "6cfcd180287e1239",
-      "title": "阶跃 Step 5 Preview 登上 OpenRouter 全球第一，10月15日开源！",
-      "url": "https://www.leiphone.com/category/industrynews/7iRgmb0q4JgVbmU8.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261010//6ac9b01ee16ba.jpg?imageMogr2/quality/90",
-      "score": 6.493,
+      "article_id": "e3274a164282fee4",
+      "title": "Edge AI Daily 早报（10月12日）",
+      "url": "https://www.tmtpost.com/8164715.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": null,
+      "score": 5.642,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及开源、基准/榜单"
+        "命中多重信号：发布/上线、融资/并购"
       ],
-      "cluster_size": 2,
-      "independent_sources": 2
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
       "article_id": "b76f5215212ac3b0",
@@ -346,7 +345,7 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 5.878,
+      "score": 5.37,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线"
@@ -361,9 +360,23 @@
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
       "image_url": "https://static.leiphone.com/uploads/new/images/20261010/6ac9b2326d2ea.jpg?imageMogr2/quality/90",
-      "score": 5.699,
+      "score": 5.192,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "6cfcd180287e1239",
+      "title": "阶跃 Step 5 Preview 登上 OpenRouter 全球第一，10月15日开源！",
+      "url": "https://www.leiphone.com/category/industrynews/7iRgmb0q4JgVbmU8.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261010//6ac9b01ee16ba.jpg?imageMogr2/quality/90",
+      "score": 5.153,
+      "reasons": [
+        "命中多重信号：开源、基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -375,26 +388,12 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 5.572,
+      "score": 5.065,
       "reasons": [
         "2 个独立来源同时报道"
       ],
       "cluster_size": 2,
       "independent_sources": 2
-    },
-    {
-      "article_id": "b6b3db19737cba27",
-      "title": "QuotaPanel v0.2.0 点开菜单栏就看到额度，MiMo 额度来源上线",
-      "url": "https://www.oschina.net/news/502955",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.505,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
     }
   ]
 }
