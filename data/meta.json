@@ -1,13 +1,43 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261012T010521Z-b9831e",
-  "last_run_at": "2026-10-12T01:05:21Z",
-  "last_success_at": "2026-10-12T01:05:21Z",
-  "total_articles": 2226,
+  "last_run_id": "20261013T025442Z-ee5980",
+  "last_run_at": "2026-10-13T02:54:42Z",
+  "last_success_at": "2026-10-13T02:54:42Z",
+  "total_articles": 2311,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "9726aa3a5f66ec7f",
+      "title": "Meta releases its first frontier model, Muse Wonder",
+      "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 7.047,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及发布/上线、基准/榜单"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "8a005e9676cbc606",
+      "title": "微软在 Qwen 模型基础上推出决策模型 Microsoft-Decision-1",
+      "url": "https://www.solidot.org/story?sid=85584",
+      "source_name": "Solidot",
+      "source_name_en": "Solidot",
+      "image_url": null,
+      "score": 6.213,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及发布/上线、基准/榜单"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
     {
       "article_id": "e3274a164282fee4",
       "title": "Edge AI Daily 早报（10月12日）",
@@ -15,7 +45,7 @@
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
       "image_url": null,
-      "score": 5.642,
+      "score": 5.104,
       "reasons": [
         "命中多重信号：发布/上线、融资/并购"
       ],
@@ -23,61 +53,32 @@
       "independent_sources": 1
     },
     {
-      "article_id": "b76f5215212ac3b0",
-      "title": "比 Astra 还贵！GPT-6.1 Sol 极速版上线，社区吐槽：“500 美元套餐都撑不过一天”",
-      "url": "https://www.infoq.cn/article/soBOt9TSckGlJlBS519y?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
+      "article_id": "9202dbf6eedd440b",
+      "title": "AI is a tool and using it well takes skill",
+      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.37,
+      "score": 5.091,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "8fa6b3d73987e3eb",
-      "title": "JEPA、空间智能路线正面交锋：WorldArena 2.0 挑战赛开考「能不能被机器人真正用起来」| IROS 2026",
-      "url": "https://www.leiphone.com/category/private/A0uKolgD2esWoUfT.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261010/6ac9b2326d2ea.jpg?imageMogr2/quality/90",
-      "score": 5.192,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
+        "社区热度 250 分"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "6cfcd180287e1239",
-      "title": "阶跃 Step 5 Preview 登上 OpenRouter 全球第一，10月15日开源！",
-      "url": "https://www.leiphone.com/category/industrynews/7iRgmb0q4JgVbmU8.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261010//6ac9b01ee16ba.jpg?imageMogr2/quality/90",
-      "score": 5.153,
+      "article_id": "b6603a0a4aa62669",
+      "title": "GLM-Legal",
+      "url": "https://z.ai/blog/glm-legal",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.06,
       "reasons": [
-        "命中多重信号：开源、基准/榜单"
+        "社区热度 459 分"
       ],
       "cluster_size": 1,
       "independent_sources": 1
-    },
-    {
-      "article_id": "2c9728d3318bed23",
-      "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
-      "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
-      "image_url": null,
-      "score": 5.065,
-      "reasons": [
-        "2 个独立来源同时报道"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
     }
   ]
 }
