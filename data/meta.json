@@ -1,13 +1,27 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261015T002008Z-b8f141",
-  "last_run_at": "2026-10-15T00:20:08Z",
-  "last_success_at": "2026-10-15T00:20:08Z",
-  "total_articles": 2455,
+  "last_run_id": "20261016T000911Z-3a2459",
+  "last_run_at": "2026-10-16T00:09:11Z",
+  "last_success_at": "2026-10-16T00:09:11Z",
+  "total_articles": 2480,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "cc07996f6bad6e0c",
+      "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
+      "url": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 6.147,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "877cbcbdbb3b8ad6",
       "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
@@ -15,7 +29,7 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.31,
+      "score": 5.813,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线"
@@ -24,58 +38,44 @@
       "independent_sources": 2
     },
     {
-      "article_id": "0a248ec435157a65",
-      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
-      "url": "https://parsimony.lasu.dev/",
+      "article_id": "72fb20edde28b043",
+      "title": "早报｜库克确认苹果AI国行本月推出/《GTA6》全新宣传片发布/特努斯：AI不会让iPhone消失",
+      "url": "https://www.ifanr.com/1684579?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "source_name": "爱范儿",
+      "source_name_en": "iFanr",
+      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/cover-4.jpg",
+      "score": 5.799,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "1345f06390cb57ff",
+      "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
+      "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 6.122,
+      "score": 5.798,
       "reasons": [
-        "命中多重信号：开源、基准/榜单",
-        "HN 40 分 · 3 评论"
+        "社区热度 224 分",
+        "涉及发布/上线"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "c63c766bf807989b",
-      "title": "茶百道涉IPO欺诈，被暂停交易；字节Seed单独设立大模型安全与对齐部门；华为披露下一代麒麟芯片进展，已进入测试阶段丨雷峰早报",
-      "url": "https://www.leiphone.com/category/zaobao/CKsYHgrcdIkO3hvO.html",
+      "article_id": "6d803970c8e1d7a7",
+      "title": "海康威视亮相2026中国工博会：物联感知+AI，加速工业场景数字化",
+      "url": "https://www.leiphone.com/category/industrynews/1SliUXA2cNsJLwzk.html",
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261014/6aced388b1526.jpg?imageMogr2/quality/90",
-      "score": 5.922,
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261015/6ad093171cf6f.png?imageView2/2/w/740",
+      "score": 5.781,
       "reasons": [
-        "命中多重信号：发布/上线、融资/并购、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "af0a62bc3ba84c12",
-      "title": "腾讯WorkBuddy企业版上线「可观测中心」破解规模化用Agent四大痛点",
-      "url": "https://www.leiphone.com/category/industrynews/f1Qk7Zv1CTpAQhYX.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261014/6acedca0cf7c2.png?imageMogr2/quality/90",
-      "score": 5.626,
-      "reasons": [
-        "命中多重信号：发布/上线、安全、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "af1cefc3c7f7c296",
-      "title": "修复漏洞的 PR 刚提交，攻击几分钟后就来了：AI 正在击穿开源安全流程",
-      "url": "https://www.infoq.cn/article/R7OkT6DCUifdCQqAvwtJ?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.439,
-      "reasons": [
-        "命中多重信号：开源、安全"
+        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
