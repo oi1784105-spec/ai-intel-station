@@ -1,13 +1,70 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261016T000911Z-3a2459",
-  "last_run_at": "2026-10-16T00:09:11Z",
-  "last_success_at": "2026-10-16T00:09:11Z",
-  "total_articles": 2480,
+  "last_run_id": "20261017T001250Z-d6e55e",
+  "last_run_at": "2026-10-17T00:12:50Z",
+  "last_success_at": "2026-10-17T00:12:50Z",
+  "total_articles": 2429,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "37a16be76e6fa6cd",
+      "title": "Meta 发布其开放权重模型 Muse Spark Open",
+      "url": "https://www.solidot.org/story?sid=85634",
+      "source_name": "Solidot",
+      "source_name_en": "Solidot",
+      "image_url": null,
+      "score": 6.464,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及发布/上线、开源"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "e7c8697fdfc4d88f",
+      "title": "范式智能联合睿思智联推出开源一站式生产级AI部署平台 “模域ModelSphere”",
+      "url": "https://www.infoq.cn/article/VZPlIIdGRg062mgwJe5y?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 5.925,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "40b56bbb5a4bce4b",
+      "title": "Cloudflare 计划推出公共证书颁发机构，用于签发量子安全的 TLS 证书",
+      "url": "https://www.infoq.cn/article/CoGZq3xgQhZI4rBH8pjA?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 5.906,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "17e1090e7ed8bee1",
+      "title": "Kling 4.0正式上线：10-bit HDR、30秒原生直出 刷新视频模型新基准",
+      "url": "https://www.leiphone.com/category/industrynews/1GERVRJ72xJKmsus.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261016/6ad18de61b853.png?imageMogr2/quality/90",
+      "score": 5.65,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "cc07996f6bad6e0c",
       "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
@@ -15,67 +72,9 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.147,
+      "score": 5.646,
       "reasons": [
         "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "877cbcbdbb3b8ad6",
-      "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-      "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
-      "image_url": null,
-      "score": 5.813,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "72fb20edde28b043",
-      "title": "早报｜库克确认苹果AI国行本月推出/《GTA6》全新宣传片发布/特努斯：AI不会让iPhone消失",
-      "url": "https://www.ifanr.com/1684579?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/cover-4.jpg",
-      "score": 5.799,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "1345f06390cb57ff",
-      "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
-      "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.798,
-      "reasons": [
-        "社区热度 224 分",
-        "涉及发布/上线"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "6d803970c8e1d7a7",
-      "title": "海康威视亮相2026中国工博会：物联感知+AI，加速工业场景数字化",
-      "url": "https://www.leiphone.com/category/industrynews/1SliUXA2cNsJLwzk.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261015/6ad093171cf6f.png?imageView2/2/w/740",
-      "score": 5.781,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
