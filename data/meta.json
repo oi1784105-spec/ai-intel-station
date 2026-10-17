@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261017T001250Z-d6e55e",
-  "last_run_at": "2026-10-17T00:12:50Z",
-  "last_success_at": "2026-10-17T00:12:50Z",
-  "total_articles": 2429,
+  "last_run_id": "20261017T235130Z-808358",
+  "last_run_at": "2026-10-17T23:51:30Z",
+  "last_success_at": "2026-10-17T23:51:30Z",
+  "total_articles": 2326,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
@@ -15,7 +15,7 @@
       "source_name": "Solidot",
       "source_name_en": "Solidot",
       "image_url": null,
-      "score": 6.464,
+      "score": 5.971,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、开源"
@@ -30,7 +30,7 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 5.925,
+      "score": 5.433,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
@@ -44,7 +44,7 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 5.906,
+      "score": 5.413,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -52,29 +52,30 @@
       "independent_sources": 1
     },
     {
-      "article_id": "17e1090e7ed8bee1",
-      "title": "Kling 4.0正式上线：10-bit HDR、30秒原生直出 刷新视频模型新基准",
-      "url": "https://www.leiphone.com/category/industrynews/1GERVRJ72xJKmsus.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261016/6ad18de61b853.png?imageMogr2/quality/90",
-      "score": 5.65,
+      "article_id": "5d08a741c2520807",
+      "title": "早报｜iPhone Duo开启预购，发货排到明年/特斯拉超跑发布会现场飞了/华为阔直板出货量超71万台",
+      "url": "https://www.ifanr.com/1684782?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "source_name": "爱范儿",
+      "source_name_en": "iFanr",
+      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/cover1017.jpg",
+      "score": 5.312,
       "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
+        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "cc07996f6bad6e0c",
-      "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
-      "url": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
+      "article_id": "0a248ec435157a65",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "url": "https://parsimony.lasu.dev/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.646,
+      "score": 5.216,
       "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
+        "命中多重信号：开源、基准/榜单",
+        "HN 40 分 · 3 评论"
       ],
       "cluster_size": 1,
       "independent_sources": 1
