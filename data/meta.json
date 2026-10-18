@@ -1,13 +1,27 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261017T235130Z-808358",
-  "last_run_at": "2026-10-17T23:51:30Z",
-  "last_success_at": "2026-10-17T23:51:30Z",
-  "total_articles": 2326,
+  "last_run_id": "20261018T235924Z-9f3317",
+  "last_run_at": "2026-10-18T23:59:24Z",
+  "last_success_at": "2026-10-18T23:59:24Z",
+  "total_articles": 2243,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "2009e586e757c56c",
+      "title": "Meta 联手苹果推出全美最强开源模型，编码基测输给智谱、Kimi",
+      "url": "https://www.infoq.cn/article/EuYOPRUBAeBgBGBu5ktk?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 6.063,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "37a16be76e6fa6cd",
       "title": "Meta 发布其开放权重模型 Muse Spark Open",
@@ -15,7 +29,7 @@
       "source_name": "Solidot",
       "source_name_en": "Solidot",
       "image_url": null,
-      "score": 5.971,
+      "score": 5.468,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及发布/上线、开源"
@@ -24,43 +38,15 @@
       "independent_sources": 2
     },
     {
-      "article_id": "e7c8697fdfc4d88f",
-      "title": "范式智能联合睿思智联推出开源一站式生产级AI部署平台 “模域ModelSphere”",
-      "url": "https://www.infoq.cn/article/VZPlIIdGRg062mgwJe5y?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
+      "article_id": "01fdbc7040eb4db5",
+      "title": "中美AI竞争的新变量：开源、算力与产业生态",
+      "url": "https://www.tmtpost.com/8172534.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
       "image_url": null,
-      "score": 5.433,
+      "score": 5.455,
       "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "40b56bbb5a4bce4b",
-      "title": "Cloudflare 计划推出公共证书颁发机构，用于签发量子安全的 TLS 证书",
-      "url": "https://www.infoq.cn/article/CoGZq3xgQhZI4rBH8pjA?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.413,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "5d08a741c2520807",
-      "title": "早报｜iPhone Duo开启预购，发货排到明年/特斯拉超跑发布会现场飞了/华为阔直板出货量超71万台",
-      "url": "https://www.ifanr.com/1684782?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/cover1017.jpg",
-      "score": 5.312,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "命中多重信号：开源、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -76,6 +62,20 @@
       "reasons": [
         "命中多重信号：开源、基准/榜单",
         "HN 40 分 · 3 评论"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "b9a4c6eaaadf6fb2",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 4.963,
+      "reasons": [
+        "社区热度 152 分"
       ],
       "cluster_size": 1,
       "independent_sources": 1
