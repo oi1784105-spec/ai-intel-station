@@ -1,13 +1,41 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261018T235924Z-9f3317",
-  "last_run_at": "2026-10-18T23:59:24Z",
-  "last_success_at": "2026-10-18T23:59:24Z",
-  "total_articles": 2243,
+  "last_run_id": "20261020T005802Z-70b1a1",
+  "last_run_at": "2026-10-20T00:58:02Z",
+  "last_success_at": "2026-10-20T00:58:02Z",
+  "total_articles": 2276,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "7d670bb9b339095f",
+      "title": "平台做天使投资：速卖通把品牌争夺战，打到了品牌诞生前",
+      "url": "https://www.leiphone.com/category/industrynews/prCErk1x9AsQgxw1.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261019/6ad6065a68481.jpg?imageView2/2/w/740",
+      "score": 5.831,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "f07f781abb5d7efc",
+      "title": "早报｜苹果定档下周发布新品，触屏MacBook Pro或将亮相/华为苹果拿下中国手机四成份额/杨立昆锐评特斯拉飞车，马斯克：放屁",
+      "url": "https://www.ifanr.com/1684957?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "source_name": "爱范儿",
+      "source_name_en": "iFanr",
+      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/fm.jpg",
+      "score": 5.782,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "2009e586e757c56c",
       "title": "Meta 联手苹果推出全美最强开源模型，编码基测输给智谱、Kimi",
@@ -15,7 +43,7 @@
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 6.063,
+      "score": 5.543,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
@@ -23,59 +51,29 @@
       "independent_sources": 1
     },
     {
-      "article_id": "37a16be76e6fa6cd",
-      "title": "Meta 发布其开放权重模型 Muse Spark Open",
-      "url": "https://www.solidot.org/story?sid=85634",
-      "source_name": "Solidot",
-      "source_name_en": "Solidot",
+      "article_id": "b9d8a24f9b96d581",
+      "title": "开源数据智能 Agent：YOLO Data Agent v1.0.2 发布",
+      "url": "https://www.oschina.net/news/503098",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.468,
+      "score": 5.516,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线、开源"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "01fdbc7040eb4db5",
-      "title": "中美AI竞争的新变量：开源、算力与产业生态",
-      "url": "https://www.tmtpost.com/8172534.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": null,
-      "score": 5.455,
-      "reasons": [
-        "命中多重信号：开源、安全"
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "0a248ec435157a65",
-      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
-      "url": "https://parsimony.lasu.dev/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
+      "article_id": "8f1a7d13f4de6985",
+      "title": "调问更新 9.25 ~ 10.19：智能回访上线，问卷设计与规则配置能力全面升级",
+      "url": "https://www.oschina.net/news/503096",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.216,
+      "score": 5.484,
       "reasons": [
-        "命中多重信号：开源、基准/榜单",
-        "HN 40 分 · 3 评论"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "b9a4c6eaaadf6fb2",
-      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 4.963,
-      "reasons": [
-        "社区热度 152 分"
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
