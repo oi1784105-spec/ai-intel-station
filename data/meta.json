@@ -1,13 +1,28 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261021T002647Z-801b22",
-  "last_run_at": "2026-10-21T00:26:47Z",
+  "last_run_id": "20261022T002932Z-a2a32e",
+  "last_run_at": "2026-10-22T00:29:32Z",
   "last_success_at": "2026-10-21T00:26:47Z",
-  "total_articles": 2305,
+  "total_articles": 2283,
   "source_count": 16,
-  "success_rate_7d": 1.0,
+  "success_rate_7d": 0.8571,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "f90527f992ac2637",
+      "title": "大肥鱼遇劲敌：MiniMax M3.1 Flash 拿下 Agent 任务第一，我们实测了",
+      "url": "https://www.leiphone.com/category/yanxishe/IMOE7FfuhC0qGxZk.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261021/6ad839630cd72.jpg?imageMogr2/quality/90",
+      "score": 6.543,
+      "reasons": [
+        "3 个独立来源同时报道",
+        "涉及发布/上线"
+      ],
+      "cluster_size": 3,
+      "independent_sources": 3
+    },
     {
       "article_id": "dbaa902542534b3a",
       "title": "OpenAI acquires Orchestra Bio",
@@ -15,7 +30,7 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 6.524,
+      "score": 6.023,
       "reasons": [
         "2 个独立来源同时报道",
         "官方一手来源",
@@ -25,58 +40,45 @@
       "independent_sources": 2
     },
     {
-      "article_id": "a16e93b014a88ea9",
-      "title": "MiniMax M3.1 Flash 更新：Computer Use 国产第一，成本降 70%",
-      "url": "https://www.oschina.net/news/503104/minimax-m3-1-flash",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
+      "article_id": "d3f519557f32dd3d",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 6.178,
+      "score": 5.836,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线、安全"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "992e176472e85c5f",
-      "title": "停止加薪！大众计划冻结全球大量员工薪酬至2030年；突发！美国发布DeepSeek禁令；马斯克：明年向全美儿童赠送SpaceX股票",
-      "url": "https://www.leiphone.com/category/zaobao/Y7039p8HsmmeQClm.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261020/6ad7439f4833c.png?imageMogr2/quality/90",
-      "score": 5.813,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单"
+        "官方来源，涉及开源",
+        "官方一手来源",
+        "涉及开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "1a8daa70da381929",
-      "title": "OpenBSD 8.0 释出",
-      "url": "https://www.solidot.org/story?sid=85665",
-      "source_name": "Solidot",
-      "source_name_en": "Solidot",
-      "image_url": null,
-      "score": 5.603,
+      "article_id": "59a8f174e457b06f",
+      "title": "早报｜iPhone Duo限购两台/雷军：汽车没有安全其他都是0/宝马员工争相离职挤崩系统",
+      "url": "https://www.ifanr.com/1685223?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "source_name": "爱范儿",
+      "source_name_en": "iFanr",
+      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/1022.jpg",
+      "score": 5.797,
       "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "命中多重信号：融资/并购、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "58e0591131d9a624",
-      "title": "TorchTPU - A Hybrid Eager/Compiled Architecture for Native PyTorch Execution on TPU",
-      "url": "https://arxiv.org/abs/2610.24161",
-      "source_name": "arXiv cs.AI",
-      "source_name_en": "arXiv cs.AI",
-      "image_url": null,
-      "score": 5.524,
+      "article_id": "96dfa23c20904718",
+      "title": "【钛晨报】推动科技创新和产业创新深度融合，中办、国办最新部署；比亚迪回应L3车辆落地时间；证监会：促进北交所新股合理定价，稳步推出北证50ETF",
+      "url": "https://www.tmtpost.com/8176877.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/a340e34ed6c3479715a1be2232ba47f2_1792603926.jpg",
+      "score": 5.626,
       "reasons": [
-        "命中多重信号：发布/上线、开源"
+        "命中多重信号：发布/上线、融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
