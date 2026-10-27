@@ -1,81 +1,81 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261025T235709Z-283d87",
-  "last_run_at": "2026-10-25T23:57:09Z",
-  "last_success_at": "2026-10-25T23:57:09Z",
-  "total_articles": 2128,
+  "last_run_id": "20261027T011722Z-d9d62f",
+  "last_run_at": "2026-10-27T01:17:22Z",
+  "last_success_at": "2026-10-27T01:17:22Z",
+  "total_articles": 2197,
   "source_count": 16,
-  "success_rate_7d": 0.625,
+  "success_rate_7d": 0.5714,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "c9de11c10f4550cf",
-      "title": "四分之一PR是“AI垃圾”！Linux基金会发布新报告：AI写代码快了52%，开源维护者却更累了",
-      "url": "https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
+      "article_id": "250e5d8f302445e7",
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "url": "https://openai.com/index/greptile-code-review-codex-astra",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.803,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "7cdf090850ee0b69",
-      "title": "Kimi K3.1 泄露：3D 成本仅有 GPT-6 Astra 的 1/14！横扫海外视觉三巨头",
-      "url": "https://www.leiphone.com/category/yanxishe/PZo9w14YeFSo4jmf.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261023/6adb3c211d3e5.jpg?imageMogr2/quality/90",
-      "score": 5.662,
+      "score": 6.165,
       "reasons": [
         "2 个独立来源同时报道",
-        "涉及发布/上线、安全"
+        "官方一手来源"
       ],
-      "cluster_size": 3,
+      "cluster_size": 2,
       "independent_sources": 2
     },
     {
-      "article_id": "d542228452b61be4",
-      "title": "【数智周报】MiniMax港股破发；DeepSeek开源推理框架DeepInfer并披露收入账本；美国国土安全部正式下令禁采DeepSeek……",
-      "url": "https://www.tmtpost.com/8181051.html",
+      "article_id": "786e5c9358c16742",
+      "title": "早报｜苹果回应iPhone Duo内屏开裂/Anthropic公开上市申请，冲击史上最大IPO/小鹏Robotaxi获批L4级示范运营",
+      "url": "https://www.ifanr.com/1685979?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "source_name": "爱范儿",
+      "source_name_en": "iFanr",
+      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/7M305289-scaled.jpg",
+      "score": 5.775,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "1758535ac6be3e6b",
+      "title": "Introducing GPT-6.1 Terra",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.706,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "官方一手来源"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "341590a25016dded",
+      "title": "【钛晨报】应对非银机构大额赎回，中国央行稳债市新工具落地；奥迪在华官宣：四环归一汽，字母标给上汽；中金公司“三合一”完成交割，部分新增股份10月29日上市流通",
+      "url": "https://www.tmtpost.com/8182711.html",
       "source_name": "钛媒体",
       "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/07286e70a86660a353e8f2ba98ac7f8d_1792920555.jpg",
-      "score": 5.349,
+      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/a340e34ed6c3479715a1be2232ba47f2_1793056343.jpg",
+      "score": 5.609,
       "reasons": [
-        "命中多重信号：开源、融资/并购、安全"
+        "命中多重信号：融资/并购、监管/政策"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "0a248ec435157a65",
-      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
-      "url": "https://parsimony.lasu.dev/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
+      "article_id": "71ef257d574d7fde",
+      "title": "ToolForge v0.2.2 正式发布：AI Agent 也能调用工具了！支持 MCP、CLI 与插件级权限管理",
+      "url": "https://www.oschina.net/news/503201",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.216,
+      "score": 5.318,
       "reasons": [
-        "命中多重信号：开源、基准/榜单",
-        "HN 40 分 · 3 评论"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "33331332d5b954af",
-      "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
-      "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.018,
-      "reasons": [
-        "社区热度 184 分"
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
