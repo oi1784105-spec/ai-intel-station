@@ -1,13 +1,45 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261027T011722Z-d9d62f",
-  "last_run_at": "2026-10-27T01:17:22Z",
-  "last_success_at": "2026-10-27T01:17:22Z",
-  "total_articles": 2197,
+  "last_run_id": "20261028T010247Z-cd0758",
+  "last_run_at": "2026-10-28T01:02:47Z",
+  "last_success_at": "2026-10-28T01:02:47Z",
+  "total_articles": 2252,
   "source_count": 16,
   "success_rate_7d": 0.5714,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "d42fb1eb3362412f",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.991,
+      "reasons": [
+        "官方来源，涉及基准/榜单",
+        "官方一手来源",
+        "涉及基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "8cb333260a17a324",
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "url": "https://openai.com/index/check-point-daybreak",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.678,
+      "reasons": [
+        "官方来源，涉及安全",
+        "官方一手来源",
+        "涉及安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "250e5d8f302445e7",
       "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
@@ -15,7 +47,7 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 6.165,
+      "score": 5.67,
       "reasons": [
         "2 个独立来源同时报道",
         "官方一手来源"
@@ -24,13 +56,13 @@
       "independent_sources": 2
     },
     {
-      "article_id": "786e5c9358c16742",
-      "title": "早报｜苹果回应iPhone Duo内屏开裂/Anthropic公开上市申请，冲击史上最大IPO/小鹏Robotaxi获批L4级示范运营",
-      "url": "https://www.ifanr.com/1685979?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/7M305289-scaled.jpg",
-      "score": 5.775,
+      "article_id": "00c0f3ff4efa9c7f",
+      "title": "Edge AI Daily 早报（10月28日）",
+      "url": "https://www.tmtpost.com/8184055.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": null,
+      "score": 5.642,
       "reasons": [
         "命中多重信号：发布/上线、融资/并购"
       ],
@@ -38,42 +70,13 @@
       "independent_sources": 1
     },
     {
-      "article_id": "1758535ac6be3e6b",
-      "title": "Introducing GPT-6.1 Terra",
-      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.706,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "官方一手来源"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "341590a25016dded",
-      "title": "【钛晨报】应对非银机构大额赎回，中国央行稳债市新工具落地；奥迪在华官宣：四环归一汽，字母标给上汽；中金公司“三合一”完成交割，部分新增股份10月29日上市流通",
-      "url": "https://www.tmtpost.com/8182711.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2026/10/a340e34ed6c3479715a1be2232ba47f2_1793056343.jpg",
-      "score": 5.609,
-      "reasons": [
-        "命中多重信号：融资/并购、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "71ef257d574d7fde",
-      "title": "ToolForge v0.2.2 正式发布：AI Agent 也能调用工具了！支持 MCP、CLI 与插件级权限管理",
-      "url": "https://www.oschina.net/news/503201",
+      "article_id": "d02cb512d03a80a9",
+      "title": "开源 AI 终端 uniTerm v1.11 发布：覆盖 32 种协议，远程桌面全面重构、AI 能力大幅升级",
+      "url": "https://www.oschina.net/news/503231",
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.318,
+      "score": 5.336,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
