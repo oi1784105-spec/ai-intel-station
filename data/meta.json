@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261031T012741Z-fd6b2d",
-  "last_run_at": "2026-10-31T01:27:41Z",
-  "last_success_at": "2026-10-31T01:27:41Z",
-  "total_articles": 2248,
+  "last_run_id": "20261101T004832Z-8d6174",
+  "last_run_at": "2026-11-01T00:48:32Z",
+  "last_success_at": "2026-11-01T00:48:32Z",
+  "total_articles": 2224,
   "source_count": 16,
-  "success_rate_7d": 0.8571,
+  "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
@@ -15,14 +15,44 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 6.399,
+      "score": 5.913,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及开源",
-        "HN 1677 分 · 435 评论"
+        "HN 1706 分 · 438 评论"
       ],
       "cluster_size": 2,
       "independent_sources": 2
+    },
+    {
+      "article_id": "e666f1d4f581d3e0",
+      "title": "Claude Code for VS Code 官方扩展被植入后门",
+      "url": "https://www.solidot.org/story?sid=85756",
+      "source_name": "Solidot",
+      "source_name_en": "Solidot",
+      "image_url": null,
+      "score": 5.903,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及发布/上线、安全"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "a9ce9215ef28b665",
+      "title": "Do the math: How we took over ChatGPT accounts",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.722,
+      "reasons": [
+        "社区热度 300 分",
+        "涉及安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
       "article_id": "a8861851d3875fdd",
@@ -31,7 +61,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.026,
+      "score": 5.54,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
@@ -39,44 +69,16 @@
       "independent_sources": 1
     },
     {
-      "article_id": "828ddfeadf3b972b",
-      "title": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
-      "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "article_id": "9a1e17b51b2d98d8",
+      "title": "OpenAI raises less than half of $30B target",
+      "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.866,
+      "score": 5.526,
       "reasons": [
-        "2 个独立来源同时报道",
-        "HN 35 分"
-      ],
-      "cluster_size": 3,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "045bbe365f3887a2",
-      "title": "早报｜iPhone国行AI官宣！千问接入Siri/DeepSeek千亿融资曝光/于东来建议支持「消费入座」",
-      "url": "https://www.ifanr.com/1686979?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/10/Apple-Intelligence-hero-CN_big.jpg.large_2x.jpg",
-      "score": 5.775,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "9906470a46d35e03",
-      "title": "Chainguard 推出面向 AI 编码智能体的安全工作区与安全校验能力",
-      "url": "https://www.infoq.cn/article/UNli8x0wc8XUNjI5ETya?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.748,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "社区热度 181 分",
+        "涉及融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
