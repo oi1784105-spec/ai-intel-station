@@ -1,80 +1,81 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261102T012048Z-199acd",
-  "last_run_at": "2026-11-02T01:20:48Z",
-  "last_success_at": "2026-11-02T01:20:48Z",
-  "total_articles": 2204,
+  "last_run_id": "20261103T032201Z-a54f4e",
+  "last_run_at": "2026-11-03T03:22:01Z",
+  "last_success_at": "2026-11-03T03:22:01Z",
+  "total_articles": 2297,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "6d03b012d3560a97",
-      "title": "Pika 基于 MiniMax H3 开源 H3 Flex，六步实现音视频联合生成",
-      "url": "https://www.leiphone.com/category/industrynews/MK1z0js4sqcp1xca.html",
+      "article_id": "ed4b58253682640f",
+      "title": "LifeVal",
+      "url": "https://openai.com/index/lifeval",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.817,
+      "reasons": [
+        "官方来源，涉及基准/榜单",
+        "官方一手来源",
+        "涉及基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "005d9c394a679693",
+      "title": "具身下半场怎么打？智元用一场发布会，给出了自己的答案",
+      "url": "https://www.leiphone.com/category/ai/d2myOaWdKKFW23lm.html",
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261101//6ae70a2ab884d.jpg?imageMogr2/quality/90",
-      "score": 6.609,
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261102/6ae8639fbb39d.jpg?imageMogr2/quality/90",
+      "score": 5.745,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线、开源"
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "a437782712b76522",
+      "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 5.466,
+      "reasons": [
+        "2 个独立来源同时报道"
       ],
       "cluster_size": 2,
       "independent_sources": 2
     },
     {
-      "article_id": "c5112ecb798280aa",
-      "title": "千亿融资敲定后，DeepSeek发布了Super-agent架构",
-      "url": "https://www.tmtpost.com/8189170.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": null,
-      "score": 5.641,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "06ae59d0fe145be7",
-      "title": "Edge AI Daily 早报（11月2日）",
-      "url": "https://www.tmtpost.com/8189326.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": null,
-      "score": 5.627,
-      "reasons": [
-        "命中多重信号：融资/并购、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "5f71f97877dd3af9",
-      "title": "【钛晨报】事关股市，央行、金融监管总局、证监会今日将召开会议；中国国新、中国诚通，各获大行新增千亿级股票回购增持贷款额度；小鹏、小米10月交付量首超5万，鸿蒙智行同比腰斩",
-      "url": "https://www.tmtpost.com/8189217.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": "https://images.tmtpost.com/uploads/images/2026/11/a340e34ed6c3479715a1be2232ba47f2_1793548119.jpg",
-      "score": 5.608,
-      "reasons": [
-        "命中多重信号：发布/上线、监管/政策"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "ea14836bfcf67f8a",
-      "title": "JimuBI v2.5.6 发布，修复 7 项安全漏洞",
-      "url": "https://www.oschina.net/news/503332",
+      "article_id": "d8c82845a0e6fbac",
+      "title": "Go 语言重构 Java 项目会提升了多少",
+      "url": "https://www.oschina.net/news/503342",
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.587,
+      "score": 5.345,
       "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "dbdd3136dd171680",
+      "title": ":fire::fire: ApiGo 开源接口平台 Go 版本发布",
+      "url": "https://www.oschina.net/news/503339",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.292,
+      "reasons": [
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
