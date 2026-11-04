@@ -1,13 +1,55 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261103T032201Z-a54f4e",
-  "last_run_at": "2026-11-03T03:22:01Z",
-  "last_success_at": "2026-11-03T03:22:01Z",
-  "total_articles": 2297,
+  "last_run_id": "20261104T020004Z-bdf81d",
+  "last_run_at": "2026-11-04T02:00:04Z",
+  "last_success_at": "2026-11-04T02:00:04Z",
+  "total_articles": 2391,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "5e835f2767e32401",
+      "title": "AI教AI开车！百度首次披露Apollo World世界模型，让无人驾驶突破“不可能三角”",
+      "url": "https://www.infoq.cn/article/tIt75FRqU2hwy4eWrOIu?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 6.055,
+      "reasons": [
+        "3 个独立来源同时报道"
+      ],
+      "cluster_size": 3,
+      "independent_sources": 3
+    },
+    {
+      "article_id": "26c8a590a1447571",
+      "title": "蚂蚁数科携智能体超级工厂亮相香港金融科技周，加速全球企业AGI升级",
+      "url": "https://www.leiphone.com/category/industrynews/rDBfh9DpSlCgX0Ic.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261103/6ae9809288aa8.jpg?imageMogr2/quality/90",
+      "score": 5.695,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "36315b3cb5b626b9",
+      "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
+      "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 5.481,
+      "reasons": [
+        "2 个独立来源同时报道"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
     {
       "article_id": "ed4b58253682640f",
       "title": "LifeVal",
@@ -15,7 +57,7 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.817,
+      "score": 5.346,
       "reasons": [
         "官方来源，涉及基准/榜单",
         "官方一手来源",
@@ -25,57 +67,15 @@
       "independent_sources": 1
     },
     {
-      "article_id": "005d9c394a679693",
-      "title": "具身下半场怎么打？智元用一场发布会，给出了自己的答案",
-      "url": "https://www.leiphone.com/category/ai/d2myOaWdKKFW23lm.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261102/6ae8639fbb39d.jpg?imageMogr2/quality/90",
-      "score": 5.745,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "a437782712b76522",
-      "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
-      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
-      "image_url": null,
-      "score": 5.466,
-      "reasons": [
-        "2 个独立来源同时报道"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "d8c82845a0e6fbac",
-      "title": "Go 语言重构 Java 项目会提升了多少",
-      "url": "https://www.oschina.net/news/503342",
+      "article_id": "afe5dd355ba5ffff",
+      "title": "GFlow v1.4.1 发布：审批流转全程留痕、审批消息直达 IM、开放外部系统集成",
+      "url": "https://www.oschina.net/news/503364",
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.345,
+      "score": 5.326,
       "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "dbdd3136dd171680",
-      "title": ":fire::fire: ApiGo 开源接口平台 Go 版本发布",
-      "url": "https://www.oschina.net/news/503339",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.292,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
+        "命中多重信号：发布/上线、安全、监管/政策"
       ],
       "cluster_size": 1,
       "independent_sources": 1
