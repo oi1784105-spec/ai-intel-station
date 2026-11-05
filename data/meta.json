@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261104T020004Z-bdf81d",
-  "last_run_at": "2026-11-04T02:00:04Z",
-  "last_success_at": "2026-11-04T02:00:04Z",
-  "total_articles": 2391,
+  "last_run_id": "20261105T020235Z-bc41b1",
+  "last_run_at": "2026-11-05T02:02:35Z",
+  "last_success_at": "2026-11-05T02:02:35Z",
+  "total_articles": 2443,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "5e835f2767e32401",
-      "title": "AI教AI开车！百度首次披露Apollo World世界模型，让无人驾驶突破“不可能三角”",
-      "url": "https://www.infoq.cn/article/tIt75FRqU2hwy4eWrOIu?utm_source=rss&utm_medium=article",
+      "article_id": "bb779f39a67b00cc",
+      "title": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
+      "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 6.248,
+      "reasons": [
+        "命中多重信号：开源、监管/政策"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "311e06862fd21c3c",
+      "title": "谷歌 Data Agent Kit 正式发布：安全防护分为 Skill 与 IAM",
+      "url": "https://www.infoq.cn/article/UtKS9EofSoyd2P7Otx7e?utm_source=rss&utm_medium=article",
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 6.055,
-      "reasons": [
-        "3 个独立来源同时报道"
-      ],
-      "cluster_size": 3,
-      "independent_sources": 3
-    },
-    {
-      "article_id": "26c8a590a1447571",
-      "title": "蚂蚁数科携智能体超级工厂亮相香港金融科技周，加速全球企业AGI升级",
-      "url": "https://www.leiphone.com/category/industrynews/rDBfh9DpSlCgX0Ic.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261103/6ae9809288aa8.jpg?imageMogr2/quality/90",
-      "score": 5.695,
+      "score": 5.958,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -37,45 +37,43 @@
       "independent_sources": 1
     },
     {
-      "article_id": "36315b3cb5b626b9",
-      "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
-      "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
+      "article_id": "5c5265b7a93cd1eb",
+      "title": "Anthropic 为重要开源项目新增可选安全扫描服务",
+      "url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 5.481,
+      "score": 5.955,
       "reasons": [
-        "2 个独立来源同时报道"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "ed4b58253682640f",
-      "title": "LifeVal",
-      "url": "https://openai.com/index/lifeval",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.346,
-      "reasons": [
-        "官方来源，涉及基准/榜单",
-        "官方一手来源",
-        "涉及基准/榜单"
+        "命中多重信号：开源、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "afe5dd355ba5ffff",
-      "title": "GFlow v1.4.1 发布：审批流转全程留痕、审批消息直达 IM、开放外部系统集成",
-      "url": "https://www.oschina.net/news/503364",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.326,
+      "article_id": "d17708f1e54dfc47",
+      "title": "独家丨预测引擎 Prophetlab 获数千万种子轮，常春藤资本等机构联合投资",
+      "url": "https://www.leiphone.com/category/industrynews/5gyZIVYyxDzi67wu.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/6a6c4981e5bcb.jpg?imageMogr2/quality/90",
+      "score": 5.901,
       "reasons": [
-        "命中多重信号：发布/上线、安全、监管/政策"
+        "命中多重信号：发布/上线、融资/并购、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "291922e8c924216e",
+      "title": "360参与发起《智能体发展自律公约》，助力构建可信智能体生态",
+      "url": "https://www.leiphone.com/category/industrynews/UB25ocDFu1ntNMtz.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261104/6aeafdfb8abc2.jpg?imageMogr2/quality/90",
+      "score": 5.76,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
