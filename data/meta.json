@@ -1,13 +1,28 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261106T020436Z-ce07c0",
-  "last_run_at": "2026-11-06T02:04:36Z",
-  "last_success_at": "2026-11-06T02:04:36Z",
-  "total_articles": 2478,
+  "last_run_id": "20261107T014246Z-9993e1",
+  "last_run_at": "2026-11-07T01:42:46Z",
+  "last_success_at": "2026-11-07T01:42:46Z",
+  "total_articles": 2517,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "cfd4354afa14004f",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 6.464,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单",
+        "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "5978e168ee564d91",
       "title": "百度开源文心5.5 Flash Base，多基准测试刷新同尺寸模型 SOTA",
@@ -15,7 +30,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": "https://static.leiphone.com/uploads/new/images/20261105/6aec27bc80709.png?imageView2/2/w/740",
-      "score": 6.841,
+      "score": 6.349,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及开源、基准/榜单"
@@ -30,10 +45,10 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 6.615,
+      "score": 6.127,
       "reasons": [
         "命中多重信号：发布/上线、开源",
-        "HN 86 分 · 2 评论"
+        "HN 95 分 · 4 评论"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -45,7 +60,7 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 6.498,
+      "score": 6.006,
       "reasons": [
         "命中多重信号：发布/上线、监管/政策",
         "官方一手来源"
@@ -54,32 +69,19 @@
       "independent_sources": 1
     },
     {
-      "article_id": "54e0059fbe4ebd62",
-      "title": "早报｜首款触屏MacBook Pro开卖/2027年放假安排公布，调休减少/GPT-6 Cyber发布，复现1724项漏洞",
-      "url": "https://www.ifanr.com/1688032?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "source_name": "爱范儿",
-      "source_name_en": "iFanr",
-      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/11/7M306815-scaled.jpg",
-      "score": 5.762,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "bb779f39a67b00cc",
-      "title": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
-      "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
+      "article_id": "0c70037a8b3b6e6d",
+      "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 5.747,
+      "score": 5.832,
       "reasons": [
-        "命中多重信号：开源、监管/政策"
+        "2 个独立来源同时报道",
+        "HN 37 分 · 7 评论"
       ],
-      "cluster_size": 1,
-      "independent_sources": 1
+      "cluster_size": 2,
+      "independent_sources": 2
     }
   ]
 }
