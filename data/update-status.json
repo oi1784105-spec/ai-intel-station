@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-08T01:11:52+00:00",
-  "run_id": "20261108T011152Z-bf67f8",
+  "generated_at": "2026-11-09T01:30:28+00:00",
+  "run_id": "20261109T013028Z-94decb",
   "trigger": "cron",
   "offline": false,
   "overall": "success",
-  "total_in_store": 2436,
-  "new_this_run": 31,
-  "deduped_this_run": 167,
+  "total_in_store": 2376,
+  "new_this_run": 34,
+  "deduped_this_run": 164,
   "window_days": 30,
   "health": {
-    "ok": 9,
-    "no_new": 6,
+    "ok": 10,
+    "no_new": 5,
     "parse_warning": 1,
     "stale": 0,
     "failed": 0,
@@ -25,16 +25,16 @@
       "status": "ok",
       "http_status": 200,
       "items_seen": 10,
-      "items_kept": 9,
+      "items_kept": 10,
       "items_filtered": 0,
       "items_tz_corrected": 0,
-      "items_summary_dropped": 5,
+      "items_summary_dropped": 7,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 6,
-      "latest_published_at": "2026-11-07T05:01:17+00:00",
-      "duration_ms": 1686,
+      "items_new": 5,
+      "items_dup": 5,
+      "latest_published_at": "2026-11-08T04:09:55+00:00",
+      "duration_ms": 1928,
       "error": null
     },
     {
@@ -50,10 +50,10 @@
       "items_summary_dropped": 20,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 3,
-      "items_dup": 17,
-      "latest_published_at": "2026-11-08T01:00:00+00:00",
-      "duration_ms": 1352,
+      "items_new": 5,
+      "items_dup": 15,
+      "latest_published_at": "2026-11-08T16:08:00+00:00",
+      "duration_ms": 1346,
       "error": null
     },
     {
@@ -63,16 +63,16 @@
       "status": "ok",
       "http_status": 200,
       "items_seen": 20,
-      "items_kept": 13,
-      "items_filtered": 7,
+      "items_kept": 14,
+      "items_filtered": 6,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 19,
       "items_out_of_window": 0,
-      "items_new": 1,
+      "items_new": 2,
       "items_dup": 12,
-      "latest_published_at": "2026-11-07T02:40:00+00:00",
-      "duration_ms": 2535,
+      "latest_published_at": "2026-11-08T13:11:00+00:00",
+      "duration_ms": 17343,
       "error": null
     },
     {
@@ -82,35 +82,35 @@
       "status": "ok",
       "http_status": 200,
       "items_seen": 50,
-      "items_kept": 25,
-      "items_filtered": 25,
+      "items_kept": 23,
+      "items_filtered": 27,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 1,
-      "items_dup": 24,
-      "latest_published_at": "2026-11-07T09:40:05+00:00",
-      "duration_ms": 3172,
+      "items_new": 2,
+      "items_dup": 21,
+      "latest_published_at": "2026-11-08T01:17:24+00:00",
+      "duration_ms": 2571,
       "error": null
     },
     {
       "id": "ifanr",
       "name": "爱范儿",
       "name_en": "iFanr",
-      "status": "no_new",
+      "status": "ok",
       "http_status": 200,
       "items_seen": 20,
-      "items_kept": 8,
-      "items_filtered": 12,
+      "items_kept": 9,
+      "items_filtered": 11,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 20,
       "items_out_of_window": 0,
-      "items_new": 0,
-      "items_dup": 8,
-      "latest_published_at": "2026-11-06T00:15:15+00:00",
-      "duration_ms": 1387,
+      "items_new": 2,
+      "items_dup": 7,
+      "latest_published_at": "2026-11-09T00:34:19+00:00",
+      "duration_ms": 1290,
       "error": null
     },
     {
@@ -120,16 +120,16 @@
       "status": "no_new",
       "http_status": 200,
       "items_seen": 10,
-      "items_kept": 3,
-      "items_filtered": 7,
+      "items_kept": 2,
+      "items_filtered": 8,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
       "items_new": 0,
-      "items_dup": 3,
+      "items_dup": 2,
       "latest_published_at": "2026-11-06T03:06:53+00:00",
-      "duration_ms": 1142,
+      "duration_ms": 1074,
       "error": null
     },
     {
@@ -145,10 +145,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 2,
-      "items_dup": 6,
-      "latest_published_at": "2026-11-07T11:46:00+00:00",
-      "duration_ms": 1287,
+      "items_new": 1,
+      "items_dup": 7,
+      "latest_published_at": "2026-11-08T13:43:08+00:00",
+      "duration_ms": 1157,
       "error": null
     },
     {
@@ -157,17 +157,17 @@
       "name_en": "TMTPost",
       "status": "ok",
       "http_status": 200,
-      "items_seen": 17,
+      "items_seen": 19,
       "items_kept": 9,
-      "items_filtered": 8,
+      "items_filtered": 10,
       "items_tz_corrected": 0,
-      "items_summary_dropped": 10,
-      "items_with_image": 11,
+      "items_summary_dropped": 3,
+      "items_with_image": 7,
       "items_out_of_window": 0,
       "items_new": 9,
       "items_dup": 0,
-      "latest_published_at": "2026-11-08T00:58:37+00:00",
-      "duration_ms": 2855,
+      "latest_published_at": "2026-11-09T00:32:21+00:00",
+      "duration_ms": 2129,
       "error": null
     },
     {
@@ -186,7 +186,7 @@
       "items_new": 0,
       "items_dup": 20,
       "latest_published_at": "2026-11-06T08:00:00+00:00",
-      "duration_ms": 540,
+      "duration_ms": 454,
       "error": null
     },
     {
@@ -205,7 +205,7 @@
       "items_new": 0,
       "items_dup": 5,
       "latest_published_at": "2026-11-05T17:00:00+00:00",
-      "duration_ms": 272,
+      "duration_ms": 358,
       "error": null
     },
     {
@@ -221,10 +221,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 2,
-      "items_dup": 18,
-      "latest_published_at": "2026-11-07T22:07:22+00:00",
-      "duration_ms": 91,
+      "items_new": 1,
+      "items_dup": 19,
+      "latest_published_at": "2026-11-08T21:00:11+00:00",
+      "duration_ms": 87,
       "error": null
     },
     {
@@ -242,8 +242,8 @@
       "items_out_of_window": 0,
       "items_new": 4,
       "items_dup": 6,
-      "latest_published_at": "2026-11-07T15:50:00+00:00",
-      "duration_ms": 114,
+      "latest_published_at": "2026-11-08T22:54:50+00:00",
+      "duration_ms": 121,
       "error": null
     },
     {
@@ -262,7 +262,7 @@
       "items_new": 0,
       "items_dup": 10,
       "latest_published_at": "2026-11-06T10:00:00+00:00",
-      "duration_ms": 89,
+      "duration_ms": 114,
       "error": null
     },
     {
@@ -276,12 +276,12 @@
       "items_filtered": 13,
       "items_tz_corrected": 0,
       "items_summary_dropped": 0,
-      "items_with_image": 8,
+      "items_with_image": 7,
       "items_out_of_window": 0,
       "items_new": 0,
       "items_dup": 17,
       "latest_published_at": "2026-11-06T17:13:12+00:00",
-      "duration_ms": 129,
+      "duration_ms": 157,
       "error": null
     },
     {
@@ -297,10 +297,10 @@
       "items_summary_dropped": 0,
       "items_with_image": 0,
       "items_out_of_window": 0,
-      "items_new": 6,
-      "items_dup": 14,
-      "latest_published_at": "2026-11-07T21:47:47+00:00",
-      "duration_ms": 798,
+      "items_new": 3,
+      "items_dup": 16,
+      "latest_published_at": "2026-11-08T19:37:42+00:00",
+      "duration_ms": 779,
       "error": null
     },
     {
@@ -319,11 +319,25 @@
       "items_new": 0,
       "items_dup": 0,
       "latest_published_at": null,
-      "duration_ms": 187,
+      "duration_ms": 247,
       "error": "响应中没有任何条目（源格式可能已变）"
     }
   ],
   "highlights": [
+    {
+      "article_id": "45da7994669e5304",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 5.539,
+      "reasons": [
+        "2 个独立来源同时报道"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
     {
       "article_id": "cfd4354afa14004f",
       "title": "Measuring how AI agents handle everyday wet-lab science",
@@ -331,54 +345,10 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.975,
+      "score": 5.5,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单",
         "官方一手来源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "5978e168ee564d91",
-      "title": "百度开源文心5.5 Flash Base，多基准测试刷新同尺寸模型 SOTA",
-      "url": "https://www.qbitai.com/2026/11/507787.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261105/6aec27bc80709.png?imageView2/2/w/740",
-      "score": 5.859,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及开源、基准/榜单"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "a6d4256e41de9c81",
-      "title": "Edge AI Daily 早报（11月8日）",
-      "url": "https://www.tmtpost.com/8197405.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": null,
-      "score": 5.645,
-      "reasons": [
-        "命中多重信号：开源、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "35ff29f694098762",
-      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
-      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.637,
-      "reasons": [
-        "命中多重信号：发布/上线、开源",
-        "HN 95 分 · 4 评论"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -390,10 +360,40 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.517,
+      "score": 5.5,
       "reasons": [
         "命中多重信号：发布/上线、监管/政策",
         "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "35ff29f694098762",
+      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.238,
+      "reasons": [
+        "命中多重信号：发布/上线、开源",
+        "HN 95 分 · 4 评论"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "0a248ec435157a65",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "url": "https://parsimony.lasu.dev/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.216,
+      "reasons": [
+        "命中多重信号：开源、基准/榜单",
+        "HN 40 分 · 3 评论"
       ],
       "cluster_size": 1,
       "independent_sources": 1

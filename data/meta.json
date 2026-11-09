@@ -1,13 +1,27 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261108T011152Z-bf67f8",
-  "last_run_at": "2026-11-08T01:11:52Z",
-  "last_success_at": "2026-11-08T01:11:52Z",
-  "total_articles": 2436,
+  "last_run_id": "20261109T013028Z-94decb",
+  "last_run_at": "2026-11-09T01:30:28Z",
+  "last_success_at": "2026-11-09T01:30:28Z",
+  "total_articles": 2376,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "45da7994669e5304",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 5.539,
+      "reasons": [
+        "2 个独立来源同时报道"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
     {
       "article_id": "cfd4354afa14004f",
       "title": "Measuring how AI agents handle everyday wet-lab science",
@@ -15,54 +29,10 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.975,
+      "score": 5.5,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单",
         "官方一手来源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "5978e168ee564d91",
-      "title": "百度开源文心5.5 Flash Base，多基准测试刷新同尺寸模型 SOTA",
-      "url": "https://www.qbitai.com/2026/11/507787.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261105/6aec27bc80709.png?imageView2/2/w/740",
-      "score": 5.859,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及开源、基准/榜单"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "a6d4256e41de9c81",
-      "title": "Edge AI Daily 早报（11月8日）",
-      "url": "https://www.tmtpost.com/8197405.html",
-      "source_name": "钛媒体",
-      "source_name_en": "TMTPost",
-      "image_url": null,
-      "score": 5.645,
-      "reasons": [
-        "命中多重信号：开源、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "35ff29f694098762",
-      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
-      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.637,
-      "reasons": [
-        "命中多重信号：发布/上线、开源",
-        "HN 95 分 · 4 评论"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -74,10 +44,40 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.517,
+      "score": 5.5,
       "reasons": [
         "命中多重信号：发布/上线、监管/政策",
         "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "35ff29f694098762",
+      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.238,
+      "reasons": [
+        "命中多重信号：发布/上线、开源",
+        "HN 95 分 · 4 评论"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "0a248ec435157a65",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "url": "https://parsimony.lasu.dev/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.216,
+      "reasons": [
+        "命中多重信号：开源、基准/榜单",
+        "HN 40 分 · 3 评论"
       ],
       "cluster_size": 1,
       "independent_sources": 1
