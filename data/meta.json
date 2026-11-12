@@ -1,66 +1,52 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261111T014505Z-b31591",
-  "last_run_at": "2026-11-11T01:45:05Z",
-  "last_success_at": "2026-11-11T01:45:05Z",
-  "total_articles": 2506,
+  "last_run_id": "20261112T024541Z-3b8a2b",
+  "last_run_at": "2026-11-12T02:45:41Z",
+  "last_success_at": "2026-11-12T02:45:41Z",
+  "total_articles": 2517,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "865216ef113dee31",
-      "title": "阿里巴巴：已正式申请平头哥独立上市",
-      "url": "https://www.leiphone.com/category/industrynews/dew7AYBxkGAYilZj.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": null,
-      "score": 5.829,
-      "reasons": [
-        "命中多重信号：发布/上线、融资/并购"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "02e4a20d191af380",
-      "title": "Google Cloud launches Gemini for healthcare.",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "article_id": "cce714811b519a82",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
       "source_name": "Google AI Blog",
       "source_name_en": "Google AI Blog",
-      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/social_share_NWQpgus.max-600x600.format-webp.webp",
-      "score": 5.784,
-      "reasons": [
-        "官方来源，涉及发布/上线",
-        "官方一手来源",
-        "涉及发布/上线"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "99d632aaa4166752",
-      "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
-      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 5.772,
+      "score": 6.017,
       "reasons": [
         "2 个独立来源同时报道",
-        "涉及发布/上线"
+        "官方一手来源",
+        "HN 290 分 · 90 评论"
       ],
       "cluster_size": 2,
       "independent_sources": 2
     },
     {
-      "article_id": "90bdca777f02a245",
-      "title": "Fable 5.2 “撞车”蚂蚁灵波触觉模型，CEO 朱兴：两类模型协同将加速具身产业成熟",
-      "url": "https://www.leiphone.com/category/industrynews/Qhv28gnFkgFPCbXV.html",
-      "source_name": "雷锋网",
-      "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261110/6af2be7964e02.png?imageMogr2/quality/90",
-      "score": 5.706,
+      "article_id": "f6b29b4e2ab3b1b9",
+      "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 5.738,
+      "reasons": [
+        "社区热度 179 分",
+        "涉及开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "d6a209a1f46dfc54",
+      "title": "英伟达机器人开源撞上Fable 5.2发布！Jim Fan：不是寒冬是夏天",
+      "url": "https://www.qbitai.com/2026/11/509032.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
+      "image_url": null,
+      "score": 5.563,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
@@ -68,15 +54,31 @@
       "independent_sources": 1
     },
     {
-      "article_id": "0818d92f20b88fa3",
-      "title": "派早报：700 号段保护服务试点获批、Claude Code 设置文件泄露凭据等",
-      "url": "https://sspai.com/post/118905",
-      "source_name": "少数派",
-      "source_name_en": "Sspai",
+      "article_id": "cfd4354afa14004f",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.623,
+      "score": 5.5,
       "reasons": [
-        "命中多重信号：发布/上线、安全、基准/榜单"
+        "命中多重信号：发布/上线、基准/榜单",
+        "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "f93567576105c713",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.5,
+      "reasons": [
+        "命中多重信号：发布/上线、监管/政策",
+        "官方一手来源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
