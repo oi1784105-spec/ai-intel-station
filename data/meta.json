@@ -1,84 +1,82 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261112T024541Z-3b8a2b",
-  "last_run_at": "2026-11-12T02:45:41Z",
-  "last_success_at": "2026-11-12T02:45:41Z",
-  "total_articles": 2517,
+  "last_run_id": "20261113T022821Z-87367c",
+  "last_run_at": "2026-11-13T02:28:21Z",
+  "last_success_at": "2026-11-13T02:28:21Z",
+  "total_articles": 2525,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "cce714811b519a82",
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "source_name": "Google AI Blog",
-      "source_name_en": "Google AI Blog",
+      "article_id": "3903c89c61e50edc",
+      "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
+      "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.017,
+      "score": 6.237,
+      "reasons": [
+        "命中多重信号：开源、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "5c8a7e2ce9e472f4",
+      "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 6.215,
+      "reasons": [
+        "命中多重信号：开源、融资/并购"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "660711644cdc9dc9",
+      "title": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
+      "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 6.195,
       "reasons": [
         "2 个独立来源同时报道",
-        "官方一手来源",
-        "HN 290 分 · 90 评论"
+        "涉及安全"
       ],
       "cluster_size": 2,
       "independent_sources": 2
     },
     {
-      "article_id": "f6b29b4e2ab3b1b9",
-      "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
-      "url": "https://github.com/FrigadeHQ/yogurt",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.738,
-      "reasons": [
-        "社区热度 179 分",
-        "涉及开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "d6a209a1f46dfc54",
-      "title": "英伟达机器人开源撞上Fable 5.2发布！Jim Fan：不是寒冬是夏天",
-      "url": "https://www.qbitai.com/2026/11/509032.html",
+      "article_id": "29642905d8f6bbe7",
+      "title": "多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛",
+      "url": "https://www.qbitai.com/2026/11/509440.html",
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 5.563,
+      "score": 6.09,
       "reasons": [
-        "命中多重信号：发布/上线、开源"
+        "命中多重信号：开源、基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "cfd4354afa14004f",
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "article_id": "5b0f73df89a6e310",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/business/customer-stories/amplitude",
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 5.5,
+      "score": 6.065,
       "reasons": [
-        "命中多重信号：发布/上线、基准/榜单",
-        "官方一手来源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "f93567576105c713",
-      "title": "Setting a new standard for responsible AI infrastructure",
-      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.5,
-      "reasons": [
-        "命中多重信号：发布/上线、监管/政策",
-        "官方一手来源"
+        "官方来源，涉及发布/上线",
+        "官方一手来源",
+        "涉及发布/上线"
       ],
       "cluster_size": 1,
       "independent_sources": 1
