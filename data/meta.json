@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261113T022821Z-87367c",
-  "last_run_at": "2026-11-13T02:28:21Z",
-  "last_success_at": "2026-11-13T02:28:21Z",
-  "total_articles": 2525,
+  "last_run_id": "20261114T020217Z-ec59a4",
+  "last_run_at": "2026-11-14T02:02:17Z",
+  "last_success_at": "2026-11-14T02:02:17Z",
+  "total_articles": 2516,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
@@ -15,7 +15,7 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.237,
+      "score": 5.746,
       "reasons": [
         "命中多重信号：开源、融资/并购"
       ],
@@ -29,27 +29,12 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.215,
+      "score": 5.724,
       "reasons": [
         "命中多重信号：开源、融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
-    },
-    {
-      "article_id": "660711644cdc9dc9",
-      "title": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
-      "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
-      "image_url": null,
-      "score": 6.195,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及安全"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
     },
     {
       "article_id": "29642905d8f6bbe7",
@@ -58,7 +43,7 @@
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.09,
+      "score": 5.599,
       "reasons": [
         "命中多重信号：开源、基准/榜单"
       ],
@@ -72,11 +57,26 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 6.065,
+      "score": 5.574,
       "reasons": [
         "官方来源，涉及发布/上线",
         "官方一手来源",
         "涉及发布/上线"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "cfd4354afa14004f",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.5,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单",
+        "官方一手来源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
