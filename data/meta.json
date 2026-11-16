@@ -1,13 +1,28 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261115T013517Z-afe65a",
-  "last_run_at": "2026-11-15T01:35:17Z",
-  "last_success_at": "2026-11-15T01:35:17Z",
-  "total_articles": 2448,
+  "last_run_id": "20261116T013915Z-a30697",
+  "last_run_at": "2026-11-16T01:39:15Z",
+  "last_success_at": "2026-11-16T01:39:15Z",
+  "total_articles": 2395,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
+    {
+      "article_id": "de1b04aef2180495",
+      "title": "All AI-generated code should be Open Source",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "source_name": "Hacker News",
+      "source_name_en": "Hacker News",
+      "image_url": null,
+      "score": 6.074,
+      "reasons": [
+        "社区热度 1082 分",
+        "涉及开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
     {
       "article_id": "5bf4951adbe9698d",
       "title": "Introducing ChatGPT Wallet",
@@ -15,7 +30,7 @@
       "source_name": "OpenAI News",
       "source_name_en": "OpenAI News",
       "image_url": null,
-      "score": 6.346,
+      "score": 5.845,
       "reasons": [
         "3 个独立来源同时报道",
         "官方一手来源"
@@ -24,30 +39,29 @@
       "independent_sources": 3
     },
     {
+      "article_id": "aaf786fc759c070a",
+      "title": "Edge AI Daily 早报（11月16日）",
+      "url": "https://www.tmtpost.com/8206064.html",
+      "source_name": "钛媒体",
+      "source_name_en": "TMTPost",
+      "image_url": null,
+      "score": 5.632,
+      "reasons": [
+        "命中多重信号：安全、监管/政策"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
       "article_id": "0563f648c822e625",
       "title": "「史上最严」湿实验预测基准发布！推理拉满、算力翻5倍也白搭",
       "url": "https://www.qbitai.com/2026/11/510232.html",
       "source_name": "量子位",
       "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.075,
+      "score": 5.573,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "b26717d449a421fa",
-      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.827,
-      "reasons": [
-        "社区热度 1033 分",
-        "涉及融资/并购"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -62,21 +76,6 @@
       "score": 5.5,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单",
-        "官方一手来源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "f93567576105c713",
-      "title": "Setting a new standard for responsible AI infrastructure",
-      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.5,
-      "reasons": [
-        "命中多重信号：发布/上线、监管/政策",
         "官方一手来源"
       ],
       "cluster_size": 1,
