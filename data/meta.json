@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261118T032529Z-33f221",
-  "last_run_at": "2026-11-18T03:25:29Z",
-  "last_success_at": "2026-11-18T03:25:29Z",
-  "total_articles": 2563,
+  "last_run_id": "20261119T025901Z-c37fab",
+  "last_run_at": "2026-11-19T02:59:01Z",
+  "last_success_at": "2026-11-19T02:59:01Z",
+  "total_articles": 2610,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
@@ -15,7 +15,7 @@
       "source_name": "TechCrunch AI",
       "source_name_en": "TechCrunch AI",
       "image_url": null,
-      "score": 6.529,
+      "score": 6.038,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及开源、安全"
@@ -24,28 +24,13 @@
       "independent_sources": 2
     },
     {
-      "article_id": "549a77347d5e1e5f",
-      "title": "Introducing GPT-6.2 Astra and Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
+      "article_id": "709316486f763a0c",
+      "title": "全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线",
+      "url": "https://www.qbitai.com/2026/11/510916.html",
+      "source_name": "量子位",
+      "source_name_en": "QbitAI",
       "image_url": null,
-      "score": 6.032,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "官方一手来源"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "23e091fc201d004c",
-      "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol，任务成本显著下降",
-      "url": "https://www.oschina.net/news/503626/openai-gpt-6-2-astra-sol",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.796,
+      "score": 5.992,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -53,30 +38,44 @@
       "independent_sources": 1
     },
     {
-      "article_id": "773cc78ee17a9631",
-      "title": "California state AG sues OpenAI over rogue agent incidents",
-      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
+      "article_id": "a616b4e1bed67145",
+      "title": "Manus 成为开源游戏引擎 Godot 白金赞助商",
+      "url": "https://www.oschina.net/news/503657/manus-sponsorship-partners-godot-engine",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.781,
+      "score": 5.833,
       "reasons": [
         "2 个独立来源同时报道",
-        "涉及监管/政策"
+        "涉及开源"
       ],
       "cluster_size": 2,
       "independent_sources": 2
     },
     {
-      "article_id": "5e50937a8e920ca3",
-      "title": "File Mover Express：亚马逊云科技发布用于 S3 文件传输的开源工具",
-      "url": "https://www.infoq.cn/article/i0a4s8Cf7WMxcZha74kF?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
+      "article_id": "2507f599f5384325",
+      "title": "伏羲智能决策平台发布 v1.0.0：多智能体协作与决策运营闭环升级",
+      "url": "https://www.oschina.net/news/503652",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.741,
+      "score": 5.789,
       "reasons": [
         "命中多重信号：发布/上线、开源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "ec48e4fd86647589",
+      "title": "海外算力通道收窄！众智 FlagOS × 清昴智能，助力国芯高性能上线商用 Token 工厂",
+      "url": "https://www.leiphone.com/category/industrynews/ukrIJ082d0MIuodR.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261118/6afd37db19e0c.png?imageView2/2/w/740",
+      "score": 5.653,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
