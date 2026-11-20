@@ -1,36 +1,49 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261119T025901Z-c37fab",
-  "last_run_at": "2026-11-19T02:59:01Z",
-  "last_success_at": "2026-11-19T02:59:01Z",
-  "total_articles": 2610,
+  "last_run_id": "20261120T025258Z-629860",
+  "last_run_at": "2026-11-20T02:52:58Z",
+  "last_success_at": "2026-11-20T02:52:58Z",
+  "total_articles": 2626,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "030a040e02b27922",
-      "title": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’",
-      "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-      "source_name": "TechCrunch AI",
-      "source_name_en": "TechCrunch AI",
-      "image_url": null,
-      "score": 6.038,
+      "article_id": "92c2e19464fb3cf6",
+      "title": "早报｜苹果招人打造「接管电脑」的AI智能体/史上最大IPO，Anthropic上市/华为官宣Mate 90 Air主打轻薄",
+      "url": "https://www.ifanr.com/1690473?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "source_name": "爱范儿",
+      "source_name_en": "iFanr",
+      "image_url": "https://s3.ifanr.com/wp-content/uploads/2026/11/dims.apnews.jpg",
+      "score": 5.75,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及开源、安全"
+        "命中多重信号：发布/上线、融资/并购"
       ],
-      "cluster_size": 2,
-      "independent_sources": 2
+      "cluster_size": 1,
+      "independent_sources": 1
     },
     {
-      "article_id": "709316486f763a0c",
-      "title": "全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线",
-      "url": "https://www.qbitai.com/2026/11/510916.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
-      "image_url": null,
-      "score": 5.992,
+      "article_id": "361f2a03dd1d2f31",
+      "title": "诺亦腾机器人入选 The Information 2026 全球最具潜力50家初创企业榜单",
+      "url": "https://www.leiphone.com/category/ai/AfdiA9NBN3TJrgDL.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261119/6afebc1c3d595.png?imageView2/2/w/740",
+      "score": 5.73,
+      "reasons": [
+        "命中多重信号：发布/上线、融资/并购、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "c3208c8e6ec1bc9a",
+      "title": "Google 杀入 Jev 核心赛道：Gemini Decision 1 五项基准领先两项落后",
+      "url": "https://www.leiphone.com/category/ai/wctgzdX4CN2RVxCm.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261119/6afebc66439ac.jpg?imageMogr2/quality/90",
+      "score": 5.73,
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单"
       ],
@@ -38,47 +51,32 @@
       "independent_sources": 1
     },
     {
-      "article_id": "a616b4e1bed67145",
-      "title": "Manus 成为开源游戏引擎 Godot 白金赞助商",
-      "url": "https://www.oschina.net/news/503657/manus-sponsorship-partners-godot-engine",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.833,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及开源"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "2507f599f5384325",
-      "title": "伏羲智能决策平台发布 v1.0.0：多智能体协作与决策运营闭环升级",
-      "url": "https://www.oschina.net/news/503652",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.789,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "ec48e4fd86647589",
-      "title": "海外算力通道收窄！众智 FlagOS × 清昴智能，助力国芯高性能上线商用 Token 工厂",
-      "url": "https://www.leiphone.com/category/industrynews/ukrIJ082d0MIuodR.html",
+      "article_id": "660081ed8786a638",
+      "title": "百图生科正式发布AI药物安全性评价系统，从虚拟细胞走向虚拟猴，为药物研发带来全新助力",
+      "url": "https://www.leiphone.com/category/industrynews/UlpahlWOHi0OeI7Y.html",
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261118/6afd37db19e0c.png?imageView2/2/w/740",
-      "score": 5.653,
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261119/6afe958d829d0.png?imageView2/2/w/740",
+      "score": 5.674,
       "reasons": [
-        "命中多重信号：发布/上线、安全"
+        "命中多重信号：发布/上线、安全、基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
+    },
+    {
+      "article_id": "e60f4e5e7cf4b021",
+      "title": "Meta’s new Muse Charm device may cost $300",
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "source_name": "TechCrunch AI",
+      "source_name_en": "TechCrunch AI",
+      "image_url": null,
+      "score": 5.531,
+      "reasons": [
+        "2 个独立来源同时报道"
+      ],
+      "cluster_size": 3,
+      "independent_sources": 2
     }
   ]
 }
