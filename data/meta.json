@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261121T030129Z-77bdd4",
-  "last_run_at": "2026-11-21T03:01:29Z",
-  "last_success_at": "2026-11-21T03:01:29Z",
-  "total_articles": 2616,
+  "last_run_id": "20261122T015747Z-397502",
+  "last_run_at": "2026-11-22T01:57:47Z",
+  "last_success_at": "2026-11-22T01:57:47Z",
+  "total_articles": 2548,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
@@ -15,7 +15,7 @@
       "source_name": "Hacker News",
       "source_name_en": "Hacker News",
       "image_url": null,
-      "score": 6.632,
+      "score": 6.154,
       "reasons": [
         "2 个独立来源同时报道",
         "涉及融资/并购",
@@ -25,44 +25,15 @@
       "independent_sources": 2
     },
     {
-      "article_id": "8eedfb938eff80ec",
-      "title": "华为云开源昇腾原生具身世界模型CloudRobo-WM1.2，两项评测均列第一",
-      "url": "https://www.infoq.cn/article/LCqRiGDSeMBfXo4iktdA?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.902,
+      "article_id": "ea2303306e27d5ad",
+      "title": "当 Kling Image 4.0 自己出设计方案，生图的门槛又变了！",
+      "url": "https://www.leiphone.com/category/yanxishe/zjw3hyGGqzhBaPj7.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261121/6b01088df1c07.png?imageMogr2/quality/90",
+      "score": 5.621,
       "reasons": [
-        "命中多重信号：开源、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "a87cfba72128cbd7",
-      "title": "Cloudflare 推出面向后量子时代 Web 安全的公共证书颁发机构",
-      "url": "https://www.infoq.cn/article/WGpi7vxi1pCiJeJBKbm7?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.77,
-      "reasons": [
-        "命中多重信号：发布/上线、安全"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "fda5004e845ff961",
-      "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "source_name": "Hacker News",
-      "source_name_en": "Hacker News",
-      "image_url": null,
-      "score": 5.695,
-      "reasons": [
-        "社区热度 192 分",
-        "涉及融资/并购"
+        "命中多重信号：发布/上线、基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
@@ -78,6 +49,35 @@
       "reasons": [
         "命中多重信号：发布/上线、基准/榜单",
         "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "f93567576105c713",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.5,
+      "reasons": [
+        "命中多重信号：发布/上线、监管/政策",
+        "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "8eedfb938eff80ec",
+      "title": "华为云开源昇腾原生具身世界模型CloudRobo-WM1.2，两项评测均列第一",
+      "url": "https://www.infoq.cn/article/LCqRiGDSeMBfXo4iktdA?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
+      "image_url": null,
+      "score": 5.424,
+      "reasons": [
+        "命中多重信号：开源、基准/榜单"
       ],
       "cluster_size": 1,
       "independent_sources": 1
