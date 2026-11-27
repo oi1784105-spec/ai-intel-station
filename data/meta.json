@@ -1,21 +1,64 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261126T040025Z-ca592c",
-  "last_run_at": "2026-11-26T04:00:25Z",
-  "last_success_at": "2026-11-26T04:00:25Z",
-  "total_articles": 2672,
+  "last_run_id": "20261127T035856Z-10126f",
+  "last_run_at": "2026-11-27T03:58:56Z",
+  "last_success_at": "2026-11-27T03:58:56Z",
+  "total_articles": 2660,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "587668722ad0d72c",
-      "title": "开源数据库 DocumentDB 正式发布 1.0 版本",
-      "url": "https://www.infoq.cn/article/k2Q7xBBucwOwxVoyq4LG?utm_source=rss&utm_medium=article",
+      "article_id": "d735635591862bb8",
+      "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "source_name": "The Verge AI",
+      "source_name_en": "The Verge AI",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25557391/STK278_character_ai_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 5.907,
+      "reasons": [
+        "2 个独立来源同时报道",
+        "涉及发布/上线"
+      ],
+      "cluster_size": 2,
+      "independent_sources": 2
+    },
+    {
+      "article_id": "c50cf651def5e6ad",
+      "title": "Uber 推出安全 AI 框架：对 AI 智能体进行全生命周期治理",
+      "url": "https://www.infoq.cn/article/xA3g2i0VtTZIOVePMedY?utm_source=rss&utm_medium=article",
       "source_name": "InfoQ 中国 AI",
       "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 6.229,
+      "score": 5.792,
+      "reasons": [
+        "命中多重信号：发布/上线、安全"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "80aec041aaa8d680",
+      "title": "直播 25 天训出一个模型，五项登顶，一群 00 后的 Physical AI 实验",
+      "url": "https://www.leiphone.com/category/ai/0DEts3fxmZTZ7ojp.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261126/6b082aae55b8d.jpg?imageMogr2/quality/90",
+      "score": 5.784,
+      "reasons": [
+        "命中多重信号：发布/上线、开源、基准/榜单"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "9846b87071630118",
+      "title": "蚂蚁百灵 Ling-3.2-air 开源发布，提升编程、智能体与多模态能力",
+      "url": "https://www.oschina.net/news/503847",
+      "source_name": "开源中国",
+      "source_name_en": "OSChina",
+      "image_url": null,
+      "score": 5.778,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
@@ -23,60 +66,15 @@
       "independent_sources": 1
     },
     {
-      "article_id": "0c44f618ed02c7db",
-      "title": "蚂蚁OceanBase发布湖库一体AI数据平台OceanLake，核心引擎向全球开源",
-      "url": "https://www.qbitai.com/2026/11/512330.html",
-      "source_name": "量子位",
-      "source_name_en": "QbitAI",
+      "article_id": "587668722ad0d72c",
+      "title": "开源数据库 DocumentDB 正式发布 1.0 版本",
+      "url": "https://www.infoq.cn/article/k2Q7xBBucwOwxVoyq4LG?utm_source=rss&utm_medium=article",
+      "source_name": "InfoQ 中国 AI",
+      "source_name_en": "InfoQ China",
       "image_url": null,
-      "score": 6.223,
+      "score": 5.73,
       "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线、开源"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "9f3ac1a006e7d901",
-      "title": "百度大模型文心 5.5 Flash Preview 正式开源",
-      "url": "https://www.oschina.net/news/503792",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 6.112,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线、开源"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "8df6d97195aff4e6",
-      "title": "AICon 北京 2026 全日程揭晓｜探索 AI 应用边界，构建持续创造价值的生产体系",
-      "url": "https://www.oschina.net/event/8598428",
-      "source_name": "开源中国",
-      "source_name_en": "OSChina",
-      "image_url": null,
-      "score": 5.779,
-      "reasons": [
-        "命中多重信号：安全、基准/榜单"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "cfd4354afa14004f",
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-      "source_name": "OpenAI News",
-      "source_name_en": "OpenAI News",
-      "image_url": null,
-      "score": 5.5,
-      "reasons": [
-        "命中多重信号：发布/上线、基准/榜单",
-        "官方一手来源"
+        "命中多重信号：发布/上线、开源"
       ],
       "cluster_size": 1,
       "independent_sources": 1
