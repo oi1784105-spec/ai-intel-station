@@ -1,36 +1,21 @@
 {
   "schema_version": 1,
-  "last_run_id": "20261127T035856Z-10126f",
-  "last_run_at": "2026-11-27T03:58:56Z",
-  "last_success_at": "2026-11-27T03:58:56Z",
-  "total_articles": 2660,
+  "last_run_id": "20261128T034646Z-214e38",
+  "last_run_at": "2026-11-28T03:46:46Z",
+  "last_success_at": "2026-11-28T03:46:46Z",
+  "total_articles": 2598,
   "source_count": 16,
   "success_rate_7d": 1.0,
   "window_days": 30,
   "highlights": [
     {
-      "article_id": "d735635591862bb8",
-      "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
-      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
-      "source_name": "The Verge AI",
-      "source_name_en": "The Verge AI",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25557391/STK278_character_ai_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 5.907,
-      "reasons": [
-        "2 个独立来源同时报道",
-        "涉及发布/上线"
-      ],
-      "cluster_size": 2,
-      "independent_sources": 2
-    },
-    {
-      "article_id": "c50cf651def5e6ad",
-      "title": "Uber 推出安全 AI 框架：对 AI 智能体进行全生命周期治理",
-      "url": "https://www.infoq.cn/article/xA3g2i0VtTZIOVePMedY?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
+      "article_id": "35f2c52ecd2f275f",
+      "title": "美团2026年三季报：营收1156亿元，AI经营工作台“妙手”已服务200万商家",
+      "url": "https://www.leiphone.com/category/industrynews/iJ0tw7k1kHDs5zjT.html",
+      "source_name": "雷锋网",
+      "source_name_en": "Leiphone",
       "image_url": null,
-      "score": 5.792,
+      "score": 5.739,
       "reasons": [
         "命中多重信号：发布/上线、安全"
       ],
@@ -38,41 +23,57 @@
       "independent_sources": 1
     },
     {
-      "article_id": "80aec041aaa8d680",
-      "title": "直播 25 天训出一个模型，五项登顶，一群 00 后的 Physical AI 实验",
-      "url": "https://www.leiphone.com/category/ai/0DEts3fxmZTZ7ojp.html",
+      "article_id": "8d26383da474df55",
+      "title": "OpenAI、Anthropic 内部出现分歧：AI 能力增长太快，模型隐藏行为，监测开始系统失灵？",
+      "url": "https://www.leiphone.com/category/ai/IMi92BFX4KU0R8uh.html",
       "source_name": "雷锋网",
       "source_name_en": "Leiphone",
-      "image_url": "https://static.leiphone.com/uploads/new/images/20261126/6b082aae55b8d.jpg?imageMogr2/quality/90",
-      "score": 5.784,
+      "image_url": "https://static.leiphone.com/uploads/new/images/20261127/6b093cbb909df.jpg?imageMogr2/quality/90",
+      "score": 5.694,
       "reasons": [
-        "命中多重信号：发布/上线、开源、基准/榜单"
+        "命中多重信号：发布/上线、安全"
       ],
       "cluster_size": 1,
       "independent_sources": 1
     },
     {
-      "article_id": "9846b87071630118",
-      "title": "蚂蚁百灵 Ling-3.2-air 开源发布，提升编程、智能体与多模态能力",
-      "url": "https://www.oschina.net/news/503847",
+      "article_id": "cfd4354afa14004f",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.5,
+      "reasons": [
+        "命中多重信号：发布/上线、基准/榜单",
+        "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "f93567576105c713",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "source_name": "OpenAI News",
+      "source_name_en": "OpenAI News",
+      "image_url": null,
+      "score": 5.5,
+      "reasons": [
+        "命中多重信号：发布/上线、监管/政策",
+        "官方一手来源"
+      ],
+      "cluster_size": 1,
+      "independent_sources": 1
+    },
+    {
+      "article_id": "f6ca4490be812b5a",
+      "title": "微信开源 WeMM-Ecom：多模态基础模型家族、基于真实电商需求驱动",
+      "url": "https://www.oschina.net/news/503871",
       "source_name": "开源中国",
       "source_name_en": "OSChina",
       "image_url": null,
-      "score": 5.778,
-      "reasons": [
-        "命中多重信号：发布/上线、开源"
-      ],
-      "cluster_size": 1,
-      "independent_sources": 1
-    },
-    {
-      "article_id": "587668722ad0d72c",
-      "title": "开源数据库 DocumentDB 正式发布 1.0 版本",
-      "url": "https://www.infoq.cn/article/k2Q7xBBucwOwxVoyq4LG?utm_source=rss&utm_medium=article",
-      "source_name": "InfoQ 中国 AI",
-      "source_name_en": "InfoQ China",
-      "image_url": null,
-      "score": 5.73,
+      "score": 5.458,
       "reasons": [
         "命中多重信号：发布/上线、开源"
       ],
